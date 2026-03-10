@@ -1,0 +1,65 @@
+databaseChangeLog:
+  - changeSet:
+      id: 9-create-country-stats-table
+      author: codex
+      preConditions:
+        onFail: MARK_RAN
+        onError: HALT
+        not:
+          tableExists:
+            tableName: country_stats
+      changes:
+        - createTable:
+            tableName: country_stats
+            columns:
+              - column:
+                  name: country_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: year
+                  type: INT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: population
+                  type: BIGINT
+              - column:
+                  name: gdp_usd
+                  type: NUMERIC(20,2)
+              - column:
+                  name: gdp_per_capita_usd
+                  type: NUMERIC(20,2)
+              - column:
+                  name: inflation_pct
+                  type: NUMERIC(5,2)
+              - column:
+                  name: unemployment_pct
+                  type: NUMERIC(5,2)
+              - column:
+                  name: life_expectancy
+                  type: NUMERIC(4,1)
+              - column:
+                  name: internet_penetration_pct
+                  type: NUMERIC(5,2)
+              - column:
+                  name: co2_tons_per_capita
+                  type: NUMERIC(6,2)
+        - addPrimaryKey:
+            tableName: country_stats
+            columnNames: country_id, year
+            constraintName: pk_country_stats
+        - addForeignKeyConstraint:
+            constraintName: fk_country_stats_country
+            baseTableName: country_stats
+            baseColumnNames: country_id
+            referencedTableName: country
+            referencedColumnNames: id
+            onDelete: CASCADE
+        - createIndex:
+            tableName: country_stats
+            indexName: ix_country_stats_year
+            columns:
+              - column:
+                  name: year

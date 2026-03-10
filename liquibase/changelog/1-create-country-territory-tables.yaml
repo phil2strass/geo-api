@@ -33,10 +33,77 @@ databaseChangeLog:
               - column:
                   name: calling_code
                   type: VARCHAR(10)
+              - column:
+                  name: official_name
+                  type: VARCHAR(200)
+              - column:
+                  name: iso3_code
+                  type: VARCHAR(3)
+              - column:
+                  name: iso_numeric
+                  type: VARCHAR(3)
+              - column:
+                  name: region
+                  type: VARCHAR(64)
+              - column:
+                  name: subregion
+                  type: VARCHAR(64)
+              - column:
+                  name: capital
+                  type: VARCHAR(160)
+              - column:
+                  name: latitude
+                  type: NUMERIC(9,6)
+              - column:
+                  name: longitude
+                  type: NUMERIC(9,6)
+              - column:
+                  name: area_km2
+                  type: NUMERIC(12,2)
+              - column:
+                  name: tld
+                  type: JSONB
+              - column:
+                  name: timezones
+                  type: JSONB
+              - column:
+                  name: currencies
+                  type: JSONB
+              - column:
+                  name: languages
+                  type: JSONB
+              - column:
+                  name: flag_emoji
+                  type: VARCHAR(8)
+              - column:
+                  name: start_of_week
+                  type: VARCHAR(12)
+              - column:
+                  name: un_member
+                  type: BOOLEAN
+              - column:
+                  name: independent
+                  type: BOOLEAN
         - addUniqueConstraint:
             tableName: country
             columnNames: iso_code
             constraintName: uq_country_iso_code
+        - addUniqueConstraint:
+            tableName: country
+            columnNames: iso3_code
+            constraintName: uq_country_iso3_code
+        - createIndex:
+            tableName: country
+            indexName: ix_country_region
+            columns:
+              - column:
+                  name: region
+        - createIndex:
+            tableName: country
+            indexName: ix_country_subregion
+            columns:
+              - column:
+                  name: subregion
 
   - changeSet:
       id: 1-create-territory-table

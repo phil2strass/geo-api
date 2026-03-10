@@ -5,3 +5,17 @@ databaseChangeLog:
       file: changelog/2-load-countries.sql
   - include:
       file: changelog/3-load-territories.sql
+  - include:
+      file: changelog/4-load-country-details.sql
+  - include:
+      file: changelog/5-fix-country-flag-emoji.sql
+  - include:
+      file: changelog/6-fix-country-tld-ascii.sql
+  - include:
+      file: changelog/7-fix-country-languages-ascii.sql
+  - include:
+      file: changelog/8-fix-country-currencies-ascii.sql
+  - include:
+      file: changelog/9-create-country-stats-table.yaml
+  - include:
+      file: changelog/10-load-country-stats-2022.sql
