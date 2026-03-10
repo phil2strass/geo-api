@@ -1,0 +1,85 @@
+databaseChangeLog:
+  - changeSet:
+      id: 1-create-country-table
+      author: codex
+      preConditions:
+        onFail: MARK_RAN
+        onError: HALT
+        not:
+          tableExists:
+            tableName: country
+      changes:
+        - createTable:
+            tableName: country
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_country
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(160)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: iso_code
+                  type: VARCHAR(3)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: calling_code
+                  type: VARCHAR(10)
+        - addUniqueConstraint:
+            tableName: country
+            columnNames: iso_code
+            constraintName: uq_country_iso_code
+
+  - changeSet:
+      id: 1-create-territory-table
+      author: codex
+      preConditions:
+        onFail: MARK_RAN
+        onError: HALT
+        not:
+          tableExists:
+            tableName: territory
+      changes:
+        - createTable:
+            tableName: territory
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_territory
+                    nullable: false
+              - column:
+                  name: country_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: name
+                  type: VARCHAR(200)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: type
+                  type: VARCHAR(32)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: calling_code
+                  type: VARCHAR(10)
+        - createIndex:
+            tableName: territory
+            indexName: ix_territory_country_id
+            columns:
+              - column:
+                  name: country_id

@@ -72,3 +72,6 @@ uvicorn app.main:app --reload
 ```
 
 Dans ce cas, la variable `DATABASE_URL` doit pointer vers la base PostgreSQL.
+
+# liquibase
+~/IdeaProjects/geo-api/liquibase$ liquibase --classpath=lib/postgresql.jar --driver=org.postgresql.Driver update

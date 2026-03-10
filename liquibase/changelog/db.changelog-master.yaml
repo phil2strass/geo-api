@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: changelog/1-create-country-territory-tables.yaml
+  - include:
+      file: changelog/2-load-countries.sql
+  - include:
+      file: changelog/3-load-territories.sql
