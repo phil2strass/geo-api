@@ -19,3 +19,5 @@ databaseChangeLog:
       file: changelog/9-create-country-stats-table.yaml
   - include:
       file: changelog/10-load-country-stats-2022.sql
+  - include:
+      file: changelog/11-add-country-area-population.yaml

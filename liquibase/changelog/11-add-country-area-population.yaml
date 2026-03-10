@@ -1,0 +1,47 @@
+databaseChangeLog:
+  - changeSet:
+      id: 11-add-country-population-column
+      author: codex
+      preConditions:
+        onFail: MARK_RAN
+        onError: HALT
+        not:
+          columnExists:
+            tableName: country
+            columnName: population
+      changes:
+        - addColumn:
+            tableName: country
+            columns:
+              - column:
+                  name: population
+                  type: BIGINT
+
+  - changeSet:
+      id: 11-backfill-country-population
+      author: codex
+      preConditions:
+        onFail: MARK_RAN
+        onError: HALT
+        tableExists:
+          tableName: country
+      changes:
+        - sql:
+            splitStatements: false
+            stripComments: true
+            sql: |
+              UPDATE country c
+              SET population = s.population
+              FROM (
+                  SELECT cs.country_id, cs.population
+                  FROM country_stats cs
+                  JOIN (
+                      SELECT country_id, MAX(year) AS max_year
+                      FROM country_stats
+                      GROUP BY country_id
+                  ) latest
+                    ON latest.country_id = cs.country_id
+                   AND latest.max_year = cs.year
+              ) s
+              WHERE c.id = s.country_id
+                AND (c.population IS NULL OR c.population <> s.population);
