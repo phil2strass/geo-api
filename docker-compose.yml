@@ -1,0 +1,50 @@
+services:
+  db:
+    image: postgres:16-alpine
+    container_name: geo-db
+    environment:
+      POSTGRES_DB: geo
+      POSTGRES_USER: geo_user
+      POSTGRES_PASSWORD: geo_pass
+    ports:
+      - "5432:5432"
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U geo_user -d geo"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  liquibase:
+    image: liquibase/liquibase:4.30
+    container_name: geo-liquibase
+    depends_on:
+      db:
+        condition: service_healthy
+    volumes:
+      - ./liquibase:/liquibase/changelog
+    command:
+      - --url=jdbc:postgresql://db:5432/geo
+      - --username=geo_user
+      - --password=geo_pass
+      - --changelog-file=changelog/db.changelog-master.yaml
+      - update
+
+  api:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: geo-api
+    depends_on:
+      db:
+        condition: service_healthy
+    environment:
+      APP_NAME: geo-api
+      APP_ENV: dev
+      DATABASE_URL: postgresql+psycopg://geo_user:geo_pass@db:5432/geo
+    ports:
+      - "8000:8000"
+
+volumes:
+  pgdata:
