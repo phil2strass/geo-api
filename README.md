@@ -1,6 +1,6 @@
 # geo-api
 
-API Python pour lire les donnnees de la table `geo`, avec gestion de schema et seed via Liquibase.
+API Python pour lire les donnnees de la table `geo`.
 
 ## Architecture proposee
 
@@ -11,7 +11,6 @@ API Python pour lire les donnnees de la table `geo`, avec gestion de schema et s
   - `services` (logique metier)
   - `repositories` (acces donnees)
   - `models/schemas` (modele DB + contrats API)
-- `Liquibase` pour versionner structure + donnees de la base.
 - `PostgreSQL` comme base cible (modifiable).
 
 ## Structure du projet
@@ -50,13 +49,7 @@ Copier `.env.example` vers `.env` et adapter si besoin.
 docker compose up -d db
 ```
 
-2. Appliquer les migrations Liquibase (structure + seed) :
-
-```bash
-docker compose run --rm liquibase update
-```
-
-3. Demarrer l'API :
+2. Demarrer l'API :
 
 ```bash
 docker compose up --build api
