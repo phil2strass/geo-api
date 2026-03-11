@@ -3,6 +3,7 @@ from __future__ import annotations
 
 import argparse
 import json
+import os
 import random
 import re
 import time
@@ -11,7 +12,8 @@ import urllib.request
 from urllib.error import HTTPError, URLError
 from pathlib import Path
 
-ROOT = Path('/home/philippe/IdeaProjects/geo-api')
+SCRIPT_DIR = Path(__file__).resolve().parent
+ROOT = Path(os.environ.get('GEO_API_ROOT', str(SCRIPT_DIR.parent))).resolve()
 COUNTRIES_SQL = ROOT / 'liquibase/changelog/2-load-countries.sql'
 OUT_SQL = ROOT / 'liquibase/changelog/18-load-territory-from-wikidata.sql'
 CACHE_JSON = ROOT / 'scripts/.territory_wikidata_cache.json'
@@ -53,6 +55,11 @@ TYPE_PRIORITY = {
 
 
 def parse_iso_codes() -> list[str]:
+    if not COUNTRIES_SQL.exists():
+        raise FileNotFoundError(
+            f"Missing input SQL file: {COUNTRIES_SQL}. "
+            "Set GEO_API_ROOT to the repository path if needed."
+        )
     text = COUNTRIES_SQL.read_text(encoding='utf-8')
     return sorted(set(re.findall(r"\(\d+,\s*'[^']+',\s*'([A-Z]{2})'", text)))
 
@@ -199,7 +206,15 @@ def main() -> None:
         default='',
         help='Comma-separated ISO2 list to process only specific countries (example: AF,AE,FR).',
     )
+    parser.add_argument(
+        '--limit',
+        type=int,
+        default=100,
+        help='SPARQL page size (lower values reduce 504 errors but increase total requests).',
+    )
     args = parser.parse_args()
+    if args.limit <= 0:
+        parser.error('--limit must be >= 1')
 
     iso_codes = parse_iso_codes()
     if args.only_iso.strip():
@@ -215,7 +230,7 @@ def main() -> None:
     if resume_start > 0:
         print(f"resuming from batch index {resume_start}")
 
-    limit = 500
+    limit = args.limit
     batch_size = 1
     total = 0
     failed_isos: list[str] = []

@@ -57,8 +57,15 @@ docker compose up -d db
 
 2. Appliquer les migrations Liquibase (base `geo2`) :
 
-```bash
-./liquibase/run-migrations.sh geo
+```cmd
+docker run --rm -v "%cd%\liquibase:/liquibase" -w /liquibase liquibase/liquibase:4.31 ^
+  --classpath=/liquibase/lib/postgresql.jar ^
+  --driver=org.postgresql.Driver ^
+  --url=jdbc:postgresql://host.docker.internal:55432/geo2 ^
+  --username=geo ^
+  --password=geo ^
+  --changeLogFile=changelog/db.changelog-master.yaml ^
+  update
 ```
 
 3. Demarrer l'API :
@@ -91,6 +98,21 @@ Dans ce cas :
 
 Liquibase est utilise uniquement pour la base `geo2` :
 
+Sans installation locale de Liquibase (recommande) :
+
+```cmd
+docker run --rm -v "%cd%\liquibase:/liquibase" -w /liquibase liquibase/liquibase:4.31 ^
+  --classpath=/liquibase/lib/postgresql.jar ^
+  --driver=org.postgresql.Driver ^
+  --url=jdbc:postgresql://host.docker.internal:55432/geo2 ^
+  --username=geo ^
+  --password=geo ^
+  --changeLogFile=changelog/db.changelog-master.yaml ^
+  update
+```
+
+Avec Liquibase installe localement (Linux / Git Bash / WSL) :
+
 ```bash
 ./liquibase/run-migrations.sh geo
 ```
@@ -110,16 +132,40 @@ psql postgresql://geo:geo@localhost:55432/glottolog -f data/glottolog.sql
 
 ## Import Wikidata des territoires
 
-1. Generer le SQL d'upsert territories depuis Wikidata :
+1. Generer le SQL d'upsert territories depuis Wikidata (API WDQS) :
 
 ```bash
 python3 scripts/generate_territory_wikidata_sql.py
 ```
 
-2. Inclure puis appliquer la migration generee :
+Alternative sans API (recommande en cas de timeouts WDQS), a partir d'un dump local :
 
 ```bash
-./liquibase/run-migrations.sh geo
+python3 scripts/generate_territory_wikidata_sql_from_dump.py \
+  --dump-file /chemin/vers/latest-all.json.bz2
+```
+
+Ce mode fait un parcours exhaustif du dump (sans perte de donnees), mais peut prendre plusieurs heures.
+
+Pour tester rapidement un pays :
+
+```bash
+python3 scripts/generate_territory_wikidata_sql_from_dump.py \
+  --dump-file /chemin/vers/latest-all.json.bz2 \
+  --only-iso AF
+```
+
+2. Inclure puis appliquer la migration generee :
+
+```cmd
+docker run --rm -v "%cd%\liquibase:/liquibase" -w /liquibase liquibase/liquibase:4.31 ^
+  --classpath=/liquibase/lib/postgresql.jar ^
+  --driver=org.postgresql.Driver ^
+  --url=jdbc:postgresql://host.docker.internal:55432/geo2 ^
+  --username=geo ^
+  --password=geo ^
+  --changeLogFile=changelog/db.changelog-master.yaml ^
+  update
 ```
 
 # glotolog
