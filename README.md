@@ -147,6 +147,21 @@ python3 scripts/generate_territory_wikidata_sql_from_dump.py \
 
 Ce mode fait un parcours exhaustif du dump (sans perte de donnees), mais peut prendre plusieurs heures.
 
+Alternative recommandee WDQS (dump SPARQL "truthy", plus compact) :
+
+```bash
+python3 scripts/generate_territory_wikidata_sql_from_truthy_nt.py \
+  --dump-file /chemin/vers/latest-truthy.nt.bz2
+```
+
+Test rapide sur un pays :
+
+```bash
+python3 scripts/generate_territory_wikidata_sql_from_truthy_nt.py \
+  --dump-file /chemin/vers/latest-truthy.nt.bz2 \
+  --only-iso AF
+```
+
 Pour tester rapidement un pays :
 
 ```bash
