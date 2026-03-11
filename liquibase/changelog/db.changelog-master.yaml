@@ -21,3 +21,15 @@ databaseChangeLog:
       file: changelog/10-load-country-stats-2022.sql
   - include:
       file: changelog/11-add-country-area-population.yaml
+  - include:
+      file: changelog/12-create-language-tables.yaml
+  - include:
+      file: changelog/13-enrich-language-metadata.sql
+  - include:
+      file: changelog/14-fix-language-metadata-mojibake.sql
+  - include:
+      file: changelog/15-rename-territory-to-territory-call.sql
+  - include:
+      file: changelog/16-create-territory-table.sql
+  - include:
+      file: changelog/17-create-territory-type-table.sql

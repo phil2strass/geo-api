@@ -1,6 +1,8 @@
 # geo-api
 
-API Python pour lire les donnnees de la table `geo`.
+API Python pour lire les donnees geo, avec gestion de deux bases PostgreSQL :
+- `geo2` (donnees pays/geo)
+- `glottolog` (dump linguistique)
 
 ## Architecture proposee
 
@@ -11,7 +13,7 @@ API Python pour lire les donnnees de la table `geo`.
   - `services` (logique metier)
   - `repositories` (acces donnees)
   - `models/schemas` (modele DB + contrats API)
-- `PostgreSQL` comme base cible (modifiable).
+- `PostgreSQL` avec deux bases logiques (`geo2`, `glottolog`).
 
 ## Structure du projet
 
@@ -26,9 +28,13 @@ app/
   repositories/
   schemas/
   services/
+data/
+  glottolog.sql
+docker/
+  postgres/
+    initdb/
 liquibase/
   changelog/
-  data/
 docker-compose.yml
 ```
 
@@ -49,7 +55,13 @@ Copier `.env.example` vers `.env` et adapter si besoin.
 docker compose up -d db
 ```
 
-2. Demarrer l'API :
+2. Appliquer les migrations Liquibase (base `geo2`) :
+
+```bash
+./liquibase/run-migrations.sh geo
+```
+
+3. Demarrer l'API :
 
 ```bash
 docker compose up --build api
@@ -71,7 +83,49 @@ pip install -r requirements.txt
 uvicorn app.main:app --reload
 ```
 
-Dans ce cas, la variable `DATABASE_URL` doit pointer vers la base PostgreSQL.
+Dans ce cas :
+- `DATABASE_URL` pointe vers `geo2`
+- `GLOTTOLOG_DATABASE_URL` pointe vers `glottolog`
 
-# liquibase
-~/IdeaProjects/geo-api/liquibase$ liquibase --classpath=lib/postgresql.jar --driver=org.postgresql.Driver update
+## Liquibase
+
+Liquibase est utilise uniquement pour la base `geo2` :
+
+```bash
+./liquibase/run-migrations.sh geo
+```
+
+Fichier de config :
+- `liquibase/liquibase.geo.properties`
+
+## Import initial Glottolog
+
+Le fichier `data/glottolog.sql` est un dump `pg_dump` avec `COPY ... FROM stdin` (format psql), non executable via JDBC Liquibase.
+
+Importer le dump avec `psql` :
+
+```bash
+psql postgresql://geo:geo@localhost:55432/glottolog -f data/glottolog.sql
+```
+
+## Import Wikidata des territoires
+
+1. Generer le SQL d'upsert territories depuis Wikidata :
+
+```bash
+python3 scripts/generate_territory_wikidata_sql.py
+```
+
+2. Inclure puis appliquer la migration generee :
+
+```bash
+./liquibase/run-migrations.sh geo
+```
+
+# glotolog
+psql "postgresql://geo:geo@localhost:5432/glottolog" -v ON_ERROR_STOP=1 -f data/glottolog.sql
+
+Si la base existe déjà, réimport propre:
+dropdb -h localhost -p 5432 -U geo --if-exists glottolog
+createdb -h localhost -p 5432 -U geo glottolog
+psql "postgresql://geo:geo@localhost:5432/glottolog" -v ON_ERROR_STOP=1 -f data/glottolog.sql

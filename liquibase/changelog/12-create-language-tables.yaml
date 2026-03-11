@@ -1,0 +1,227 @@
+databaseChangeLog:
+  - changeSet:
+      id: 12-create-language-table
+      author: codex
+      preConditions:
+        onFail: MARK_RAN
+        onError: HALT
+        not:
+          tableExists:
+            tableName: language
+      changes:
+        - createTable:
+            tableName: language
+            columns:
+              - column:
+                  name: id
+                  type: BIGINT
+                  autoIncrement: true
+                  constraints:
+                    primaryKey: true
+                    primaryKeyName: pk_language
+                    nullable: false
+              - column:
+                  name: iso639_3
+                  type: VARCHAR(3)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: iso639_1
+                  type: VARCHAR(2)
+              - column:
+                  name: iso639_2b
+                  type: VARCHAR(3)
+              - column:
+                  name: iso639_2t
+                  type: VARCHAR(3)
+              - column:
+                  name: english_name
+                  type: VARCHAR(160)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: native_name
+                  type: VARCHAR(200)
+              - column:
+                  name: language_family
+                  type: VARCHAR(120)
+              - column:
+                  name: writing_systems
+                  type: JSONB
+              - column:
+                  name: direction
+                  type: VARCHAR(3)
+                  defaultValue: ltr
+              - column:
+                  name: language_type
+                  type: VARCHAR(16)
+                  defaultValue: living
+              - column:
+                  name: speakers_native
+                  type: BIGINT
+              - column:
+                  name: speakers_total
+                  type: BIGINT
+              - column:
+                  name: first_documented_year
+                  type: INT
+              - column:
+                  name: has_wikipedia
+                  type: BOOLEAN
+              - column:
+                  name: notes
+                  type: TEXT
+              - column:
+                  name: created_at
+                  type: TIMESTAMP
+                  defaultValueComputed: CURRENT_TIMESTAMP
+                  constraints:
+                    nullable: false
+        - addUniqueConstraint:
+            tableName: language
+            columnNames: iso639_3
+            constraintName: uq_language_iso639_3
+        - createIndex:
+            tableName: language
+            indexName: ix_language_english_name
+            columns:
+              - column:
+                  name: english_name
+        - sql:
+            splitStatements: false
+            stripComments: true
+            sql: |
+              ALTER TABLE language
+              ADD CONSTRAINT chk_language_direction
+              CHECK (direction IN ('ltr', 'rtl', 'ttb'));
+        - sql:
+            splitStatements: false
+            stripComments: true
+            sql: |
+              ALTER TABLE language
+              ADD CONSTRAINT chk_language_type
+              CHECK (language_type IN ('living', 'extinct', 'historical', 'ancient', 'constructed', 'sign'));
+
+  - changeSet:
+      id: 12-create-country-language-table
+      author: codex
+      preConditions:
+        onFail: MARK_RAN
+        onError: HALT
+        not:
+          tableExists:
+            tableName: country_language
+      changes:
+        - createTable:
+            tableName: country_language
+            columns:
+              - column:
+                  name: country_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: language_id
+                  type: BIGINT
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_official
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_de_facto
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: is_minority
+                  type: BOOLEAN
+                  defaultValueBoolean: false
+                  constraints:
+                    nullable: false
+              - column:
+                  name: speakers_pct
+                  type: NUMERIC(5,2)
+              - column:
+                  name: source
+                  type: VARCHAR(120)
+        - addPrimaryKey:
+            tableName: country_language
+            columnNames: country_id, language_id
+            constraintName: pk_country_language
+        - addForeignKeyConstraint:
+            constraintName: fk_country_language_country
+            baseTableName: country_language
+            baseColumnNames: country_id
+            referencedTableName: country
+            referencedColumnNames: id
+            onDelete: CASCADE
+        - addForeignKeyConstraint:
+            constraintName: fk_country_language_language
+            baseTableName: country_language
+            baseColumnNames: language_id
+            referencedTableName: language
+            referencedColumnNames: id
+            onDelete: CASCADE
+        - createIndex:
+            tableName: country_language
+            indexName: ix_country_language_language_id
+            columns:
+              - column:
+                  name: language_id
+        - sql:
+            splitStatements: false
+            stripComments: true
+            sql: |
+              ALTER TABLE country_language
+              ADD CONSTRAINT chk_country_language_speakers_pct
+              CHECK (speakers_pct IS NULL OR (speakers_pct >= 0 AND speakers_pct <= 100));
+
+  - changeSet:
+      id: 12-seed-language-and-country-language
+      author: codex
+      preConditions:
+        onFail: MARK_RAN
+        onError: HALT
+        tableExists:
+          tableName: country
+      changes:
+        - sql:
+            splitStatements: false
+            stripComments: true
+            sql: |
+              WITH lang_source AS (
+                  SELECT
+                      lower(trim(e.key)) AS iso639_3,
+                      min(trim(e.value)) AS english_name
+                  FROM country c
+                  CROSS JOIN LATERAL jsonb_each_text(c.languages) AS e(key, value)
+                  WHERE c.languages IS NOT NULL
+                    AND jsonb_typeof(c.languages) = 'object'
+                    AND e.key ~ '^[A-Za-z]{3}$'
+                  GROUP BY lower(trim(e.key))
+              )
+              INSERT INTO language (iso639_3, english_name)
+              SELECT ls.iso639_3, ls.english_name
+              FROM lang_source ls
+              ON CONFLICT (iso639_3) DO UPDATE
+                  SET english_name = EXCLUDED.english_name
+              WHERE language.english_name IS NULL OR language.english_name = '';
+
+              INSERT INTO country_language (country_id, language_id, is_official, source)
+              SELECT
+                  c.id,
+                  l.id,
+                  TRUE,
+                  'country.languages'
+              FROM country c
+              CROSS JOIN LATERAL jsonb_each_text(c.languages) AS e(key, value)
+              JOIN language l ON l.iso639_3 = lower(trim(e.key))
+              WHERE c.languages IS NOT NULL
+                AND jsonb_typeof(c.languages) = 'object'
+                AND e.key ~ '^[A-Za-z]{3}$'
+              ON CONFLICT (country_id, language_id) DO NOTHING;

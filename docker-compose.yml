@@ -10,6 +10,7 @@ services:
       - "55432:5432"
     volumes:
       - pgdata:/var/lib/postgresql/data
+      - ./docker/postgres/initdb:/docker-entrypoint-initdb.d:ro
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U geo -d geo2"]
       interval: 5s
@@ -28,6 +29,7 @@ services:
       APP_NAME: geo-api
       APP_ENV: dev
       DATABASE_URL: postgresql+psycopg://geo:geo@db:5432/geo2
+      GLOTTOLOG_DATABASE_URL: postgresql+psycopg://geo:geo@db:5432/glottolog
     ports:
       - "8000:8000"
 
