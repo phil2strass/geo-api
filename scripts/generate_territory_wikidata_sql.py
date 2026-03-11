@@ -315,13 +315,15 @@ def main() -> None:
             ]) + ")"
         )
 
+    values_sql = ",\n        ".join(value_lines)
+
     sql = f"""--liquibase formatted sql
 --changeset codex:18-load-territory-from-wikidata dbms:postgresql
 --comment Load territory data from Wikidata (P17/P31/P279/P131/P625) with mapped territory types.
 
 WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, longitude) AS (
     VALUES
-        {",\n        ".join(value_lines)}
+        {values_sql}
 ), upsert AS (
     INSERT INTO territory (wikidata_id, name, type, country_id, parent_id, latitude, longitude)
     SELECT
