@@ -236,3 +236,9 @@ Si la base existe déjà, réimport propre:
 dropdb -h localhost -p 5432 -U geo --if-exists glottolog
 createdb -h localhost -p 5432 -U geo glottolog
 psql "postgresql://geo:geo@localhost:5432/glottolog" -v ON_ERROR_STOP=1 -f data/glottolog.sql
+
+chmod +x scripts/osm/country/create_osm_pbf.sh
+./scripts/osm/country/create_osm_pbf.sh \
+--world-dem /chemin/vers/world_30m.vrt \
+--country-pbf-dir /srv/pgdata/osm/pays \
+--output-dir /srv/pgdata/osm/dem/tif
