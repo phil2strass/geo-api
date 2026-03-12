@@ -115,6 +115,8 @@ Avec Liquibase installe localement (Linux / Git Bash / WSL) :
 
 ```bash
 ./liquibase/run-migrations.sh geo
+bash .\liquibase\run-migrations.sh geo
+
 ```
 
 Fichier de config :

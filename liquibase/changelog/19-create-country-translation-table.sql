@@ -25,20 +25,6 @@ CREATE INDEX IF NOT EXISTS ix_country_translation_common_name
 COMMENT ON TABLE country_translation IS
 'Country translated names by language. source=fallback means not a real translation yet.';
 
---changeset codex:19-seed-country-translation-fallback dbms:postgresql
---comment Seed one row per (country, language) with default country names as fallback values.
-
-INSERT INTO country_translation (country_id, language_id, common_name, official_name, source)
-SELECT
- c.id,
- l.id,
- c.name,
- c.official_name,
- 'seed.fallback.country_defaults'
-FROM country c
-CROSS JOIN language l
-ON CONFLICT (country_id, language_id) DO NOTHING;
-
 --changeset codex:19-create-country-translation-view dbms:postgresql
 --comment Convenience view to query translations with language and country codes.
 
