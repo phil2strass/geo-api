@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
-WORLD_DEM_VRT="world_30m.vrt"
+WORLD_DEM_VRT="data/world_30m.vrt"
 COUNTRY_PBF_DIR="/srv/pgdata/osm/pays"
 OUTPUT_DIR="/srv/pgdata/osm/dem/tif"
 TMP_DIR="data/relief/tmp"
