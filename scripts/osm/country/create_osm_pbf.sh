@@ -1,11 +1,11 @@
 #!/usr/bin/env bash
 set -uo pipefail
 
-WORLD_DEM_VRT="data/world_30m.vrt"
+WORLD_DEM_VRT="data/country/world_30m.vrt"
 COUNTRY_PBF_DIR="/srv/pgdata/osm/pays"
 OUTPUT_DIR="/srv/pgdata/osm/dem/tif"
 TMP_DIR="data/relief/tmp"
-COUNTRIES_SHP="data/countries/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
+COUNTRIES_SHP="data/country/ne_10m_admin_0_countries/ne_10m_admin_0_countries.shp"
 COUNTRIES_LAYER="ne_10m_admin_0_countries"
 MAX_COUNTRIES="0"
 SKIP_EXISTING="0"
