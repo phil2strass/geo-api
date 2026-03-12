@@ -183,6 +183,27 @@ docker run --rm -v "%cd%\liquibase:/liquibase" -w /liquibase liquibase/liquibase
   update
 ```
 
+## Import Wikidata des traductions de pays
+
+Generer la migration SQL des traductions pays depuis le dump WDQS truthy :
+
+```bash
+python3 scripts/generate_country_translation_wikidata_sql_from_truthy_nt.py \
+  --dump-file /chemin/vers/latest-truthy.nt.bz2
+```
+
+Test rapide sur un pays / quelques langues :
+
+```bash
+python3 scripts/generate_country_translation_wikidata_sql_from_truthy_nt.py \
+  --dump-file /chemin/vers/latest-truthy.nt.bz2 \
+  --only-iso FR \
+  --only-lang fr,en,de
+```
+
+Le script ecrit `liquibase/changelog/20-load-country-translations-from-wikidata.sql`.
+Ensuite, ajouter ce fichier dans `liquibase/changelog/db.changelog-master.yaml`, puis appliquer `liquibase update`.
+
 # glotolog
 psql "postgresql://geo:geo@localhost:5432/glottolog" -v ON_ERROR_STOP=1 -f data/glottolog.sql
 

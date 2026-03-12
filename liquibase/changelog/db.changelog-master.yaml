@@ -35,3 +35,5 @@ databaseChangeLog:
       file: changelog/17-create-territory-type-table.sql
   - include: 
       file: changelog/18-load-territory-from-wikidata.sql
+  - include: 
+      file: changelog/19-create-country-translation-table.sql
