@@ -33,3 +33,5 @@ databaseChangeLog:
       file: changelog/16-create-territory-table.sql
   - include:
       file: changelog/17-create-territory-type-table.sql
+  - include: 
+      file: changelog/18-load-territory-from-wikidata.sql
