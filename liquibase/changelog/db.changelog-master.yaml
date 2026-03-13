@@ -38,4 +38,8 @@ databaseChangeLog:
   - include:
       file: changelog/19-create-country-translation-table.sql
   - include:
-      file: changelog/21-create-territory-translation-table.sql
+      file: changelog/20-create-language-translation-table.sql
+  - include:
+      file: changelog/21-load-country-translations-from-wikidata.sql
+  - include:
+      file: changelog/22-create-territory-translation-table.sql
