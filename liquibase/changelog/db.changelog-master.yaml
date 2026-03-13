@@ -39,3 +39,5 @@ databaseChangeLog:
       file: changelog/19-create-country-translation-table.sql
   - include:
       file: changelog/20-create-language-translation-table.sql
+  - include:
+      file: changelog/21-load-country-translations-from-wikidata.sql

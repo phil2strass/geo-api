@@ -52,6 +52,8 @@ TYPE_PRIORITY = {
     'historical_region': 10,
     'cultural_region': 11,
 }
+LABEL_FALLBACK_LANGUAGES = 'en,fr,de,es,pt,it,nl,ca,pl,cs,sv'
+QID_LIKE_RE = re.compile(r'^Q[0-9]+$')
 
 
 def parse_iso_codes() -> list[str]:
@@ -82,6 +84,16 @@ def parse_point(point: str | None) -> tuple[float | None, float | None]:
     return lat, lon
 
 
+def choose_better_name(current: str | None, candidate: str | None, qid: str) -> str:
+    current_is_qid = not current or QID_LIKE_RE.fullmatch(current) is not None or current == qid
+    candidate_is_qid = not candidate or QID_LIKE_RE.fullmatch(candidate) is not None or candidate == qid
+    if current_is_qid and not candidate_is_qid:
+        return candidate  # type: ignore[return-value]
+    if current is None:
+        return candidate or qid
+    return current
+
+
 def wikidata_query(iso_values: list[str], limit: int, offset: int) -> dict:
     values_iso = ' '.join(f'"{iso}"' for iso in iso_values)
     values_type = '\n    '.join(f'("{src}" "{dst}")' for src, dst in TYPE_MAPPING)
@@ -104,7 +116,7 @@ SELECT ?countryIso ?territory ?territoryLabel ?mappedType ?parent ?coord WHERE {
   OPTIONAL {{ ?territory wdt:P131 ?parent . }}
   OPTIONAL {{ ?territory wdt:P625 ?coord . }}
 
-  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "en". }}
+  SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{LABEL_FALLBACK_LANGUAGES}". }}
 }}
 LIMIT {limit}
 OFFSET {offset}
@@ -287,11 +299,13 @@ def main() -> None:
                             candidate['parent_qid'] = candidate['parent_qid'] or existing['parent_qid']
                             candidate['lat'] = candidate['lat'] if candidate['lat'] is not None else existing['lat']
                             candidate['lon'] = candidate['lon'] if candidate['lon'] is not None else existing['lon']
+                            candidate['name'] = choose_better_name(candidate['name'], existing['name'], qid)
                             rows_by_qid[qid] = candidate
                         else:
                             existing['parent_qid'] = existing['parent_qid'] or candidate['parent_qid']
                             existing['lat'] = existing['lat'] if existing['lat'] is not None else candidate['lat']
                             existing['lon'] = existing['lon'] if existing['lon'] is not None else candidate['lon']
+                            existing['name'] = choose_better_name(existing['name'], candidate['name'], qid)
 
                 total += len(bindings)
                 offset += limit
