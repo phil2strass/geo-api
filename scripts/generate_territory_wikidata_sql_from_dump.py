@@ -45,6 +45,20 @@ TYPE_PRIORITY = {
 }
 
 TYPE_MAP_BY_LABEL = dict(TYPE_MAPPING)
+PREFERRED_LABEL_LANGS = (
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "nl",
+    "ca",
+    "pl",
+    "cs",
+    "sv",
+)
+QID_LIKE_RE = re.compile(r"^Q[0-9]+$")
 
 
 def parse_iso_codes() -> list[str]:
@@ -150,16 +164,35 @@ def qid(entity: dict) -> str | None:
 
 
 def en_label(entity: dict) -> str | None:
+    return preferred_label(entity)
+
+
+def label_rank(lang: str | None) -> tuple[int, str]:
+    if lang in PREFERRED_LABEL_LANGS:
+        return (PREFERRED_LABEL_LANGS.index(lang), lang or "")
+    if lang:
+        return (len(PREFERRED_LABEL_LANGS) + 1, lang)
+    return (len(PREFERRED_LABEL_LANGS) + 2, "")
+
+
+def preferred_label(entity: dict) -> str | None:
     labels = entity.get("labels", {})
     if not isinstance(labels, dict):
         return None
-    en = labels.get("en")
-    if not isinstance(en, dict):
-        return None
-    value = en.get("value")
-    if isinstance(value, str) and value.strip():
-        return value.strip()
-    return None
+    best: tuple[tuple[int, str], str] | None = None
+    for lang, payload in labels.items():
+        if not isinstance(payload, dict):
+            continue
+        value = payload.get("value")
+        if not isinstance(value, str):
+            continue
+        value = value.strip()
+        if not value or QID_LIKE_RE.fullmatch(value):
+            continue
+        rank = label_rank(lang if isinstance(lang, str) else None)
+        if best is None or rank < best[0]:
+            best = (rank, value)
+    return best[1] if best else None
 
 
 def sql_string(value: str | None) -> str:

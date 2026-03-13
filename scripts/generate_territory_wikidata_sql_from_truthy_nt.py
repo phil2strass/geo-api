@@ -45,6 +45,20 @@ TYPE_PRIORITY = {
 }
 
 TYPE_MAP_BY_LABEL = dict(TYPE_MAPPING)
+PREFERRED_LABEL_LANGS = (
+    "en",
+    "fr",
+    "de",
+    "es",
+    "pt",
+    "it",
+    "nl",
+    "ca",
+    "pl",
+    "cs",
+    "sv",
+)
+QID_LIKE_RE = re.compile(r"^Q[0-9]+$")
 
 WD = "http://www.wikidata.org/entity/"
 WDT = "http://www.wikidata.org/prop/direct/"
@@ -60,6 +74,24 @@ TRIPLE_RE = re.compile(r'^<http://www\.wikidata\.org/entity/(Q\d+)> <([^>]+)> (.
 QOBJ_RE = re.compile(r'^<http://www\.wikidata\.org/entity/(Q\d+)>$')
 LIT_RE = re.compile(r'^"((?:[^"\\]|\\.)*)"(?:(@[A-Za-z0-9-]+)|\^\^<[^>]+>)?$')
 WKT_POINT_RE = re.compile(r"Point\(([-0-9.]+)\s+([-0-9.]+)\)")
+
+
+def label_rank(lang: str | None) -> tuple[int, str]:
+    if lang in PREFERRED_LABEL_LANGS:
+        return (PREFERRED_LABEL_LANGS.index(lang), lang or "")
+    if lang:
+        return (len(PREFERRED_LABEL_LANGS) + 1, lang)
+    return (len(PREFERRED_LABEL_LANGS) + 2, "")
+
+
+def choose_better_label(current: tuple[str, str | None] | None, candidate: tuple[str, str | None] | None) -> tuple[str, str | None] | None:
+    if candidate is None:
+        return current
+    if current is None:
+        return candidate
+    if label_rank(candidate[1]) < label_rank(current[1]):
+        return candidate
+    return current
 
 
 def parse_iso_codes() -> list[str]:
@@ -149,13 +181,15 @@ def merge_row(existing: dict | None, candidate: dict) -> dict:
         candidate["parent_qid"] = candidate["parent_qid"] or existing.get("parent_qid")
         candidate["lat"] = candidate["lat"] if candidate["lat"] is not None else existing.get("lat")
         candidate["lon"] = candidate["lon"] if candidate["lon"] is not None else existing.get("lon")
-        candidate["name"] = candidate["name"] or existing.get("name")
+        if QID_LIKE_RE.fullmatch(candidate["name"] or "") and not QID_LIKE_RE.fullmatch(existing.get("name") or ""):
+            candidate["name"] = existing.get("name")
         return candidate
 
     existing["parent_qid"] = existing.get("parent_qid") or candidate["parent_qid"]
     existing["lat"] = existing.get("lat") if existing.get("lat") is not None else candidate["lat"]
     existing["lon"] = existing.get("lon") if existing.get("lon") is not None else candidate["lon"]
-    existing["name"] = existing.get("name") or candidate["name"]
+    if QID_LIKE_RE.fullmatch(existing.get("name") or "") and not QID_LIKE_RE.fullmatch(candidate["name"] or ""):
+        existing["name"] = candidate["name"]
     return existing
 
 
@@ -231,9 +265,10 @@ def flush_subject(
 
     chosen_type = sorted(state["types"], key=lambda t: TYPE_PRIORITY.get(t, 999))[0]
     chosen_country_iso = sorted(state["countries"])[0]
+    chosen_label = state["label"][0] if state["label"] else None
     candidate = {
         "qid": subject_qid,
-        "name": state["name"] or subject_qid,
+        "name": chosen_label or subject_qid,
         "type": chosen_type,
         "country_iso": chosen_country_iso,
         "parent_qid": state["parent_qid"],
@@ -325,7 +360,7 @@ def main() -> None:
 
     current_qid: str | None = None
     current = {
-        "name": None,
+        "label": None,
         "countries": set(),
         "types": set(),
         "parent_qid": None,
@@ -341,7 +376,7 @@ def main() -> None:
 
             current_qid = subject_qid
             current = {
-                "name": None,
+                "label": None,
                 "countries": set(),
                 "types": set(),
                 "parent_qid": None,
@@ -351,8 +386,10 @@ def main() -> None:
 
         if predicate == RDFS_LABEL:
             value, lang = parse_literal(obj)
-            if lang == "en" and isinstance(value, str) and current["name"] is None:
-                current["name"] = value
+            if isinstance(value, str):
+                value = value.strip()
+                if value and not QID_LIKE_RE.fullmatch(value):
+                    current["label"] = choose_better_label(current["label"], (value, lang))
         elif predicate == P17:
             country_qid = parse_object_qid(obj)
             if country_qid and country_qid in country_iso_by_qid:

@@ -13,7 +13,7 @@ from typing import Iterator
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = Path(os.environ.get("GEO_API_ROOT", str(SCRIPT_DIR.parent))).resolve()
 COUNTRIES_SQL = ROOT / "liquibase/changelog/2-load-countries.sql"
-DEFAULT_OUT_SQL = ROOT / "liquibase/changelog/20-load-country-translations-from-wikidata.sql"
+DEFAULT_OUT_SQL = ROOT / "liquibase/changelog/21-load-country-translations-from-wikidata.sql"
 
 WDT = "http://www.wikidata.org/prop/direct/"
 RDFS_LABEL = "http://www.w3.org/2000/01/rdf-schema#label"
@@ -113,7 +113,7 @@ def render_sql(rows: list[dict]) -> str:
 
     values_sql = ",\n        ".join(value_lines)
     return f"""--liquibase formatted sql
---changeset codex:20-load-country-translations-from-wikidata dbms:postgresql
+--changeset codex:21-load-country-translations-from-wikidata dbms:postgresql
 --comment Load country translated names from WDQS truthy dump labels (rdfs:label + P1448 official names).
 
 WITH data (country_iso2, lang_code, common_name, official_name, source) AS (

@@ -10115,6 +10115,19 @@ WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, l
         ('Q136499232', 'Meteorological Services Department, Zimbabwe', 'department', 'ZW', NULL, NULL, NULL),
         ('Q135257493', 'Q135257493', 'region', 'ZW', 'Q465847', NULL, NULL),
         ('Q14210029', 'Southeastern Zimbabwe', 'region', 'ZW', 'Q954', -20.270000, 30.770000)
+), normalized_data AS (
+    SELECT
+        wikidata_id,
+        CASE
+            WHEN name ~ '^Q[0-9]+$' THEN NULL
+            ELSE name
+        END AS name,
+        type,
+        country_iso,
+        parent_wikidata_id,
+        latitude,
+        longitude
+    FROM data
 ), upsert AS (
     INSERT INTO territory (wikidata_id, name, type, country_id, parent_id, latitude, longitude)
     SELECT
@@ -10125,8 +10138,9 @@ WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, l
         NULL,
         d.latitude,
         d.longitude
-    FROM data d
+    FROM normalized_data d
     JOIN country c ON c.iso_code = d.country_iso
+    WHERE d.name IS NOT NULL
     ON CONFLICT (wikidata_id) DO UPDATE
     SET
         name = EXCLUDED.name,
@@ -10137,7 +10151,7 @@ WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, l
 )
 UPDATE territory t
 SET parent_id = p.id
-FROM data d
+FROM normalized_data d
 JOIN territory p ON p.wikidata_id = d.parent_wikidata_id
 WHERE t.wikidata_id = d.wikidata_id
   AND d.parent_wikidata_id IS NOT NULL

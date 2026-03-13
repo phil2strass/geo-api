@@ -203,7 +203,30 @@ python3 scripts/generate_country_translation_wikidata_sql_from_truthy_nt.py \
   --only-lang fr,en,de
 ```
 
-Le script ecrit `liquibase/changelog/20-load-country-translations-from-wikidata.sql`.
+Le script ecrit `liquibase/changelog/21-load-country-translations-from-wikidata.sql`.
+Ensuite, ajouter ce fichier dans `liquibase/changelog/db.changelog-master.yaml`, puis appliquer `liquibase update`.
+
+## Import Wikidata des traductions de langues
+
+Creer d'abord la table `language_translation` via Liquibase avec `changelog/20-create-language-translation-table.sql`.
+
+Generer ensuite la migration SQL des traductions de langues depuis le dump WDQS truthy :
+
+```bash
+python3 scripts/generate_language_translation_wikidata_sql_from_truthy_nt.py \
+  --dump-file /chemin/vers/latest-truthy.nt.bz2
+```
+
+Test rapide sur quelques langues / quelques traductions :
+
+```bash
+python3 scripts/generate_language_translation_wikidata_sql_from_truthy_nt.py \
+  --dump-file /chemin/vers/latest-truthy.nt.bz2 \
+  --only-iso6393 fra,eng,deu \
+  --only-lang fr,en,de
+```
+
+Le script ecrit `liquibase/changelog/22-load-language-translations-from-wikidata.sql`.
 Ensuite, ajouter ce fichier dans `liquibase/changelog/db.changelog-master.yaml`, puis appliquer `liquibase update`.
 
 # glotolog
@@ -213,3 +236,9 @@ Si la base existe déjà, réimport propre:
 dropdb -h localhost -p 5432 -U geo --if-exists glottolog
 createdb -h localhost -p 5432 -U geo glottolog
 psql "postgresql://geo:geo@localhost:5432/glottolog" -v ON_ERROR_STOP=1 -f data/glottolog.sql
+
+chmod +x scripts/osm/country/create_osm_pbf.sh
+./scripts/osm/country/create_osm_pbf.sh \
+--world-dem /chemin/vers/world_30m.vrt \
+--country-pbf-dir /srv/pgdata/osm/pays \
+--output-dir /srv/pgdata/osm/dem/tif
