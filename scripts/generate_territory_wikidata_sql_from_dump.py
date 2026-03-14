@@ -320,6 +320,13 @@ def sql_number(value: float | None) -> str:
     return f"{value:.6f}"
 
 
+def normalize_code_list(values: list[str]) -> str | None:
+    cleaned = sorted({value.strip() for value in values if value and value.strip()})
+    if not cleaned:
+        return None
+    return ",".join(cleaned)
+
+
 def resolve_type_code(
     qid: str,
     direct_type_map: dict[str, str],
@@ -373,6 +380,8 @@ def render_sql(rows: list[dict]) -> str:
                     sql_string(row["type"]),
                     sql_string(row["country_iso"]),
                     sql_string(row["parent_qid"]),
+                    sql_string(row["telephone_country_code"]),
+                    sql_string(row["local_dialing_code"]),
                     sql_number(row["lat"]),
                     sql_number(row["lon"]),
                 ]
@@ -384,19 +393,21 @@ def render_sql(rows: list[dict]) -> str:
 
     return f"""--liquibase formatted sql
 --changeset codex:18-load-territory-from-wikidata dbms:postgresql
---comment Load territory data from Wikidata dump (P17/P31/P131/P625) with mapped territory types.
+--comment Load territory data from Wikidata dump (P17/P31/P131/P474/P473/P625) with mapped territory types.
 
-WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, longitude) AS (
+WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, telephone_country_code, local_dialing_code, latitude, longitude) AS (
     VALUES
         {values_sql}
 ), upsert AS (
-    INSERT INTO territory (wikidata_id, name, type, country_id, parent_id, latitude, longitude)
+    INSERT INTO territory (wikidata_id, name, type, country_id, parent_id, telephone_country_code, local_dialing_code, latitude, longitude)
     SELECT
         d.wikidata_id,
         d.name,
         d.type,
         c.id,
         NULL,
+        d.telephone_country_code,
+        d.local_dialing_code,
         d.latitude,
         d.longitude
     FROM data d
@@ -406,6 +417,8 @@ WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, l
         name = EXCLUDED.name,
         type = EXCLUDED.type,
         country_id = EXCLUDED.country_id,
+        telephone_country_code = EXCLUDED.telephone_country_code,
+        local_dialing_code = EXCLUDED.local_dialing_code,
         latitude = EXCLUDED.latitude,
         longitude = EXCLUDED.longitude
 )
@@ -574,6 +587,8 @@ def main() -> None:
             "type": mapped_types[0],
             "country_iso": p17_country_isos[0],
             "parent_qid": parent_qid,
+            "telephone_country_code": normalize_code_list(claim_string_values(entity, "P474")),
+            "local_dialing_code": normalize_code_list(claim_string_values(entity, "P473")),
             "lat": lat,
             "lon": lon,
         }

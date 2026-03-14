@@ -9,6 +9,8 @@ CREATE TABLE IF NOT EXISTS territory (
     country_id BIGINT NOT NULL,
     parent_id BIGINT,
     wikidata_id VARCHAR(32),
+    telephone_country_code VARCHAR(32),
+    local_dialing_code VARCHAR(128),
     latitude NUMERIC(9,6),
     longitude NUMERIC(9,6),
     CONSTRAINT pk_territory PRIMARY KEY (id),
@@ -41,3 +43,9 @@ CREATE INDEX IF NOT EXISTS ix_territory_type ON territory(type);
 
 COMMENT ON COLUMN territory.type IS
 'Wikidata mapping: federal state->state, province->province, region->region, department->department, county->county, district->district, municipality->municipality, autonomous region->autonomous_region, overseas department/territory->overseas_region, historical region->historical_region, cultural region->cultural_region';
+
+COMMENT ON COLUMN territory.telephone_country_code IS
+'Wikidata P474 telephone country code, e.g. +1 or +590.';
+
+COMMENT ON COLUMN territory.local_dialing_code IS
+'Wikidata P473 local dialing code(s), comma-separated when multiple values exist.';

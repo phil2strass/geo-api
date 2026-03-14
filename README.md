@@ -242,3 +242,5 @@ chmod +x scripts/osm/country/create_osm_pbf.sh
 --world-dem /chemin/vers/world_30m.vrt \
 --country-pbf-dir /srv/pgdata/osm/pays \
 --output-dir /srv/pgdata/osm/dem/tif
+
+python3 scripts/generate_territory_wikidata_sql_from_truthy_nt.py --dump-file data/latest-truthy.nt.1.bz2

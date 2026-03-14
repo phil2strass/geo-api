@@ -182,6 +182,8 @@ P31 = f"{WDT}P31"
 P279 = f"{WDT}P279"
 P131 = f"{WDT}P131"
 P297 = f"{WDT}P297"
+P473 = f"{WDT}P473"
+P474 = f"{WDT}P474"
 P625 = f"{WDT}P625"
 
 TRIPLE_RE = re.compile(r'^<http://www\.wikidata\.org/entity/(Q\d+)> <([^>]+)> (.+) \.$')
@@ -285,6 +287,13 @@ def sql_number(value: float | None) -> str:
     return f"{value:.6f}"
 
 
+def normalize_code_list(values: list[str]) -> str | None:
+    cleaned = sorted({value.strip() for value in values if value and value.strip()})
+    if not cleaned:
+        return None
+    return ",".join(cleaned)
+
+
 def merge_row(existing: dict | None, candidate: dict) -> dict:
     if existing is None:
         return candidate
@@ -293,6 +302,13 @@ def merge_row(existing: dict | None, candidate: dict) -> dict:
     new_p = TYPE_PRIORITY.get(candidate["type"], 999)
     if new_p < old_p:
         candidate["parent_qid"] = candidate["parent_qid"] or existing.get("parent_qid")
+        candidate["telephone_country_code"] = normalize_code_list(
+            [candidate.get("telephone_country_code"), existing.get("telephone_country_code")]
+        )
+        candidate["local_dialing_code"] = normalize_code_list(
+            (candidate.get("local_dialing_code") or "").split(",")
+            + (existing.get("local_dialing_code") or "").split(",")
+        )
         candidate["lat"] = candidate["lat"] if candidate["lat"] is not None else existing.get("lat")
         candidate["lon"] = candidate["lon"] if candidate["lon"] is not None else existing.get("lon")
         if QID_LIKE_RE.fullmatch(candidate["name"] or "") and not QID_LIKE_RE.fullmatch(existing.get("name") or ""):
@@ -300,6 +316,13 @@ def merge_row(existing: dict | None, candidate: dict) -> dict:
         return candidate
 
     existing["parent_qid"] = existing.get("parent_qid") or candidate["parent_qid"]
+    existing["telephone_country_code"] = normalize_code_list(
+        [existing.get("telephone_country_code"), candidate.get("telephone_country_code")]
+    )
+    existing["local_dialing_code"] = normalize_code_list(
+        (existing.get("local_dialing_code") or "").split(",")
+        + (candidate.get("local_dialing_code") or "").split(",")
+    )
     existing["lat"] = existing.get("lat") if existing.get("lat") is not None else candidate["lat"]
     existing["lon"] = existing.get("lon") if existing.get("lon") is not None else candidate["lon"]
     if QID_LIKE_RE.fullmatch(existing.get("name") or "") and not QID_LIKE_RE.fullmatch(candidate["name"] or ""):
@@ -360,6 +383,8 @@ def render_sql(rows: list[dict]) -> str:
                     sql_string(row["type"]),
                     sql_string(row["country_iso"]),
                     sql_string(row["parent_qid"]),
+                    sql_string(row["telephone_country_code"]),
+                    sql_string(row["local_dialing_code"]),
                     sql_number(row["lat"]),
                     sql_number(row["lon"]),
                 ]
@@ -370,19 +395,21 @@ def render_sql(rows: list[dict]) -> str:
     values_sql = ",\n        ".join(value_lines)
     return f"""--liquibase formatted sql
 --changeset codex:18-load-territory-from-wikidata dbms:postgresql
---comment Load territory data from WDQS truthy dump (P17/P31/P131/P625) with mapped territory types.
+--comment Load territory data from WDQS truthy dump (P17/P31/P131/P474/P473/P625) with mapped territory types.
 
-WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, longitude) AS (
+WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, telephone_country_code, local_dialing_code, latitude, longitude) AS (
     VALUES
         {values_sql}
 ), upsert AS (
-    INSERT INTO territory (wikidata_id, name, type, country_id, parent_id, latitude, longitude)
+    INSERT INTO territory (wikidata_id, name, type, country_id, parent_id, telephone_country_code, local_dialing_code, latitude, longitude)
     SELECT
         d.wikidata_id,
         d.name,
         d.type,
         c.id,
         NULL,
+        d.telephone_country_code,
+        d.local_dialing_code,
         d.latitude,
         d.longitude
     FROM data d
@@ -392,6 +419,8 @@ WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, l
         name = EXCLUDED.name,
         type = EXCLUDED.type,
         country_id = EXCLUDED.country_id,
+        telephone_country_code = EXCLUDED.telephone_country_code,
+        local_dialing_code = EXCLUDED.local_dialing_code,
         latitude = EXCLUDED.latitude,
         longitude = EXCLUDED.longitude
 )
@@ -424,6 +453,8 @@ def flush_subject(
         "type": chosen_type,
         "country_iso": chosen_country_iso,
         "parent_qid": state["parent_qid"],
+        "telephone_country_code": normalize_code_list(state["telephone_country_codes"]),
+        "local_dialing_code": normalize_code_list(state["local_dialing_codes"]),
         "lat": state["lat"],
         "lon": state["lon"],
     }
@@ -547,6 +578,8 @@ def main() -> None:
         "countries": set(),
         "types": set(),
         "parent_qid": None,
+        "telephone_country_codes": [],
+        "local_dialing_codes": [],
         "lat": None,
         "lon": None,
     }
@@ -563,6 +596,8 @@ def main() -> None:
                 "countries": set(),
                 "types": set(),
                 "parent_qid": None,
+                "telephone_country_codes": [],
+                "local_dialing_codes": [],
                 "lat": None,
                 "lon": None,
             }
@@ -586,6 +621,14 @@ def main() -> None:
                 parent_qid = parse_object_qid(obj)
                 if parent_qid:
                     current["parent_qid"] = parent_qid
+        elif predicate == P474:
+            value, _ = parse_literal(obj)
+            if isinstance(value, str):
+                current["telephone_country_codes"].append(value)
+        elif predicate == P473:
+            value, _ = parse_literal(obj)
+            if isinstance(value, str):
+                current["local_dialing_codes"].append(value)
         elif predicate == P625:
             if current["lat"] is None or current["lon"] is None:
                 point_literal, _ = parse_literal(obj)

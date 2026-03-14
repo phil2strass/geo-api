@@ -208,6 +208,13 @@ def choose_better_name(current: str | None, candidate: str | None, qid: str) -> 
     return current
 
 
+def normalize_code_list(values: list[str]) -> str | None:
+    cleaned = sorted({value.strip() for value in values if value and value.strip()})
+    if not cleaned:
+        return None
+    return ",".join(cleaned)
+
+
 def wikidata_query(iso_values: list[str], limit: int, offset: int) -> dict:
     values_iso = ' '.join(f'"{iso}"' for iso in iso_values)
     values_type = '\n    '.join(f'("{src}" "{dst}")' for src, dst in TYPE_MAPPING)
@@ -258,7 +265,7 @@ def wikidata_query(iso_values: list[str], limit: int, offset: int) -> dict:
 """
 
     query = f"""
-SELECT ?countryIso ?territory ?territoryLabel ?mappedType ?parent ?coord WHERE {{
+SELECT ?countryIso ?territory ?territoryLabel ?mappedType ?parent ?coord ?phoneCode ?localDialingCode WHERE {{
   VALUES ?countryIso {{ {values_iso} }}
   VALUES (?type_lc ?mappedType) {{
     {values_type}
@@ -274,6 +281,8 @@ SELECT ?countryIso ?territory ?territoryLabel ?mappedType ?parent ?coord WHERE {
 
   OPTIONAL {{ ?territory wdt:P131 ?parent . }}
   OPTIONAL {{ ?territory wdt:P625 ?coord . }}
+  OPTIONAL {{ ?territory wdt:P474 ?phoneCode . }}
+  OPTIONAL {{ ?territory wdt:P473 ?localDialingCode . }}
 
   SERVICE wikibase:label {{ bd:serviceParam wikibase:language "{LABEL_FALLBACK_LANGUAGES}". }}
 }}
@@ -346,6 +355,67 @@ def sql_number(value: float | None) -> str:
     if value is None:
         return 'NULL'
     return f"{value:.6f}"
+
+
+def render_sql(rows: list[dict]) -> str:
+    if not rows:
+        raise RuntimeError('No territory rows found from Wikidata query.')
+
+    values_sql = ",\n        ".join(
+        "(" + ", ".join(
+            [
+                sql_string(row['qid']),
+                sql_string(row['name']),
+                sql_string(row['type']),
+                sql_string(row['country_iso']),
+                sql_string(row['parent_qid']),
+                sql_string(row.get('telephone_country_code')),
+                sql_string(row.get('local_dialing_code')),
+                sql_number(row['lat']),
+                sql_number(row['lon']),
+            ]
+        ) + ")"
+        for row in rows
+    )
+    return f"""--liquibase formatted sql
+--changeset codex:18-load-territory-from-wikidata dbms:postgresql
+--comment Load territory data from Wikidata (P17/P31/P279/P131/P474/P473/P625) with mapped territory types.
+
+WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, telephone_country_code, local_dialing_code, latitude, longitude) AS (
+    VALUES
+        {values_sql}
+), upsert AS (
+    INSERT INTO territory (wikidata_id, name, type, country_id, parent_id, telephone_country_code, local_dialing_code, latitude, longitude)
+    SELECT
+        d.wikidata_id,
+        d.name,
+        d.type,
+        c.id,
+        NULL,
+        d.telephone_country_code,
+        d.local_dialing_code,
+        d.latitude,
+        d.longitude
+    FROM data d
+    JOIN country c ON c.iso_code = d.country_iso
+    ON CONFLICT (wikidata_id) DO UPDATE
+    SET
+        name = EXCLUDED.name,
+        type = EXCLUDED.type,
+        country_id = EXCLUDED.country_id,
+        telephone_country_code = EXCLUDED.telephone_country_code,
+        local_dialing_code = EXCLUDED.local_dialing_code,
+        latitude = EXCLUDED.latitude,
+        longitude = EXCLUDED.longitude
+)
+UPDATE territory t
+SET parent_id = p.id
+FROM data d
+JOIN territory p ON p.wikidata_id = d.parent_wikidata_id
+WHERE t.wikidata_id = d.wikidata_id
+  AND d.parent_wikidata_id IS NOT NULL
+  AND t.parent_id IS DISTINCT FROM p.id;
+"""
 
 
 def load_cache() -> tuple[int, dict[str, dict]]:
@@ -436,6 +506,8 @@ def main() -> None:
                     mapped_type = b.get('mappedType', {}).get('value')
                     name = b.get('territoryLabel', {}).get('value') or qid
                     parent_qid = qid_from_uri(b.get('parent', {}).get('value'))
+                    phone_code = b.get('phoneCode', {}).get('value')
+                    local_dialing_code = b.get('localDialingCode', {}).get('value')
                     lat, lon = parse_point(b.get('coord', {}).get('value'))
 
                     existing = rows_by_qid.get(qid)
@@ -445,6 +517,8 @@ def main() -> None:
                         'type': mapped_type,
                         'country_iso': country_iso,
                         'parent_qid': parent_qid,
+                        'telephone_country_code': phone_code,
+                        'local_dialing_code': local_dialing_code,
                         'lat': lat,
                         'lon': lon,
                     }
@@ -456,12 +530,26 @@ def main() -> None:
                         p_new = TYPE_PRIORITY.get(mapped_type, 999)
                         if p_new < p_old:
                             candidate['parent_qid'] = candidate['parent_qid'] or existing['parent_qid']
+                            candidate['telephone_country_code'] = normalize_code_list(
+                                [candidate.get('telephone_country_code'), existing.get('telephone_country_code')]
+                            )
+                            candidate['local_dialing_code'] = normalize_code_list(
+                                (candidate.get('local_dialing_code') or '').split(',')
+                                + (existing.get('local_dialing_code') or '').split(',')
+                            )
                             candidate['lat'] = candidate['lat'] if candidate['lat'] is not None else existing['lat']
                             candidate['lon'] = candidate['lon'] if candidate['lon'] is not None else existing['lon']
                             candidate['name'] = choose_better_name(candidate['name'], existing['name'], qid)
                             rows_by_qid[qid] = candidate
                         else:
                             existing['parent_qid'] = existing['parent_qid'] or candidate['parent_qid']
+                            existing['telephone_country_code'] = normalize_code_list(
+                                [existing.get('telephone_country_code'), candidate.get('telephone_country_code')]
+                            )
+                            existing['local_dialing_code'] = normalize_code_list(
+                                (existing.get('local_dialing_code') or '').split(',')
+                                + (candidate.get('local_dialing_code') or '').split(',')
+                            )
                             existing['lat'] = existing['lat'] if existing['lat'] is not None else candidate['lat']
                             existing['lon'] = existing['lon'] if existing['lon'] is not None else candidate['lon']
                             existing['name'] = choose_better_name(existing['name'], candidate['name'], qid)
@@ -473,58 +561,7 @@ def main() -> None:
         print("interrupted by user; writing partial SQL from collected data...")
 
     rows = sorted(rows_by_qid.values(), key=lambda r: (r['country_iso'], r['name'], r['qid']))
-
-    value_lines = []
-    for r in rows:
-        value_lines.append(
-            "(" + ", ".join([
-                sql_string(r['qid']),
-                sql_string(r['name']),
-                sql_string(r['type']),
-                sql_string(r['country_iso']),
-                sql_string(r['parent_qid']),
-                sql_number(r['lat']),
-                sql_number(r['lon']),
-            ]) + ")"
-        )
-
-    values_sql = ",\n        ".join(value_lines)
-
-    sql = f"""--liquibase formatted sql
---changeset codex:18-load-territory-from-wikidata dbms:postgresql
---comment Load territory data from Wikidata (P17/P31/P279/P131/P625) with mapped territory types.
-
-WITH data (wikidata_id, name, type, country_iso, parent_wikidata_id, latitude, longitude) AS (
-    VALUES
-        {values_sql}
-), upsert AS (
-    INSERT INTO territory (wikidata_id, name, type, country_id, parent_id, latitude, longitude)
-    SELECT
-        d.wikidata_id,
-        d.name,
-        d.type,
-        c.id,
-        NULL,
-        d.latitude,
-        d.longitude
-    FROM data d
-    JOIN country c ON c.iso_code = d.country_iso
-    ON CONFLICT (wikidata_id) DO UPDATE
-    SET
-        name = EXCLUDED.name,
-        type = EXCLUDED.type,
-        country_id = EXCLUDED.country_id,
-        latitude = EXCLUDED.latitude,
-        longitude = EXCLUDED.longitude
-)
-UPDATE territory t
-SET parent_id = p.id
-FROM data d
-JOIN territory p ON p.wikidata_id = d.parent_wikidata_id
-WHERE t.wikidata_id = d.wikidata_id
-  AND d.parent_wikidata_id IS NOT NULL
-  AND t.parent_id IS DISTINCT FROM p.id;
-"""
+    sql = render_sql(rows)
 
     OUT_SQL.write_text(sql, encoding='utf-8')
     print(f"bindings fetched: {total}")
