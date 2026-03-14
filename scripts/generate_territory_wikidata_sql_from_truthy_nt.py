@@ -19,16 +19,129 @@ TYPE_MAPPING = [
     ("federal state", "state"),
     ("province", "province"),
     ("region", "region"),
+    ("region of France", "overseas_region"),
     ("department", "department"),
     ("county", "county"),
     ("district", "district"),
     ("municipality", "municipality"),
     ("autonomous region", "autonomous_region"),
     ("overseas department", "overseas_region"),
+    ("overseas department and region of France", "overseas_region"),
     ("overseas territory", "overseas_region"),
     ("historical region", "historical_region"),
     ("cultural region", "cultural_region"),
 ]
+
+ATTACHED_COUNTRY_LABELS = {
+    "AU": {
+        "christmas island",
+        "cocos (keeling) islands",
+        "norfolk island",
+    },
+    "CN": {
+        "hong kong",
+        "macau",
+    },
+    "DK": {
+        "faroe islands",
+        "greenland",
+    },
+    "ES": {
+        "balearic islands",
+        "canary islands",
+        "ceuta",
+        "melilla",
+        "plazas de soberania",
+        "rota",
+        "spanish north africa",
+    },
+    "FI": {
+        "aland islands",
+        "åland islands",
+    },
+    "FR": {
+        "clipperton island",
+        "french guiana",
+        "french polynesia",
+        "french southern and antarctic lands",
+        "french southern territories",
+        "guadeloupe",
+        "martinique",
+        "mayotte",
+        "new caledonia",
+        "réunion",
+        "reunion",
+        "saint barthélemy",
+        "saint barthelemy",
+        "saint martin",
+        "saint pierre and miquelon",
+        "saint-pierre and miquelon",
+        "wallis and futuna",
+    },
+    "GB": {
+        "akrotiri and dhekelia",
+        "alderney",
+        "anguilla",
+        "bermuda",
+        "british antarctic territory",
+        "british indian ocean territory",
+        "british virgin islands",
+        "cayman islands",
+        "falkland islands",
+        "gibraltar",
+        "guernsey",
+        "isle of man",
+        "jersey",
+        "montserrat",
+        "pitcairn islands",
+        "saint helena, ascension and tristan da cunha",
+        "sark",
+        "south georgia and the south sandwich islands",
+        "turks and caicos islands",
+    },
+    "NL": {
+        "aruba",
+        "bonaire",
+        "caribbean netherlands",
+        "curaçao",
+        "curacao",
+        "saba",
+        "sint eustatius",
+        "sint maarten",
+        "saint martin (dutch part)",
+    },
+    "NO": {
+        "bouvet island",
+        "jan mayen",
+        "svalbard",
+    },
+    "NZ": {
+        "chatham islands",
+        "cook islands",
+        "niue",
+        "tokelau",
+    },
+    "PT": {
+        "azores",
+        "azores islands",
+        "madeira",
+        "madeira islands",
+    },
+    "US": {
+        "american samoa",
+        "guam",
+        "guantánamo bay",
+        "guantanamo bay",
+        "northern mariana islands",
+        "puerto rico",
+        "u.s. virgin islands",
+        "united states virgin islands",
+        "us virgin islands",
+    },
+}
+ATTACHED_COUNTRY_TYPE_QIDS = {
+    "GB": {"Q46395", "Q185086"},
+}
 
 TYPE_PRIORITY = {
     "overseas_region": 1,
@@ -66,6 +179,7 @@ RDFS_LABEL = "http://www.w3.org/2000/01/rdf-schema#label"
 
 P17 = f"{WDT}P17"
 P31 = f"{WDT}P31"
+P279 = f"{WDT}P279"
 P131 = f"{WDT}P131"
 P297 = f"{WDT}P297"
 P625 = f"{WDT}P625"
@@ -191,6 +305,44 @@ def merge_row(existing: dict | None, candidate: dict) -> dict:
     if QID_LIKE_RE.fullmatch(existing.get("name") or "") and not QID_LIKE_RE.fullmatch(candidate["name"] or ""):
         existing["name"] = candidate["name"]
     return existing
+
+
+def resolve_type_code(
+    qid: str,
+    direct_type_map: dict[str, str],
+    subclass_parents: dict[str, set[str]],
+    cache: dict[str, str | None],
+    trail: set[str] | None = None,
+) -> str | None:
+    if qid in cache:
+        return cache[qid]
+
+    direct = direct_type_map.get(qid)
+    if direct is not None:
+        cache[qid] = direct
+        return direct
+
+    if trail is None:
+        trail = set()
+    if qid in trail:
+        cache[qid] = None
+        return None
+
+    next_trail = set(trail)
+    next_trail.add(qid)
+    best_type: str | None = None
+    best_priority = 999
+    for parent_qid in subclass_parents.get(qid, ()):
+        parent_type = resolve_type_code(parent_qid, direct_type_map, subclass_parents, cache, next_trail)
+        if parent_type is None:
+            continue
+        parent_priority = TYPE_PRIORITY.get(parent_type, 999)
+        if parent_priority < best_priority:
+            best_type = parent_type
+            best_priority = parent_priority
+
+    cache[qid] = best_type
+    return best_type
 
 
 def render_sql(rows: list[dict]) -> str:
@@ -320,9 +472,11 @@ def main() -> None:
     if not wanted_iso_set:
         raise RuntimeError("No ISO code selected. Check --only-iso.")
 
-    # Pass 1: gather country QIDs from P297 and type QIDs from English labels.
+    # Pass 1: gather country QIDs and resolve territory types from labels plus subclass chains.
     country_qids_by_iso: dict[str, set[str]] = {}
-    type_qid_to_mapped: dict[str, str] = {}
+    direct_type_map: dict[str, str] = {}
+    subclass_parents: dict[str, set[str]] = {}
+    attached_alias_qids: dict[str, set[str]] = {}
 
     for subject_qid, predicate, obj in iter_triples(dump_path, args.progress_every, pass_name="pass1"):
         if predicate == P297:
@@ -336,7 +490,36 @@ def main() -> None:
             if lang == "en" and isinstance(value, str):
                 mapped = TYPE_MAP_BY_LABEL.get(value.lower())
                 if mapped:
-                    type_qid_to_mapped[subject_qid] = mapped
+                    direct_type_map[subject_qid] = mapped
+                label_lc = value.lower()
+                for iso in wanted_iso_set:
+                    if label_lc in ATTACHED_COUNTRY_LABELS.get(iso, ()):
+                        attached_alias_qids.setdefault(iso, set()).add(subject_qid)
+        elif predicate == P279:
+            parent_qid = parse_object_qid(obj)
+            if parent_qid:
+                subclass_parents.setdefault(subject_qid, set()).add(parent_qid)
+        elif predicate == P31:
+            type_qid = parse_object_qid(obj)
+            if type_qid:
+                for iso in wanted_iso_set:
+                    if type_qid in ATTACHED_COUNTRY_TYPE_QIDS.get(iso, set()):
+                        attached_alias_qids.setdefault(iso, set()).add(subject_qid)
+
+    for iso, qids in attached_alias_qids.items():
+        country_qids_by_iso.setdefault(iso, set()).update(qids)
+
+    type_qid_to_mapped: dict[str, str] = {}
+    type_resolution_cache: dict[str, str | None] = {}
+    for type_qid in set(direct_type_map) | set(subclass_parents):
+        mapped = resolve_type_code(
+            type_qid,
+            direct_type_map,
+            subclass_parents,
+            type_resolution_cache,
+        )
+        if mapped is not None:
+            type_qid_to_mapped[type_qid] = mapped
 
     missing_iso = sorted(wanted_iso_set - set(country_qids_by_iso.keys()))
     if missing_iso:

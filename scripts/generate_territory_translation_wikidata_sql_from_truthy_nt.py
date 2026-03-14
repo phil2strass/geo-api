@@ -13,7 +13,7 @@ from typing import Iterator
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = Path(os.environ.get("GEO_API_ROOT", str(SCRIPT_DIR.parent))).resolve()
 COUNTRIES_SQL = ROOT / "liquibase/changelog/2-load-countries.sql"
-DEFAULT_OUT_SQL = ROOT / "liquibase/changelog/22-load-territory-translations-from-wikidata.sql"
+DEFAULT_OUT_SQL = ROOT / "liquibase/changelog/24-load-territory-translations-from-wikidata.sql"
 
 TYPE_MAPPING = [
     ("federal state", "state"),

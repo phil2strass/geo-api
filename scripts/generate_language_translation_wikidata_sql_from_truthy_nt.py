@@ -13,7 +13,7 @@ from typing import Iterator
 SCRIPT_DIR = Path(__file__).resolve().parent
 ROOT = Path(os.environ.get("GEO_API_ROOT", str(SCRIPT_DIR.parent))).resolve()
 COUNTRY_DETAILS_SQL = ROOT / "liquibase/changelog/4-load-country-details.sql"
-DEFAULT_OUT_SQL = ROOT / "liquibase/changelog/22-load-language-translations-from-wikidata.sql"
+DEFAULT_OUT_SQL = ROOT / "liquibase/changelog/23-load-language-translations-from-wikidata.sql"
 
 WDT = "http://www.wikidata.org/prop/direct/"
 RDFS_LABEL = "http://www.w3.org/2000/01/rdf-schema#label"

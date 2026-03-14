@@ -43,3 +43,7 @@ databaseChangeLog:
       file: changelog/21-load-country-translations-from-wikidata.sql
   - include:
       file: changelog/22-create-territory-translation-table.sql
+  - include:
+      file: changelog/23-load-language-translations-from-wikidata.sql
+  - include:
+      file: changelog/24-load-territory-translations-from-wikidata.sql

@@ -28,16 +28,130 @@ TYPE_MAPPING = [
     ('federal state', 'state'),
     ('province', 'province'),
     ('region', 'region'),
+    ('region of France', 'overseas_region'),
     ('department', 'department'),
     ('county', 'county'),
     ('district', 'district'),
     ('municipality', 'municipality'),
     ('autonomous region', 'autonomous_region'),
     ('overseas department', 'overseas_region'),
+    ('overseas department and region of France', 'overseas_region'),
     ('overseas territory', 'overseas_region'),
     ('historical region', 'historical_region'),
     ('cultural region', 'cultural_region'),
 ]
+
+ATTACHED_COUNTRY_LABELS = {
+    "AU": {
+        "christmas island",
+        "cocos (keeling) islands",
+        "norfolk island",
+    },
+    "CN": {
+        "hong kong",
+        "macau",
+    },
+    "DK": {
+        "faroe islands",
+        "greenland",
+    },
+    "ES": {
+        "balearic islands",
+        "canary islands",
+        "ceuta",
+        "melilla",
+        "plazas de soberania",
+        "rota",
+        "spanish north africa",
+    },
+    "FI": {
+        "aland islands",
+        "åland islands",
+    },
+    "FR": {
+        "clipperton island",
+        "french guiana",
+        "french polynesia",
+        "french southern and antarctic lands",
+        "french southern territories",
+        "guadeloupe",
+        "martinique",
+        "mayotte",
+        "new caledonia",
+        "réunion",
+        "reunion",
+        "saint barthélemy",
+        "saint barthelemy",
+        "saint martin",
+        "saint-pierre and miquelon",
+        "saint pierre and miquelon",
+        "wallis and futuna",
+    },
+    "GB": {
+        "akrotiri and dhekelia",
+        "alderney",
+        "anguilla",
+        "bermuda",
+        "british antarctic territory",
+        "british indian ocean territory",
+        "british virgin islands",
+        "cayman islands",
+        "falkland islands",
+        "gibraltar",
+        "guernsey",
+        "isle of man",
+        "jersey",
+        "montserrat",
+        "pitcairn islands",
+        "saint helena, ascension and tristan da cunha",
+        "sark",
+        "south georgia and the south sandwich islands",
+        "turks and caicos islands",
+    },
+    "NL": {
+        "aruba",
+        "bonaire",
+        "caribbean netherlands",
+        "curaçao",
+        "curacao",
+        "saba",
+        "sint eustatius",
+        "sint maarten",
+        "saint martin (dutch part)",
+    },
+    "NO": {
+        "bouvet island",
+        "jan mayen",
+        "svalbard",
+    },
+    "NZ": {
+        "chatham islands",
+        "cook islands",
+        "niue",
+        "tokelau",
+    },
+    "PT": {
+        "azores",
+        "azores islands",
+        "madeira",
+        "madeira islands",
+    },
+    "US": {
+        "american samoa",
+        "guam",
+        "guantánamo bay",
+        "guantanamo bay",
+        "northern mariana islands",
+        "puerto rico",
+        "u.s. virgin islands",
+        "united states virgin islands",
+        "us virgin islands",
+    },
+}
+
+ATTACHED_COUNTRY_TYPE_QIDS = {
+    "GB": {"Q46395", "Q185086"},
+}
 
 TYPE_PRIORITY = {
     'overseas_region': 1,
@@ -97,6 +211,51 @@ def choose_better_name(current: str | None, candidate: str | None, qid: str) -> 
 def wikidata_query(iso_values: list[str], limit: int, offset: int) -> dict:
     values_iso = ' '.join(f'"{iso}"' for iso in iso_values)
     values_type = '\n    '.join(f'("{src}" "{dst}")' for src, dst in TYPE_MAPPING)
+    alias_rows = []
+    for iso in iso_values:
+        for label in sorted(ATTACHED_COUNTRY_LABELS.get(iso, ())):
+            alias_rows.append(f'("{iso}" "{label}")')
+    values_country_alias = "\n    ".join(alias_rows)
+    type_rows = []
+    for iso in iso_values:
+        for qid in sorted(ATTACHED_COUNTRY_TYPE_QIDS.get(iso, ())):
+            type_rows.append(f'(wd:{qid} "{iso}")')
+    values_country_type = "\n    ".join(type_rows)
+    country_binding = """
+  {
+    ?country wdt:P297 ?countryIso .
+  }
+"""
+    if alias_rows or type_rows:
+        alias_union = ""
+        type_union = ""
+        if alias_rows:
+            alias_union = f"""
+  UNION
+  {{
+    VALUES (?countryIso ?countryLabelLc) {{
+      {values_country_alias}
+    }}
+    ?country rdfs:label ?countryLabel .
+    FILTER(LANG(?countryLabel) = "en")
+    FILTER(LCASE(STR(?countryLabel)) = ?countryLabelLc)
+  }}
+"""
+        if type_rows:
+            type_union = f"""
+  UNION
+  {{
+    VALUES (?ukRelatedType ?countryIso) {{
+      {values_country_type}
+    }}
+    ?country wdt:P31/wdt:P279* ?ukRelatedType .
+  }}
+"""
+        country_binding = f"""
+  {{
+    ?country wdt:P297 ?countryIso .
+  }}{alias_union}{type_union}
+"""
 
     query = f"""
 SELECT ?countryIso ?territory ?territoryLabel ?mappedType ?parent ?coord WHERE {{
@@ -105,9 +264,9 @@ SELECT ?countryIso ?territory ?territoryLabel ?mappedType ?parent ?coord WHERE {
     {values_type}
   }}
 
-  ?country wdt:P297 ?countryIso .
+  {country_binding}
   ?territory wdt:P17 ?country ;
-             wdt:P31 ?typeClass .
+             wdt:P31/wdt:P279* ?typeClass .
 
   ?typeClass rdfs:label ?typeLabel .
   FILTER(LANG(?typeLabel) = "en")

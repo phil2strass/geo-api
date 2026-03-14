@@ -226,7 +226,7 @@ python3 scripts/generate_language_translation_wikidata_sql_from_truthy_nt.py \
   --only-lang fr,en,de
 ```
 
-Le script ecrit `liquibase/changelog/22-load-language-translations-from-wikidata.sql`.
+Le script ecrit `liquibase/changelog/23-load-language-translations-from-wikidata.sql`.
 Ensuite, ajouter ce fichier dans `liquibase/changelog/db.changelog-master.yaml`, puis appliquer `liquibase update`.
 
 # glotolog
