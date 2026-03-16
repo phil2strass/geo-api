@@ -172,7 +172,40 @@ python3 scripts/generate_territory_wikidata_sql_from_dump.py \
   --only-iso AF
 ```
 
-2. Inclure puis appliquer la migration generee :
+2. Appliquer les migrations Liquibase puis lancer l'import des territoires :
+
+`18-load-territory-from-wikidata.sql` n'est plus execute par Liquibase. `./liquibase/run-migrations.sh geo` applique d'abord le changelog schema/reference, puis recharge ce fichier SQL source en flux vers PostgreSQL sans fichiers intermediaires.
+
+```bash
+./liquibase/run-migrations.sh geo
+```
+
+Pour lancer seulement l'import SQL des territoires apres generation du fichier source :
+
+```bash
+./scripts/import_territory_wikidata.sh
+```
+
+`territory` reste le gazetteer large importe depuis Wikidata. La hierarchie administrative propre est desormais separee dans :
+- `country_admin_level` : niveaux admin par pays
+- `admin_territory` : unites admin propres, avec `display_name` et `admin_code`
+
+Le sync post-import peuple pour l'instant la France sur les niveaux `region` et `department`.
+Pour relancer seulement ce sync :
+
+```bash
+./scripts/sync_admin_territory.sh
+```
+
+Exemple pour lister les departements francais avec leur code :
+
+```sql
+SELECT admin_code, display_name, parent_display_name
+FROM v_admin_territory
+WHERE country_iso2 = 'FR'
+  AND admin_level_code = 'department'
+ORDER BY admin_code;
+```
 
 ```cmd
 docker run --rm -v "%cd%\liquibase:/liquibase" -w /liquibase liquibase/liquibase:4.31 ^
@@ -244,3 +277,5 @@ chmod +x scripts/osm/country/create_osm_pbf.sh
 --output-dir /srv/pgdata/osm/dem/tif
 
 python3 scripts/generate_territory_wikidata_sql_from_truthy_nt.py --dump-file data/latest-truthy.nt.1.bz2
+
+PGPASSWORD=geo psql -h localhost -p 5432 -U geo -d geo2 -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"

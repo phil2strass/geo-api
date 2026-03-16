@@ -34,8 +34,6 @@ databaseChangeLog:
   - include:
       file: changelog/17-create-territory-type-table.sql
   - include:
-      file: changelog/18-load-territory-from-wikidata.sql
-  - include:
       file: changelog/19-create-country-translation-table.sql
   - include:
       file: changelog/20-create-language-translation-table.sql
@@ -47,3 +45,5 @@ databaseChangeLog:
       file: changelog/23-load-language-translations-from-wikidata.sql
   - include:
       file: changelog/24-load-territory-translations-from-wikidata.sql
+  - include:
+      file: changelog/25-create-admin-territory-structure.sql

@@ -5,31 +5,65 @@ SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 cd "$SCRIPT_DIR"
 
 usage() {
-  echo "Usage: $0 [geo]"
+  echo "Usage: $0 [geo] [liquibase args...]"
 }
 
-TARGET="${1:-geo}"
+TARGET="geo"
+if [[ $# -gt 0 ]] && [[ "$1" != -* ]]; then
+  TARGET="$1"
+  shift
+fi
+
+LIQUIBASE_ARGS=("$@")
 LIQUIBASE_DB_HOST="${LIQUIBASE_DB_HOST:-localhost}"
 LIQUIBASE_DB_PORT="${LIQUIBASE_DB_PORT:-55432}"
 LIQUIBASE_DB_NAME="${LIQUIBASE_DB_NAME:-geo2}"
 LIQUIBASE_DB_USER="${LIQUIBASE_DB_USER:-geo}"
 LIQUIBASE_DB_PASSWORD="${LIQUIBASE_DB_PASSWORD:-geo}"
+SKIP_TERRITORY_WIKIDATA_IMPORT="${SKIP_TERRITORY_WIKIDATA_IMPORT:-0}"
+SKIP_ADMIN_TERRITORY_SYNC="${SKIP_ADMIN_TERRITORY_SYNC:-0}"
+
+export LIQUIBASE_DB_HOST
+export LIQUIBASE_DB_PORT
+export LIQUIBASE_DB_NAME
+export LIQUIBASE_DB_USER
+export LIQUIBASE_DB_PASSWORD
+export SKIP_TERRITORY_WIKIDATA_IMPORT
+export SKIP_ADMIN_TERRITORY_SYNC
 
 # Force UTF-8 across the shell, JVM, and PostgreSQL client path when Liquibase reads
 # formatted SQL files containing multilingual Wikidata labels.
-UTF8_LOCALE="${LANG:-C.UTF-8}"
-if ! locale -a 2>/dev/null | grep -qi '^c\.utf-8$'; then
-  UTF8_LOCALE="${LANG:-en_US.UTF-8}"
-fi
+AVAILABLE_LOCALES="$(locale -a 2>/dev/null || true)"
+UTF8_LOCALE="$(printf '%s\n' "$AVAILABLE_LOCALES" | grep -Ei '^(c\.utf-?8|.*\.utf-?8)$' | head -n1 || true)"
+UTF8_LOCALE="${UTF8_LOCALE:-C}"
 
 export LANG="$UTF8_LOCALE"
-export LC_ALL="${LC_ALL:-$UTF8_LOCALE}"
+export LC_ALL="$UTF8_LOCALE"
 export LANGUAGE="${LANGUAGE:-$UTF8_LOCALE}"
 export PGCLIENTENCODING="${PGCLIENTENCODING:-UTF8}"
 
 UTF8_JAVA_FLAGS="-Dfile.encoding=UTF-8 -Dsun.jnu.encoding=UTF-8"
 export JAVA_OPTS="${JAVA_OPTS:-} ${UTF8_JAVA_FLAGS}"
 export JAVA_TOOL_OPTIONS="${JAVA_TOOL_OPTIONS:-} ${UTF8_JAVA_FLAGS}"
+
+normalize_liquibase_args() {
+  local arg
+  local normalized=()
+
+  for arg in "$@"; do
+    if [[ "$arg" == -[[:alpha:]]* ]] && [[ "$arg" != --* ]]; then
+      normalized+=("--${arg#-}")
+    else
+      normalized+=("$arg")
+    fi
+  done
+
+  printf '%s\0' "${normalized[@]}"
+}
+
+if [[ ${#LIQUIBASE_ARGS[@]} -gt 0 ]]; then
+  mapfile -d '' -t LIQUIBASE_ARGS < <(normalize_liquibase_args "${LIQUIBASE_ARGS[@]}")
+fi
 
 run_geo() {
   echo "Running Liquibase for geo2..."
@@ -40,7 +74,13 @@ run_geo() {
     --username="${LIQUIBASE_DB_USER}" \
     --password="${LIQUIBASE_DB_PASSWORD}" \
     --changeLogFile=changelog/db.changelog-master.yaml \
+    "${LIQUIBASE_ARGS[@]}" \
     update
+
+  if [[ "$SKIP_TERRITORY_WIKIDATA_IMPORT" != "1" ]]; then
+    echo "Running territory SQL import for geo2..."
+    ../scripts/import_territory_wikidata.sh
+  fi
 }
 
 case "$TARGET" in

@@ -7,3 +7,4 @@ __pycache__/
 .idea/
 liquibase.properties
 data
+liquibase/changelog/18-load-territory-from-wikidata.sql
