@@ -20,16 +20,12 @@ LIQUIBASE_DB_PORT="${LIQUIBASE_DB_PORT:-55432}"
 LIQUIBASE_DB_NAME="${LIQUIBASE_DB_NAME:-geo2}"
 LIQUIBASE_DB_USER="${LIQUIBASE_DB_USER:-geo}"
 LIQUIBASE_DB_PASSWORD="${LIQUIBASE_DB_PASSWORD:-geo}"
-SKIP_TERRITORY_WIKIDATA_IMPORT="${SKIP_TERRITORY_WIKIDATA_IMPORT:-0}"
-SKIP_ADMIN_TERRITORY_SYNC="${SKIP_ADMIN_TERRITORY_SYNC:-0}"
 
 export LIQUIBASE_DB_HOST
 export LIQUIBASE_DB_PORT
 export LIQUIBASE_DB_NAME
 export LIQUIBASE_DB_USER
 export LIQUIBASE_DB_PASSWORD
-export SKIP_TERRITORY_WIKIDATA_IMPORT
-export SKIP_ADMIN_TERRITORY_SYNC
 
 # Force UTF-8 across the shell, JVM, and PostgreSQL client path when Liquibase reads
 # formatted SQL files containing multilingual Wikidata labels.
@@ -76,11 +72,6 @@ run_geo() {
     --changeLogFile=changelog/db.changelog-master.yaml \
     "${LIQUIBASE_ARGS[@]}" \
     update
-
-  if [[ "$SKIP_TERRITORY_WIKIDATA_IMPORT" != "1" ]]; then
-    echo "Running territory SQL import for geo2..."
-    ../scripts/import_territory_wikidata.sh
-  fi
 }
 
 case "$TARGET" in

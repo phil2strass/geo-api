@@ -172,26 +172,26 @@ python3 scripts/generate_territory_wikidata_sql_from_dump.py \
   --only-iso AF
 ```
 
-2. Appliquer les migrations Liquibase puis lancer l'import des territoires :
+2. Appliquer les migrations Liquibase puis lancer le programme Python dedie a la migration `18` :
 
-`18-load-territory-from-wikidata.sql` n'est plus execute par Liquibase. `./liquibase/run-migrations.sh geo` applique d'abord le changelog schema/reference, puis recharge ce fichier SQL source en flux vers PostgreSQL sans fichiers intermediaires.
+`18-load-territory-from-wikidata.sql` n'est plus execute par Liquibase. `./liquibase/run-migrations.sh geo` applique uniquement le changelog schema/reference. La migration de donnees `18` se lance ensuite separement via un programme Python.
 
 ```bash
 ./liquibase/run-migrations.sh geo
 ```
 
-Pour lancer seulement l'import SQL des territoires apres generation du fichier source :
+Pour lancer seulement la migration `18` apres generation du fichier source :
 
 ```bash
-./scripts/import_territory_wikidata.sh
+python3 scripts/import_territory_wikidata.py
 ```
 
 `territory` reste le gazetteer large importe depuis Wikidata. La hierarchie administrative propre est desormais separee dans :
 - `country_admin_level` : niveaux admin par pays
 - `admin_territory` : unites admin propres, avec `display_name` et `admin_code`
 
-Le sync post-import peuple pour l'instant la France sur les niveaux `region` et `department`.
-Pour relancer seulement ce sync :
+Le sync administratif reste separe de la migration `18` et peuple pour l'instant la France sur les niveaux `region` et `department`.
+Pour lancer seulement ce sync :
 
 ```bash
 ./scripts/sync_admin_territory.sh
