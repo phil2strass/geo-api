@@ -1,0 +1,2137 @@
+level_code	admin_code	display_name	territory_wikidata_id	parent_level_code	parent_admin_code	source
+canton	ZH	Zürich	Q11943			seed.ch_admin_canton
+canton	BE	Bern / Berne	Q11911			seed.ch_admin_canton
+canton	LU	Luzern	Q12121			seed.ch_admin_canton
+canton	UR	Uri	Q12404			seed.ch_admin_canton
+canton	SZ	Schwyz	Q12433			seed.ch_admin_canton
+canton	OW	Obwalden	Q12573			seed.ch_admin_canton
+canton	NW	Nidwalden	Q12592			seed.ch_admin_canton
+canton	GL	Glarus	Q11922			seed.ch_admin_canton
+canton	ZG	Zug	Q11933			seed.ch_admin_canton
+canton	FR	Fribourg / Freiburg	Q12640			seed.ch_admin_canton
+canton	SO	Solothurn	Q11929			seed.ch_admin_canton
+canton	BS	Basel-Stadt	Q12172			seed.ch_admin_canton
+canton	BL	Basel-Landschaft	Q12146			seed.ch_admin_canton
+canton	SH	Schaffhausen	Q12697			seed.ch_admin_canton
+canton	AR	Appenzell Ausserrhoden	Q12079			seed.ch_admin_canton
+canton	AI	Appenzell Innerrhoden	Q12094			seed.ch_admin_canton
+canton	SG	St. Gallen	Q12746			seed.ch_admin_canton
+canton	GR	Graubünden / Grigioni / Grischun	Q11925			seed.ch_admin_canton
+canton	AG	Aargau	Q11972			seed.ch_admin_canton
+canton	TG	Thurgau	Q12713			seed.ch_admin_canton
+canton	TI	Ticino	Q12724			seed.ch_admin_canton
+canton	VD	Vaud	Q12771			seed.ch_admin_canton
+canton	VS	Valais / Wallis	Q834			seed.ch_admin_canton
+canton	NE	Neuchâtel	Q12738			seed.ch_admin_canton
+canton	GE	Genève	Q11917			seed.ch_admin_canton
+canton	JU	Jura	Q12755			seed.ch_admin_canton
+municipality	1	Aeugst am Albis	Q64945	canton	ZH	seed.ch_admin_municipality
+municipality	2	Affoltern am Albis	Q68290	canton	ZH	seed.ch_admin_municipality
+municipality	3	Bonstetten	Q65510	canton	ZH	seed.ch_admin_municipality
+municipality	4	Hausen am Albis	Q65231	canton	ZH	seed.ch_admin_municipality
+municipality	5	Hedingen	Q65129	canton	ZH	seed.ch_admin_municipality
+municipality	6	Kappel am Albis	Q64589	canton	ZH	seed.ch_admin_municipality
+municipality	7	Knonau	Q66328	canton	ZH	seed.ch_admin_municipality
+municipality	8	Maschwanden	Q64977	canton	ZH	seed.ch_admin_municipality
+municipality	9	Mettmenstetten	Q65547	canton	ZH	seed.ch_admin_municipality
+municipality	10	Obfelden	Q65942	canton	ZH	seed.ch_admin_municipality
+municipality	11	Ottenbach	Q67513	canton	ZH	seed.ch_admin_municipality
+municipality	12	Rifferswil	Q66598	canton	ZH	seed.ch_admin_municipality
+municipality	13	Stallikon	Q66062	canton	ZH	seed.ch_admin_municipality
+municipality	14	Wettswil am Albis	Q65934	canton	ZH	seed.ch_admin_municipality
+municipality	22	Benken (ZH)	Q70171	canton	ZH	seed.ch_admin_municipality
+municipality	23	Berg am Irchel	Q65781	canton	ZH	seed.ch_admin_municipality
+municipality	24	Buch am Irchel	Q68451	canton	ZH	seed.ch_admin_municipality
+municipality	25	Dachsen	Q67949	canton	ZH	seed.ch_admin_municipality
+municipality	26	Dorf	Q70283	canton	ZH	seed.ch_admin_municipality
+municipality	27	Feuerthalen	Q66283	canton	ZH	seed.ch_admin_municipality
+municipality	28	Flaach	Q70367	canton	ZH	seed.ch_admin_municipality
+municipality	29	Flurlingen	Q66757	canton	ZH	seed.ch_admin_municipality
+municipality	31	Henggart	Q68417	canton	ZH	seed.ch_admin_municipality
+municipality	33	Kleinandelfingen	Q68413	canton	ZH	seed.ch_admin_municipality
+municipality	34	Laufen-Uhwiesen	Q66336	canton	ZH	seed.ch_admin_municipality
+municipality	35	Marthalen	Q67213	canton	ZH	seed.ch_admin_municipality
+municipality	37	Ossingen	Q68393	canton	ZH	seed.ch_admin_municipality
+municipality	38	Rheinau	Q67534	canton	ZH	seed.ch_admin_municipality
+municipality	39	Thalheim an der Thur	Q65844	canton	ZH	seed.ch_admin_municipality
+municipality	40	Trüllikon	Q67933	canton	ZH	seed.ch_admin_municipality
+municipality	41	Truttikon	Q70072	canton	ZH	seed.ch_admin_municipality
+municipality	43	Volken	Q67922	canton	ZH	seed.ch_admin_municipality
+municipality	51	Bachenbülach	Q69887	canton	ZH	seed.ch_admin_municipality
+municipality	52	Bassersdorf	Q69734	canton	ZH	seed.ch_admin_municipality
+municipality	53	Bülach	Q9093	canton	ZH	seed.ch_admin_municipality
+municipality	54	Dietlikon	Q65164	canton	ZH	seed.ch_admin_municipality
+municipality	55	Eglisau	Q69175	canton	ZH	seed.ch_admin_municipality
+municipality	56	Embrach	Q65877	canton	ZH	seed.ch_admin_municipality
+municipality	57	Freienstein-Teufen	Q66964	canton	ZH	seed.ch_admin_municipality
+municipality	58	Glattfelden	Q68399	canton	ZH	seed.ch_admin_municipality
+municipality	59	Hochfelden	Q68410	canton	ZH	seed.ch_admin_municipality
+municipality	60	Höri	Q70377	canton	ZH	seed.ch_admin_municipality
+municipality	61	Hüntwangen	Q69367	canton	ZH	seed.ch_admin_municipality
+municipality	62	Kloten	Q68165	canton	ZH	seed.ch_admin_municipality
+municipality	63	Lufingen	Q67912	canton	ZH	seed.ch_admin_municipality
+municipality	64	Nürensdorf	Q67898	canton	ZH	seed.ch_admin_municipality
+municipality	65	Oberembrach	Q65512	canton	ZH	seed.ch_admin_municipality
+municipality	66	Opfikon	Q64224	canton	ZH	seed.ch_admin_municipality
+municipality	67	Rafz	Q66457	canton	ZH	seed.ch_admin_municipality
+municipality	68	Rorbas	Q67909	canton	ZH	seed.ch_admin_municipality
+municipality	69	Wallisellen	Q69374	canton	ZH	seed.ch_admin_municipality
+municipality	70	Wasterkingen	Q67882	canton	ZH	seed.ch_admin_municipality
+municipality	71	Wil (ZH)	Q67223	canton	ZH	seed.ch_admin_municipality
+municipality	72	Winkel	Q66588	canton	ZH	seed.ch_admin_municipality
+municipality	81	Bachs	Q70273	canton	ZH	seed.ch_admin_municipality
+municipality	82	Boppelsen	Q67062	canton	ZH	seed.ch_admin_municipality
+municipality	83	Buchs (ZH)	Q67539	canton	ZH	seed.ch_admin_municipality
+municipality	84	Dällikon	Q66755	canton	ZH	seed.ch_admin_municipality
+municipality	85	Dänikon	Q70131	canton	ZH	seed.ch_admin_municipality
+municipality	86	Dielsdorf	Q67951	canton	ZH	seed.ch_admin_municipality
+municipality	87	Hüttikon	Q65671	canton	ZH	seed.ch_admin_municipality
+municipality	88	Neerach	Q68395	canton	ZH	seed.ch_admin_municipality
+municipality	89	Niederglatt	Q67920	canton	ZH	seed.ch_admin_municipality
+municipality	90	Niederhasli	Q67042	canton	ZH	seed.ch_admin_municipality
+municipality	91	Niederweningen	Q66411	canton	ZH	seed.ch_admin_municipality
+municipality	92	Oberglatt	Q70022	canton	ZH	seed.ch_admin_municipality
+municipality	93	Oberweningen	Q70264	canton	ZH	seed.ch_admin_municipality
+municipality	94	Otelfingen	Q66156	canton	ZH	seed.ch_admin_municipality
+municipality	95	Regensberg	Q70197	canton	ZH	seed.ch_admin_municipality
+municipality	96	Regensdorf	Q64205	canton	ZH	seed.ch_admin_municipality
+municipality	97	Rümlang	Q67894	canton	ZH	seed.ch_admin_municipality
+municipality	98	Schleinikon	Q67884	canton	ZH	seed.ch_admin_municipality
+municipality	99	Schöfflisdorf	Q70295	canton	ZH	seed.ch_admin_municipality
+municipality	100	Stadel	Q67907	canton	ZH	seed.ch_admin_municipality
+municipality	101	Steinmaur	Q67887	canton	ZH	seed.ch_admin_municipality
+municipality	102	Weiach	Q70088	canton	ZH	seed.ch_admin_municipality
+municipality	111	Bäretswil	Q65868	canton	ZH	seed.ch_admin_municipality
+municipality	112	Bubikon	Q67068	canton	ZH	seed.ch_admin_municipality
+municipality	113	Dürnten	Q67220	canton	ZH	seed.ch_admin_municipality
+municipality	114	Fischenthal	Q65854	canton	ZH	seed.ch_admin_municipality
+municipality	115	Gossau (ZH)	Q67525	canton	ZH	seed.ch_admin_municipality
+municipality	116	Grüningen	Q67120	canton	ZH	seed.ch_admin_municipality
+municipality	117	Hinwil	Q69383	canton	ZH	seed.ch_admin_municipality
+municipality	118	Rüti (ZH)	Q69752	canton	ZH	seed.ch_admin_municipality
+municipality	119	Seegräben	Q67310	canton	ZH	seed.ch_admin_municipality
+municipality	120	Wald (ZH)	Q67272	canton	ZH	seed.ch_admin_municipality
+municipality	121	Wetzikon (ZH)	Q68305	canton	ZH	seed.ch_admin_municipality
+municipality	131	Adliswil	Q68210	canton	ZH	seed.ch_admin_municipality
+municipality	135	Kilchberg (ZH)	Q66633	canton	ZH	seed.ch_admin_municipality
+municipality	136	Langnau am Albis	Q65347	canton	ZH	seed.ch_admin_municipality
+municipality	137	Oberrieden	Q65528	canton	ZH	seed.ch_admin_municipality
+municipality	138	Richterswil	Q68227	canton	ZH	seed.ch_admin_municipality
+municipality	139	Rüschlikon	Q66819	canton	ZH	seed.ch_admin_municipality
+municipality	141	Thalwil	Q68959	canton	ZH	seed.ch_admin_municipality
+municipality	151	Erlenbach (ZH)	Q69203	canton	ZH	seed.ch_admin_municipality
+municipality	152	Herrliberg	Q69224	canton	ZH	seed.ch_admin_municipality
+municipality	153	Hombrechtikon	Q69188	canton	ZH	seed.ch_admin_municipality
+municipality	154	Küsnacht (ZH)	Q69216	canton	ZH	seed.ch_admin_municipality
+municipality	155	Männedorf	Q64627	canton	ZH	seed.ch_admin_municipality
+municipality	156	Meilen	Q68261	canton	ZH	seed.ch_admin_municipality
+municipality	157	Oetwil am See	Q67354	canton	ZH	seed.ch_admin_municipality
+municipality	158	Stäfa	Q69774	canton	ZH	seed.ch_admin_municipality
+municipality	159	Uetikon am See	Q67058	canton	ZH	seed.ch_admin_municipality
+municipality	160	Zumikon	Q66898	canton	ZH	seed.ch_admin_municipality
+municipality	161	Zollikon	Q218691	canton	ZH	seed.ch_admin_municipality
+municipality	172	Fehraltorf	Q70369	canton	ZH	seed.ch_admin_municipality
+municipality	173	Hittnau	Q65841	canton	ZH	seed.ch_admin_municipality
+municipality	176	Lindau	Q65759	canton	ZH	seed.ch_admin_municipality
+municipality	177	Pfäffikon	Q68269	canton	ZH	seed.ch_admin_municipality
+municipality	178	Russikon	Q67957	canton	ZH	seed.ch_admin_municipality
+municipality	180	Weisslingen	Q70375	canton	ZH	seed.ch_admin_municipality
+municipality	181	Wila	Q66752	canton	ZH	seed.ch_admin_municipality
+municipality	182	Wildberg	Q67346	canton	ZH	seed.ch_admin_municipality
+municipality	191	Dübendorf	Q64082	canton	ZH	seed.ch_admin_municipality
+municipality	192	Egg	Q64877	canton	ZH	seed.ch_admin_municipality
+municipality	193	Fällanden	Q64869	canton	ZH	seed.ch_admin_municipality
+municipality	194	Greifensee	Q64882	canton	ZH	seed.ch_admin_municipality
+municipality	195	Maur	Q64857	canton	ZH	seed.ch_admin_municipality
+municipality	196	Mönchaltorf	Q66747	canton	ZH	seed.ch_admin_municipality
+municipality	197	Schwerzenbach	Q66814	canton	ZH	seed.ch_admin_municipality
+municipality	198	Uster	Q64032	canton	ZH	seed.ch_admin_municipality
+municipality	199	Volketswil	Q69754	canton	ZH	seed.ch_admin_municipality
+municipality	200	Wangen-Brüttisellen	Q66829	canton	ZH	seed.ch_admin_municipality
+municipality	211	Altikon	Q65929	canton	ZH	seed.ch_admin_municipality
+municipality	213	Brütten	Q65812	canton	ZH	seed.ch_admin_municipality
+municipality	214	Dägerlen	Q68437	canton	ZH	seed.ch_admin_municipality
+municipality	215	Dättlikon	Q70381	canton	ZH	seed.ch_admin_municipality
+municipality	216	Dinhard	Q65795	canton	ZH	seed.ch_admin_municipality
+municipality	218	Ellikon an der Thur	Q65769	canton	ZH	seed.ch_admin_municipality
+municipality	219	Elsau	Q64832	canton	ZH	seed.ch_admin_municipality
+municipality	220	Hagenbuch	Q65926	canton	ZH	seed.ch_admin_municipality
+municipality	221	Hettlingen	Q64967	canton	ZH	seed.ch_admin_municipality
+municipality	223	Neftenbach	Q65040	canton	ZH	seed.ch_admin_municipality
+municipality	224	Pfungen	Q65119	canton	ZH	seed.ch_admin_municipality
+municipality	225	Rickenbach (ZH)	Q68457	canton	ZH	seed.ch_admin_municipality
+municipality	226	Schlatt (ZH)	Q68390	canton	ZH	seed.ch_admin_municipality
+municipality	227	Seuzach	Q65805	canton	ZH	seed.ch_admin_municipality
+municipality	228	Turbenthal	Q65858	canton	ZH	seed.ch_admin_municipality
+municipality	230	Winterthur	Q9125	canton	ZH	seed.ch_admin_municipality
+municipality	231	Zell (ZH)	Q67211	canton	ZH	seed.ch_admin_municipality
+municipality	241	Aesch (ZH)	Q68342	canton	ZH	seed.ch_admin_municipality
+municipality	242	Birmensdorf (ZH)	Q65282	canton	ZH	seed.ch_admin_municipality
+municipality	243	Dietikon	Q64070	canton	ZH	seed.ch_admin_municipality
+municipality	244	Geroldswil	Q66660	canton	ZH	seed.ch_admin_municipality
+municipality	245	Oberengstringen	Q69963	canton	ZH	seed.ch_admin_municipality
+municipality	246	Oetwil an der Limmat	Q66414	canton	ZH	seed.ch_admin_municipality
+municipality	247	Schlieren	Q69148	canton	ZH	seed.ch_admin_municipality
+municipality	248	Uitikon	Q66678	canton	ZH	seed.ch_admin_municipality
+municipality	249	Unterengstringen	Q66079	canton	ZH	seed.ch_admin_municipality
+municipality	250	Urdorf	Q69109	canton	ZH	seed.ch_admin_municipality
+municipality	251	Weiningen (ZH)	Q66093	canton	ZH	seed.ch_admin_municipality
+municipality	261	Zürich	Q72	canton	ZH	seed.ch_admin_municipality
+municipality	291	Andelfingen	Q68423	canton	ZH	seed.ch_admin_municipality
+municipality	292	Stammheim	Q60322693	canton	ZH	seed.ch_admin_municipality
+municipality	293	Wädenswil	Q69718	canton	ZH	seed.ch_admin_municipality
+municipality	294	Elgg	Q67137	canton	ZH	seed.ch_admin_municipality
+municipality	295	Horgen	Q68286	canton	ZH	seed.ch_admin_municipality
+municipality	296	Illnau-Effretikon	Q64873	canton	ZH	seed.ch_admin_municipality
+municipality	297	Bauma	Q67145	canton	ZH	seed.ch_admin_municipality
+municipality	298	Wiesendangen	Q64853	canton	ZH	seed.ch_admin_municipality
+municipality	301	Aarberg	Q64113	canton	BE	seed.ch_admin_municipality
+municipality	302	Bargen (BE)	Q66438	canton	BE	seed.ch_admin_municipality
+municipality	303	Grossaffoltern	Q65921	canton	BE	seed.ch_admin_municipality
+municipality	304	Kallnach	Q66482	canton	BE	seed.ch_admin_municipality
+municipality	305	Kappelen	Q65924	canton	BE	seed.ch_admin_municipality
+municipality	306	Lyss	Q69512	canton	BE	seed.ch_admin_municipality
+municipality	307	Meikirch	Q67294	canton	BE	seed.ch_admin_municipality
+municipality	309	Radelfingen	Q67140	canton	BE	seed.ch_admin_municipality
+municipality	310	Rapperswil (BE)	Q67577	canton	BE	seed.ch_admin_municipality
+municipality	311	Schüpfen	Q66783	canton	BE	seed.ch_admin_municipality
+municipality	312	Seedorf (BE)	Q66928	canton	BE	seed.ch_admin_municipality
+municipality	321	Aarwangen	Q69222	canton	BE	seed.ch_admin_municipality
+municipality	322	Auswil	Q67598	canton	BE	seed.ch_admin_municipality
+municipality	323	Bannwil	Q66841	canton	BE	seed.ch_admin_municipality
+municipality	324	Bleienbach	Q67606	canton	BE	seed.ch_admin_municipality
+municipality	325	Busswil bei Melchnau	Q67450	canton	BE	seed.ch_admin_municipality
+municipality	326	Gondiswil	Q65477	canton	BE	seed.ch_admin_municipality
+municipality	329	Langenthal	Q69726	canton	BE	seed.ch_admin_municipality
+municipality	331	Lotzwil	Q66846	canton	BE	seed.ch_admin_municipality
+municipality	332	Madiswil	Q67628	canton	BE	seed.ch_admin_municipality
+municipality	333	Melchnau	Q66879	canton	BE	seed.ch_admin_municipality
+municipality	335	Oeschenbach	Q67770	canton	BE	seed.ch_admin_municipality
+municipality	336	Reisiswil	Q67836	canton	BE	seed.ch_admin_municipality
+municipality	337	Roggwil (BE)	Q68015	canton	BE	seed.ch_admin_municipality
+municipality	338	Rohrbach	Q70268	canton	BE	seed.ch_admin_municipality
+municipality	339	Rohrbachgraben	Q67246	canton	BE	seed.ch_admin_municipality
+municipality	340	Rütschelen	Q67625	canton	BE	seed.ch_admin_municipality
+municipality	341	Schwarzhäusern	Q67623	canton	BE	seed.ch_admin_municipality
+municipality	342	Thunstetten	Q67788	canton	BE	seed.ch_admin_municipality
+municipality	344	Ursenbach	Q70287	canton	BE	seed.ch_admin_municipality
+municipality	345	Wynau	Q70104	canton	BE	seed.ch_admin_municipality
+municipality	351	Bern	Q70	canton	BE	seed.ch_admin_municipality
+municipality	352	Bolligen	Q69160	canton	BE	seed.ch_admin_municipality
+municipality	353	Bremgarten bei Bern	Q68185	canton	BE	seed.ch_admin_municipality
+municipality	354	Kirchlindach	Q69688	canton	BE	seed.ch_admin_municipality
+municipality	355	Köniz	Q64058	canton	BE	seed.ch_admin_municipality
+municipality	356	Muri bei Bern	Q69765	canton	BE	seed.ch_admin_municipality
+municipality	357	Oberbalm	Q65883	canton	BE	seed.ch_admin_municipality
+municipality	358	Stettlen	Q70052	canton	BE	seed.ch_admin_municipality
+municipality	359	Vechigen	Q66852	canton	BE	seed.ch_admin_municipality
+municipality	360	Wohlen bei Bern	Q67613	canton	BE	seed.ch_admin_municipality
+municipality	361	Zollikofen	Q69675	canton	BE	seed.ch_admin_municipality
+municipality	362	Ittigen	Q69690	canton	BE	seed.ch_admin_municipality
+municipality	363	Ostermundigen	Q69682	canton	BE	seed.ch_admin_municipality
+municipality	371	Biel/Bienne	Q1034	canton	BE	seed.ch_admin_municipality
+municipality	372	Evilard	Q70093	canton	BE	seed.ch_admin_municipality
+municipality	381	Arch	Q11729	canton	BE	seed.ch_admin_municipality
+municipality	382	Büetigen	Q67399	canton	BE	seed.ch_admin_municipality
+municipality	383	Büren an der Aare	Q66360	canton	BE	seed.ch_admin_municipality
+municipality	385	Diessbach bei Büren	Q67854	canton	BE	seed.ch_admin_municipality
+municipality	386	Dotzigen	Q69861	canton	BE	seed.ch_admin_municipality
+municipality	387	Lengnau (BE)	Q66473	canton	BE	seed.ch_admin_municipality
+municipality	388	Leuzigen	Q67376	canton	BE	seed.ch_admin_municipality
+municipality	389	Meienried	Q67422	canton	BE	seed.ch_admin_municipality
+municipality	390	Meinisberg	Q69914	canton	BE	seed.ch_admin_municipality
+municipality	391	Oberwil bei Büren	Q67558	canton	BE	seed.ch_admin_municipality
+municipality	392	Pieterlen	Q67849	canton	BE	seed.ch_admin_municipality
+municipality	393	Rüti bei Büren	Q11737	canton	BE	seed.ch_admin_municipality
+municipality	394	Wengi	Q69866	canton	BE	seed.ch_admin_municipality
+municipality	401	Aefligen	Q68376	canton	BE	seed.ch_admin_municipality
+municipality	402	Alchenstorf	Q66945	canton	BE	seed.ch_admin_municipality
+municipality	403	Bäriswil	Q68565	canton	BE	seed.ch_admin_municipality
+municipality	404	Burgdorf	Q68311	canton	BE	seed.ch_admin_municipality
+municipality	405	Ersigen	Q67636	canton	BE	seed.ch_admin_municipality
+municipality	406	Hasle bei Burgdorf	Q67066	canton	BE	seed.ch_admin_municipality
+municipality	407	Heimiswil	Q67632	canton	BE	seed.ch_admin_municipality
+municipality	408	Hellsau	Q68603	canton	BE	seed.ch_admin_municipality
+municipality	409	Hindelbank	Q67564	canton	BE	seed.ch_admin_municipality
+municipality	410	Höchstetten	Q67792	canton	BE	seed.ch_admin_municipality
+municipality	411	Kernenried	Q67618	canton	BE	seed.ch_admin_municipality
+municipality	412	Kirchberg (BE)	Q66463	canton	BE	seed.ch_admin_municipality
+municipality	413	Koppigen	Q66668	canton	BE	seed.ch_admin_municipality
+municipality	414	Krauchthal	Q65981	canton	BE	seed.ch_admin_municipality
+municipality	415	Lyssach	Q67593	canton	BE	seed.ch_admin_municipality
+municipality	418	Oberburg	Q67860	canton	BE	seed.ch_admin_municipality
+municipality	420	Rüdtligen-Alchenflüh	Q67556	canton	BE	seed.ch_admin_municipality
+municipality	421	Rumendingen	Q67794	canton	BE	seed.ch_admin_municipality
+municipality	422	Rüti bei Lyssach	Q67819	canton	BE	seed.ch_admin_municipality
+municipality	423	Willadingen	Q67404	canton	BE	seed.ch_admin_municipality
+municipality	424	Wynigen	Q67439	canton	BE	seed.ch_admin_municipality
+municipality	431	Corgémont	Q66917	canton	BE	seed.ch_admin_municipality
+municipality	432	Cormoret	Q66425	canton	BE	seed.ch_admin_municipality
+municipality	433	Cortébert	Q69974	canton	BE	seed.ch_admin_municipality
+municipality	434	Courtelary	Q65649	canton	BE	seed.ch_admin_municipality
+municipality	435	La Ferrière	Q69879	canton	BE	seed.ch_admin_municipality
+municipality	437	Mont-Tramelan	Q66431	canton	BE	seed.ch_admin_municipality
+municipality	438	Orvin	Q67016	canton	BE	seed.ch_admin_municipality
+municipality	441	Renan (BE)	Q517870	canton	BE	seed.ch_admin_municipality
+municipality	442	Romont (BE)	Q70281	canton	BE	seed.ch_admin_municipality
+municipality	443	Saint-Imier	Q66390	canton	BE	seed.ch_admin_municipality
+municipality	444	Sonceboz-Sombeval	Q67292	canton	BE	seed.ch_admin_municipality
+municipality	445	Sonvilier	Q66471	canton	BE	seed.ch_admin_municipality
+municipality	446	Tramelan	Q66384	canton	BE	seed.ch_admin_municipality
+municipality	448	Villeret	Q69979	canton	BE	seed.ch_admin_municipality
+municipality	449	Sauge	Q15059724	canton	BE	seed.ch_admin_municipality
+municipality	450	Péry-La Heutte	Q16269754	canton	BE	seed.ch_admin_municipality
+municipality	491	Brüttelen	Q67260	canton	BE	seed.ch_admin_municipality
+municipality	492	Erlach	Q69453	canton	BE	seed.ch_admin_municipality
+municipality	493	Finsterhennen	Q69950	canton	BE	seed.ch_admin_municipality
+municipality	494	Gals	Q67241	canton	BE	seed.ch_admin_municipality
+municipality	495	Gampelen	Q67387	canton	BE	seed.ch_admin_municipality
+municipality	496	Ins	Q69487	canton	BE	seed.ch_admin_municipality
+municipality	497	Lüscherz	Q69491	canton	BE	seed.ch_admin_municipality
+municipality	498	Müntschemier	Q69945	canton	BE	seed.ch_admin_municipality
+municipality	499	Siselen	Q69877	canton	BE	seed.ch_admin_municipality
+municipality	500	Treiten	Q69873	canton	BE	seed.ch_admin_municipality
+municipality	501	Tschugg	Q69891	canton	BE	seed.ch_admin_municipality
+municipality	502	Vinelz	Q67084	canton	BE	seed.ch_admin_municipality
+municipality	533	Bätterkinden	Q67596	canton	BE	seed.ch_admin_municipality
+municipality	535	Deisswil bei Münchenbuchsee	Q67832	canton	BE	seed.ch_admin_municipality
+municipality	538	Fraubrunnen	Q10317	canton	BE	seed.ch_admin_municipality
+municipality	540	Jegenstorf	Q10341	canton	BE	seed.ch_admin_municipality
+municipality	541	Iffwil	Q67780	canton	BE	seed.ch_admin_municipality
+municipality	543	Mattstetten	Q67839	canton	BE	seed.ch_admin_municipality
+municipality	544	Moosseedorf	Q67552	canton	BE	seed.ch_admin_municipality
+municipality	546	Münchenbuchsee	Q69071	canton	BE	seed.ch_admin_municipality
+municipality	551	Urtenen-Schönbühl	Q67282	canton	BE	seed.ch_admin_municipality
+municipality	552	Utzenstorf	Q67778	canton	BE	seed.ch_admin_municipality
+municipality	553	Wiggiswil	Q67648	canton	BE	seed.ch_admin_municipality
+municipality	554	Wiler bei Utzenstorf	Q67396	canton	BE	seed.ch_admin_municipality
+municipality	556	Zielebach	Q66098	canton	BE	seed.ch_admin_municipality
+municipality	557	Zuzwil (BE)	Q66932	canton	BE	seed.ch_admin_municipality
+municipality	561	Adelboden	Q68994	canton	BE	seed.ch_admin_municipality
+municipality	562	Aeschi bei Spiez	Q68327	canton	BE	seed.ch_admin_municipality
+municipality	563	Frutigen	Q66208	canton	BE	seed.ch_admin_municipality
+municipality	564	Kandergrund	Q65540	canton	BE	seed.ch_admin_municipality
+municipality	565	Kandersteg	Q66218	canton	BE	seed.ch_admin_municipality
+municipality	566	Krattigen	Q65953	canton	BE	seed.ch_admin_municipality
+municipality	567	Reichenbach im Kandertal	Q66378	canton	BE	seed.ch_admin_municipality
+municipality	571	Beatenberg	Q68108	canton	BE	seed.ch_admin_municipality
+municipality	572	Bönigen	Q65502	canton	BE	seed.ch_admin_municipality
+municipality	573	Brienz (BE)	Q65268	canton	BE	seed.ch_admin_municipality
+municipality	574	Brienzwiler	Q65211	canton	BE	seed.ch_admin_municipality
+municipality	575	Därligen	Q65065	canton	BE	seed.ch_admin_municipality
+municipality	576	Grindelwald	Q64004	canton	BE	seed.ch_admin_municipality
+municipality	577	Gsteigwiler	Q65738	canton	BE	seed.ch_admin_municipality
+municipality	578	Gündlischwand	Q65560	canton	BE	seed.ch_admin_municipality
+municipality	579	Habkern	Q64779	canton	BE	seed.ch_admin_municipality
+municipality	580	Hofstetten bei Brienz	Q65200	canton	BE	seed.ch_admin_municipality
+municipality	581	Interlaken	Q68103	canton	BE	seed.ch_admin_municipality
+municipality	582	Iseltwald	Q64760	canton	BE	seed.ch_admin_municipality
+municipality	584	Lauterbrunnen	Q64011	canton	BE	seed.ch_admin_municipality
+municipality	585	Leissigen	Q65300	canton	BE	seed.ch_admin_municipality
+municipality	586	Lütschental	Q66017	canton	BE	seed.ch_admin_municipality
+municipality	587	Matten bei Interlaken	Q65757	canton	BE	seed.ch_admin_municipality
+municipality	588	Niederried bei Interlaken	Q66134	canton	BE	seed.ch_admin_municipality
+municipality	589	Oberried am Brienzersee	Q66000	canton	BE	seed.ch_admin_municipality
+municipality	590	Ringgenberg (BE)	Q66582	canton	BE	seed.ch_admin_municipality
+municipality	591	Saxeten	Q66009	canton	BE	seed.ch_admin_municipality
+municipality	592	Schwanden bei Brienz	Q65238	canton	BE	seed.ch_admin_municipality
+municipality	593	Unterseen	Q67097	canton	BE	seed.ch_admin_municipality
+municipality	594	Wilderswil	Q69256	canton	BE	seed.ch_admin_municipality
+municipality	602	Arni (BE)	Q67569	canton	BE	seed.ch_admin_municipality
+municipality	603	Biglen	Q65875	canton	BE	seed.ch_admin_municipality
+municipality	605	Bowil	Q69380	canton	BE	seed.ch_admin_municipality
+municipality	606	Brenzikofen	Q66146	canton	BE	seed.ch_admin_municipality
+municipality	607	Freimettigen	Q67616	canton	BE	seed.ch_admin_municipality
+municipality	608	Grosshöchstetten	Q67611	canton	BE	seed.ch_admin_municipality
+municipality	609	Häutligen	Q67768	canton	BE	seed.ch_admin_municipality
+municipality	610	Herbligen	Q67634	canton	BE	seed.ch_admin_municipality
+municipality	611	Kiesen	Q66381	canton	BE	seed.ch_admin_municipality
+municipality	612	Konolfingen	Q66211	canton	BE	seed.ch_admin_municipality
+municipality	613	Landiswil	Q67809	canton	BE	seed.ch_admin_municipality
+municipality	614	Linden	Q67608	canton	BE	seed.ch_admin_municipality
+municipality	615	Mirchel	Q67621	canton	BE	seed.ch_admin_municipality
+municipality	616	Münsingen	Q69783	canton	BE	seed.ch_admin_municipality
+municipality	617	Niederhünigen	Q67657	canton	BE	seed.ch_admin_municipality
+municipality	619	Oberdiessbach	Q67582	canton	BE	seed.ch_admin_municipality
+municipality	620	Oberthal	Q67503	canton	BE	seed.ch_admin_municipality
+municipality	622	Oppligen	Q67659	canton	BE	seed.ch_admin_municipality
+municipality	623	Rubigen	Q67821	canton	BE	seed.ch_admin_municipality
+municipality	626	Walkringen	Q67460	canton	BE	seed.ch_admin_municipality
+municipality	627	Worb	Q69732	canton	BE	seed.ch_admin_municipality
+municipality	628	Zäziwil	Q66924	canton	BE	seed.ch_admin_municipality
+municipality	629	Oberhünigen	Q67805	canton	BE	seed.ch_admin_municipality
+municipality	630	Allmendingen	Q67432	canton	BE	seed.ch_admin_municipality
+municipality	632	Wichtrach	Q65945	canton	BE	seed.ch_admin_municipality
+municipality	662	Ferenbalm	Q65886	canton	BE	seed.ch_admin_municipality
+municipality	663	Frauenkappelen	Q69680	canton	BE	seed.ch_admin_municipality
+municipality	665	Gurbrü	Q67019	canton	BE	seed.ch_admin_municipality
+municipality	666	Kriechenwil	Q67022	canton	BE	seed.ch_admin_municipality
+municipality	667	Laupen	Q67112	canton	BE	seed.ch_admin_municipality
+municipality	668	Mühleberg	Q67278	canton	BE	seed.ch_admin_municipality
+municipality	669	Münchenwiler	Q659790	canton	BE	seed.ch_admin_municipality
+municipality	670	Neuenegg	Q66125	canton	BE	seed.ch_admin_municipality
+municipality	671	Wileroltigen	Q66919	canton	BE	seed.ch_admin_municipality
+municipality	681	Belprahon	Q67296	canton	BE	seed.ch_admin_municipality
+municipality	683	Champoz	Q66938	canton	BE	seed.ch_admin_municipality
+municipality	687	Corcelles (BE)	Q67862	canton	BE	seed.ch_admin_municipality
+municipality	690	Court	Q69897	canton	BE	seed.ch_admin_municipality
+municipality	691	Crémines	Q68599	canton	BE	seed.ch_admin_municipality
+municipality	692	Eschert	Q67574	canton	BE	seed.ch_admin_municipality
+municipality	694	Grandval	Q67029	canton	BE	seed.ch_admin_municipality
+municipality	696	Loveresse	Q67591	canton	BE	seed.ch_admin_municipality
+municipality	701	Perrefitte	Q66455	canton	BE	seed.ch_admin_municipality
+municipality	703	Reconvilier	Q67249	canton	BE	seed.ch_admin_municipality
+municipality	704	Roches (BE)	Q68011	canton	BE	seed.ch_admin_municipality
+municipality	706	Saicourt	Q67384	canton	BE	seed.ch_admin_municipality
+municipality	707	Saules (BE)	Q69931	canton	BE	seed.ch_admin_municipality
+municipality	708	Schelten	Q67369	canton	BE	seed.ch_admin_municipality
+municipality	709	Seehof	Q67236	canton	BE	seed.ch_admin_municipality
+municipality	711	Sorvilier	Q67458	canton	BE	seed.ch_admin_municipality
+municipality	713	Tavannes	Q67203	canton	BE	seed.ch_admin_municipality
+municipality	715	Rebévelier	Q68570	canton	BE	seed.ch_admin_municipality
+municipality	716	Petit-Val	Q17325677	canton	BE	seed.ch_admin_municipality
+municipality	717	Valbirse	Q17326749	canton	BE	seed.ch_admin_municipality
+municipality	723	La Neuveville	Q69476	canton	BE	seed.ch_admin_municipality
+municipality	724	Nods	Q67468	canton	BE	seed.ch_admin_municipality
+municipality	726	Plateau de Diesse	Q15124921	canton	BE	seed.ch_admin_municipality
+municipality	731	Aegerten	Q69389	canton	BE	seed.ch_admin_municipality
+municipality	732	Bellmund	Q67382	canton	BE	seed.ch_admin_municipality
+municipality	733	Brügg	Q69455	canton	BE	seed.ch_admin_municipality
+municipality	734	Bühl	Q69983	canton	BE	seed.ch_admin_municipality
+municipality	735	Epsach	Q67371	canton	BE	seed.ch_admin_municipality
+municipality	736	Hagneck	Q67546	canton	BE	seed.ch_admin_municipality
+municipality	737	Hermrigen	Q67391	canton	BE	seed.ch_admin_municipality
+municipality	738	Jens	Q66943	canton	BE	seed.ch_admin_municipality
+municipality	739	Ipsach	Q69460	canton	BE	seed.ch_admin_municipality
+municipality	740	Ligerz	Q69495	canton	BE	seed.ch_admin_municipality
+municipality	741	Merzligen	Q70293	canton	BE	seed.ch_admin_municipality
+municipality	742	Mörigen	Q69467	canton	BE	seed.ch_admin_municipality
+municipality	743	Nidau	Q13209	canton	BE	seed.ch_admin_municipality
+municipality	744	Orpund	Q69227	canton	BE	seed.ch_admin_municipality
+municipality	745	Port	Q68197	canton	BE	seed.ch_admin_municipality
+municipality	746	Safnern	Q67542	canton	BE	seed.ch_admin_municipality
+municipality	747	Scheuren	Q67566	canton	BE	seed.ch_admin_municipality
+municipality	748	Schwadernau	Q69858	canton	BE	seed.ch_admin_municipality
+municipality	749	Studen (BE)	Q69908	canton	BE	seed.ch_admin_municipality
+municipality	750	Sutz-Lattrigen	Q69463	canton	BE	seed.ch_admin_municipality
+municipality	751	Täuffelen	Q69443	canton	BE	seed.ch_admin_municipality
+municipality	754	Walperswil	Q69926	canton	BE	seed.ch_admin_municipality
+municipality	755	Worben	Q67364	canton	BE	seed.ch_admin_municipality
+municipality	756	Twann-Tüscherz	Q70621	canton	BE	seed.ch_admin_municipality
+municipality	761	Därstetten	Q65721	canton	BE	seed.ch_admin_municipality
+municipality	762	Diemtigen	Q65957	canton	BE	seed.ch_admin_municipality
+municipality	763	Erlenbach im Simmental	Q66132	canton	BE	seed.ch_admin_municipality
+municipality	766	Oberwil im Simmental	Q66778	canton	BE	seed.ch_admin_municipality
+municipality	767	Reutigen	Q66750	canton	BE	seed.ch_admin_municipality
+municipality	768	Spiez	Q69484	canton	BE	seed.ch_admin_municipality
+municipality	769	Wimmis	Q65949	canton	BE	seed.ch_admin_municipality
+municipality	770	Stocken-Höfen	Q15060153	canton	BE	seed.ch_admin_municipality
+municipality	782	Guttannen	Q69419	canton	BE	seed.ch_admin_municipality
+municipality	783	Hasliberg	Q69424	canton	BE	seed.ch_admin_municipality
+municipality	784	Innertkirchen	Q69231	canton	BE	seed.ch_admin_municipality
+municipality	785	Meiringen	Q64123	canton	BE	seed.ch_admin_municipality
+municipality	786	Schattenhalb	Q65490	canton	BE	seed.ch_admin_municipality
+municipality	791	Boltigen	Q65939	canton	BE	seed.ch_admin_municipality
+municipality	792	Lenk	Q65152	canton	BE	seed.ch_admin_municipality
+municipality	793	St. Stephan	Q66798	canton	BE	seed.ch_admin_municipality
+municipality	794	Zweisimmen	Q69417	canton	BE	seed.ch_admin_municipality
+municipality	841	Gsteig	Q65753	canton	BE	seed.ch_admin_municipality
+municipality	842	Lauenen	Q65903	canton	BE	seed.ch_admin_municipality
+municipality	843	Saanen	Q66629	canton	BE	seed.ch_admin_municipality
+municipality	852	Guggisberg	Q64969	canton	BE	seed.ch_admin_municipality
+municipality	853	Rüschegg	Q65474	canton	BE	seed.ch_admin_municipality
+municipality	855	Schwarzenburg	Q70708	canton	BE	seed.ch_admin_municipality
+municipality	861	Belp	Q69678	canton	BE	seed.ch_admin_municipality
+municipality	863	Burgistein	Q66393	canton	BE	seed.ch_admin_municipality
+municipality	866	Gerzensee	Q67014	canton	BE	seed.ch_admin_municipality
+municipality	867	Gurzelen	Q66613	canton	BE	seed.ch_admin_municipality
+municipality	868	Jaberg	Q66585	canton	BE	seed.ch_admin_municipality
+municipality	869	Kaufdorf	Q66655	canton	BE	seed.ch_admin_municipality
+municipality	870	Kehrsatz	Q68274	canton	BE	seed.ch_admin_municipality
+municipality	872	Kirchdorf (BE)	Q65895	canton	BE	seed.ch_admin_municipality
+municipality	877	Niedermuhlern	Q66148	canton	BE	seed.ch_admin_municipality
+municipality	879	Riggisberg	Q65618	canton	BE	seed.ch_admin_municipality
+municipality	880	Rüeggisberg	Q66387	canton	BE	seed.ch_admin_municipality
+municipality	883	Seftigen	Q69240	canton	BE	seed.ch_admin_municipality
+municipality	884	Toffen	Q66692	canton	BE	seed.ch_admin_municipality
+municipality	885	Uttigen	Q66120	canton	BE	seed.ch_admin_municipality
+municipality	886	Wattenwil	Q65492	canton	BE	seed.ch_admin_municipality
+municipality	888	Wald (BE)	Q67251	canton	BE	seed.ch_admin_municipality
+municipality	889	Thurnen	Q67869174	canton	BE	seed.ch_admin_municipality
+municipality	901	Eggiwil	Q67393	canton	BE	seed.ch_admin_municipality
+municipality	902	Langnau im Emmental	Q66300	canton	BE	seed.ch_admin_municipality
+municipality	903	Lauperswil	Q67238	canton	BE	seed.ch_admin_municipality
+municipality	904	Röthenbach im Emmental	Q65741	canton	BE	seed.ch_admin_municipality
+municipality	905	Rüderswil	Q67644	canton	BE	seed.ch_admin_municipality
+municipality	906	Schangnau	Q66700	canton	BE	seed.ch_admin_municipality
+municipality	907	Signau	Q67289	canton	BE	seed.ch_admin_municipality
+municipality	908	Trub	Q67842	canton	BE	seed.ch_admin_municipality
+municipality	909	Trubschachen	Q69114	canton	BE	seed.ch_admin_municipality
+municipality	921	Amsoldingen	Q64776	canton	BE	seed.ch_admin_municipality
+municipality	922	Blumenstein	Q66139	canton	BE	seed.ch_admin_municipality
+municipality	923	Buchholterberg	Q65495	canton	BE	seed.ch_admin_municipality
+municipality	924	Eriz	Q64997	canton	BE	seed.ch_admin_municipality
+municipality	925	Fahrni	Q65487	canton	BE	seed.ch_admin_municipality
+municipality	927	Heiligenschwendi	Q65485	canton	BE	seed.ch_admin_municipality
+municipality	928	Heimberg	Q65206	canton	BE	seed.ch_admin_municipality
+municipality	929	Hilterfingen	Q66042	canton	BE	seed.ch_admin_municipality
+municipality	931	Homberg	Q69090	canton	BE	seed.ch_admin_municipality
+municipality	932	Horrenbach-Buchen	Q65500	canton	BE	seed.ch_admin_municipality
+municipality	934	Oberhofen am Thunersee	Q66611	canton	BE	seed.ch_admin_municipality
+municipality	935	Oberlangenegg	Q65481	canton	BE	seed.ch_admin_municipality
+municipality	936	Pohlern	Q65748	canton	BE	seed.ch_admin_municipality
+municipality	938	Sigriswil	Q65732	canton	BE	seed.ch_admin_municipality
+municipality	939	Steffisburg	Q69668	canton	BE	seed.ch_admin_municipality
+municipality	940	Teuffenthal (BE)	Q65554	canton	BE	seed.ch_admin_municipality
+municipality	941	Thierachern	Q66040	canton	BE	seed.ch_admin_municipality
+municipality	942	Thun	Q68978	canton	BE	seed.ch_admin_municipality
+municipality	943	Uebeschi	Q65249	canton	BE	seed.ch_admin_municipality
+municipality	944	Uetendorf	Q66114	canton	BE	seed.ch_admin_municipality
+municipality	945	Unterlangenegg	Q68170	canton	BE	seed.ch_admin_municipality
+municipality	946	Wachseldorn	Q65734	canton	BE	seed.ch_admin_municipality
+municipality	948	Forst-Längenbühl	Q67775	canton	BE	seed.ch_admin_municipality
+municipality	951	Affoltern im Emmental	Q65169	canton	BE	seed.ch_admin_municipality
+municipality	952	Dürrenroth	Q69819	canton	BE	seed.ch_admin_municipality
+municipality	953	Eriswil	Q65744	canton	BE	seed.ch_admin_municipality
+municipality	954	Huttwil	Q69619	canton	BE	seed.ch_admin_municipality
+municipality	955	Lützelflüh	Q67826	canton	BE	seed.ch_admin_municipality
+municipality	956	Rüegsau	Q67834	canton	BE	seed.ch_admin_municipality
+municipality	957	Sumiswald	Q68167	canton	BE	seed.ch_admin_municipality
+municipality	958	Trachselwald	Q67086	canton	BE	seed.ch_admin_municipality
+municipality	959	Walterswil (BE)	Q67548	canton	BE	seed.ch_admin_municipality
+municipality	960	Wyssachen	Q66446	canton	BE	seed.ch_admin_municipality
+municipality	971	Attiswil	Q67257	canton	BE	seed.ch_admin_municipality
+municipality	972	Berken	Q67803	canton	BE	seed.ch_admin_municipality
+municipality	973	Bettenhausen	Q67588	canton	BE	seed.ch_admin_municipality
+municipality	975	Farnern	Q68591	canton	BE	seed.ch_admin_municipality
+municipality	976	Graben	Q67642	canton	BE	seed.ch_admin_municipality
+municipality	977	Heimenhausen	Q67655	canton	BE	seed.ch_admin_municipality
+municipality	979	Herzogenbuchsee	Q67499	canton	BE	seed.ch_admin_municipality
+municipality	980	Inkwil	Q67646	canton	BE	seed.ch_admin_municipality
+municipality	981	Niederbipp	Q69168	canton	BE	seed.ch_admin_municipality
+municipality	982	Niederönz	Q67785	canton	BE	seed.ch_admin_municipality
+municipality	983	Oberbipp	Q70271	canton	BE	seed.ch_admin_municipality
+municipality	985	Ochlenberg	Q67857	canton	BE	seed.ch_admin_municipality
+municipality	987	Rumisberg	Q70290	canton	BE	seed.ch_admin_municipality
+municipality	988	Seeberg	Q70275	canton	BE	seed.ch_admin_municipality
+municipality	989	Thörigen	Q70277	canton	BE	seed.ch_admin_municipality
+municipality	990	Walliswil bei Niederbipp	Q67851	canton	BE	seed.ch_admin_municipality
+municipality	991	Walliswil bei Wangen	Q67426	canton	BE	seed.ch_admin_municipality
+municipality	992	Wangen an der Aare	Q67536	canton	BE	seed.ch_admin_municipality
+municipality	995	Wiedlisbach	Q67133	canton	BE	seed.ch_admin_municipality
+municipality	1001	Doppleschwand	Q121062269	canton	LU	seed.ch_admin_municipality
+municipality	1002	Entlebuch	Q14547	canton	LU	seed.ch_admin_municipality
+municipality	1004	Flühli	Q14552	canton	LU	seed.ch_admin_municipality
+municipality	1005	Hasle (LU)	Q14555	canton	LU	seed.ch_admin_municipality
+municipality	1007	Romoos	Q14557	canton	LU	seed.ch_admin_municipality
+municipality	1008	Schüpfheim	Q14559	canton	LU	seed.ch_admin_municipality
+municipality	1009	Werthenstein	Q14562	canton	LU	seed.ch_admin_municipality
+municipality	1010	Escholzmatt-Marbach	Q14550	canton	LU	seed.ch_admin_municipality
+municipality	1021	Aesch (LU)	Q7120	canton	LU	seed.ch_admin_municipality
+municipality	1023	Ballwil	Q7096	canton	LU	seed.ch_admin_municipality
+municipality	1024	Emmen	Q4225	canton	LU	seed.ch_admin_municipality
+municipality	1025	Ermensee	Q7115	canton	LU	seed.ch_admin_municipality
+municipality	1026	Eschenbach (LU)	Q7092	canton	LU	seed.ch_admin_municipality
+municipality	1030	Hitzkirch	Q7114	canton	LU	seed.ch_admin_municipality
+municipality	1031	Hochdorf	Q7102	canton	LU	seed.ch_admin_municipality
+municipality	1032	Hohenrain	Q7109	canton	LU	seed.ch_admin_municipality
+municipality	1033	Inwil	Q7097	canton	LU	seed.ch_admin_municipality
+municipality	1037	Rain	Q7107	canton	LU	seed.ch_admin_municipality
+municipality	1039	Römerswil	Q7111	canton	LU	seed.ch_admin_municipality
+municipality	1040	Rothenburg	Q7083	canton	LU	seed.ch_admin_municipality
+municipality	1041	Schongau	Q7121	canton	LU	seed.ch_admin_municipality
+municipality	1051	Adligenswil	Q14563	canton	LU	seed.ch_admin_municipality
+municipality	1052	Buchrain	Q7098	canton	LU	seed.ch_admin_municipality
+municipality	1053	Dierikon	Q14565	canton	LU	seed.ch_admin_municipality
+municipality	1054	Ebikon	Q14566	canton	LU	seed.ch_admin_municipality
+municipality	1055	Gisikon	Q14567	canton	LU	seed.ch_admin_municipality
+municipality	1056	Greppen	Q14568	canton	LU	seed.ch_admin_municipality
+municipality	1058	Horw	Q14570	canton	LU	seed.ch_admin_municipality
+municipality	1059	Kriens	Q14571	canton	LU	seed.ch_admin_municipality
+municipality	1061	Luzern	Q4191	canton	LU	seed.ch_admin_municipality
+municipality	1062	Malters	Q14572	canton	LU	seed.ch_admin_municipality
+municipality	1063	Meggen	Q14573	canton	LU	seed.ch_admin_municipality
+municipality	1064	Meierskappel	Q14574	canton	LU	seed.ch_admin_municipality
+municipality	1065	Root	Q14575	canton	LU	seed.ch_admin_municipality
+municipality	1066	Schwarzenberg	Q14576	canton	LU	seed.ch_admin_municipality
+municipality	1067	Udligenswil	Q14577	canton	LU	seed.ch_admin_municipality
+municipality	1068	Vitznau	Q14578	canton	LU	seed.ch_admin_municipality
+municipality	1069	Weggis	Q14580	canton	LU	seed.ch_admin_municipality
+municipality	1081	Beromünster	Q7146	canton	LU	seed.ch_admin_municipality
+municipality	1082	Büron	Q7139	canton	LU	seed.ch_admin_municipality
+municipality	1083	Buttisholz	Q7132	canton	LU	seed.ch_admin_municipality
+municipality	1084	Eich	Q7147	canton	LU	seed.ch_admin_municipality
+municipality	1085	Geuensee	Q7142	canton	LU	seed.ch_admin_municipality
+municipality	1086	Grosswangen	Q7133	canton	LU	seed.ch_admin_municipality
+municipality	1088	Hildisrieden	Q7153	canton	LU	seed.ch_admin_municipality
+municipality	1089	Knutwil	Q7137	canton	LU	seed.ch_admin_municipality
+municipality	1091	Mauensee	Q7136	canton	LU	seed.ch_admin_municipality
+municipality	1093	Neuenkirch	Q7128	canton	LU	seed.ch_admin_municipality
+municipality	1094	Nottwil	Q7131	canton	LU	seed.ch_admin_municipality
+municipality	1095	Oberkirch	Q7135	canton	LU	seed.ch_admin_municipality
+municipality	1097	Rickenbach (LU)	Q7144	canton	LU	seed.ch_admin_municipality
+municipality	1098	Ruswil	Q7124	canton	LU	seed.ch_admin_municipality
+municipality	1099	Schenkon	Q7143	canton	LU	seed.ch_admin_municipality
+municipality	1100	Schlierbach	Q7140	canton	LU	seed.ch_admin_municipality
+municipality	1102	Sempach	Q7151	canton	LU	seed.ch_admin_municipality
+municipality	1103	Sursee	Q7123	canton	LU	seed.ch_admin_municipality
+municipality	1104	Triengen	Q7138	canton	LU	seed.ch_admin_municipality
+municipality	1107	Wolhusen	Q7125	canton	LU	seed.ch_admin_municipality
+municipality	1121	Alberswil	Q14584	canton	LU	seed.ch_admin_municipality
+municipality	1122	Altbüron	Q14585	canton	LU	seed.ch_admin_municipality
+municipality	1123	Altishofen	Q14586	canton	LU	seed.ch_admin_municipality
+municipality	1125	Dagmersellen	Q14587	canton	LU	seed.ch_admin_municipality
+municipality	1127	Egolzwil	Q14589	canton	LU	seed.ch_admin_municipality
+municipality	1128	Ettiswil	Q14592	canton	LU	seed.ch_admin_municipality
+municipality	1129	Fischbach	Q14594	canton	LU	seed.ch_admin_municipality
+municipality	1131	Grossdietwil	Q14600	canton	LU	seed.ch_admin_municipality
+municipality	1132	Hergiswil bei Willisau	Q14603	canton	LU	seed.ch_admin_municipality
+municipality	1135	Luthern	Q14605	canton	LU	seed.ch_admin_municipality
+municipality	1136	Menznau	Q14607	canton	LU	seed.ch_admin_municipality
+municipality	1137	Nebikon	Q14610	canton	LU	seed.ch_admin_municipality
+municipality	1139	Pfaffnau	Q14612	canton	LU	seed.ch_admin_municipality
+municipality	1140	Reiden	Q14614	canton	LU	seed.ch_admin_municipality
+municipality	1142	Roggliswil	Q14616	canton	LU	seed.ch_admin_municipality
+municipality	1143	Schötz	Q14618	canton	LU	seed.ch_admin_municipality
+municipality	1145	Ufhusen	Q14621	canton	LU	seed.ch_admin_municipality
+municipality	1146	Wauwil	Q14623	canton	LU	seed.ch_admin_municipality
+municipality	1147	Wikon	Q14625	canton	LU	seed.ch_admin_municipality
+municipality	1150	Zell (LU)	Q14628	canton	LU	seed.ch_admin_municipality
+municipality	1151	Willisau	Q14627	canton	LU	seed.ch_admin_municipality
+municipality	1201	Altdorf (UR)	Q68150	canton	UR	seed.ch_admin_municipality
+municipality	1202	Andermatt	Q64019	canton	UR	seed.ch_admin_municipality
+municipality	1203	Attinghausen	Q69279	canton	UR	seed.ch_admin_municipality
+municipality	1205	Bürglen (UR)	Q69321	canton	UR	seed.ch_admin_municipality
+municipality	1206	Erstfeld	Q69642	canton	UR	seed.ch_admin_municipality
+municipality	1207	Flüelen	Q69665	canton	UR	seed.ch_admin_municipality
+municipality	1208	Göschenen	Q69639	canton	UR	seed.ch_admin_municipality
+municipality	1209	Gurtnellen	Q65450	canton	UR	seed.ch_admin_municipality
+municipality	1210	Hospental	Q65681	canton	UR	seed.ch_admin_municipality
+municipality	1211	Isenthal	Q65573	canton	UR	seed.ch_admin_municipality
+municipality	1212	Realp	Q67161	canton	UR	seed.ch_admin_municipality
+municipality	1213	Schattdorf	Q66635	canton	UR	seed.ch_admin_municipality
+municipality	1214	Seedorf (UR)	Q69814	canton	UR	seed.ch_admin_municipality
+municipality	1215	Seelisberg	Q65355	canton	UR	seed.ch_admin_municipality
+municipality	1216	Silenen	Q69135	canton	UR	seed.ch_admin_municipality
+municipality	1217	Sisikon	Q66862	canton	UR	seed.ch_admin_municipality
+municipality	1218	Spiringen	Q69663	canton	UR	seed.ch_admin_municipality
+municipality	1219	Unterschächen	Q65959	canton	UR	seed.ch_admin_municipality
+municipality	1220	Wassen	Q69635	canton	UR	seed.ch_admin_municipality
+municipality	1301	Einsiedeln	Q68950	canton	SZ	seed.ch_admin_municipality
+municipality	1311	Gersau	Q64380	canton	SZ	seed.ch_admin_municipality
+municipality	1321	Feusisberg	Q69654	canton	SZ	seed.ch_admin_municipality
+municipality	1322	Freienbach	Q69780	canton	SZ	seed.ch_admin_municipality
+municipality	1323	Wollerau	Q69647	canton	SZ	seed.ch_admin_municipality
+municipality	1331	Küssnacht (SZ)	Q64183	canton	SZ	seed.ch_admin_municipality
+municipality	1341	Altendorf	Q69625	canton	SZ	seed.ch_admin_municipality
+municipality	1342	Galgenen	Q66580	canton	SZ	seed.ch_admin_municipality
+municipality	1343	Innerthal	Q66234	canton	SZ	seed.ch_admin_municipality
+municipality	1344	Lachen	Q67100	canton	SZ	seed.ch_admin_municipality
+municipality	1345	Reichenburg	Q65862	canton	SZ	seed.ch_admin_municipality
+municipality	1346	Schübelbach	Q65623	canton	SZ	seed.ch_admin_municipality
+municipality	1347	Tuggen	Q65620	canton	SZ	seed.ch_admin_municipality
+municipality	1348	Vorderthal	Q66794	canton	SZ	seed.ch_admin_municipality
+municipality	1349	Wangen (SZ)	Q66707	canton	SZ	seed.ch_admin_municipality
+municipality	1361	Alpthal	Q66231	canton	SZ	seed.ch_admin_municipality
+municipality	1362	Arth	Q69742	canton	SZ	seed.ch_admin_municipality
+municipality	1363	Illgau	Q65453	canton	SZ	seed.ch_admin_municipality
+municipality	1364	Ingenbohl	Q66330	canton	SZ	seed.ch_admin_municipality
+municipality	1365	Lauerz	Q69627	canton	SZ	seed.ch_admin_municipality
+municipality	1366	Morschach	Q67050	canton	SZ	seed.ch_admin_municipality
+municipality	1367	Muotathal	Q66069	canton	SZ	seed.ch_admin_municipality
+municipality	1368	Oberiberg	Q66552	canton	SZ	seed.ch_admin_municipality
+municipality	1369	Riemenstalden	Q66249	canton	SZ	seed.ch_admin_municipality
+municipality	1370	Rothenthurm	Q66962	canton	SZ	seed.ch_admin_municipality
+municipality	1371	Sattel	Q65465	canton	SZ	seed.ch_admin_municipality
+municipality	1372	Schwyz	Q68155	canton	SZ	seed.ch_admin_municipality
+municipality	1373	Steinen	Q67191	canton	SZ	seed.ch_admin_municipality
+municipality	1374	Steinerberg	Q66900	canton	SZ	seed.ch_admin_municipality
+municipality	1375	Unteriberg	Q64824	canton	SZ	seed.ch_admin_municipality
+municipality	1401	Alpnach	Q69296	canton	OW	seed.ch_admin_municipality
+municipality	1402	Engelberg	Q64108	canton	OW	seed.ch_admin_municipality
+municipality	1403	Giswil	Q69248	canton	OW	seed.ch_admin_municipality
+municipality	1404	Kerns	Q67159	canton	OW	seed.ch_admin_municipality
+municipality	1405	Lungern	Q64292	canton	OW	seed.ch_admin_municipality
+municipality	1406	Sachseln	Q64614	canton	OW	seed.ch_admin_municipality
+municipality	1407	Sarnen	Q63964	canton	OW	seed.ch_admin_municipality
+municipality	1501	Beckenried	Q69140	canton	NW	seed.ch_admin_municipality
+municipality	1502	Buochs	Q64567	canton	NW	seed.ch_admin_municipality
+municipality	1503	Dallenwil	Q64575	canton	NW	seed.ch_admin_municipality
+municipality	1504	Emmetten	Q69177	canton	NW	seed.ch_admin_municipality
+municipality	1505	Ennetbürgen	Q64310	canton	NW	seed.ch_admin_municipality
+municipality	1506	Ennetmoos	Q64599	canton	NW	seed.ch_admin_municipality
+municipality	1507	Hergiswil (NW)	Q570969	canton	NW	seed.ch_admin_municipality
+municipality	1508	Oberdorf (NW)	Q67154	canton	NW	seed.ch_admin_municipality
+municipality	1509	Stans	Q63931	canton	NW	seed.ch_admin_municipality
+municipality	1510	Stansstad	Q64285	canton	NW	seed.ch_admin_municipality
+municipality	1511	Wolfenschiessen	Q64351	canton	NW	seed.ch_admin_municipality
+municipality	1630	Glarus Nord	Q70635	canton	GL	seed.ch_admin_municipality
+municipality	1631	Glarus Süd	Q70695	canton	GL	seed.ch_admin_municipality
+municipality	1632	Glarus	Q63912	canton	GL	seed.ch_admin_municipality
+municipality	1701	Baar	Q64087	canton	ZG	seed.ch_admin_municipality
+municipality	1702	Cham	Q69235	canton	ZG	seed.ch_admin_municipality
+municipality	1703	Hünenberg	Q66256	canton	ZG	seed.ch_admin_municipality
+municipality	1704	Menzingen	Q66050	canton	ZG	seed.ch_admin_municipality
+municipality	1705	Neuheim	Q65986	canton	ZG	seed.ch_admin_municipality
+municipality	1706	Oberägeri	Q65017	canton	ZG	seed.ch_admin_municipality
+municipality	1707	Risch	Q66604	canton	ZG	seed.ch_admin_municipality
+municipality	1708	Steinhausen	Q66697	canton	ZG	seed.ch_admin_municipality
+municipality	1709	Unterägeri	Q65658	canton	ZG	seed.ch_admin_municipality
+municipality	1710	Walchwil	Q66298	canton	ZG	seed.ch_admin_municipality
+municipality	1711	Zug	Q68144	canton	ZG	seed.ch_admin_municipality
+municipality	2008	Châtillon (FR)	Q70297	canton	FR	seed.ch_admin_municipality
+municipality	2011	Cugy (FR)	Q70302	canton	FR	seed.ch_admin_municipality
+municipality	2022	Gletterens	Q68573	canton	FR	seed.ch_admin_municipality
+municipality	2025	Lully (FR)	Q70493	canton	FR	seed.ch_admin_municipality
+municipality	2029	Montagny (FR)	Q67683	canton	FR	seed.ch_admin_municipality
+municipality	2035	Nuvilly	Q70323	canton	FR	seed.ch_admin_municipality
+municipality	2038	Prévondavaux	Q68659	canton	FR	seed.ch_admin_municipality
+municipality	2041	Saint-Aubin (FR)	Q70403	canton	FR	seed.ch_admin_municipality
+municipality	2043	Sévaz	Q68576	canton	FR	seed.ch_admin_municipality
+municipality	2044	Surpierre	Q68606	canton	FR	seed.ch_admin_municipality
+municipality	2045	Vallon	Q70343	canton	FR	seed.ch_admin_municipality
+municipality	2050	Les Montets	Q67243	canton	FR	seed.ch_admin_municipality
+municipality	2051	Delley-Portalban	Q68552	canton	FR	seed.ch_admin_municipality
+municipality	2053	Belmont-Broye	Q17310488	canton	FR	seed.ch_admin_municipality
+municipality	2054	Estavayer	Q28035756	canton	FR	seed.ch_admin_municipality
+municipality	2055	Cheyres-Châbles	Q22490623	canton	FR	seed.ch_admin_municipality
+municipality	2056	Fétigny-Ménières	Q133571724	canton	FR	seed.ch_admin_municipality
+municipality	2063	Billens-Hennens	Q70454	canton	FR	seed.ch_admin_municipality
+municipality	2067	Le Châtelard	Q68480	canton	FR	seed.ch_admin_municipality
+municipality	2068	Châtonnaye	Q70418	canton	FR	seed.ch_admin_municipality
+municipality	2079	Grangettes	Q69928	canton	FR	seed.ch_admin_municipality
+municipality	2086	Massonnens	Q70427	canton	FR	seed.ch_admin_municipality
+municipality	2087	Mézières (FR)	Q70637	canton	FR	seed.ch_admin_municipality
+municipality	2096	Romont (FR)	Q67103	canton	FR	seed.ch_admin_municipality
+municipality	2097	Rue	Q70188	canton	FR	seed.ch_admin_municipality
+municipality	2099	Siviriez	Q68619	canton	FR	seed.ch_admin_municipality
+municipality	2102	Ursy	Q70452	canton	FR	seed.ch_admin_municipality
+municipality	2113	Vuisternens-devant-Romont	Q68485	canton	FR	seed.ch_admin_municipality
+municipality	2114	Villorsonnens	Q68055	canton	FR	seed.ch_admin_municipality
+municipality	2115	Torny	Q68048	canton	FR	seed.ch_admin_municipality
+municipality	2117	Villaz	Q59925980	canton	FR	seed.ch_admin_municipality
+municipality	2121	Haut-Intyamon	Q66876	canton	FR	seed.ch_admin_municipality
+municipality	2122	Pont-en-Ogoz	Q66903	canton	FR	seed.ch_admin_municipality
+municipality	2123	Botterens	Q67143	canton	FR	seed.ch_admin_municipality
+municipality	2124	Broc	Q67519	canton	FR	seed.ch_admin_municipality
+municipality	2125	Bulle	Q68308	canton	FR	seed.ch_admin_municipality
+municipality	2128	Châtel-sur-Montsalvens	Q67800	canton	FR	seed.ch_admin_municipality
+municipality	2129	Corbières	Q67708	canton	FR	seed.ch_admin_municipality
+municipality	2130	Crésuz	Q67361	canton	FR	seed.ch_admin_municipality
+municipality	2131	Echarlens	Q66873	canton	FR	seed.ch_admin_municipality
+municipality	2134	Grandvillard	Q66887	canton	FR	seed.ch_admin_municipality
+municipality	2135	Gruyères	Q69600	canton	FR	seed.ch_admin_municipality
+municipality	2137	Hauteville	Q662294	canton	FR	seed.ch_admin_municipality
+municipality	2138	Jaun	Q66911	canton	FR	seed.ch_admin_municipality
+municipality	2140	Marsens	Q67075	canton	FR	seed.ch_admin_municipality
+municipality	2143	Morlon	Q67081	canton	FR	seed.ch_admin_municipality
+municipality	2145	Le Pâquier (FR)	Q69918	canton	FR	seed.ch_admin_municipality
+municipality	2147	Pont-la-Ville	Q67510	canton	FR	seed.ch_admin_municipality
+municipality	2148	Riaz	Q67741	canton	FR	seed.ch_admin_municipality
+municipality	2149	La Roche	Q67686	canton	FR	seed.ch_admin_municipality
+municipality	2152	Sâles	Q67736	canton	FR	seed.ch_admin_municipality
+municipality	2153	Sorens	Q66498	canton	FR	seed.ch_admin_municipality
+municipality	2155	Vaulruz	Q66444	canton	FR	seed.ch_admin_municipality
+municipality	2160	Vuadens	Q66520	canton	FR	seed.ch_admin_municipality
+municipality	2162	Bas-Intyamon	Q66020	canton	FR	seed.ch_admin_municipality
+municipality	2163	Val-de-Charmey	Q2507678	canton	FR	seed.ch_admin_municipality
+municipality	2173	Autigny	Q70180	canton	FR	seed.ch_admin_municipality
+municipality	2174	Avry	Q67073	canton	FR	seed.ch_admin_municipality
+municipality	2175	Belfaux	Q65880	canton	FR	seed.ch_admin_municipality
+municipality	2177	Chénens	Q67079	canton	FR	seed.ch_admin_municipality
+municipality	2183	Corminboeuf	Q66487	canton	FR	seed.ch_admin_municipality
+municipality	2186	Cottens (FR)	Q67714	canton	FR	seed.ch_admin_municipality
+municipality	2194	Ferpicloz	Q66422	canton	FR	seed.ch_admin_municipality
+municipality	2196	Fribourg	Q36378	canton	FR	seed.ch_admin_municipality
+municipality	2197	Givisiez	Q66461	canton	FR	seed.ch_admin_municipality
+municipality	2198	Granges-Paccot	Q67060	canton	FR	seed.ch_admin_municipality
+municipality	2206	Marly	Q65891	canton	FR	seed.ch_admin_municipality
+municipality	2208	Matran	Q66419	canton	FR	seed.ch_admin_municipality
+municipality	2211	Neyruz (FR)	Q66466	canton	FR	seed.ch_admin_municipality
+municipality	2216	Pierrafortscha	Q67321	canton	FR	seed.ch_admin_municipality
+municipality	2220	Le Mouret	Q66480	canton	FR	seed.ch_admin_municipality
+municipality	2226	Treyvaux	Q67448	canton	FR	seed.ch_admin_municipality
+municipality	2228	Villars-sur-Glâne	Q69760	canton	FR	seed.ch_admin_municipality
+municipality	2230	Villarsel-sur-Marly	Q67356	canton	FR	seed.ch_admin_municipality
+municipality	2233	Hauterive (FR)	Q67300	canton	FR	seed.ch_admin_municipality
+municipality	2234	La Brillaz	Q66935	canton	FR	seed.ch_admin_municipality
+municipality	2235	La Sonnaz	Q24771	canton	FR	seed.ch_admin_municipality
+municipality	2236	Gibloux	Q19843360	canton	FR	seed.ch_admin_municipality
+municipality	2237	Prez	Q65963837	canton	FR	seed.ch_admin_municipality
+municipality	2238	Bois-d'Amont	Q88464491	canton	FR	seed.ch_admin_municipality
+municipality	2239	Grolley-Ponthaux	Q20012496	canton	FR	seed.ch_admin_municipality
+municipality	2250	Courgevaux	Q67456	canton	FR	seed.ch_admin_municipality
+municipality	2254	Courtepin	Q70042	canton	FR	seed.ch_admin_municipality
+municipality	2257	Cressier (FR)	Q68558	canton	FR	seed.ch_admin_municipality
+municipality	2258	Fräschels	Q68562	canton	FR	seed.ch_admin_municipality
+municipality	2261	Greng	Q69885	canton	FR	seed.ch_admin_municipality
+municipality	2262	Gurmels	Q66941	canton	FR	seed.ch_admin_municipality
+municipality	2265	Kerzers	Q69871	canton	FR	seed.ch_admin_municipality
+municipality	2266	Kleinbösingen	Q69905	canton	FR	seed.ch_admin_municipality
+municipality	2271	Meyriez	Q68662	canton	FR	seed.ch_admin_municipality
+municipality	2272	Misery-Courtion	Q67326	canton	FR	seed.ch_admin_municipality
+municipality	2274	Muntelier	Q68665	canton	FR	seed.ch_admin_municipality
+municipality	2275	Murten	Q68283	canton	FR	seed.ch_admin_municipality
+municipality	2276	Ried bei Kerzers	Q69938	canton	FR	seed.ch_admin_municipality
+municipality	2284	Mont-Vully	Q19843359	canton	FR	seed.ch_admin_municipality
+municipality	2292	Brünisried	Q66952	canton	FR	seed.ch_admin_municipality
+municipality	2293	Düdingen	Q70108	canton	FR	seed.ch_admin_municipality
+municipality	2294	Giffers	Q66476	canton	FR	seed.ch_admin_municipality
+municipality	2295	Bösingen	Q67379	canton	FR	seed.ch_admin_municipality
+municipality	2296	Heitenried	Q68031	canton	FR	seed.ch_admin_municipality
+municipality	2299	Plaffeien	Q67798	canton	FR	seed.ch_admin_municipality
+municipality	2300	Plasselb	Q67374	canton	FR	seed.ch_admin_municipality
+municipality	2301	Rechthalten	Q66763	canton	FR	seed.ch_admin_municipality
+municipality	2303	St. Silvester	Q68042	canton	FR	seed.ch_admin_municipality
+municipality	2304	St. Ursen	Q66453	canton	FR	seed.ch_admin_municipality
+municipality	2305	Schmitten (FR)	Q67705	canton	FR	seed.ch_admin_municipality
+municipality	2306	Tafers	Q66865	canton	FR	seed.ch_admin_municipality
+municipality	2307	Tentlingen	Q67313	canton	FR	seed.ch_admin_municipality
+municipality	2308	Ueberstorf	Q67689	canton	FR	seed.ch_admin_municipality
+municipality	2309	Wünnewil-Flamatt	Q67718	canton	FR	seed.ch_admin_municipality
+municipality	2321	Attalens	Q38652	canton	FR	seed.ch_admin_municipality
+municipality	2323	Bossonnens	Q68429	canton	FR	seed.ch_admin_municipality
+municipality	2325	Châtel-Saint-Denis	Q69517	canton	FR	seed.ch_admin_municipality
+municipality	2328	Granges (Veveyse)	Q68420	canton	FR	seed.ch_admin_municipality
+municipality	2333	Remaufens	Q25843	canton	FR	seed.ch_admin_municipality
+municipality	2335	Saint-Martin (FR)	Q70434	canton	FR	seed.ch_admin_municipality
+municipality	2336	Semsales	Q67699	canton	FR	seed.ch_admin_municipality
+municipality	2337	Le Flon	Q68538	canton	FR	seed.ch_admin_municipality
+municipality	2338	La Verrerie	Q67324	canton	FR	seed.ch_admin_municipality
+municipality	2401	Egerkingen	Q64275	canton	SO	seed.ch_admin_municipality
+municipality	2402	Härkingen	Q66399	canton	SO	seed.ch_admin_municipality
+municipality	2403	Kestenholz	Q66084	canton	SO	seed.ch_admin_municipality
+municipality	2404	Neuendorf	Q66772	canton	SO	seed.ch_admin_municipality
+municipality	2405	Niederbuchsiten	Q65609	canton	SO	seed.ch_admin_municipality
+municipality	2406	Oberbuchsiten	Q67008	canton	SO	seed.ch_admin_municipality
+municipality	2407	Oensingen	Q65846	canton	SO	seed.ch_admin_municipality
+municipality	2408	Wolfwil	Q66066	canton	SO	seed.ch_admin_municipality
+municipality	2421	Aedermannsdorf	Q68384	canton	SO	seed.ch_admin_municipality
+municipality	2422	Balsthal	Q65455	canton	SO	seed.ch_admin_municipality
+municipality	2424	Herbetswil	Q66089	canton	SO	seed.ch_admin_municipality
+municipality	2425	Holderbank (SO)	Q65856	canton	SO	seed.ch_admin_municipality
+municipality	2426	Laupersdorf	Q66407	canton	SO	seed.ch_admin_municipality
+municipality	2427	Matzendorf	Q66352	canton	SO	seed.ch_admin_municipality
+municipality	2428	Mümliswil-Ramiswil	Q65071	canton	SO	seed.ch_admin_municipality
+municipality	2430	Welschenrohr-Gänsbrunnen	Q99519698	canton	SO	seed.ch_admin_municipality
+municipality	2445	Biezwil	Q67004	canton	SO	seed.ch_admin_municipality
+municipality	2455	Lüterkofen-Ichertswil	Q67931	canton	SO	seed.ch_admin_municipality
+municipality	2457	Messen	Q67215	canton	SO	seed.ch_admin_municipality
+municipality	2461	Schnottwil	Q66680	canton	SO	seed.ch_admin_municipality
+municipality	2463	Unterramsern	Q67889	canton	SO	seed.ch_admin_municipality
+municipality	2464	Lüsslingen-Nennigkofen	Q1686296	canton	SO	seed.ch_admin_municipality
+municipality	2465	Buchegg	Q15108127	canton	SO	seed.ch_admin_municipality
+municipality	2471	Bättwil	Q70027	canton	SO	seed.ch_admin_municipality
+municipality	2472	Büren (SO)	Q70057	canton	SO	seed.ch_admin_municipality
+municipality	2473	Dornach	Q64694	canton	SO	seed.ch_admin_municipality
+municipality	2474	Gempen	Q66542	canton	SO	seed.ch_admin_municipality
+municipality	2475	Hochwald	Q66575	canton	SO	seed.ch_admin_municipality
+municipality	2476	Hofstetten-Flüh	Q70010	canton	SO	seed.ch_admin_municipality
+municipality	2477	Metzerlen-Mariastein	Q70025	canton	SO	seed.ch_admin_municipality
+municipality	2478	Nuglar-St. Pantaleon	Q70061	canton	SO	seed.ch_admin_municipality
+municipality	2479	Rodersdorf	Q66559	canton	SO	seed.ch_admin_municipality
+municipality	2480	Seewen	Q66577	canton	SO	seed.ch_admin_municipality
+municipality	2481	Witterswil	Q70059	canton	SO	seed.ch_admin_municipality
+municipality	2491	Hauenstein-Ifenthal	Q66060	canton	SO	seed.ch_admin_municipality
+municipality	2492	Kienberg	Q64533	canton	SO	seed.ch_admin_municipality
+municipality	2493	Lostorf	Q65421	canton	SO	seed.ch_admin_municipality
+municipality	2495	Niedergösgen	Q65009	canton	SO	seed.ch_admin_municipality
+municipality	2497	Obergösgen	Q65849	canton	SO	seed.ch_admin_municipality
+municipality	2499	Stüsslingen	Q66281	canton	SO	seed.ch_admin_municipality
+municipality	2500	Trimbach	Q65037	canton	SO	seed.ch_admin_municipality
+municipality	2501	Winznau	Q65588	canton	SO	seed.ch_admin_municipality
+municipality	2502	Wisen (SO)	Q65134	canton	SO	seed.ch_admin_municipality
+municipality	2503	Erlinsbach (SO)	Q66252	canton	SO	seed.ch_admin_municipality
+municipality	2511	Aeschi (SO)	Q68324	canton	SO	seed.ch_admin_municipality
+municipality	2513	Biberist	Q66723	canton	SO	seed.ch_admin_municipality
+municipality	2514	Bolken	Q66688	canton	SO	seed.ch_admin_municipality
+municipality	2516	Deitingen	Q66142	canton	SO	seed.ch_admin_municipality
+municipality	2517	Derendingen	Q69143	canton	SO	seed.ch_admin_municipality
+municipality	2518	Etziken	Q66682	canton	SO	seed.ch_admin_municipality
+municipality	2519	Gerlafingen	Q65629	canton	SO	seed.ch_admin_municipality
+municipality	2523	Horriwil	Q67343	canton	SO	seed.ch_admin_municipality
+municipality	2524	Hüniken	Q67944	canton	SO	seed.ch_admin_municipality
+municipality	2525	Kriegstetten	Q65213	canton	SO	seed.ch_admin_municipality
+municipality	2526	Lohn-Ammannsegg	Q67006	canton	SO	seed.ch_admin_municipality
+municipality	2527	Luterbach	Q66839	canton	SO	seed.ch_admin_municipality
+municipality	2528	Obergerlafingen	Q66136	canton	SO	seed.ch_admin_municipality
+municipality	2530	Recherswil	Q66849	canton	SO	seed.ch_admin_municipality
+municipality	2532	Subingen	Q66959	canton	SO	seed.ch_admin_municipality
+municipality	2534	Zuchwil	Q18473	canton	SO	seed.ch_admin_municipality
+municipality	2535	Drei Höfe	Q240486	canton	SO	seed.ch_admin_municipality
+municipality	2541	Balm bei Günsberg	Q66966	canton	SO	seed.ch_admin_municipality
+municipality	2542	Bellach	Q66403	canton	SO	seed.ch_admin_municipality
+municipality	2543	Bettlach	Q66831	canton	SO	seed.ch_admin_municipality
+municipality	2544	Feldbrunnen-St. Niklaus	Q66969	canton	SO	seed.ch_admin_municipality
+municipality	2545	Flumenthal	Q67334	canton	SO	seed.ch_admin_municipality
+municipality	2546	Grenchen	Q68248	canton	SO	seed.ch_admin_municipality
+municipality	2547	Günsberg	Q66988	canton	SO	seed.ch_admin_municipality
+municipality	2548	Hubersdorf	Q66982	canton	SO	seed.ch_admin_municipality
+municipality	2549	Kammersrohr	Q67929	canton	SO	seed.ch_admin_municipality
+municipality	2550	Langendorf	Q66984	canton	SO	seed.ch_admin_municipality
+municipality	2551	Lommiswil	Q66971	canton	SO	seed.ch_admin_municipality
+municipality	2553	Oberdorf (SO)	Q70237	canton	SO	seed.ch_admin_municipality
+municipality	2554	Riedholz	Q66973	canton	SO	seed.ch_admin_municipality
+municipality	2555	Rüttenen	Q66998	canton	SO	seed.ch_admin_municipality
+municipality	2556	Selzach	Q67935	canton	SO	seed.ch_admin_municipality
+municipality	2571	Boningen	Q65606	canton	SO	seed.ch_admin_municipality
+municipality	2572	Däniken	Q65586	canton	SO	seed.ch_admin_municipality
+municipality	2573	Dulliken	Q65978	canton	SO	seed.ch_admin_municipality
+municipality	2574	Eppenberg-Wöschnau	Q65597	canton	SO	seed.ch_admin_municipality
+municipality	2575	Fulenbach	Q65312	canton	SO	seed.ch_admin_municipality
+municipality	2576	Gretzenbach	Q65965	canton	SO	seed.ch_admin_municipality
+municipality	2578	Gunzgen	Q65851	canton	SO	seed.ch_admin_municipality
+municipality	2579	Hägendorf	Q67184	canton	SO	seed.ch_admin_municipality
+municipality	2580	Kappel (SO)	Q65575	canton	SO	seed.ch_admin_municipality
+municipality	2581	Olten	Q68129	canton	SO	seed.ch_admin_municipality
+municipality	2582	Rickenbach (SO)	Q66833	canton	SO	seed.ch_admin_municipality
+municipality	2583	Schönenwerd	Q66884	canton	SO	seed.ch_admin_municipality
+municipality	2584	Starrkirch-Wil	Q66154	canton	SO	seed.ch_admin_municipality
+municipality	2585	Walterswil (SO)	Q66275	canton	SO	seed.ch_admin_municipality
+municipality	2586	Wangen bei Olten	Q69967	canton	SO	seed.ch_admin_municipality
+municipality	2601	Solothurn	Q68965	canton	SO	seed.ch_admin_municipality
+municipality	2611	Bärschwil	Q66716	canton	SO	seed.ch_admin_municipality
+municipality	2612	Beinwil (SO)	Q65391	canton	SO	seed.ch_admin_municipality
+municipality	2613	Breitenbach	Q66672	canton	SO	seed.ch_admin_municipality
+municipality	2614	Büsserach	Q66770	canton	SO	seed.ch_admin_municipality
+municipality	2615	Erschwil	Q66775	canton	SO	seed.ch_admin_municipality
+municipality	2616	Fehren	Q66765	canton	SO	seed.ch_admin_municipality
+municipality	2617	Grindel	Q66354	canton	SO	seed.ch_admin_municipality
+municipality	2618	Himmelried	Q70044	canton	SO	seed.ch_admin_municipality
+municipality	2619	Kleinlützel	Q66173	canton	SO	seed.ch_admin_municipality
+municipality	2620	Meltingen	Q66357	canton	SO	seed.ch_admin_municipality
+municipality	2621	Nunningen	Q64697	canton	SO	seed.ch_admin_municipality
+municipality	2622	Zullwil	Q66345	canton	SO	seed.ch_admin_municipality
+municipality	2701	Basel	Q78	canton	BS	seed.ch_admin_municipality
+municipality	2702	Bettingen	Q67530	canton	BS	seed.ch_admin_municipality
+municipality	2703	Riehen	Q5262	canton	BS	seed.ch_admin_municipality
+municipality	2761	Aesch (BL)	Q68367	canton	BL	seed.ch_admin_municipality
+municipality	2762	Allschwil	Q64727	canton	BL	seed.ch_admin_municipality
+municipality	2763	Arlesheim	Q581647	canton	BL	seed.ch_admin_municipality
+municipality	2764	Biel-Benken	Q70067	canton	BL	seed.ch_admin_municipality
+municipality	2765	Binningen	Q69621	canton	BL	seed.ch_admin_municipality
+municipality	2766	Birsfelden	Q64665	canton	BL	seed.ch_admin_municipality
+municipality	2767	Bottmingen	Q70036	canton	BL	seed.ch_admin_municipality
+municipality	2768	Ettingen	Q70012	canton	BL	seed.ch_admin_municipality
+municipality	2769	Münchenstein	Q69030	canton	BL	seed.ch_admin_municipality
+municipality	2770	Muttenz	Q66191	canton	BL	seed.ch_admin_municipality
+municipality	2771	Oberwil (BL)	Q69724	canton	BL	seed.ch_admin_municipality
+municipality	2772	Pfeffingen	Q66549	canton	BL	seed.ch_admin_municipality
+municipality	2773	Reinach (BL)	Q69747	canton	BL	seed.ch_admin_municipality
+municipality	2774	Schönenbuch	Q66508	canton	BL	seed.ch_admin_municipality
+municipality	2775	Therwil	Q66595	canton	BL	seed.ch_admin_municipality
+municipality	2781	Blauen	Q66371	canton	BL	seed.ch_admin_municipality
+municipality	2782	Brislach	Q66725	canton	BL	seed.ch_admin_municipality
+municipality	2783	Burg im Leimental	Q70008	canton	BL	seed.ch_admin_municipality
+municipality	2784	Dittingen	Q66590	canton	BL	seed.ch_admin_municipality
+municipality	2785	Duggingen	Q66736	canton	BL	seed.ch_admin_municipality
+municipality	2786	Grellingen	Q66821	canton	BL	seed.ch_admin_municipality
+municipality	2787	Laufen	Q68363	canton	BL	seed.ch_admin_municipality
+municipality	2788	Liesberg	Q67265	canton	BL	seed.ch_admin_municipality
+municipality	2789	Nenzlingen	Q66401	canton	BL	seed.ch_admin_municipality
+municipality	2790	Roggenburg	Q66806	canton	BL	seed.ch_admin_municipality
+municipality	2791	Röschenz	Q66368	canton	BL	seed.ch_admin_municipality
+municipality	2792	Wahlen	Q67947	canton	BL	seed.ch_admin_municipality
+municipality	2793	Zwingen	Q66702	canton	BL	seed.ch_admin_municipality
+municipality	2821	Arisdorf	Q66564	canton	BL	seed.ch_admin_municipality
+municipality	2822	Augst	Q66515	canton	BL	seed.ch_admin_municipality
+municipality	2823	Bubendorf	Q66532	canton	BL	seed.ch_admin_municipality
+municipality	2824	Frenkendorf	Q66593	canton	BL	seed.ch_admin_municipality
+municipality	2825	Füllinsdorf	Q66523	canton	BL	seed.ch_admin_municipality
+municipality	2826	Giebenach	Q66741	canton	BL	seed.ch_admin_municipality
+municipality	2827	Hersberg	Q66572	canton	BL	seed.ch_admin_municipality
+municipality	2828	Lausen	Q66733	canton	BL	seed.ch_admin_municipality
+municipality	2829	Liestal	Q68972	canton	BL	seed.ch_admin_municipality
+municipality	2830	Lupsingen	Q66506	canton	BL	seed.ch_admin_municipality
+municipality	2831	Pratteln	Q64679	canton	BL	seed.ch_admin_municipality
+municipality	2832	Ramlinsburg	Q66529	canton	BL	seed.ch_admin_municipality
+municipality	2833	Seltisberg	Q66547	canton	BL	seed.ch_admin_municipality
+municipality	2834	Ziefen	Q64705	canton	BL	seed.ch_admin_municipality
+municipality	2841	Anwil	Q66803	canton	BL	seed.ch_admin_municipality
+municipality	2842	Böckten	Q66731	canton	BL	seed.ch_admin_municipality
+municipality	2843	Buckten	Q66570	canton	BL	seed.ch_admin_municipality
+municipality	2844	Buus	Q66325	canton	BL	seed.ch_admin_municipality
+municipality	2845	Diepflingen	Q67280	canton	BL	seed.ch_admin_municipality
+municipality	2846	Gelterkinden	Q65936	canton	BL	seed.ch_admin_municipality
+municipality	2847	Häfelfingen	Q65120	canton	BL	seed.ch_admin_municipality
+municipality	2848	Hemmiken	Q66623	canton	BL	seed.ch_admin_municipality
+municipality	2849	Itingen	Q66537	canton	BL	seed.ch_admin_municipality
+municipality	2850	Känerkinden	Q65837	canton	BL	seed.ch_admin_municipality
+municipality	2851	Kilchberg (BL)	Q66811	canton	BL	seed.ch_admin_municipality
+municipality	2852	Läufelfingen	Q64719	canton	BL	seed.ch_admin_municipality
+municipality	2853	Maisprach	Q66323	canton	BL	seed.ch_admin_municipality
+municipality	2854	Nusshof	Q66545	canton	BL	seed.ch_admin_municipality
+municipality	2855	Oltingen	Q66095	canton	BL	seed.ch_admin_municipality
+municipality	2856	Ormalingen	Q67918	canton	BL	seed.ch_admin_municipality
+municipality	2857	Rickenbach (BL)	Q67942	canton	BL	seed.ch_admin_municipality
+municipality	2858	Rothenfluh	Q66801	canton	BL	seed.ch_admin_municipality
+municipality	2859	Rümlingen	Q67954	canton	BL	seed.ch_admin_municipality
+municipality	2860	Rünenberg	Q67275	canton	BL	seed.ch_admin_municipality
+municipality	2861	Sissach	Q66554	canton	BL	seed.ch_admin_municipality
+municipality	2862	Tecknau	Q67262	canton	BL	seed.ch_admin_municipality
+municipality	2863	Tenniken	Q67351	canton	BL	seed.ch_admin_municipality
+municipality	2864	Thürnen	Q67926	canton	BL	seed.ch_admin_municipality
+municipality	2865	Wenslingen	Q67024	canton	BL	seed.ch_admin_municipality
+municipality	2866	Wintersingen	Q66111	canton	BL	seed.ch_admin_municipality
+municipality	2867	Wittinsburg	Q68013	canton	BL	seed.ch_admin_municipality
+municipality	2868	Zeglingen	Q65343	canton	BL	seed.ch_admin_municipality
+municipality	2869	Zunzgen	Q66240	canton	BL	seed.ch_admin_municipality
+municipality	2881	Arboldswil	Q64702	canton	BL	seed.ch_admin_municipality
+municipality	2882	Bennwil	Q64735	canton	BL	seed.ch_admin_municipality
+municipality	2883	Bretzwil	Q64829	canton	BL	seed.ch_admin_municipality
+municipality	2884	Diegten	Q65046	canton	BL	seed.ch_admin_municipality
+municipality	2885	Eptingen	Q64715	canton	BL	seed.ch_admin_municipality
+municipality	2886	Hölstein	Q69020	canton	BL	seed.ch_admin_municipality
+municipality	2887	Lampenberg	Q64724	canton	BL	seed.ch_admin_municipality
+municipality	2888	Langenbruck	Q64808	canton	BL	seed.ch_admin_municipality
+municipality	2889	Lauwil	Q65117	canton	BL	seed.ch_admin_municipality
+municipality	2890	Liedertswil	Q65060	canton	BL	seed.ch_admin_municipality
+municipality	2891	Niederdorf	Q64710	canton	BL	seed.ch_admin_municipality
+municipality	2892	Oberdorf (BL)	Q64821	canton	BL	seed.ch_admin_municipality
+municipality	2893	Reigoldswil	Q64668	canton	BL	seed.ch_admin_municipality
+municipality	2894	Titterten	Q64687	canton	BL	seed.ch_admin_municipality
+municipality	2895	Waldenburg	Q67092	canton	BL	seed.ch_admin_municipality
+municipality	2901	Gächlingen	Q66500	canton	SH	seed.ch_admin_municipality
+municipality	2903	Löhningen	Q66373	canton	SH	seed.ch_admin_municipality
+municipality	2904	Neunkirch	Q67114	canton	SH	seed.ch_admin_municipality
+municipality	2914	Büttenhardt	Q69128	canton	SH	seed.ch_admin_municipality
+municipality	2915	Dörflingen	Q69107	canton	SH	seed.ch_admin_municipality
+municipality	2917	Lohn (SH)	Q69629	canton	SH	seed.ch_admin_municipality
+municipality	2919	Stetten (SH)	Q69180	canton	SH	seed.ch_admin_municipality
+municipality	2920	Thayngen	Q69152	canton	SH	seed.ch_admin_municipality
+municipality	2931	Bargen (SH)	Q69156	canton	SH	seed.ch_admin_municipality
+municipality	2932	Beringen	Q69186	canton	SH	seed.ch_admin_municipality
+municipality	2933	Buchberg	Q65808	canton	SH	seed.ch_admin_municipality
+municipality	2936	Merishausen	Q69649	canton	SH	seed.ch_admin_municipality
+municipality	2937	Neuhausen am Rheinfall	Q69372	canton	SH	seed.ch_admin_municipality
+municipality	2938	Rüdlingen	Q66796	canton	SH	seed.ch_admin_municipality
+municipality	2939	Schaffhausen	Q9009	canton	SH	seed.ch_admin_municipality
+municipality	2951	Beggingen	Q69123	canton	SH	seed.ch_admin_municipality
+municipality	2952	Schleitheim	Q69111	canton	SH	seed.ch_admin_municipality
+municipality	2953	Siblingen	Q69660	canton	SH	seed.ch_admin_municipality
+municipality	2961	Buch (SH)	Q66305	canton	SH	seed.ch_admin_municipality
+municipality	2962	Hemishofen	Q66363	canton	SH	seed.ch_admin_municipality
+municipality	2963	Ramsen	Q69182	canton	SH	seed.ch_admin_municipality
+municipality	2964	Stein am Rhein	Q11939	canton	SH	seed.ch_admin_municipality
+municipality	2971	Hallau	Q69172	canton	SH	seed.ch_admin_municipality
+municipality	2972	Oberhallau	Q66648	canton	SH	seed.ch_admin_municipality
+municipality	2973	Trasadingen	Q66977	canton	SH	seed.ch_admin_municipality
+municipality	2974	Wilchingen	Q69164	canton	SH	seed.ch_admin_municipality
+municipality	3001	Herisau	Q63970	canton	AR	seed.ch_admin_municipality
+municipality	3002	Hundwil	Q69652	canton	AR	seed.ch_admin_municipality
+municipality	3003	Schönengrund	Q64296	canton	AR	seed.ch_admin_municipality
+municipality	3004	Schwellbrunn	Q64622	canton	AR	seed.ch_admin_municipality
+municipality	3005	Stein (AR)	Q67193	canton	AR	seed.ch_admin_municipality
+municipality	3006	Urnäsch	Q67168	canton	AR	seed.ch_admin_municipality
+municipality	3007	Waldstatt	Q69658	canton	AR	seed.ch_admin_municipality
+municipality	3021	Bühler	Q67197	canton	AR	seed.ch_admin_municipality
+municipality	3022	Gais	Q67171	canton	AR	seed.ch_admin_municipality
+municipality	3023	Speicher	Q67148	canton	AR	seed.ch_admin_municipality
+municipality	3024	Teufen (AR)	Q67209	canton	AR	seed.ch_admin_municipality
+municipality	3025	Trogen	Q68189	canton	AR	seed.ch_admin_municipality
+municipality	3031	Grub (AR)	Q67200	canton	AR	seed.ch_admin_municipality
+municipality	3032	Heiden	Q68315	canton	AR	seed.ch_admin_municipality
+municipality	3033	Lutzenberg	Q67178	canton	AR	seed.ch_admin_municipality
+municipality	3034	Rehetobel	Q67182	canton	AR	seed.ch_admin_municipality
+municipality	3035	Reute (AR)	Q66204	canton	AR	seed.ch_admin_municipality
+municipality	3036	Wald (AR)	Q67175	canton	AR	seed.ch_admin_municipality
+municipality	3037	Walzenhausen	Q64594	canton	AR	seed.ch_admin_municipality
+municipality	3038	Wolfhalden	Q661621	canton	AR	seed.ch_admin_municipality
+municipality	3101	Appenzell	Q67125	canton	AI	seed.ch_admin_municipality
+municipality	3102	Gonten	Q64604	canton	AI	seed.ch_admin_municipality
+municipality	3104	Schlatt-Haslen	Q64301	canton	AI	seed.ch_admin_municipality
+municipality	3111	Oberegg	Q69407	canton	AI	seed.ch_admin_municipality
+municipality	3112	Schwende-Rüte	Q107342348	canton	AI	seed.ch_admin_municipality
+municipality	3201	Häggenschwil	Q66087	canton	SG	seed.ch_admin_municipality
+municipality	3202	Muolen	Q67044	canton	SG	seed.ch_admin_municipality
+municipality	3203	St. Gallen	Q25607	canton	SG	seed.ch_admin_municipality
+municipality	3204	Wittenbach	Q66056	canton	SG	seed.ch_admin_municipality
+municipality	3211	Berg (SG)	Q67318	canton	SG	seed.ch_admin_municipality
+municipality	3212	Eggersriet	Q66868	canton	SG	seed.ch_admin_municipality
+municipality	3213	Goldach	Q66790	canton	SG	seed.ch_admin_municipality
+municipality	3214	Mörschwil	Q66334	canton	SG	seed.ch_admin_municipality
+municipality	3215	Rorschach	Q68250	canton	SG	seed.ch_admin_municipality
+municipality	3216	Rorschacherberg	Q66269	canton	SG	seed.ch_admin_municipality
+municipality	3217	Steinach	Q66860	canton	SG	seed.ch_admin_municipality
+municipality	3218	Tübach	Q66562	canton	SG	seed.ch_admin_municipality
+municipality	3219	Untereggen	Q66416	canton	SG	seed.ch_admin_municipality
+municipality	3231	Au (SG)	Q66254	canton	SG	seed.ch_admin_municipality
+municipality	3232	Balgach	Q65508	canton	SG	seed.ch_admin_municipality
+municipality	3233	Berneck	Q67225	canton	SG	seed.ch_admin_municipality
+municipality	3234	Diepoldsau	Q65615	canton	SG	seed.ch_admin_municipality
+municipality	3235	Rheineck	Q69595	canton	SG	seed.ch_admin_municipality
+municipality	3236	St. Margrethen	Q66243	canton	SG	seed.ch_admin_municipality
+municipality	3237	Thal	Q65543	canton	SG	seed.ch_admin_municipality
+municipality	3238	Widnau	Q65612	canton	SG	seed.ch_admin_municipality
+municipality	3251	Altstätten	Q68281	canton	SG	seed.ch_admin_municipality
+municipality	3252	Eichberg	Q66271	canton	SG	seed.ch_admin_municipality
+municipality	3253	Marbach (SG)	Q67900	canton	SG	seed.ch_admin_municipality
+municipality	3254	Oberriet (SG)	Q65263	canton	SG	seed.ch_admin_municipality
+municipality	3255	Rebstein	Q17834	canton	SG	seed.ch_admin_municipality
+municipality	3256	Rüthi (SG)	Q66890	canton	SG	seed.ch_admin_municipality
+municipality	3271	Buchs (SG)	Q68277	canton	SG	seed.ch_admin_municipality
+municipality	3272	Gams	Q67315	canton	SG	seed.ch_admin_municipality
+municipality	3273	Grabs	Q67048	canton	SG	seed.ch_admin_municipality
+municipality	3274	Sennwald	Q69393	canton	SG	seed.ch_admin_municipality
+municipality	3275	Sevelen	Q69612	canton	SG	seed.ch_admin_municipality
+municipality	3276	Wartau	Q66788	canton	SG	seed.ch_admin_municipality
+municipality	3291	Bad Ragaz	Q95759	canton	SG	seed.ch_admin_municipality
+municipality	3292	Flums	Q69954	canton	SG	seed.ch_admin_municipality
+municipality	3293	Mels	Q67027	canton	SG	seed.ch_admin_municipality
+municipality	3294	Pfäfers	Q66052	canton	SG	seed.ch_admin_municipality
+municipality	3295	Quarten	Q66228	canton	SG	seed.ch_admin_municipality
+municipality	3296	Sargans	Q64571	canton	SG	seed.ch_admin_municipality
+municipality	3297	Vilters-Wangs	Q66246	canton	SG	seed.ch_admin_municipality
+municipality	3298	Walenstadt	Q64191	canton	SG	seed.ch_admin_municipality
+municipality	3311	Amden	Q65679	canton	SG	seed.ch_admin_municipality
+municipality	3312	Benken (SG)	Q67227	canton	SG	seed.ch_admin_municipality
+municipality	3313	Kaltbrunn	Q66786	canton	SG	seed.ch_admin_municipality
+municipality	3315	Schänis	Q65446	canton	SG	seed.ch_admin_municipality
+municipality	3316	Weesen	Q69644	canton	SG	seed.ch_admin_municipality
+municipality	3338	Schmerikon	Q66684	canton	SG	seed.ch_admin_municipality
+municipality	3339	Uznach	Q67106	canton	SG	seed.ch_admin_municipality
+municipality	3340	Rapperswil-Jona	Q69729	canton	SG	seed.ch_admin_municipality
+municipality	3341	Gommiswald	Q66744	canton	SG	seed.ch_admin_municipality
+municipality	3342	Eschenbach (SG)	Q66824	canton	SG	seed.ch_admin_municipality
+municipality	3352	Ebnat-Kappel	Q66237	canton	SG	seed.ch_admin_municipality
+municipality	3359	Wildhaus-Alt St. Johann	Q70619	canton	SG	seed.ch_admin_municipality
+municipality	3360	Nesslau	Q70720	canton	SG	seed.ch_admin_municipality
+municipality	3374	Lichtensteig	Q69274	canton	SG	seed.ch_admin_municipality
+municipality	3379	Wattwil	Q66601	canton	SG	seed.ch_admin_municipality
+municipality	3392	Kirchberg (SG)	Q64860	canton	SG	seed.ch_admin_municipality
+municipality	3393	Lütisburg	Q66857	canton	SG	seed.ch_admin_municipality
+municipality	3394	Mosnang	Q65775	canton	SG	seed.ch_admin_municipality
+municipality	3395	Bütschwil-Ganterschwil	Q1021823	canton	SG	seed.ch_admin_municipality
+municipality	3396	Neckertal	Q68864	canton	SG	seed.ch_admin_municipality
+municipality	3401	Degersheim	Q64974	canton	SG	seed.ch_admin_municipality
+municipality	3402	Flawil	Q65506	canton	SG	seed.ch_admin_municipality
+municipality	3405	Jonschwil	Q65816	canton	SG	seed.ch_admin_municipality
+municipality	3407	Oberuzwil	Q66557	canton	SG	seed.ch_admin_municipality
+municipality	3408	Uzwil	Q64171	canton	SG	seed.ch_admin_municipality
+municipality	3422	Niederbüren	Q66266	canton	SG	seed.ch_admin_municipality
+municipality	3423	Niederhelfenschwil	Q66714	canton	SG	seed.ch_admin_municipality
+municipality	3424	Oberbüren	Q66670	canton	SG	seed.ch_admin_municipality
+municipality	3426	Zuzwil (SG)	Q66279	canton	SG	seed.ch_admin_municipality
+municipality	3427	Wil (SG)	Q64077	canton	SG	seed.ch_admin_municipality
+municipality	3441	Andwil (SG)	Q67726	canton	SG	seed.ch_admin_municipality
+municipality	3442	Gaiserwald	Q66781	canton	SG	seed.ch_admin_municipality
+municipality	3443	Gossau (SG)	Q69777	canton	SG	seed.ch_admin_municipality
+municipality	3444	Waldkirch	Q64630	canton	SG	seed.ch_admin_municipality
+municipality	3506	Vaz/Obervaz	Q64647	canton	GR	seed.ch_admin_municipality
+municipality	3513	Lantsch/Lenz	Q65104	canton	GR	seed.ch_admin_municipality
+municipality	3514	Schmitten (GR)	Q65399	canton	GR	seed.ch_admin_municipality
+municipality	3542	Albula/Alvra	Q15890943	canton	GR	seed.ch_admin_municipality
+municipality	3543	Surses	Q19944645	canton	GR	seed.ch_admin_municipality
+municipality	3544	Bergün Filisur	Q22465879	canton	GR	seed.ch_admin_municipality
+municipality	3551	Brusio	Q64580	canton	GR	seed.ch_admin_municipality
+municipality	3561	Poschiavo	Q69503	canton	GR	seed.ch_admin_municipality
+municipality	3572	Falera	Q65086	canton	GR	seed.ch_admin_municipality
+municipality	3575	Laax	Q69606	canton	GR	seed.ch_admin_municipality
+municipality	3581	Sagogn	Q65684	canton	GR	seed.ch_admin_municipality
+municipality	3582	Schluein	Q65093	canton	GR	seed.ch_admin_municipality
+municipality	3603	Vals	Q64585	canton	GR	seed.ch_admin_municipality
+municipality	3618	Lumnezia	Q1877273	canton	GR	seed.ch_admin_municipality
+municipality	3619	Ilanz/Glion	Q15056824	canton	GR	seed.ch_admin_municipality
+municipality	3633	Fürstenau	Q64805	canton	GR	seed.ch_admin_municipality
+municipality	3637	Rothenbrunnen	Q65366	canton	GR	seed.ch_admin_municipality
+municipality	3638	Scharans	Q64342	canton	GR	seed.ch_admin_municipality
+municipality	3640	Sils im Domleschg	Q65069	canton	GR	seed.ch_admin_municipality
+municipality	3661	Cazis	Q64443	canton	GR	seed.ch_admin_municipality
+municipality	3662	Flerden	Q64800	canton	GR	seed.ch_admin_municipality
+municipality	3663	Masein	Q64916	canton	GR	seed.ch_admin_municipality
+municipality	3668	Thusis	Q66171	canton	GR	seed.ch_admin_municipality
+municipality	3669	Tschappina	Q65699	canton	GR	seed.ch_admin_municipality
+municipality	3670	Urmein	Q64816	canton	GR	seed.ch_admin_municipality
+municipality	3672	Safiental	Q2680071	canton	GR	seed.ch_admin_municipality
+municipality	3673	Domleschg	Q18411365	canton	GR	seed.ch_admin_municipality
+municipality	3681	Avers	Q69196	canton	GR	seed.ch_admin_municipality
+municipality	3695	Sufers	Q66012	canton	GR	seed.ch_admin_municipality
+municipality	3701	Andeer	Q64359	canton	GR	seed.ch_admin_municipality
+municipality	3711	Rongellen	Q65430	canton	GR	seed.ch_admin_municipality
+municipality	3712	Zillis-Reischen	Q64890	canton	GR	seed.ch_admin_municipality
+municipality	3713	Ferrera	Q70463	canton	GR	seed.ch_admin_municipality
+municipality	3714	Rheinwald	Q55264136	canton	GR	seed.ch_admin_municipality
+municipality	3715	Muntogna da Schons	Q99519699	canton	GR	seed.ch_admin_municipality
+municipality	3721	Bonaduz	Q64473	canton	GR	seed.ch_admin_municipality
+municipality	3722	Domat/Ems	Q68266	canton	GR	seed.ch_admin_municipality
+municipality	3723	Rhäzüns	Q66030	canton	GR	seed.ch_admin_municipality
+municipality	3731	Felsberg	Q64961	canton	GR	seed.ch_admin_municipality
+municipality	3732	Flims	Q65049	canton	GR	seed.ch_admin_municipality
+municipality	3733	Tamins	Q64740	canton	GR	seed.ch_admin_municipality
+municipality	3734	Trin	Q65564	canton	GR	seed.ch_admin_municipality
+municipality	3746	Zernez	Q64609	canton	GR	seed.ch_admin_municipality
+municipality	3752	Samnaun	Q69358	canton	GR	seed.ch_admin_municipality
+municipality	3762	Scuol	Q69079	canton	GR	seed.ch_admin_municipality
+municipality	3764	Valsot	Q7912633	canton	GR	seed.ch_admin_municipality
+municipality	3781	Bever	Q69121	canton	GR	seed.ch_admin_municipality
+municipality	3782	Celerina/Schlarigna	Q64964	canton	GR	seed.ch_admin_municipality
+municipality	3783	Madulain	Q66638	canton	GR	seed.ch_admin_municipality
+municipality	3784	Pontresina	Q69259	canton	GR	seed.ch_admin_municipality
+municipality	3785	La Punt Chamues-ch	Q65637	canton	GR	seed.ch_admin_municipality
+municipality	3786	Samedan	Q69085	canton	GR	seed.ch_admin_municipality
+municipality	3787	St. Moritz	Q68986	canton	GR	seed.ch_admin_municipality
+municipality	3788	S-chanf	Q65552	canton	GR	seed.ch_admin_municipality
+municipality	3789	Sils im Engadin/Segl	Q64200	canton	GR	seed.ch_admin_municipality
+municipality	3790	Silvaplana	Q65254	canton	GR	seed.ch_admin_municipality
+municipality	3791	Zuoz	Q66184	canton	GR	seed.ch_admin_municipality
+municipality	3792	Bregaglia	Q70677	canton	GR	seed.ch_admin_municipality
+municipality	3804	Buseno	Q65369	canton	GR	seed.ch_admin_municipality
+municipality	3805	Castaneda	Q659408	canton	GR	seed.ch_admin_municipality
+municipality	3808	Rossa	Q66809	canton	GR	seed.ch_admin_municipality
+municipality	3810	Santa Maria in Calanca	Q65569	canton	GR	seed.ch_admin_municipality
+municipality	3821	Lostallo	Q65115	canton	GR	seed.ch_admin_municipality
+municipality	3822	Mesocco	Q64617	canton	GR	seed.ch_admin_municipality
+municipality	3823	Soazza	Q65711	canton	GR	seed.ch_admin_municipality
+municipality	3831	Cama	Q66024	canton	GR	seed.ch_admin_municipality
+municipality	3832	Grono	Q66181	canton	GR	seed.ch_admin_municipality
+municipality	3834	Roveredo (GR)	Q64912	canton	GR	seed.ch_admin_municipality
+municipality	3835	San Vittore	Q65687	canton	GR	seed.ch_admin_municipality
+municipality	3837	Calanca	Q18229597	canton	GR	seed.ch_admin_municipality
+municipality	3847	Val Müstair	Q70513	canton	GR	seed.ch_admin_municipality
+municipality	3851	Davos	Q68097	canton	GR	seed.ch_admin_municipality
+municipality	3861	Fideris	Q64643	canton	GR	seed.ch_admin_municipality
+municipality	3862	Furna	Q65044	canton	GR	seed.ch_admin_municipality
+municipality	3863	Jenaz	Q64555	canton	GR	seed.ch_admin_municipality
+municipality	3871	Klosters	Q68236	canton	GR	seed.ch_admin_municipality
+municipality	3881	Conters im Prättigau	Q65100	canton	GR	seed.ch_admin_municipality
+municipality	3882	Küblis	Q64639	canton	GR	seed.ch_admin_municipality
+municipality	3891	Luzein	Q65296	canton	GR	seed.ch_admin_municipality
+municipality	3901	Chur	Q69007	canton	GR	seed.ch_admin_municipality
+municipality	3911	Churwalden	Q64363	canton	GR	seed.ch_admin_municipality
+municipality	3921	Arosa	Q63954	canton	GR	seed.ch_admin_municipality
+municipality	3945	Trimmis	Q69099	canton	GR	seed.ch_admin_municipality
+municipality	3946	Untervaz	Q69095	canton	GR	seed.ch_admin_municipality
+municipality	3947	Zizers	Q69616	canton	GR	seed.ch_admin_municipality
+municipality	3951	Fläsch	Q65386	canton	GR	seed.ch_admin_municipality
+municipality	3952	Jenins	Q65404	canton	GR	seed.ch_admin_municipality
+municipality	3953	Maienfeld	Q64178	canton	GR	seed.ch_admin_municipality
+municipality	3954	Malans	Q69053	canton	GR	seed.ch_admin_municipality
+municipality	3955	Landquart	Q70631	canton	GR	seed.ch_admin_municipality
+municipality	3961	Grüsch	Q64635	canton	GR	seed.ch_admin_municipality
+municipality	3962	Schiers	Q65244	canton	GR	seed.ch_admin_municipality
+municipality	3972	Seewis im Prättigau	Q64748	canton	GR	seed.ch_admin_municipality
+municipality	3981	Breil/Brigels	Q64920	canton	GR	seed.ch_admin_municipality
+municipality	3982	Disentis/Mustér	Q68347	canton	GR	seed.ch_admin_municipality
+municipality	3983	Medel (Lucmagn)	Q64925	canton	GR	seed.ch_admin_municipality
+municipality	3985	Sumvitg	Q64942	canton	GR	seed.ch_admin_municipality
+municipality	3986	Tujetsch	Q64280	canton	GR	seed.ch_admin_municipality
+municipality	3987	Trun	Q64951	canton	GR	seed.ch_admin_municipality
+municipality	3988	Obersaxen Mundaun	Q21051027	canton	GR	seed.ch_admin_municipality
+municipality	4001	Aarau	Q14274	canton	AG	seed.ch_admin_municipality
+municipality	4002	Biberstein	Q64491	canton	AG	seed.ch_admin_municipality
+municipality	4003	Buchs (AG)	Q64512	canton	AG	seed.ch_admin_municipality
+municipality	4004	Densbüren	Q64537	canton	AG	seed.ch_admin_municipality
+municipality	4005	Erlinsbach (AG)	Q65415	canton	AG	seed.ch_admin_municipality
+municipality	4006	Gränichen	Q64267	canton	AG	seed.ch_admin_municipality
+municipality	4007	Hirschthal	Q64526	canton	AG	seed.ch_admin_municipality
+municipality	4008	Küttigen	Q65007	canton	AG	seed.ch_admin_municipality
+municipality	4009	Muhen	Q64985	canton	AG	seed.ch_admin_municipality
+municipality	4010	Oberentfelden	Q64990	canton	AG	seed.ch_admin_municipality
+municipality	4012	Suhr	Q65195	canton	AG	seed.ch_admin_municipality
+municipality	4013	Unterentfelden	Q64253	canton	AG	seed.ch_admin_municipality
+municipality	4021	Baden	Q63939	canton	AG	seed.ch_admin_municipality
+municipality	4022	Bellikon	Q64521	canton	AG	seed.ch_admin_municipality
+municipality	4023	Bergdietikon	Q68302	canton	AG	seed.ch_admin_municipality
+municipality	4024	Birmenstorf (AG)	Q64457	canton	AG	seed.ch_admin_municipality
+municipality	4026	Ennetbaden	Q64424	canton	AG	seed.ch_admin_municipality
+municipality	4027	Fislisbach	Q64469	canton	AG	seed.ch_admin_municipality
+municipality	4028	Freienwil	Q64402	canton	AG	seed.ch_admin_municipality
+municipality	4029	Gebenstorf	Q64486	canton	AG	seed.ch_admin_municipality
+municipality	4030	Killwangen	Q64547	canton	AG	seed.ch_admin_municipality
+municipality	4031	Künten	Q64247	canton	AG	seed.ch_admin_municipality
+municipality	4032	Mägenwil	Q64551	canton	AG	seed.ch_admin_municipality
+municipality	4033	Mellingen	Q64216	canton	AG	seed.ch_admin_municipality
+municipality	4034	Neuenhof	Q64461	canton	AG	seed.ch_admin_municipality
+municipality	4035	Niederrohrdorf	Q64465	canton	AG	seed.ch_admin_municipality
+municipality	4037	Oberrohrdorf	Q64496	canton	AG	seed.ch_admin_municipality
+municipality	4038	Obersiggenthal	Q64541	canton	AG	seed.ch_admin_municipality
+municipality	4039	Remetschwil	Q64500	canton	AG	seed.ch_admin_municipality
+municipality	4040	Spreitenbach	Q64210	canton	AG	seed.ch_admin_municipality
+municipality	4041	Stetten (AG)	Q65158	canton	AG	seed.ch_admin_municipality
+municipality	4044	Untersiggenthal	Q64269	canton	AG	seed.ch_admin_municipality
+municipality	4045	Wettingen	Q27576	canton	AG	seed.ch_admin_municipality
+municipality	4046	Wohlenschwil	Q65161	canton	AG	seed.ch_admin_municipality
+municipality	4047	Würenlingen	Q64219	canton	AG	seed.ch_admin_municipality
+municipality	4048	Würenlos	Q64258	canton	AG	seed.ch_admin_municipality
+municipality	4049	Ehrendingen	Q65294	canton	AG	seed.ch_admin_municipality
+municipality	4061	Arni (AG)	Q64324	canton	AG	seed.ch_admin_municipality
+municipality	4062	Berikon	Q64334	canton	AG	seed.ch_admin_municipality
+municipality	4063	Bremgarten (AG)	Q64139	canton	AG	seed.ch_admin_municipality
+municipality	4064	Büttikon	Q64768	canton	AG	seed.ch_admin_municipality
+municipality	4065	Dottikon	Q64438	canton	AG	seed.ch_admin_municipality
+municipality	4066	Eggenwil	Q659067	canton	AG	seed.ch_admin_municipality
+municipality	4067	Fischbach-Göslikon	Q64948	canton	AG	seed.ch_admin_municipality
+municipality	4068	Hägglingen	Q65286	canton	AG	seed.ch_admin_municipality
+municipality	4071	Jonen	Q64957	canton	AG	seed.ch_admin_municipality
+municipality	4072	Niederwil (AG)	Q65660	canton	AG	seed.ch_admin_municipality
+municipality	4073	Oberlunkhofen	Q64245	canton	AG	seed.ch_admin_municipality
+municipality	4074	Oberwil-Lieli	Q65646	canton	AG	seed.ch_admin_municipality
+municipality	4075	Rudolfstetten-Friedlisberg	Q64306	canton	AG	seed.ch_admin_municipality
+municipality	4076	Sarmenstorf	Q65217	canton	AG	seed.ch_admin_municipality
+municipality	4077	Tägerig	Q65190	canton	AG	seed.ch_admin_municipality
+municipality	4078	Uezwil	Q65203	canton	AG	seed.ch_admin_municipality
+municipality	4079	Unterlunkhofen	Q65150	canton	AG	seed.ch_admin_municipality
+municipality	4080	Villmergen	Q64232	canton	AG	seed.ch_admin_municipality
+municipality	4081	Widen	Q64384	canton	AG	seed.ch_admin_municipality
+municipality	4082	Wohlen (AG)	Q68244	canton	AG	seed.ch_admin_municipality
+municipality	4083	Zufikon	Q64221	canton	AG	seed.ch_admin_municipality
+municipality	4084	Islisberg	Q64929	canton	AG	seed.ch_admin_municipality
+municipality	4091	Auenstein	Q64504	canton	AG	seed.ch_admin_municipality
+municipality	4092	Birr	Q64411	canton	AG	seed.ch_admin_municipality
+municipality	4093	Birrhard	Q64987	canton	AG	seed.ch_admin_municipality
+municipality	4095	Brugg	Q64099	canton	AG	seed.ch_admin_municipality
+municipality	4099	Habsburg	Q64131	canton	AG	seed.ch_admin_municipality
+municipality	4100	Hausen (AG)	Q65497	canton	AG	seed.ch_admin_municipality
+municipality	4104	Lupfig	Q65336	canton	AG	seed.ch_admin_municipality
+municipality	4105	Mandach	Q66074	canton	AG	seed.ch_admin_municipality
+municipality	4106	Mönthal	Q66817	canton	AG	seed.ch_admin_municipality
+municipality	4107	Mülligen	Q65325	canton	AG	seed.ch_admin_municipality
+municipality	4110	Remigen	Q66738	canton	AG	seed.ch_admin_municipality
+municipality	4111	Riniken	Q66675	canton	AG	seed.ch_admin_municipality
+municipality	4112	Rüfenach	Q66728	canton	AG	seed.ch_admin_municipality
+municipality	4117	Thalheim (AG)	Q65907	canton	AG	seed.ch_admin_municipality
+municipality	4120	Veltheim (AG)	Q65142	canton	AG	seed.ch_admin_municipality
+municipality	4121	Villigen	Q65193	canton	AG	seed.ch_admin_municipality
+municipality	4123	Windisch	Q69208	canton	AG	seed.ch_admin_municipality
+municipality	4124	Bözberg	Q1020189	canton	AG	seed.ch_admin_municipality
+municipality	4125	Schinznach	Q237120	canton	AG	seed.ch_admin_municipality
+municipality	4131	Beinwil am See	Q65000	canton	AG	seed.ch_admin_municipality
+municipality	4132	Birrwil	Q64673	canton	AG	seed.ch_admin_municipality
+municipality	4134	Dürrenäsch	Q64979	canton	AG	seed.ch_admin_municipality
+municipality	4135	Gontenschwil	Q65333	canton	AG	seed.ch_admin_municipality
+municipality	4136	Holziken	Q65969	canton	AG	seed.ch_admin_municipality
+municipality	4137	Leimbach (AG)	Q65975	canton	AG	seed.ch_admin_municipality
+municipality	4138	Leutwil	Q65595	canton	AG	seed.ch_admin_municipality
+municipality	4139	Menziken	Q65309	canton	AG	seed.ch_admin_municipality
+municipality	4140	Oberkulm	Q65426	canton	AG	seed.ch_admin_municipality
+municipality	4141	Reinach (AG)	Q67507	canton	AG	seed.ch_admin_municipality
+municipality	4142	Schlossrued	Q65288	canton	AG	seed.ch_admin_municipality
+municipality	4143	Schmiedrued	Q65583	canton	AG	seed.ch_admin_municipality
+municipality	4144	Schöftland	Q65411	canton	AG	seed.ch_admin_municipality
+municipality	4145	Teufenthal (AG)	Q65182	canton	AG	seed.ch_admin_municipality
+municipality	4146	Unterkulm	Q65140	canton	AG	seed.ch_admin_municipality
+municipality	4147	Zetzwil	Q65188	canton	AG	seed.ch_admin_municipality
+municipality	4161	Eiken	Q66433	canton	AG	seed.ch_admin_municipality
+municipality	4163	Frick	Q66617	canton	AG	seed.ch_admin_municipality
+municipality	4164	Gansingen	Q67348	canton	AG	seed.ch_admin_municipality
+municipality	4165	Gipf-Oberfrick	Q66986	canton	AG	seed.ch_admin_municipality
+municipality	4169	Kaisten	Q67904	canton	AG	seed.ch_admin_municipality
+municipality	4170	Laufenburg	Q69191	canton	AG	seed.ch_admin_municipality
+municipality	4172	Münchwilen (AG)	Q70379	canton	AG	seed.ch_admin_municipality
+municipality	4173	Oberhof	Q66996	canton	AG	seed.ch_admin_municipality
+municipality	4175	Oeschgen	Q70085	canton	AG	seed.ch_admin_municipality
+municipality	4176	Schwaderloch	Q67340	canton	AG	seed.ch_admin_municipality
+municipality	4177	Sisseln	Q540871	canton	AG	seed.ch_admin_municipality
+municipality	4181	Wittnau	Q69058	canton	AG	seed.ch_admin_municipality
+municipality	4182	Wölflinswil	Q66442	canton	AG	seed.ch_admin_municipality
+municipality	4183	Zeihen	Q66657	canton	AG	seed.ch_admin_municipality
+municipality	4184	Mettauertal	Q70606	canton	AG	seed.ch_admin_municipality
+municipality	4185	Böztal	Q64520764	canton	AG	seed.ch_admin_municipality
+municipality	4186	Herznach-Ueken	Q110713110	canton	AG	seed.ch_admin_municipality
+municipality	4191	Ammerswil	Q65198	canton	AG	seed.ch_admin_municipality
+municipality	4192	Boniswil	Q64529	canton	AG	seed.ch_admin_municipality
+municipality	4193	Brunegg	Q64656	canton	AG	seed.ch_admin_municipality
+municipality	4194	Dintikon	Q65132	canton	AG	seed.ch_admin_municipality
+municipality	4195	Egliswil	Q65155	canton	AG	seed.ch_admin_municipality
+municipality	4196	Fahrwangen	Q64982	canton	AG	seed.ch_admin_municipality
+municipality	4197	Hallwil	Q65291	canton	AG	seed.ch_admin_municipality
+municipality	4198	Hendschiken	Q65319	canton	AG	seed.ch_admin_municipality
+municipality	4199	Holderbank (AG)	Q65627	canton	AG	seed.ch_admin_municipality
+municipality	4200	Hunzenschwil	Q65696	canton	AG	seed.ch_admin_municipality
+municipality	4201	Lenzburg	Q69433	canton	AG	seed.ch_admin_municipality
+municipality	4202	Meisterschwanden	Q65316	canton	AG	seed.ch_admin_municipality
+municipality	4203	Möriken-Wildegg	Q65227	canton	AG	seed.ch_admin_municipality
+municipality	4204	Niederlenz	Q64732	canton	AG	seed.ch_admin_municipality
+municipality	4205	Othmarsingen	Q65124	canton	AG	seed.ch_admin_municipality
+municipality	4206	Rupperswil	Q65306	canton	AG	seed.ch_admin_municipality
+municipality	4207	Schafisheim	Q65993	canton	AG	seed.ch_admin_municipality
+municipality	4208	Seengen	Q65004	canton	AG	seed.ch_admin_municipality
+municipality	4209	Seon	Q64563	canton	AG	seed.ch_admin_municipality
+municipality	4210	Staufen	Q65137	canton	AG	seed.ch_admin_municipality
+municipality	4221	Abtwil	Q69219	canton	AG	seed.ch_admin_municipality
+municipality	4222	Aristau	Q64752	canton	AG	seed.ch_admin_municipality
+municipality	4223	Auw	Q64420	canton	AG	seed.ch_admin_municipality
+municipality	4224	Beinwil (Freiamt)	Q65024	canton	AG	seed.ch_admin_municipality
+municipality	4226	Besenbüren	Q659378	canton	AG	seed.ch_admin_municipality
+municipality	4227	Bettwil	Q64415	canton	AG	seed.ch_admin_municipality
+municipality	4228	Boswil	Q65222	canton	AG	seed.ch_admin_municipality
+municipality	4229	Bünzen	Q64784	canton	AG	seed.ch_admin_municipality
+municipality	4230	Buttwil	Q64792	canton	AG	seed.ch_admin_municipality
+municipality	4231	Dietwil	Q64763	canton	AG	seed.ch_admin_municipality
+municipality	4232	Geltwil	Q65033	canton	AG	seed.ch_admin_municipality
+municipality	4233	Kallern	Q65052	canton	AG	seed.ch_admin_municipality
+municipality	4234	Merenschwand	Q64755	canton	AG	seed.ch_admin_municipality
+municipality	4235	Mühlau	Q64516	canton	AG	seed.ch_admin_municipality
+municipality	4236	Muri (AG)	Q69011	canton	AG	seed.ch_admin_municipality
+municipality	4237	Oberrüti	Q64771	canton	AG	seed.ch_admin_municipality
+municipality	4238	Rottenschwil	Q64433	canton	AG	seed.ch_admin_municipality
+municipality	4239	Sins	Q64372	canton	AG	seed.ch_admin_municipality
+municipality	4240	Waltenschwil	Q64242	canton	AG	seed.ch_admin_municipality
+municipality	4251	Hellikon	Q66686	canton	AG	seed.ch_admin_municipality
+municipality	4252	Kaiseraugst	Q69048	canton	AG	seed.ch_admin_municipality
+municipality	4253	Magden	Q66567	canton	AG	seed.ch_admin_municipality
+municipality	4254	Möhlin	Q69126	canton	AG	seed.ch_admin_municipality
+municipality	4255	Mumpf	Q66293	canton	AG	seed.ch_admin_municipality
+municipality	4256	Obermumpf	Q66287	canton	AG	seed.ch_admin_municipality
+municipality	4257	Olsberg	Q66511	canton	AG	seed.ch_admin_municipality
+municipality	4258	Rheinfelden	Q269667	canton	AG	seed.ch_admin_municipality
+municipality	4259	Schupfart	Q66314	canton	AG	seed.ch_admin_municipality
+municipality	4260	Stein (AG)	Q65914	canton	AG	seed.ch_admin_municipality
+municipality	4261	Wallbach	Q65909	canton	AG	seed.ch_admin_municipality
+municipality	4262	Wegenstetten	Q65889	canton	AG	seed.ch_admin_municipality
+municipality	4263	Zeiningen	Q65147	canton	AG	seed.ch_admin_municipality
+municipality	4264	Zuzgen	Q65918	canton	AG	seed.ch_admin_municipality
+municipality	4271	Aarburg	Q64165	canton	AG	seed.ch_admin_municipality
+municipality	4273	Bottenwil	Q64261	canton	AG	seed.ch_admin_municipality
+municipality	4274	Brittnau	Q64273	canton	AG	seed.ch_admin_municipality
+municipality	4275	Kirchleerau	Q64453	canton	AG	seed.ch_admin_municipality
+municipality	4276	Kölliken	Q68106	canton	AG	seed.ch_admin_municipality
+municipality	4277	Moosleerau	Q64398	canton	AG	seed.ch_admin_municipality
+municipality	4279	Murgenthal	Q64478	canton	AG	seed.ch_admin_municipality
+municipality	4280	Oftringen	Q68220	canton	AG	seed.ch_admin_municipality
+municipality	4281	Reitnau	Q64393	canton	AG	seed.ch_admin_municipality
+municipality	4282	Rothrist	Q64482	canton	AG	seed.ch_admin_municipality
+municipality	4283	Safenwil	Q64448	canton	AG	seed.ch_admin_municipality
+municipality	4284	Staffelbach	Q64239	canton	AG	seed.ch_admin_municipality
+municipality	4285	Strengelbach	Q64237	canton	AG	seed.ch_admin_municipality
+municipality	4286	Uerkheim	Q64376	canton	AG	seed.ch_admin_municipality
+municipality	4287	Vordemwald	Q64234	canton	AG	seed.ch_admin_municipality
+municipality	4288	Wiliberg	Q64250	canton	AG	seed.ch_admin_municipality
+municipality	4289	Zofingen	Q63986	canton	AG	seed.ch_admin_municipality
+municipality	4303	Böttstein	Q65002	canton	AG	seed.ch_admin_municipality
+municipality	4304	Döttingen	Q64787	canton	AG	seed.ch_admin_municipality
+municipality	4305	Endingen	Q69438	canton	AG	seed.ch_admin_municipality
+municipality	4306	Fisibach	Q66109	canton	AG	seed.ch_admin_municipality
+municipality	4307	Full-Reuenthal	Q66101	canton	AG	seed.ch_admin_municipality
+municipality	4309	Klingnau	Q67135	canton	AG	seed.ch_admin_municipality
+municipality	4310	Koblenz	Q69441	canton	AG	seed.ch_admin_municipality
+municipality	4311	Leibstadt	Q66347	canton	AG	seed.ch_admin_municipality
+municipality	4312	Lengnau (AG)	Q69429	canton	AG	seed.ch_admin_municipality
+municipality	4313	Leuggern	Q66718	canton	AG	seed.ch_admin_municipality
+municipality	4314	Mellikon	Q66047	canton	AG	seed.ch_admin_municipality
+municipality	4318	Schneisingen	Q64407	canton	AG	seed.ch_admin_municipality
+municipality	4319	Siglistorf	Q65729	canton	AG	seed.ch_admin_municipality
+municipality	4320	Tegerfelden	Q64255	canton	AG	seed.ch_admin_municipality
+municipality	4324	Zurzach	Q65246908	canton	AG	seed.ch_admin_municipality
+municipality	4401	Arbon	Q64156	canton	TG	seed.ch_admin_municipality
+municipality	4406	Dozwil	Q65407	canton	TG	seed.ch_admin_municipality
+municipality	4411	Egnach	Q65029	canton	TG	seed.ch_admin_municipality
+municipality	4416	Hefenhofen	Q66405	canton	TG	seed.ch_admin_municipality
+municipality	4421	Horn	Q66195	canton	TG	seed.ch_admin_municipality
+municipality	4426	Kesswil	Q69413	canton	TG	seed.ch_admin_municipality
+municipality	4431	Roggwil (TG)	Q65577	canton	TG	seed.ch_admin_municipality
+municipality	4436	Romanshorn	Q65125	canton	TG	seed.ch_admin_municipality
+municipality	4441	Salmsach	Q66652	canton	TG	seed.ch_admin_municipality
+municipality	4446	Sommeri	Q66641	canton	TG	seed.ch_admin_municipality
+municipality	4451	Uttwil	Q65634	canton	TG	seed.ch_admin_municipality
+municipality	4461	Amriswil	Q69768	canton	TG	seed.ch_admin_municipality
+municipality	4471	Bischofszell	Q64865	canton	TG	seed.ch_admin_municipality
+municipality	4476	Erlen	Q65439	canton	TG	seed.ch_admin_municipality
+municipality	4486	Hauptwil-Gottshaus	Q66307	canton	TG	seed.ch_admin_municipality
+municipality	4495	Hohentannen	Q66309	canton	TG	seed.ch_admin_municipality
+municipality	4501	Kradolf-Schönenberg	Q65830	canton	TG	seed.ch_admin_municipality
+municipality	4506	Sulgen	Q65971	canton	TG	seed.ch_admin_municipality
+municipality	4511	Zihlschlacht-Sitterdorf	Q65443	canton	TG	seed.ch_admin_municipality
+municipality	4536	Basadingen-Schlattingen	Q66711	canton	TG	seed.ch_admin_municipality
+municipality	4545	Diessenhofen	Q67128	canton	TG	seed.ch_admin_municipality
+municipality	4546	Schlatt (TG)	Q67358	canton	TG	seed.ch_admin_municipality
+municipality	4551	Aadorf	Q69131	canton	TG	seed.ch_admin_municipality
+municipality	4561	Felben-Wellhausen	Q64837	canton	TG	seed.ch_admin_municipality
+municipality	4566	Frauenfeld	Q68120	canton	TG	seed.ch_admin_municipality
+municipality	4571	Gachnang	Q64840	canton	TG	seed.ch_admin_municipality
+municipality	4590	Hüttlingen	Q65802	canton	TG	seed.ch_admin_municipality
+municipality	4591	Matzingen	Q64994	canton	TG	seed.ch_admin_municipality
+municipality	4601	Neunforn	Q65020	canton	TG	seed.ch_admin_municipality
+municipality	4606	Stettfurt	Q65828	canton	TG	seed.ch_admin_municipality
+municipality	4611	Thundorf	Q64847	canton	TG	seed.ch_admin_municipality
+municipality	4616	Uesslingen-Buch	Q65810	canton	TG	seed.ch_admin_municipality
+municipality	4621	Warth-Weiningen	Q68405	canton	TG	seed.ch_admin_municipality
+municipality	4641	Altnau	Q69237	canton	TG	seed.ch_admin_municipality
+municipality	4643	Bottighofen	Q65962	canton	TG	seed.ch_admin_municipality
+municipality	4646	Ermatingen	Q65127	canton	TG	seed.ch_admin_municipality
+municipality	4651	Gottlieben	Q66302	canton	TG	seed.ch_admin_municipality
+municipality	4656	Güttingen	Q66317	canton	TG	seed.ch_admin_municipality
+municipality	4666	Kemmental	Q65777	canton	TG	seed.ch_admin_municipality
+municipality	4671	Kreuzlingen	Q63905	canton	TG	seed.ch_admin_municipality
+municipality	4681	Langrickenbach	Q66312	canton	TG	seed.ch_admin_municipality
+municipality	4683	Lengwil	Q66289	canton	TG	seed.ch_admin_municipality
+municipality	4691	Münsterlingen	Q69233	canton	TG	seed.ch_admin_municipality
+municipality	4696	Tägerwilen	Q66188	canton	TG	seed.ch_admin_municipality
+municipality	4701	Wäldi	Q65991	canton	TG	seed.ch_admin_municipality
+municipality	4711	Affeltrangen	Q65800	canton	TG	seed.ch_admin_municipality
+municipality	4716	Bettwiesen	Q65823	canton	TG	seed.ch_admin_municipality
+municipality	4721	Bichelsee-Balterswil	Q65820	canton	TG	seed.ch_admin_municipality
+municipality	4723	Braunau	Q69702	canton	TG	seed.ch_admin_municipality
+municipality	4724	Eschlikon	Q65026	canton	TG	seed.ch_admin_municipality
+municipality	4726	Fischingen	Q65525	canton	TG	seed.ch_admin_municipality
+municipality	4741	Lommis	Q65014	canton	TG	seed.ch_admin_municipality
+municipality	4746	Münchwilen (TG)	Q69704	canton	TG	seed.ch_admin_municipality
+municipality	4751	Rickenbach (TG)	Q68440	canton	TG	seed.ch_admin_municipality
+municipality	4756	Schönholzerswilen	Q68442	canton	TG	seed.ch_admin_municipality
+municipality	4761	Sirnach	Q65797	canton	TG	seed.ch_admin_municipality
+municipality	4776	Tobel-Tägerschen	Q65818	canton	TG	seed.ch_admin_municipality
+municipality	4781	Wängi	Q68177	canton	TG	seed.ch_admin_municipality
+municipality	4786	Wilen (TG)	Q65765	canton	TG	seed.ch_admin_municipality
+municipality	4791	Wuppenau	Q65771	canton	TG	seed.ch_admin_municipality
+municipality	4801	Berlingen	Q65463	canton	TG	seed.ch_admin_municipality
+municipality	4806	Eschenz	Q65080	canton	TG	seed.ch_admin_municipality
+municipality	4811	Herdern	Q65761	canton	TG	seed.ch_admin_municipality
+municipality	4816	Homburg	Q67205	canton	TG	seed.ch_admin_municipality
+municipality	4821	Hüttwilen	Q65826	canton	TG	seed.ch_admin_municipality
+municipality	4826	Mammern	Q69956	canton	TG	seed.ch_admin_municipality
+municipality	4831	Müllheim	Q65471	canton	TG	seed.ch_admin_municipality
+municipality	4841	Pfyn	Q64843	canton	TG	seed.ch_admin_municipality
+municipality	4846	Raperswilen	Q65602	canton	TG	seed.ch_admin_municipality
+municipality	4851	Salenstein	Q66644	canton	TG	seed.ch_admin_municipality
+municipality	4864	Steckborn	Q67123	canton	TG	seed.ch_admin_municipality
+municipality	4871	Wagenhausen	Q65519	canton	TG	seed.ch_admin_municipality
+municipality	4881	Amlikon-Bissegg	Q65787	canton	TG	seed.ch_admin_municipality
+municipality	4891	Berg (TG)	Q67165	canton	TG	seed.ch_admin_municipality
+municipality	4901	Birwinken	Q65767	canton	TG	seed.ch_admin_municipality
+municipality	4911	Bürglen (TG)	Q65599	canton	TG	seed.ch_admin_municipality
+municipality	4921	Bussnang	Q65983	canton	TG	seed.ch_admin_municipality
+municipality	4941	Märstetten	Q64992	canton	TG	seed.ch_admin_municipality
+municipality	4946	Weinfelden	Q68258	canton	TG	seed.ch_admin_municipality
+municipality	4951	Wigoltingen	Q65834	canton	TG	seed.ch_admin_municipality
+municipality	5001	Arbedo-Castione	Q69788	canton	TI	seed.ch_admin_municipality
+municipality	5002	Bellinzona	Q64044	canton	TI	seed.ch_admin_municipality
+municipality	5003	Cadenazzo	Q69790	canton	TI	seed.ch_admin_municipality
+municipality	5009	Isone	Q69804	canton	TI	seed.ch_admin_municipality
+municipality	5010	Lumino	Q67670	canton	TI	seed.ch_admin_municipality
+municipality	5017	Sant'Antonino	Q67673	canton	TI	seed.ch_admin_municipality
+municipality	5048	Acquarossa	Q68358	canton	TI	seed.ch_admin_municipality
+municipality	5049	Blenio	Q68789	canton	TI	seed.ch_admin_municipality
+municipality	5050	Serravalle	Q70728	canton	TI	seed.ch_admin_municipality
+municipality	5061	Airolo	Q69265	canton	TI	seed.ch_admin_municipality
+municipality	5063	Bedretto	Q67035	canton	TI	seed.ch_admin_municipality
+municipality	5071	Dalpe	Q67756	canton	TI	seed.ch_admin_municipality
+municipality	5072	Faido	Q69673	canton	TI	seed.ch_admin_municipality
+municipality	5073	Giornico	Q67763	canton	TI	seed.ch_admin_municipality
+municipality	5076	Personico	Q68810	canton	TI	seed.ch_admin_municipality
+municipality	5077	Pollegio	Q67750	canton	TI	seed.ch_admin_municipality
+municipality	5079	Quinto	Q67501	canton	TI	seed.ch_admin_municipality
+municipality	5091	Ascona	Q63992	canton	TI	seed.ch_admin_municipality
+municipality	5096	Brione sopra Minusio	Q68794	canton	TI	seed.ch_admin_municipality
+municipality	5097	Brissago	Q69706	canton	TI	seed.ch_admin_municipality
+municipality	5108	Gordola	Q69671	canton	TI	seed.ch_admin_municipality
+municipality	5112	Lavertezzo	Q69684	canton	TI	seed.ch_admin_municipality
+municipality	5113	Locarno	Q11935	canton	TI	seed.ch_admin_municipality
+municipality	5115	Losone	Q67116	canton	TI	seed.ch_admin_municipality
+municipality	5117	Mergoscia	Q68772	canton	TI	seed.ch_admin_municipality
+municipality	5118	Minusio	Q69065	canton	TI	seed.ch_admin_municipality
+municipality	5120	Muralto	Q69961	canton	TI	seed.ch_admin_municipality
+municipality	5121	Orselina	Q68813	canton	TI	seed.ch_admin_municipality
+municipality	5125	Ronco sopra Ascona	Q68336	canton	TI	seed.ch_admin_municipality
+municipality	5131	Tenero-Contra	Q67745	canton	TI	seed.ch_admin_municipality
+municipality	5136	Onsernone	Q67664	canton	TI	seed.ch_admin_municipality
+municipality	5138	Cugnasco-Gerra	Q68843	canton	TI	seed.ch_admin_municipality
+municipality	5141	Agno	Q67109	canton	TI	seed.ch_admin_municipality
+municipality	5143	Aranno	Q68792	canton	TI	seed.ch_admin_municipality
+municipality	5144	Arogno	Q68449	canton	TI	seed.ch_admin_municipality
+municipality	5148	Bedano	Q68799	canton	TI	seed.ch_admin_municipality
+municipality	5151	Bioggio	Q68425	canton	TI	seed.ch_admin_municipality
+municipality	5154	Bissone	Q69269	canton	TI	seed.ch_admin_municipality
+municipality	5160	Brusino Arsizio	Q70120	canton	TI	seed.ch_admin_municipality
+municipality	5161	Cademario	Q68806	canton	TI	seed.ch_admin_municipality
+municipality	5162	Cadempino	Q67975	canton	TI	seed.ch_admin_municipality
+municipality	5167	Canobbio	Q68434	canton	TI	seed.ch_admin_municipality
+municipality	5171	Caslano	Q67270	canton	TI	seed.ch_admin_municipality
+municipality	5176	Comano	Q70133	canton	TI	seed.ch_admin_municipality
+municipality	5180	Cureglia	Q70148	canton	TI	seed.ch_admin_municipality
+municipality	5186	Grancia	Q67969	canton	TI	seed.ch_admin_municipality
+municipality	5187	Gravesano	Q69385	canton	TI	seed.ch_admin_municipality
+municipality	5189	Lamone	Q70030	canton	TI	seed.ch_admin_municipality
+municipality	5192	Lugano	Q7024	canton	TI	seed.ch_admin_municipality
+municipality	5193	Magliaso	Q70159	canton	TI	seed.ch_admin_municipality
+municipality	5194	Manno	Q67876	canton	TI	seed.ch_admin_municipality
+municipality	5196	Massagno	Q67055	canton	TI	seed.ch_admin_municipality
+municipality	5198	Melide	Q69981	canton	TI	seed.ch_admin_municipality
+municipality	5199	Mezzovico-Vira	Q70124	canton	TI	seed.ch_admin_municipality
+municipality	5203	Morcote	Q68224	canton	TI	seed.ch_admin_municipality
+municipality	5205	Muzzano	Q68796	canton	TI	seed.ch_admin_municipality
+municipality	5206	Neggio	Q70038	canton	TI	seed.ch_admin_municipality
+municipality	5208	Origlio	Q70334	canton	TI	seed.ch_admin_municipality
+municipality	5210	Paradiso	Q68205	canton	TI	seed.ch_admin_municipality
+municipality	5212	Ponte Capriasca	Q67733	canton	TI	seed.ch_admin_municipality
+municipality	5214	Porza	Q68808	canton	TI	seed.ch_admin_municipality
+municipality	5216	Pura	Q68195	canton	TI	seed.ch_admin_municipality
+municipality	5221	Savosa	Q67668	canton	TI	seed.ch_admin_municipality
+municipality	5225	Sorengo	Q69995	canton	TI	seed.ch_admin_municipality
+municipality	5226	Capriasca	Q69043	canton	TI	seed.ch_admin_municipality
+municipality	5227	Torricella-Taverne	Q68001	canton	TI	seed.ch_admin_municipality
+municipality	5230	Vernate	Q68825	canton	TI	seed.ch_admin_municipality
+municipality	5231	Vezia	Q70126	canton	TI	seed.ch_admin_municipality
+municipality	5233	Vico Morcote	Q70118	canton	TI	seed.ch_admin_municipality
+municipality	5236	Collina d'Oro	Q69062	canton	TI	seed.ch_admin_municipality
+municipality	5237	Alto Malcantone	Q67010	canton	TI	seed.ch_admin_municipality
+municipality	5238	Monteceneri	Q70633	canton	TI	seed.ch_admin_municipality
+municipality	5239	Tresa	Q104776479	canton	TI	seed.ch_admin_municipality
+municipality	5240	Val Mara	Q109211862	canton	TI	seed.ch_admin_municipality
+municipality	5242	Balerna	Q70141	canton	TI	seed.ch_admin_municipality
+municipality	5249	Castel San Pietro	Q67872	canton	TI	seed.ch_admin_municipality
+municipality	5250	Chiasso	Q68111	canton	TI	seed.ch_admin_municipality
+municipality	5251	Coldrerio	Q67738	canton	TI	seed.ch_admin_municipality
+municipality	5254	Mendrisio	Q69041	canton	TI	seed.ch_admin_municipality
+municipality	5257	Morbio Inferiore	Q70143	canton	TI	seed.ch_admin_municipality
+municipality	5260	Novazzano	Q67743	canton	TI	seed.ch_admin_municipality
+municipality	5263	Riva San Vitale	Q67130	canton	TI	seed.ch_admin_municipality
+municipality	5266	Stabio	Q67760	canton	TI	seed.ch_admin_municipality
+municipality	5268	Vacallo	Q67470	canton	TI	seed.ch_admin_municipality
+municipality	5269	Breggia	Q70629	canton	TI	seed.ch_admin_municipality
+municipality	5281	Biasca	Q67523	canton	TI	seed.ch_admin_municipality
+municipality	5287	Riviera	Q28000807	canton	TI	seed.ch_admin_municipality
+municipality	5304	Bosco/Gurin	Q70328	canton	TI	seed.ch_admin_municipality
+municipality	5307	Campo (Vallemaggia)	Q67864	canton	TI	seed.ch_admin_municipality
+municipality	5309	Cerentino	Q67965	canton	TI	seed.ch_admin_municipality
+municipality	5310	Cevio	Q67675	canton	TI	seed.ch_admin_municipality
+municipality	5315	Linescio	Q67989	canton	TI	seed.ch_admin_municipality
+municipality	5317	Maggia	Q67996	canton	TI	seed.ch_admin_municipality
+municipality	5323	Lavizzara	Q68005	canton	TI	seed.ch_admin_municipality
+municipality	5324	Avegno Gordevio	Q70603	canton	TI	seed.ch_admin_municipality
+municipality	5395	Lema	Q130372861	canton	TI	seed.ch_admin_municipality
+municipality	5396	Terre di Pedemonte	Q2405262	canton	TI	seed.ch_admin_municipality
+municipality	5397	Centovalli	Q70611	canton	TI	seed.ch_admin_municipality
+municipality	5398	Gambarogno	Q70234	canton	TI	seed.ch_admin_municipality
+municipality	5399	Verzasca	Q1684937	canton	TI	seed.ch_admin_municipality
+municipality	5401	Aigle	Q43195	canton	VD	seed.ch_admin_municipality
+municipality	5402	Bex	Q52261	canton	VD	seed.ch_admin_municipality
+municipality	5403	Chessel	Q52781	canton	VD	seed.ch_admin_municipality
+municipality	5404	Corbeyrier	Q57099	canton	VD	seed.ch_admin_municipality
+municipality	5405	Gryon	Q69522	canton	VD	seed.ch_admin_municipality
+municipality	5406	Lavey-Morcles	Q70250	canton	VD	seed.ch_admin_municipality
+municipality	5407	Leysin	Q69610	canton	VD	seed.ch_admin_municipality
+municipality	5408	Noville	Q70005	canton	VD	seed.ch_admin_municipality
+municipality	5409	Ollon	Q70115	canton	VD	seed.ch_admin_municipality
+municipality	5410	Ormont-Dessous	Q70227	canton	VD	seed.ch_admin_municipality
+municipality	5411	Ormont-Dessus	Q70082	canton	VD	seed.ch_admin_municipality
+municipality	5412	Rennaz	Q70214	canton	VD	seed.ch_admin_municipality
+municipality	5413	Roche (VD)	Q70224	canton	VD	seed.ch_admin_municipality
+municipality	5414	Villeneuve (VD)	Q69972	canton	VD	seed.ch_admin_municipality
+municipality	5415	Yvorne	Q70240	canton	VD	seed.ch_admin_municipality
+municipality	5422	Aubonne	Q43232	canton	VD	seed.ch_admin_municipality
+municipality	5423	Ballens	Q43240	canton	VD	seed.ch_admin_municipality
+municipality	5424	Berolle	Q52258	canton	VD	seed.ch_admin_municipality
+municipality	5425	Bière	Q52262	canton	VD	seed.ch_admin_municipality
+municipality	5426	Bougy-Villars	Q52272	canton	VD	seed.ch_admin_municipality
+municipality	5427	Féchy	Q70260	canton	VD	seed.ch_admin_municipality
+municipality	5428	Gimel	Q70245	canton	VD	seed.ch_admin_municipality
+municipality	5429	Longirod	Q70257	canton	VD	seed.ch_admin_municipality
+municipality	5430	Marchissy	Q68647	canton	VD	seed.ch_admin_municipality
+municipality	5431	Mollens (VD)	Q70553	canton	VD	seed.ch_admin_municipality
+municipality	5434	Saint-George	Q68634	canton	VD	seed.ch_admin_municipality
+municipality	5435	Saint-Livres	Q68749	canton	VD	seed.ch_admin_municipality
+municipality	5436	Saint-Oyens	Q68946	canton	VD	seed.ch_admin_municipality
+municipality	5437	Saubraz	Q68760	canton	VD	seed.ch_admin_municipality
+municipality	5451	Avenches	Q43236	canton	VD	seed.ch_admin_municipality
+municipality	5456	Cudrefin	Q70192	canton	VD	seed.ch_admin_municipality
+municipality	5458	Faoug	Q70559	canton	VD	seed.ch_admin_municipality
+municipality	5464	Vully-les-Lacs	Q70706	canton	VD	seed.ch_admin_municipality
+municipality	5471	Bettens	Q52259	canton	VD	seed.ch_admin_municipality
+municipality	5472	Bournens	Q52276	canton	VD	seed.ch_admin_municipality
+municipality	5473	Boussens	Q52278	canton	VD	seed.ch_admin_municipality
+municipality	5474	La Chaux (Cossonay)	Q52701	canton	VD	seed.ch_admin_municipality
+municipality	5475	Chavannes-le-Veyron	Q52706	canton	VD	seed.ch_admin_municipality
+municipality	5476	Chevilly	Q52785	canton	VD	seed.ch_admin_municipality
+municipality	5477	Cossonay	Q57111	canton	VD	seed.ch_admin_municipality
+municipality	5479	Cuarnens	Q68624	canton	VD	seed.ch_admin_municipality
+municipality	5480	Daillens	Q68892	canton	VD	seed.ch_admin_municipality
+municipality	5481	Dizy	Q68902	canton	VD	seed.ch_admin_municipality
+municipality	5482	Eclépens	Q70525	canton	VD	seed.ch_admin_municipality
+municipality	5483	Ferreyres	Q68500	canton	VD	seed.ch_admin_municipality
+municipality	5484	Gollion	Q70594	canton	VD	seed.ch_admin_municipality
+municipality	5485	Grancy	Q68638	canton	VD	seed.ch_admin_municipality
+municipality	5486	L'Isle	Q68387	canton	VD	seed.ch_admin_municipality
+municipality	5487	Lussery-Villars	Q70586	canton	VD	seed.ch_admin_municipality
+municipality	5488	Mauraz	Q70572	canton	VD	seed.ch_admin_municipality
+municipality	5489	Mex (VD)	Q70655	canton	VD	seed.ch_admin_municipality
+municipality	5490	Moiry	Q68758	canton	VD	seed.ch_admin_municipality
+municipality	5491	Mont-la-Ville	Q70547	canton	VD	seed.ch_admin_municipality
+municipality	5492	Montricher	Q68626	canton	VD	seed.ch_admin_municipality
+municipality	5493	Orny	Q68917	canton	VD	seed.ch_admin_municipality
+municipality	5495	Penthalaz	Q70659	canton	VD	seed.ch_admin_municipality
+municipality	5496	Penthaz	Q70653	canton	VD	seed.ch_admin_municipality
+municipality	5497	Pompaples	Q70675	canton	VD	seed.ch_admin_municipality
+municipality	5498	La Sarraz	Q70210	canton	VD	seed.ch_admin_municipality
+municipality	5499	Senarclens	Q70533	canton	VD	seed.ch_admin_municipality
+municipality	5501	Sullens	Q70537	canton	VD	seed.ch_admin_municipality
+municipality	5503	Vufflens-la-Ville	Q70540	canton	VD	seed.ch_admin_municipality
+municipality	5511	Assens	Q43225	canton	VD	seed.ch_admin_municipality
+municipality	5512	Bercher	Q52256	canton	VD	seed.ch_admin_municipality
+municipality	5514	Bottens	Q52271	canton	VD	seed.ch_admin_municipality
+municipality	5515	Bretigny-sur-Morrens	Q52287	canton	VD	seed.ch_admin_municipality
+municipality	5516	Cugy (VD)	Q68747	canton	VD	seed.ch_admin_municipality
+municipality	5518	Echallens	Q70714	canton	VD	seed.ch_admin_municipality
+municipality	5520	Essertines-sur-Yverdon	Q68735	canton	VD	seed.ch_admin_municipality
+municipality	5521	Etagnières	Q68739	canton	VD	seed.ch_admin_municipality
+municipality	5522	Fey	Q68915	canton	VD	seed.ch_admin_municipality
+municipality	5523	Froideville	Q68720	canton	VD	seed.ch_admin_municipality
+municipality	5527	Morrens (VD)	Q68940	canton	VD	seed.ch_admin_municipality
+municipality	5529	Oulens-sous-Echallens	Q70651	canton	VD	seed.ch_admin_municipality
+municipality	5530	Pailly	Q68840	canton	VD	seed.ch_admin_municipality
+municipality	5531	Penthéréaz	Q70645	canton	VD	seed.ch_admin_municipality
+municipality	5533	Poliez-Pittet	Q70578	canton	VD	seed.ch_admin_municipality
+municipality	5534	Rueyres	Q70641	canton	VD	seed.ch_admin_municipality
+municipality	5535	Saint-Barthélemy (VD)	Q68073	canton	VD	seed.ch_admin_municipality
+municipality	5537	Villars-le-Terroir	Q68644	canton	VD	seed.ch_admin_municipality
+municipality	5539	Vuarrens	Q68910	canton	VD	seed.ch_admin_municipality
+municipality	5540	Montilliez	Q70731	canton	VD	seed.ch_admin_municipality
+municipality	5541	Goumoëns	Q70741	canton	VD	seed.ch_admin_municipality
+municipality	5551	Bonvillars	Q52269	canton	VD	seed.ch_admin_municipality
+municipality	5552	Bullet	Q52293	canton	VD	seed.ch_admin_municipality
+municipality	5553	Champagne	Q52685	canton	VD	seed.ch_admin_municipality
+municipality	5554	Concise	Q57096	canton	VD	seed.ch_admin_municipality
+municipality	5555	Corcelles-près-Concise	Q57102	canton	VD	seed.ch_admin_municipality
+municipality	5556	Fiez	Q68861	canton	VD	seed.ch_admin_municipality
+municipality	5557	Fontaines-sur-Grandson	Q70551	canton	VD	seed.ch_admin_municipality
+municipality	5559	Giez	Q70661	canton	VD	seed.ch_admin_municipality
+municipality	5560	Grandevent	Q70687	canton	VD	seed.ch_admin_municipality
+municipality	5561	Grandson	Q70199	canton	VD	seed.ch_admin_municipality
+municipality	5562	Mauborget	Q70580	canton	VD	seed.ch_admin_municipality
+municipality	5563	Mutrux	Q68925	canton	VD	seed.ch_admin_municipality
+municipality	5564	Novalles	Q70649	canton	VD	seed.ch_admin_municipality
+municipality	5565	Onnens (VD)	Q70588	canton	VD	seed.ch_admin_municipality
+municipality	5566	Provence	Q70450	canton	VD	seed.ch_admin_municipality
+municipality	5568	Sainte-Croix	Q70090	canton	VD	seed.ch_admin_municipality
+municipality	5571	Tévenon	Q70726	canton	VD	seed.ch_admin_municipality
+municipality	5581	Belmont-sur-Lausanne	Q43254	canton	VD	seed.ch_admin_municipality
+municipality	5582	Cheseaux-sur-Lausanne	Q52773	canton	VD	seed.ch_admin_municipality
+municipality	5583	Crissier	Q57121	canton	VD	seed.ch_admin_municipality
+municipality	5584	Epalinges	Q69252	canton	VD	seed.ch_admin_municipality
+municipality	5585	Jouxtens-Mézery	Q70243	canton	VD	seed.ch_admin_municipality
+municipality	5586	Lausanne	Q807	canton	VD	seed.ch_admin_municipality
+municipality	5587	Le Mont-sur-Lausanne	Q70221	canton	VD	seed.ch_admin_municipality
+municipality	5588	Paudex	Q70248	canton	VD	seed.ch_admin_municipality
+municipality	5589	Prilly	Q69757	canton	VD	seed.ch_admin_municipality
+municipality	5590	Pully	Q69738	canton	VD	seed.ch_admin_municipality
+municipality	5591	Renens (VD)	Q69745	canton	VD	seed.ch_admin_municipality
+municipality	5592	Romanel-sur-Lausanne	Q70254	canton	VD	seed.ch_admin_municipality
+municipality	5601	Chexbres	Q52818	canton	VD	seed.ch_admin_municipality
+municipality	5604	Forel (Lavaux)	Q70565	canton	VD	seed.ch_admin_municipality
+municipality	5606	Lutry	Q69697	canton	VD	seed.ch_admin_municipality
+municipality	5607	Puidoux	Q70545	canton	VD	seed.ch_admin_municipality
+municipality	5609	Rivaz	Q70515	canton	VD	seed.ch_admin_municipality
+municipality	5610	Saint-Saphorin (Lavaux)	Q70535	canton	VD	seed.ch_admin_municipality
+municipality	5611	Savigny	Q70647	canton	VD	seed.ch_admin_municipality
+municipality	5613	Bourg-en-Lavaux	Q52274	canton	VD	seed.ch_admin_municipality
+municipality	5621	Aclens	Q30986	canton	VD	seed.ch_admin_municipality
+municipality	5622	Bremblens	Q52281	canton	VD	seed.ch_admin_municipality
+municipality	5623	Buchillon	Q52291	canton	VD	seed.ch_admin_municipality
+municipality	5624	Bussigny	Q52300	canton	VD	seed.ch_admin_municipality
+municipality	5627	Chavannes-près-Renens	Q52714	canton	VD	seed.ch_admin_municipality
+municipality	5628	Chigny	Q57086	canton	VD	seed.ch_admin_municipality
+municipality	5629	Clarmont	Q57088	canton	VD	seed.ch_admin_municipality
+municipality	5631	Denens	Q68489	canton	VD	seed.ch_admin_municipality
+municipality	5632	Denges	Q68671	canton	VD	seed.ch_admin_municipality
+municipality	5633	Echandens	Q68630	canton	VD	seed.ch_admin_municipality
+municipality	5634	Echichens	Q68742	canton	VD	seed.ch_admin_municipality
+municipality	5635	Ecublens (VD)	Q69716	canton	VD	seed.ch_admin_municipality
+municipality	5636	Etoy	Q70216	canton	VD	seed.ch_admin_municipality
+municipality	5637	Lavigny	Q68756	canton	VD	seed.ch_admin_municipality
+municipality	5638	Lonay	Q68068	canton	VD	seed.ch_admin_municipality
+municipality	5639	Lully (VD)	Q68930	canton	VD	seed.ch_admin_municipality
+municipality	5640	Lussy-sur-Morges	Q68737	canton	VD	seed.ch_admin_municipality
+municipality	5642	Morges	Q69401	canton	VD	seed.ch_admin_municipality
+municipality	5643	Préverenges	Q68711	canton	VD	seed.ch_admin_municipality
+municipality	5645	Romanel-sur-Morges	Q70332	canton	VD	seed.ch_admin_municipality
+municipality	5646	Saint-Prex	Q68063	canton	VD	seed.ch_admin_municipality
+municipality	5648	Saint-Sulpice (VD)	Q68019	canton	VD	seed.ch_admin_municipality
+municipality	5649	Tolochenaz	Q69398	canton	VD	seed.ch_admin_municipality
+municipality	5650	Vaux-sur-Morges	Q68836	canton	VD	seed.ch_admin_municipality
+municipality	5651	Villars-Sainte-Croix	Q68883	canton	VD	seed.ch_admin_municipality
+municipality	5652	Villars-sous-Yens	Q68724	canton	VD	seed.ch_admin_municipality
+municipality	5653	Vufflens-le-Château	Q69445	canton	VD	seed.ch_admin_municipality
+municipality	5654	Vullierens	Q68636	canton	VD	seed.ch_admin_municipality
+municipality	5655	Yens	Q68642	canton	VD	seed.ch_admin_municipality
+municipality	5656	Hautemorges	Q104776665	canton	VD	seed.ch_admin_municipality
+municipality	5661	Boulens	Q52273	canton	VD	seed.ch_admin_municipality
+municipality	5663	Bussy-sur-Moudon	Q52304	canton	VD	seed.ch_admin_municipality
+municipality	5665	Chavannes-sur-Moudon	Q52719	canton	VD	seed.ch_admin_municipality
+municipality	5669	Curtilles	Q68733	canton	VD	seed.ch_admin_municipality
+municipality	5671	Dompierre (VD)	Q68896	canton	VD	seed.ch_admin_municipality
+municipality	5673	Hermenches	Q68852	canton	VD	seed.ch_admin_municipality
+municipality	5674	Lovatens	Q68754	canton	VD	seed.ch_admin_municipality
+municipality	5675	Lucens	Q70110	canton	VD	seed.ch_admin_municipality
+municipality	5678	Moudon	Q70202	canton	VD	seed.ch_admin_municipality
+municipality	5680	Ogens	Q68908	canton	VD	seed.ch_admin_municipality
+municipality	5683	Prévonloup	Q70563	canton	VD	seed.ch_admin_municipality
+municipality	5684	Rossenges	Q68831	canton	VD	seed.ch_admin_municipality
+municipality	5688	Syens	Q68684	canton	VD	seed.ch_admin_municipality
+municipality	5690	Villars-le-Comte	Q70570	canton	VD	seed.ch_admin_municipality
+municipality	5692	Vucherens	Q70048	canton	VD	seed.ch_admin_municipality
+municipality	5693	Montanaire	Q585496	canton	VD	seed.ch_admin_municipality
+municipality	5701	Arnex-sur-Nyon	Q43206	canton	VD	seed.ch_admin_municipality
+municipality	5702	Arzier-Le Muids	Q43218	canton	VD	seed.ch_admin_municipality
+municipality	5703	Bassins	Q43243	canton	VD	seed.ch_admin_municipality
+municipality	5704	Begnins	Q43251	canton	VD	seed.ch_admin_municipality
+municipality	5705	Bogis-Bossey	Q52268	canton	VD	seed.ch_admin_municipality
+municipality	5706	Borex	Q52270	canton	VD	seed.ch_admin_municipality
+municipality	5707	Chavannes-de-Bogis	Q52702	canton	VD	seed.ch_admin_municipality
+municipality	5708	Chavannes-des-Bois	Q52703	canton	VD	seed.ch_admin_municipality
+municipality	5709	Chéserex	Q52777	canton	VD	seed.ch_admin_municipality
+municipality	5710	Coinsins	Q57091	canton	VD	seed.ch_admin_municipality
+municipality	5711	Commugny	Q57094	canton	VD	seed.ch_admin_municipality
+municipality	5712	Coppet	Q57097	canton	VD	seed.ch_admin_municipality
+municipality	5713	Crans (VD)	Q57115	canton	VD	seed.ch_admin_municipality
+municipality	5714	Crassier	Q57117	canton	VD	seed.ch_admin_municipality
+municipality	5715	Duillier	Q70389	canton	VD	seed.ch_admin_municipality
+municipality	5716	Eysins	Q69287	canton	VD	seed.ch_admin_municipality
+municipality	5717	Founex	Q69331	canton	VD	seed.ch_admin_municipality
+municipality	5718	Genolier	Q69290	canton	VD	seed.ch_admin_municipality
+municipality	5719	Gingins	Q69337	canton	VD	seed.ch_admin_municipality
+municipality	5720	Givrins	Q69315	canton	VD	seed.ch_admin_municipality
+municipality	5721	Gland	Q69300	canton	VD	seed.ch_admin_municipality
+municipality	5722	Grens	Q69285	canton	VD	seed.ch_admin_municipality
+municipality	5723	Mies	Q69329	canton	VD	seed.ch_admin_municipality
+municipality	5724	Nyon	Q64027	canton	VD	seed.ch_admin_municipality
+municipality	5725	Prangins	Q69293	canton	VD	seed.ch_admin_municipality
+municipality	5726	La Rippe	Q69309	canton	VD	seed.ch_admin_municipality
+municipality	5727	Saint-Cergue	Q69335	canton	VD	seed.ch_admin_municipality
+municipality	5728	Signy-Avenex	Q69324	canton	VD	seed.ch_admin_municipality
+municipality	5729	Tannay	Q69312	canton	VD	seed.ch_admin_municipality
+municipality	5730	Trélex	Q69318	canton	VD	seed.ch_admin_municipality
+municipality	5731	Le Vaud	Q69333	canton	VD	seed.ch_admin_municipality
+municipality	5732	Vich	Q69282	canton	VD	seed.ch_admin_municipality
+municipality	5741	L'Abergement	Q70597	canton	VD	seed.ch_admin_municipality
+municipality	5742	Agiez	Q43188	canton	VD	seed.ch_admin_municipality
+municipality	5743	Arnex-sur-Orbe	Q43212	canton	VD	seed.ch_admin_municipality
+municipality	5744	Ballaigues	Q43239	canton	VD	seed.ch_admin_municipality
+municipality	5745	Baulmes	Q43245	canton	VD	seed.ch_admin_municipality
+municipality	5746	Bavois	Q43248	canton	VD	seed.ch_admin_municipality
+municipality	5747	Bofflens	Q52267	canton	VD	seed.ch_admin_municipality
+municipality	5748	Bretonnières	Q52289	canton	VD	seed.ch_admin_municipality
+municipality	5749	Chavornay	Q52726	canton	VD	seed.ch_admin_municipality
+municipality	5750	Les Clées	Q57090	canton	VD	seed.ch_admin_municipality
+municipality	5752	Croy	Q70541	canton	VD	seed.ch_admin_municipality
+municipality	5754	Juriens	Q70490	canton	VD	seed.ch_admin_municipality
+municipality	5755	Lignerolle	Q70503	canton	VD	seed.ch_admin_municipality
+municipality	5756	Montcherand	Q68653	canton	VD	seed.ch_admin_municipality
+municipality	5757	Orbe	Q68213	canton	VD	seed.ch_admin_municipality
+municipality	5758	La Praz	Q70549	canton	VD	seed.ch_admin_municipality
+municipality	5759	Premier	Q70574	canton	VD	seed.ch_admin_municipality
+municipality	5760	Rances	Q70505	canton	VD	seed.ch_admin_municipality
+municipality	5761	Romainmôtier-Envy	Q70671	canton	VD	seed.ch_admin_municipality
+municipality	5762	Sergey	Q70555	canton	VD	seed.ch_admin_municipality
+municipality	5763	Valeyres-sous-Rances	Q70501	canton	VD	seed.ch_admin_municipality
+municipality	5764	Vallorbe	Q68587	canton	VD	seed.ch_admin_municipality
+municipality	5765	Vaulion	Q70665	canton	VD	seed.ch_admin_municipality
+municipality	5766	Vuiteboeuf	Q70498	canton	VD	seed.ch_admin_municipality
+municipality	5785	Corcelles-le-Jorat	Q57101	canton	VD	seed.ch_admin_municipality
+municipality	5790	Maracon	Q68640	canton	VD	seed.ch_admin_municipality
+municipality	5792	Montpreveyres	Q70617	canton	VD	seed.ch_admin_municipality
+municipality	5798	Ropraz	Q68904	canton	VD	seed.ch_admin_municipality
+municipality	5799	Servion	Q68649	canton	VD	seed.ch_admin_municipality
+municipality	5803	Vulliens	Q68628	canton	VD	seed.ch_admin_municipality
+municipality	5804	Jorat-Menthue	Q70701	canton	VD	seed.ch_admin_municipality
+municipality	5805	Oron	Q70734	canton	VD	seed.ch_admin_municipality
+municipality	5806	Jorat-Mézières	Q19544878	canton	VD	seed.ch_admin_municipality
+municipality	5812	Champtauroz	Q52690	canton	VD	seed.ch_admin_municipality
+municipality	5813	Chevroux	Q52803	canton	VD	seed.ch_admin_municipality
+municipality	5816	Corcelles-près-Payerne	Q57104	canton	VD	seed.ch_admin_municipality
+municipality	5817	Grandcour	Q70190	canton	VD	seed.ch_admin_municipality
+municipality	5819	Henniez	Q68873	canton	VD	seed.ch_admin_municipality
+municipality	5821	Missy	Q70679	canton	VD	seed.ch_admin_municipality
+municipality	5822	Payerne	Q69525	canton	VD	seed.ch_admin_municipality
+municipality	5827	Trey	Q68879	canton	VD	seed.ch_admin_municipality
+municipality	5828	Treytorrens (Payerne)	Q70673	canton	VD	seed.ch_admin_municipality
+municipality	5830	Villarzel	Q70591	canton	VD	seed.ch_admin_municipality
+municipality	5831	Valbroye	Q70689	canton	VD	seed.ch_admin_municipality
+municipality	5841	Château-d'Oex	Q52699	canton	VD	seed.ch_admin_municipality
+municipality	5842	Rossinière	Q67694	canton	VD	seed.ch_admin_municipality
+municipality	5843	Rougemont	Q70000	canton	VD	seed.ch_admin_municipality
+municipality	5851	Allaman	Q43201	canton	VD	seed.ch_admin_municipality
+municipality	5852	Bursinel	Q52296	canton	VD	seed.ch_admin_municipality
+municipality	5853	Bursins	Q52298	canton	VD	seed.ch_admin_municipality
+municipality	5854	Burtigny	Q52299	canton	VD	seed.ch_admin_municipality
+municipality	5855	Dully	Q68622	canton	VD	seed.ch_admin_municipality
+municipality	5856	Essertines-sur-Rolle	Q68674	canton	VD	seed.ch_admin_municipality
+municipality	5857	Gilly	Q70383	canton	VD	seed.ch_admin_municipality
+municipality	5858	Luins	Q68690	canton	VD	seed.ch_admin_municipality
+municipality	5859	Mont-sur-Rolle	Q68762	canton	VD	seed.ch_admin_municipality
+municipality	5860	Perroy	Q68076	canton	VD	seed.ch_admin_municipality
+municipality	5861	Rolle	Q69570	canton	VD	seed.ch_admin_municipality
+municipality	5862	Tartegnin	Q70065	canton	VD	seed.ch_admin_municipality
+municipality	5863	Vinzel	Q68651	canton	VD	seed.ch_admin_municipality
+municipality	5871	L'Abbaye	Q69520	canton	VD	seed.ch_admin_municipality
+municipality	5872	Le Chenit	Q52743	canton	VD	seed.ch_admin_municipality
+municipality	5873	Le Lieu	Q69546	canton	VD	seed.ch_admin_municipality
+municipality	5882	Chardonne	Q52698	canton	VD	seed.ch_admin_municipality
+municipality	5883	Corseaux	Q57108	canton	VD	seed.ch_admin_municipality
+municipality	5884	Corsier-sur-Vevey	Q57110	canton	VD	seed.ch_admin_municipality
+municipality	5885	Jongny	Q69583	canton	VD	seed.ch_admin_municipality
+municipality	5886	Montreux	Q69354	canton	VD	seed.ch_admin_municipality
+municipality	5889	La Tour-de-Peilz	Q69721	canton	VD	seed.ch_admin_municipality
+municipality	5890	Vevey	Q68160	canton	VD	seed.ch_admin_municipality
+municipality	5891	Veytaux	Q68071	canton	VD	seed.ch_admin_municipality
+municipality	5892	Blonay - Saint-Légier	Q106804643	canton	VD	seed.ch_admin_municipality
+municipality	5902	Belmont-sur-Yverdon	Q43256	canton	VD	seed.ch_admin_municipality
+municipality	5903	Bioley-Magnoux	Q52263	canton	VD	seed.ch_admin_municipality
+municipality	5904	Chamblon	Q52678	canton	VD	seed.ch_admin_municipality
+municipality	5905	Champvent	Q52694	canton	VD	seed.ch_admin_municipality
+municipality	5907	Chavannes-le-Chêne	Q52704	canton	VD	seed.ch_admin_municipality
+municipality	5908	Chêne-Pâquier	Q52737	canton	VD	seed.ch_admin_municipality
+municipality	5909	Cheseaux-Noréaz	Q52752	canton	VD	seed.ch_admin_municipality
+municipality	5910	Cronay	Q57122	canton	VD	seed.ch_admin_municipality
+municipality	5911	Cuarny	Q68834	canton	VD	seed.ch_admin_municipality
+municipality	5912	Démoret	Q68875	canton	VD	seed.ch_admin_municipality
+municipality	5913	Donneloye	Q70584	canton	VD	seed.ch_admin_municipality
+municipality	5914	Ependes (VD)	Q69403	canton	VD	seed.ch_admin_municipality
+municipality	5919	Mathod	Q68752	canton	VD	seed.ch_admin_municipality
+municipality	5921	Molondin	Q70568	canton	VD	seed.ch_admin_municipality
+municipality	5922	Montagny-près-Yverdon	Q68669	canton	VD	seed.ch_admin_municipality
+municipality	5923	Oppens	Q70663	canton	VD	seed.ch_admin_municipality
+municipality	5924	Orges	Q70561	canton	VD	seed.ch_admin_municipality
+municipality	5925	Orzens	Q70667	canton	VD	seed.ch_admin_municipality
+municipality	5926	Pomy	Q70600	canton	VD	seed.ch_admin_municipality
+municipality	5928	Rovray	Q70685	canton	VD	seed.ch_admin_municipality
+municipality	5929	Suchy	Q68943	canton	VD	seed.ch_admin_municipality
+municipality	5930	Suscévaz	Q70017	canton	VD	seed.ch_admin_municipality
+municipality	5931	Treycovagnes	Q68718	canton	VD	seed.ch_admin_municipality
+municipality	5932	Ursins	Q70046	canton	VD	seed.ch_admin_municipality
+municipality	5933	Valeyres-sous-Montagny	Q70582	canton	VD	seed.ch_admin_municipality
+municipality	5934	Valeyres-sous-Ursins	Q68680	canton	VD	seed.ch_admin_municipality
+municipality	5935	Villars-Epeney	Q68745	canton	VD	seed.ch_admin_municipality
+municipality	5937	Vugelles-La Mothe	Q70627	canton	VD	seed.ch_admin_municipality
+municipality	5938	Yverdon-les-Bains	Q63946	canton	VD	seed.ch_admin_municipality
+municipality	5939	Yvonand	Q68492	canton	VD	seed.ch_admin_municipality
+municipality	6002	Brig-Glis	Q15583	canton	VS	seed.ch_admin_municipality
+municipality	6004	Eggerberg	Q67486	canton	VS	seed.ch_admin_municipality
+municipality	6007	Naters	Q67040	canton	VS	seed.ch_admin_municipality
+municipality	6008	Ried-Brig	Q67474	canton	VS	seed.ch_admin_municipality
+municipality	6009	Simplon	Q69194	canton	VS	seed.ch_admin_municipality
+municipality	6010	Termen	Q67151	canton	VS	seed.ch_admin_municipality
+municipality	6011	Zwischbergen	Q68087	canton	VS	seed.ch_admin_municipality
+municipality	6021	Ardon	Q69556	canton	VS	seed.ch_admin_municipality
+municipality	6022	Chamoson	Q70178	canton	VS	seed.ch_admin_municipality
+municipality	6023	Conthey	Q69563	canton	VS	seed.ch_admin_municipality
+municipality	6024	Nendaz	Q69540	canton	VS	seed.ch_admin_municipality
+municipality	6025	Vétroz	Q69515	canton	VS	seed.ch_admin_municipality
+municipality	6032	Bourg-Saint-Pierre	Q70157	canton	VS	seed.ch_admin_municipality
+municipality	6033	Liddes	Q68899	canton	VS	seed.ch_admin_municipality
+municipality	6034	Orsières	Q70206	canton	VS	seed.ch_admin_municipality
+municipality	6035	Sembrancher	Q70101	canton	VS	seed.ch_admin_municipality
+municipality	6037	Val de Bagnes	Q99519700	canton	VS	seed.ch_admin_municipality
+municipality	6052	Bellwald	Q68466	canton	VS	seed.ch_admin_municipality
+municipality	6054	Binn	Q68471	canton	VS	seed.ch_admin_municipality
+municipality	6056	Ernen	Q70347	canton	VS	seed.ch_admin_municipality
+municipality	6057	Fiesch	Q68051	canton	VS	seed.ch_admin_municipality
+municipality	6058	Fieschertal	Q70716	canton	VS	seed.ch_admin_municipality
+municipality	6061	Lax	Q70363	canton	VS	seed.ch_admin_municipality
+municipality	6076	Obergoms	Q70614	canton	VS	seed.ch_admin_municipality
+municipality	6077	Goms	Q26836831	canton	VS	seed.ch_admin_municipality
+municipality	6082	Ayent	Q70167	canton	VS	seed.ch_admin_municipality
+municipality	6083	Evolène	Q69551	canton	VS	seed.ch_admin_municipality
+municipality	6084	Hérémence	Q69553	canton	VS	seed.ch_admin_municipality
+municipality	6087	Saint-Martin (VS)	Q70395	canton	VS	seed.ch_admin_municipality
+municipality	6089	Vex	Q67724	canton	VS	seed.ch_admin_municipality
+municipality	6090	Mont-Noble	Q70704	canton	VS	seed.ch_admin_municipality
+municipality	6101	Agarn	Q66913	canton	VS	seed.ch_admin_municipality
+municipality	6102	Albinen	Q69889	canton	VS	seed.ch_admin_municipality
+municipality	6104	Ergisch	Q68609	canton	VS	seed.ch_admin_municipality
+municipality	6109	Inden	Q67789	canton	VS	seed.ch_admin_municipality
+municipality	6110	Leuk	Q69590	canton	VS	seed.ch_admin_municipality
+municipality	6111	Leukerbad	Q69436	canton	VS	seed.ch_admin_municipality
+municipality	6112	Oberems	Q67254	canton	VS	seed.ch_admin_municipality
+municipality	6113	Salgesch	Q70317	canton	VS	seed.ch_admin_municipality
+municipality	6116	Varen	Q67482	canton	VS	seed.ch_admin_municipality
+municipality	6117	Guttet-Feschel	Q69988	canton	VS	seed.ch_admin_municipality
+municipality	6118	Gampel-Bratsch	Q70639	canton	VS	seed.ch_admin_municipality
+municipality	6119	Turtmann-Unterems	Q2363869	canton	VS	seed.ch_admin_municipality
+municipality	6131	Bovernier	Q70145	canton	VS	seed.ch_admin_municipality
+municipality	6133	Fully	Q70137	canton	VS	seed.ch_admin_municipality
+municipality	6134	Isérables	Q69577	canton	VS	seed.ch_admin_municipality
+municipality	6135	Leytron	Q68849	canton	VS	seed.ch_admin_municipality
+municipality	6136	Martigny	Q68956	canton	VS	seed.ch_admin_municipality
+municipality	6137	Martigny-Combe	Q68871	canton	VS	seed.ch_admin_municipality
+municipality	6139	Riddes	Q68504	canton	VS	seed.ch_admin_municipality
+municipality	6140	Saillon	Q70710	canton	VS	seed.ch_admin_municipality
+municipality	6141	Saxon	Q69572	canton	VS	seed.ch_admin_municipality
+municipality	6142	Trient	Q68856	canton	VS	seed.ch_admin_municipality
+municipality	6151	Champéry	Q70099	canton	VS	seed.ch_admin_municipality
+municipality	6152	Collombey-Muraz	Q70165	canton	VS	seed.ch_admin_municipality
+municipality	6153	Monthey	Q64051	canton	VS	seed.ch_admin_municipality
+municipality	6154	Port-Valais	Q70393	canton	VS	seed.ch_admin_municipality
+municipality	6155	Saint-Gingolph	Q70528	canton	VS	seed.ch_admin_municipality
+municipality	6156	Troistorrents	Q68823	canton	VS	seed.ch_admin_municipality
+municipality	6157	Val-d'Illiez	Q68528	canton	VS	seed.ch_admin_municipality
+municipality	6158	Vionnaz	Q69549	canton	VS	seed.ch_admin_municipality
+municipality	6159	Vouvry	Q68889	canton	VS	seed.ch_admin_municipality
+municipality	6172	Bister	Q70351	canton	VS	seed.ch_admin_municipality
+municipality	6173	Bitsch	Q68046	canton	VS	seed.ch_admin_municipality
+municipality	6177	Grengiols	Q67332	canton	VS	seed.ch_admin_municipality
+municipality	6181	Riederalp	Q70321	canton	VS	seed.ch_admin_municipality
+municipality	6191	Ausserberg	Q68022	canton	VS	seed.ch_admin_municipality
+municipality	6192	Blatten	Q67496	canton	VS	seed.ch_admin_municipality
+municipality	6193	Bürchen	Q70712	canton	VS	seed.ch_admin_municipality
+municipality	6194	Eischoll	Q70391	canton	VS	seed.ch_admin_municipality
+municipality	6195	Ferden	Q68033	canton	VS	seed.ch_admin_municipality
+municipality	6197	Kippel	Q67691	canton	VS	seed.ch_admin_municipality
+municipality	6198	Niedergesteln	Q70161	canton	VS	seed.ch_admin_municipality
+municipality	6199	Raron	Q69786	canton	VS	seed.ch_admin_municipality
+municipality	6201	Unterbäch	Q68215	canton	VS	seed.ch_admin_municipality
+municipality	6202	Wiler (Lötschen)	Q67489	canton	VS	seed.ch_admin_municipality
+municipality	6203	Mörel-Filet	Q70643	canton	VS	seed.ch_admin_municipality
+municipality	6204	Steg-Hohtenn	Q70624	canton	VS	seed.ch_admin_municipality
+municipality	6205	Bettmeralp	Q15107547	canton	VS	seed.ch_admin_municipality
+municipality	6211	Collonges	Q68846	canton	VS	seed.ch_admin_municipality
+municipality	6212	Dorénaz	Q68487	canton	VS	seed.ch_admin_municipality
+municipality	6213	Evionnaz	Q70163	canton	VS	seed.ch_admin_municipality
+municipality	6214	Finhaut	Q68877	canton	VS	seed.ch_admin_municipality
+municipality	6215	Massongex	Q70184	canton	VS	seed.ch_admin_municipality
+municipality	6217	Saint-Maurice	Q69545	canton	VS	seed.ch_admin_municipality
+municipality	6218	Salvan	Q68912	canton	VS	seed.ch_admin_municipality
+municipality	6219	Vernayaz	Q68713	canton	VS	seed.ch_admin_municipality
+municipality	6220	Vérossaz	Q68936	canton	VS	seed.ch_admin_municipality
+municipality	6232	Chalais	Q70736	canton	VS	seed.ch_admin_municipality
+municipality	6235	Chippis	Q69986	canton	VS	seed.ch_admin_municipality
+municipality	6238	Grône	Q70151	canton	VS	seed.ch_admin_municipality
+municipality	6239	Icogne	Q69535	canton	VS	seed.ch_admin_municipality
+municipality	6240	Lens	Q70361	canton	VS	seed.ch_admin_municipality
+municipality	6246	Saint-Léonard	Q68222	canton	VS	seed.ch_admin_municipality
+municipality	6248	Sierre	Q68297	canton	VS	seed.ch_admin_municipality
+municipality	6252	Anniviers	Q70336	canton	VS	seed.ch_admin_municipality
+municipality	6253	Crans-Montana	Q688557	canton	VS	seed.ch_admin_municipality
+municipality	6254	Noble-Contrée	Q99519702	canton	VS	seed.ch_admin_municipality
+municipality	6261	Arbaz	Q68113	canton	VS	seed.ch_admin_municipality
+municipality	6263	Grimisuat	Q69579	canton	VS	seed.ch_admin_municipality
+municipality	6265	Savièse	Q69558	canton	VS	seed.ch_admin_municipality
+municipality	6266	Sion	Q68136	canton	VS	seed.ch_admin_municipality
+municipality	6267	Veysonnaz	Q70112	canton	VS	seed.ch_admin_municipality
+municipality	6281	Baltschieder	Q70154	canton	VS	seed.ch_admin_municipality
+municipality	6282	Eisten	Q67088	canton	VS	seed.ch_admin_municipality
+municipality	6283	Embd	Q68026	canton	VS	seed.ch_admin_municipality
+municipality	6285	Grächen	Q70097	canton	VS	seed.ch_admin_municipality
+municipality	6286	Lalden	Q70169	canton	VS	seed.ch_admin_municipality
+municipality	6287	Randa	Q67720	canton	VS	seed.ch_admin_municipality
+municipality	6288	Saas-Almagell	Q68037	canton	VS	seed.ch_admin_municipality
+municipality	6289	Saas-Balen	Q70304	canton	VS	seed.ch_admin_municipality
+municipality	6290	Saas-Fee	Q69693	canton	VS	seed.ch_admin_municipality
+municipality	6291	Saas-Grund	Q70032	canton	VS	seed.ch_admin_municipality
+municipality	6292	St. Niklaus	Q68464	canton	VS	seed.ch_admin_municipality
+municipality	6293	Stalden (VS)	Q68460	canton	VS	seed.ch_admin_municipality
+municipality	6294	Staldenried	Q70349	canton	VS	seed.ch_admin_municipality
+municipality	6295	Täsch	Q69305	canton	VS	seed.ch_admin_municipality
+municipality	6296	Törbel	Q68469	canton	VS	seed.ch_admin_municipality
+municipality	6297	Visp	Q64147	canton	VS	seed.ch_admin_municipality
+municipality	6298	Visperterminen	Q70387	canton	VS	seed.ch_admin_municipality
+municipality	6299	Zeneggen	Q70359	canton	VS	seed.ch_admin_municipality
+municipality	6300	Zermatt	Q27494	canton	VS	seed.ch_admin_municipality
+municipality	6404	Boudry	Q69507	canton	NE	seed.ch_admin_municipality
+municipality	6408	Cortaillod	Q70308	canton	NE	seed.ch_admin_municipality
+municipality	6413	Rochefort	Q70219	canton	NE	seed.ch_admin_municipality
+municipality	6416	Milvignes	Q251727	canton	NE	seed.ch_admin_municipality
+municipality	6417	La Grande Béroche	Q30743849	canton	NE	seed.ch_admin_municipality
+municipality	6421	La Chaux-de-Fonds	Q68124	canton	NE	seed.ch_admin_municipality
+municipality	6422	Les Planchettes	Q68540	canton	NE	seed.ch_admin_municipality
+municipality	6423	La Sagne	Q68532	canton	NE	seed.ch_admin_municipality
+municipality	6432	La Brévine	Q68838	canton	NE	seed.ch_admin_municipality
+municipality	6433	Brot-Plamboz	Q70519	canton	NE	seed.ch_admin_municipality
+municipality	6434	Le Cerneux-Péquignot	Q70456	canton	NE	seed.ch_admin_municipality
+municipality	6435	La Chaux-du-Milieu	Q70436	canton	NE	seed.ch_admin_municipality
+municipality	6436	Le Locle	Q64093	canton	NE	seed.ch_admin_municipality
+municipality	6437	Les Ponts-de-Martel	Q68617	canton	NE	seed.ch_admin_municipality
+municipality	6451	Cornaux	Q70479	canton	NE	seed.ch_admin_municipality
+municipality	6452	Cressier (NE)	Q70139	canton	NE	seed.ch_admin_municipality
+municipality	6455	Le Landeron	Q70204	canton	NE	seed.ch_admin_municipality
+municipality	6456	Lignières	Q68706	canton	NE	seed.ch_admin_municipality
+municipality	6458	Neuchâtel	Q69345	canton	NE	seed.ch_admin_municipality
+municipality	6487	Val-de-Ruz	Q2507659	canton	NE	seed.ch_admin_municipality
+municipality	6504	La Côte-aux-Fées	Q68526	canton	NE	seed.ch_admin_municipality
+municipality	6511	Les Verrières	Q69807	canton	NE	seed.ch_admin_municipality
+municipality	6512	Val-de-Travers	Q70526	canton	NE	seed.ch_admin_municipality
+municipality	6513	Laténa	Q123995545	canton	NE	seed.ch_admin_municipality
+municipality	6601	Aire-la-Ville	Q65280	canton	GE	seed.ch_admin_municipality
+municipality	6602	Anières	Q69842	canton	GE	seed.ch_admin_municipality
+municipality	6603	Avully	Q69200	canton	GE	seed.ch_admin_municipality
+municipality	6604	Avusy	Q68174	canton	GE	seed.ch_admin_municipality
+municipality	6605	Bardonnex	Q68191	canton	GE	seed.ch_admin_municipality
+municipality	6606	Bellevue	Q69836	canton	GE	seed.ch_admin_municipality
+municipality	6607	Bernex	Q65259	canton	GE	seed.ch_admin_municipality
+municipality	6608	Carouge (GE)	Q69364	canton	GE	seed.ch_admin_municipality
+municipality	6609	Cartigny	Q65531	canton	GE	seed.ch_admin_municipality
+municipality	6610	Céligny	Q69410	canton	GE	seed.ch_admin_municipality
+municipality	6611	Chancy	Q69811	canton	GE	seed.ch_admin_municipality
+municipality	6612	Chêne-Bougeries	Q69530	canton	GE	seed.ch_admin_municipality
+municipality	6613	Chêne-Bourg	Q69035	canton	GE	seed.ch_admin_municipality
+municipality	6614	Choulex	Q68180	canton	GE	seed.ch_admin_municipality
+municipality	6615	Collex-Bossy	Q65691	canton	GE	seed.ch_admin_municipality
+municipality	6616	Collonge-Bellerive	Q69037	canton	GE	seed.ch_admin_municipality
+municipality	6617	Cologny	Q69245	canton	GE	seed.ch_admin_municipality
+municipality	6618	Confignon	Q65277	canton	GE	seed.ch_admin_municipality
+municipality	6619	Corsier (GE)	Q65643	canton	GE	seed.ch_admin_municipality
+municipality	6620	Dardagny	Q69471	canton	GE	seed.ch_admin_municipality
+municipality	6621	Genève	Q71	canton	GE	seed.ch_admin_municipality
+municipality	6622	Genthod	Q48923	canton	GE	seed.ch_admin_municipality
+municipality	6623	Le Grand-Saconnex	Q69714	canton	GE	seed.ch_admin_municipality
+municipality	6624	Gy	Q66504	canton	GE	seed.ch_admin_municipality
+municipality	6625	Hermance	Q66200	canton	GE	seed.ch_admin_municipality
+municipality	6626	Jussy	Q65538	canton	GE	seed.ch_admin_municipality
+municipality	6627	Laconnex	Q69848	canton	GE	seed.ch_admin_municipality
+municipality	6628	Lancy	Q64065	canton	GE	seed.ch_admin_municipality
+municipality	6629	Meinier	Q69845	canton	GE	seed.ch_admin_municipality
+municipality	6630	Meyrin	Q68230	canton	GE	seed.ch_admin_municipality
+municipality	6631	Onex	Q68240	canton	GE	seed.ch_admin_municipality
+municipality	6632	Perly-Certoux	Q65516	canton	GE	seed.ch_admin_municipality
+municipality	6633	Plan-les-Ouates	Q65273	canton	GE	seed.ch_admin_municipality
+municipality	6634	Pregny-Chambésy	Q69822	canton	GE	seed.ch_admin_municipality
+municipality	6635	Presinge	Q69839	canton	GE	seed.ch_admin_municipality
+municipality	6636	Puplinge	Q69832	canton	GE	seed.ch_admin_municipality
+municipality	6637	Russin	Q69826	canton	GE	seed.ch_admin_municipality
+municipality	6638	Satigny	Q69451	canton	GE	seed.ch_admin_municipality
+municipality	6639	Soral	Q65535	canton	GE	seed.ch_admin_municipality
+municipality	6640	Thônex	Q68201	canton	GE	seed.ch_admin_municipality
+municipality	6641	Troinex	Q69817	canton	GE	seed.ch_admin_municipality
+municipality	6642	Vandoeuvres	Q65522	canton	GE	seed.ch_admin_municipality
+municipality	6643	Vernier	Q63922	canton	GE	seed.ch_admin_municipality
+municipality	6644	Versoix	Q63979	canton	GE	seed.ch_admin_municipality
+municipality	6645	Veyrier	Q69587	canton	GE	seed.ch_admin_municipality
+municipality	6702	Boécourt	Q69942	canton	JU	seed.ch_admin_municipality
+municipality	6703	Bourrignon	Q70063	canton	JU	seed.ch_admin_municipality
+municipality	6704	Châtillon (JU)	Q68803	canton	JU	seed.ch_admin_municipality
+municipality	6706	Courchapoix	Q69852	canton	JU	seed.ch_admin_municipality
+municipality	6708	Courrendlin	Q69	canton	JU	seed.ch_admin_municipality
+municipality	6709	Courroux	Q70095	canton	JU	seed.ch_admin_municipality
+municipality	6710	Courtételle	Q67463	canton	JU	seed.ch_admin_municipality
+municipality	6711	Delémont	Q63896	canton	JU	seed.ch_admin_municipality
+municipality	6712	Develier	Q68520	canton	JU	seed.ch_admin_municipality
+municipality	6713	Ederswiler	Q69924	canton	JU	seed.ch_admin_municipality
+municipality	6715	Mervelier	Q68509	canton	JU	seed.ch_admin_municipality
+municipality	6716	Mettembert	Q68017	canton	JU	seed.ch_admin_municipality
+municipality	6718	Movelier	Q68511	canton	JU	seed.ch_admin_municipality
+municipality	6719	Pleigne	Q68515	canton	JU	seed.ch_admin_municipality
+municipality	6721	Rossemaison	Q68517	canton	JU	seed.ch_admin_municipality
+municipality	6722	Saulcy	Q68083	canton	JU	seed.ch_admin_municipality
+municipality	6724	Soyhières	Q70414	canton	JU	seed.ch_admin_municipality
+municipality	6729	Haute-Sorne	Q5682949	canton	JU	seed.ch_admin_municipality
+municipality	6730	Val Terbi	Q3553411	canton	JU	seed.ch_admin_municipality
+municipality	6741	Le Bémont (JU)	Q68502	canton	JU	seed.ch_admin_municipality
+municipality	6742	Les Bois	Q70232	canton	JU	seed.ch_admin_municipality
+municipality	6743	Les Breuleux	Q68086	canton	JU	seed.ch_admin_municipality
+municipality	6745	Les Enfers	Q70411	canton	JU	seed.ch_admin_municipality
+municipality	6748	Les Genevez (JU)	Q69976	canton	JU	seed.ch_admin_municipality
+municipality	6750	Lajoux (JU)	Q68079	canton	JU	seed.ch_admin_municipality
+municipality	6751	Montfaucon	Q68081	canton	JU	seed.ch_admin_municipality
+municipality	6753	Muriaux	Q68506	canton	JU	seed.ch_admin_municipality
+municipality	6754	Le Noirmont	Q68522	canton	JU	seed.ch_admin_municipality
+municipality	6757	Saignelégier	Q67666	canton	JU	seed.ch_admin_municipality
+municipality	6758	Saint-Brais	Q68513	canton	JU	seed.ch_admin_municipality
+municipality	6759	Soubey	Q67480	canton	JU	seed.ch_admin_municipality
+municipality	6771	Alle	Q25333	canton	JU	seed.ch_admin_municipality
+municipality	6774	Boncourt	Q66980	canton	JU	seed.ch_admin_municipality
+municipality	6778	Bure	Q68445	canton	JU	seed.ch_admin_municipality
+municipality	6781	Coeuve	Q68821	canton	JU	seed.ch_admin_municipality
+municipality	6782	Cornol	Q68819	canton	JU	seed.ch_admin_municipality
+municipality	6783	Courchavon	Q69935	canton	JU	seed.ch_admin_municipality
+municipality	6784	Courgenay	Q67414	canton	JU	seed.ch_admin_municipality
+municipality	6785	Courtedoux	Q69855	canton	JU	seed.ch_admin_municipality
+municipality	6789	Fahy	Q67959	canton	JU	seed.ch_admin_municipality
+municipality	6790	Fontenais	Q68780	canton	JU	seed.ch_admin_municipality
+municipality	6792	Grandfontaine	Q67982	canton	JU	seed.ch_admin_municipality
+municipality	6800	Porrentruy	Q68256	canton	JU	seed.ch_admin_municipality
+municipality	6806	Vendlincourt	Q58038	canton	JU	seed.ch_admin_municipality
+municipality	6807	Basse-Allaine	Q70531	canton	JU	seed.ch_admin_municipality
+municipality	6808	Clos du Doubs	Q68869	canton	JU	seed.ch_admin_municipality
+municipality	6809	Haute-Ajoie	Q70609	canton	JU	seed.ch_admin_municipality
+municipality	6810	La Baroche	Q70511	canton	JU	seed.ch_admin_municipality
+municipality	6811	Damphreux-Lugnez	Q111647468	canton	JU	seed.ch_admin_municipality
+municipality	6812	Basse-Vendline	Q113535598	canton	JU	seed.ch_admin_municipality
+municipality	6831	Moutier	Q67157	canton	JU	seed.ch_admin_municipality

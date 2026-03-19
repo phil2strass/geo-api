@@ -1,0 +1,622 @@
+level_code	admin_code	display_name	territory_wikidata_id	parent_level_code	parent_admin_code	source
+region	04000	RÉGION DE BRUXELLES-CAPITALE / BRUSSELS HOOFDSTEDELIJK GEWEST	Q240			seed.be_admin_region
+arrondissement	21000	Arrondissement de Bruxelles-Capitale / Arrondissement Brussel Hoofdstad	Q90870	region	04000	seed.be_admin_arrondissement
+municipality	21001	Anderlecht / Anderlecht	Q12886	arrondissement	21000	seed.be_admin_municipality
+municipality	21002	Auderghem / Oudergem	Q272228	arrondissement	21000	seed.be_admin_municipality
+municipality	21003	Berchem-Sainte-Agathe / Sint-Agatha-Berchem	Q272272	arrondissement	21000	seed.be_admin_municipality
+municipality	21004	Bruxelles / Brussel	Q239	arrondissement	21000	seed.be_admin_municipality
+municipality	21005	Etterbeek / Etterbeek	Q192859	arrondissement	21000	seed.be_admin_municipality
+municipality	21006	Evere / Evere	Q321718	arrondissement	21000	seed.be_admin_municipality
+municipality	21007	Forest / Vorst	Q72946	arrondissement	21000	seed.be_admin_municipality
+municipality	21008	Ganshoren / Ganshoren	Q366552	arrondissement	21000	seed.be_admin_municipality
+municipality	21009	Ixelles / Elsene	Q208713	arrondissement	21000	seed.be_admin_municipality
+municipality	21010	Jette / Jette	Q241918	arrondissement	21000	seed.be_admin_municipality
+municipality	21011	Koekelberg / Koekelberg	Q219244	arrondissement	21000	seed.be_admin_municipality
+municipality	21012	Molenbeek-Saint-Jean / Sint-Jans-Molenbeek	Q180775	arrondissement	21000	seed.be_admin_municipality
+municipality	21013	Saint-Gilles / Sint-Gillis	Q237674	arrondissement	21000	seed.be_admin_municipality
+municipality	21014	Saint-Josse-ten-Noode / Sint-Joost-ten-Node	Q272243	arrondissement	21000	seed.be_admin_municipality
+municipality	21015	Schaerbeek / Schaarbeek	Q12887	arrondissement	21000	seed.be_admin_municipality
+municipality	21016	Uccle / Ukkel	Q203312	arrondissement	21000	seed.be_admin_municipality
+municipality	21017	Watermael-Boitsfort / Watermaal-Bosvoorde	Q272262	arrondissement	21000	seed.be_admin_municipality
+municipality	21018	Woluwe-Saint-Lambert / Sint-Lambrechts-Woluwe	Q211764	arrondissement	21000	seed.be_admin_municipality
+municipality	21019	Woluwe-Saint-Pierre / Sint-Pieters-Woluwe	Q242393	arrondissement	21000	seed.be_admin_municipality
+region	02000	VLAAMS GEWEST	Q9337			seed.be_admin_region
+province	10000	Provincie Antwerpen	Q1116	region	02000	seed.be_admin_province
+arrondissement	11000	Arrondissement Antwerpen	Q90895	province	10000	seed.be_admin_arrondissement
+municipality	11001	Aartselaar	Q303246	arrondissement	11000	seed.be_admin_municipality
+municipality	11002	Antwerpen	Q12892	arrondissement	11000	seed.be_admin_municipality
+municipality	11004	Boechout	Q723822	arrondissement	11000	seed.be_admin_municipality
+municipality	11005	Boom	Q723972	arrondissement	11000	seed.be_admin_municipality
+municipality	11008	Brasschaat	Q693513	arrondissement	11000	seed.be_admin_municipality
+municipality	11009	Brecht	Q724131	arrondissement	11000	seed.be_admin_municipality
+municipality	11013	Edegem	Q724238	arrondissement	11000	seed.be_admin_municipality
+municipality	11016	Essen	Q724283	arrondissement	11000	seed.be_admin_municipality
+municipality	11018	Hemiksem	Q724448	arrondissement	11000	seed.be_admin_municipality
+municipality	11021	Hove	Q649982	arrondissement	11000	seed.be_admin_municipality
+municipality	11022	Kalmthout	Q724777	arrondissement	11000	seed.be_admin_municipality
+municipality	11023	Kapellen	Q724942	arrondissement	11000	seed.be_admin_municipality
+municipality	11024	Kontich	Q725074	arrondissement	11000	seed.be_admin_municipality
+municipality	11025	Lint	Q725268	arrondissement	11000	seed.be_admin_municipality
+municipality	11057	Malle	Q917591	arrondissement	11000	seed.be_admin_municipality
+municipality	11029	Mortsel	Q688781	arrondissement	11000	seed.be_admin_municipality
+municipality	11030	Niel	Q912054	arrondissement	11000	seed.be_admin_municipality
+municipality	11035	Ranst	Q501748	arrondissement	11000	seed.be_admin_municipality
+municipality	11037	Rumst	Q943446	arrondissement	11000	seed.be_admin_municipality
+municipality	11038	Schelle	Q911968	arrondissement	11000	seed.be_admin_municipality
+municipality	11039	Schilde	Q263177	arrondissement	11000	seed.be_admin_municipality
+municipality	11040	Schoten	Q655203	arrondissement	11000	seed.be_admin_municipality
+municipality	11044	Stabroek	Q595654	arrondissement	11000	seed.be_admin_municipality
+municipality	11050	Wijnegem	Q527808	arrondissement	11000	seed.be_admin_municipality
+municipality	11052	Wommelgem	Q839037	arrondissement	11000	seed.be_admin_municipality
+municipality	11053	Wuustwezel	Q912045	arrondissement	11000	seed.be_admin_municipality
+municipality	11054	Zandhoven	Q146656	arrondissement	11000	seed.be_admin_municipality
+municipality	11055	Zoersel	Q218253	arrondissement	11000	seed.be_admin_municipality
+arrondissement	12000	Arrondissement Mechelen	Q90905	province	10000	seed.be_admin_arrondissement
+municipality	12002	Berlaar	Q723774	arrondissement	12000	seed.be_admin_municipality
+municipality	12005	Bonheiden	Q528222	arrondissement	12000	seed.be_admin_municipality
+municipality	12007	Bornem	Q724025	arrondissement	12000	seed.be_admin_municipality
+municipality	12009	Duffel	Q615109	arrondissement	12000	seed.be_admin_municipality
+municipality	12014	Heist-op-den-Berg	Q257979	arrondissement	12000	seed.be_admin_municipality
+municipality	12021	Lier	Q12460	arrondissement	12000	seed.be_admin_municipality
+municipality	12025	Mechelen	Q162022	arrondissement	12000	seed.be_admin_municipality
+municipality	12026	Nijlen	Q912084	arrondissement	12000	seed.be_admin_municipality
+municipality	12029	Putte	Q929397	arrondissement	12000	seed.be_admin_municipality
+municipality	12041	Puurs-Sint-Amands	Q45202943	arrondissement	12000	seed.be_admin_municipality
+municipality	12035	Sint-Katelijne-Waver	Q696578	arrondissement	12000	seed.be_admin_municipality
+municipality	12040	Willebroek	Q695278	arrondissement	12000	seed.be_admin_municipality
+arrondissement	13000	Arrondissement Turnhout	Q90911	province	10000	seed.be_admin_arrondissement
+municipality	13001	Arendonk	Q641905	arrondissement	13000	seed.be_admin_municipality
+municipality	13002	Baarle-Hertog	Q244959	arrondissement	13000	seed.be_admin_municipality
+municipality	13003	Balen	Q723651	arrondissement	13000	seed.be_admin_municipality
+municipality	13004	Beerse	Q723728	arrondissement	13000	seed.be_admin_municipality
+municipality	13006	Dessel	Q386732	arrondissement	13000	seed.be_admin_municipality
+municipality	13008	Geel	Q464454	arrondissement	13000	seed.be_admin_municipality
+municipality	13010	Grobbendonk	Q724389	arrondissement	13000	seed.be_admin_municipality
+municipality	13011	Herentals	Q383723	arrondissement	13000	seed.be_admin_municipality
+municipality	13012	Herenthout	Q724534	arrondissement	13000	seed.be_admin_municipality
+municipality	13013	Herselt	Q280182	arrondissement	13000	seed.be_admin_municipality
+municipality	13014	Hoogstraten	Q724638	arrondissement	13000	seed.be_admin_municipality
+municipality	13016	Hulshout	Q518758	arrondissement	13000	seed.be_admin_municipality
+municipality	13017	Kasterlee	Q725029	arrondissement	13000	seed.be_admin_municipality
+municipality	13053	Laakdal	Q725122	arrondissement	13000	seed.be_admin_municipality
+municipality	13019	Lille	Q725235	arrondissement	13000	seed.be_admin_municipality
+municipality	13021	Meerhout	Q846207	arrondissement	13000	seed.be_admin_municipality
+municipality	13023	Merksplas	Q532277	arrondissement	13000	seed.be_admin_municipality
+municipality	13025	Mol	Q465710	arrondissement	13000	seed.be_admin_municipality
+municipality	13029	Olen	Q839044	arrondissement	13000	seed.be_admin_municipality
+municipality	13031	Oud-Turnhout	Q943555	arrondissement	13000	seed.be_admin_municipality
+municipality	13035	Ravels	Q839119	arrondissement	13000	seed.be_admin_municipality
+municipality	13036	Retie	Q912062	arrondissement	13000	seed.be_admin_municipality
+municipality	13037	Rijkevorsel	Q929459	arrondissement	13000	seed.be_admin_municipality
+municipality	13040	Turnhout	Q271783	arrondissement	13000	seed.be_admin_municipality
+municipality	13044	Vorselaar	Q909914	arrondissement	13000	seed.be_admin_municipality
+municipality	13046	Vosselaar	Q929485	arrondissement	13000	seed.be_admin_municipality
+municipality	13049	Westerlo	Q475931	arrondissement	13000	seed.be_admin_municipality
+province	20001	Provincie Vlaams-Brabant	Q1118	region	02000	seed.be_admin_province
+arrondissement	23000	Arrondissement Halle-Vilvoorde	Q93368	province	20001	seed.be_admin_arrondissement
+municipality	23105	Affligem	Q382860	arrondissement	23000	seed.be_admin_municipality
+municipality	23002	Asse	Q515710	arrondissement	23000	seed.be_admin_municipality
+municipality	23003	Beersel	Q692168	arrondissement	23000	seed.be_admin_municipality
+municipality	23009	Bever	Q839017	arrondissement	23000	seed.be_admin_municipality
+municipality	23016	Dilbeek	Q641134	arrondissement	23000	seed.be_admin_municipality
+municipality	23098	Drogenbos	Q688377	arrondissement	23000	seed.be_admin_municipality
+municipality	23025	Grimbergen	Q633063	arrondissement	23000	seed.be_admin_municipality
+municipality	23027	Halle	Q210003	arrondissement	23000	seed.be_admin_municipality
+municipality	23033	Hoeilaart	Q641278	arrondissement	23000	seed.be_admin_municipality
+municipality	23038	Kampenhout	Q492453	arrondissement	23000	seed.be_admin_municipality
+municipality	23039	Kapelle-op-den-Bos	Q911995	arrondissement	23000	seed.be_admin_municipality
+municipality	23099	Kraainem	Q839023	arrondissement	23000	seed.be_admin_municipality
+municipality	23104	Lennik	Q912022	arrondissement	23000	seed.be_admin_municipality
+municipality	23044	Liedekerke	Q818621	arrondissement	23000	seed.be_admin_municipality
+municipality	23100	Linkebeek	Q631639	arrondissement	23000	seed.be_admin_municipality
+municipality	23045	Londerzeel	Q587819	arrondissement	23000	seed.be_admin_municipality
+municipality	23047	Machelen	Q752115	arrondissement	23000	seed.be_admin_municipality
+municipality	23050	Meise	Q922260	arrondissement	23000	seed.be_admin_municipality
+municipality	23052	Merchtem	Q912106	arrondissement	23000	seed.be_admin_municipality
+municipality	23060	Opwijk	Q930292	arrondissement	23000	seed.be_admin_municipality
+municipality	23062	Overijse	Q599127	arrondissement	23000	seed.be_admin_municipality
+municipality	23106	Pajottegem	Q123848537	arrondissement	23000	seed.be_admin_municipality
+municipality	23064	Pepingen	Q646037	arrondissement	23000	seed.be_admin_municipality
+municipality	23101	Sint-Genesius-Rode	Q841597	arrondissement	23000	seed.be_admin_municipality
+municipality	23097	Roosdaal	Q936660	arrondissement	23000	seed.be_admin_municipality
+municipality	23077	Sint-Pieters-Leeuw	Q688790	arrondissement	23000	seed.be_admin_municipality
+municipality	23081	Steenokkerzeel	Q984888	arrondissement	23000	seed.be_admin_municipality
+municipality	23086	Ternat	Q930249	arrondissement	23000	seed.be_admin_municipality
+municipality	23088	Vilvoorde	Q318418	arrondissement	23000	seed.be_admin_municipality
+municipality	23102	Wemmel	Q913195	arrondissement	23000	seed.be_admin_municipality
+municipality	23103	Wezembeek-Oppem	Q912091	arrondissement	23000	seed.be_admin_municipality
+municipality	23094	Zaventem	Q28898	arrondissement	23000	seed.be_admin_municipality
+municipality	23096	Zemst	Q179249	arrondissement	23000	seed.be_admin_municipality
+arrondissement	24000	Arrondissement Leuven	Q93392	province	20001	seed.be_admin_arrondissement
+municipality	24001	Aarschot	Q273442	arrondissement	24000	seed.be_admin_municipality
+municipality	24007	Begijnendijk	Q432610	arrondissement	24000	seed.be_admin_municipality
+municipality	24008	Bekkevoort	Q815054	arrondissement	24000	seed.be_admin_municipality
+municipality	24009	Bertem	Q827665	arrondissement	24000	seed.be_admin_municipality
+municipality	24011	Bierbeek	Q729929	arrondissement	24000	seed.be_admin_municipality
+municipality	24014	Boortmeerbeek	Q746078	arrondissement	24000	seed.be_admin_municipality
+municipality	24016	Boutersem	Q895293	arrondissement	24000	seed.be_admin_municipality
+municipality	24020	Diest	Q743236	arrondissement	24000	seed.be_admin_municipality
+municipality	24028	Geetbets	Q984874	arrondissement	24000	seed.be_admin_municipality
+municipality	24137	Glabbeek	Q984868	arrondissement	24000	seed.be_admin_municipality
+municipality	24033	Haacht	Q950129	arrondissement	24000	seed.be_admin_municipality
+municipality	24038	Herent	Q930269	arrondissement	24000	seed.be_admin_municipality
+municipality	24041	Hoegaarden	Q818787	arrondissement	24000	seed.be_admin_municipality
+municipality	24043	Holsbeek	Q676893	arrondissement	24000	seed.be_admin_municipality
+municipality	24045	Huldenberg	Q943472	arrondissement	24000	seed.be_admin_municipality
+municipality	24048	Keerbergen	Q984894	arrondissement	24000	seed.be_admin_municipality
+municipality	24054	Kortenaken	Q984877	arrondissement	24000	seed.be_admin_municipality
+municipality	24055	Kortenberg	Q929474	arrondissement	24000	seed.be_admin_municipality
+municipality	24059	Landen	Q943502	arrondissement	24000	seed.be_admin_municipality
+municipality	24130	Zoutleeuw	Q227070	arrondissement	24000	seed.be_admin_municipality
+municipality	24133	Linter	Q984881	arrondissement	24000	seed.be_admin_municipality
+municipality	24062	Leuven	Q118958	arrondissement	24000	seed.be_admin_municipality
+municipality	24066	Lubbeek	Q929447	arrondissement	24000	seed.be_admin_municipality
+municipality	24134	Scherpenheuvel-Zichem	Q932020	arrondissement	24000	seed.be_admin_municipality
+municipality	24086	Oud-Heverlee	Q746641	arrondissement	24000	seed.be_admin_municipality
+municipality	24094	Rotselaar	Q926139	arrondissement	24000	seed.be_admin_municipality
+municipality	24104	Tervuren	Q456544	arrondissement	24000	seed.be_admin_municipality
+municipality	24135	Tielt-Winge	Q984892	arrondissement	24000	seed.be_admin_municipality
+municipality	24107	Tienen	Q456550	arrondissement	24000	seed.be_admin_municipality
+municipality	24109	Tremelo	Q926110	arrondissement	24000	seed.be_admin_municipality
+province	30000	Provincie West-Vlaanderen	Q1113	region	02000	seed.be_admin_province
+arrondissement	31000	Arrondissement Brugge	Q91045	province	30000	seed.be_admin_arrondissement
+municipality	31003	Beernem	Q687921	arrondissement	31000	seed.be_admin_municipality
+municipality	31004	Blankenberge	Q328104	arrondissement	31000	seed.be_admin_municipality
+municipality	31005	Brugge	Q12994	arrondissement	31000	seed.be_admin_municipality
+municipality	31006	Damme	Q323408	arrondissement	31000	seed.be_admin_municipality
+municipality	31012	Jabbeke	Q465973	arrondissement	31000	seed.be_admin_municipality
+municipality	31043	Knokke-Heist	Q12988	arrondissement	31000	seed.be_admin_municipality
+municipality	31022	Oostkamp	Q742892	arrondissement	31000	seed.be_admin_municipality
+municipality	31033	Torhout	Q270633	arrondissement	31000	seed.be_admin_municipality
+municipality	31040	Zedelgem	Q184287	arrondissement	31000	seed.be_admin_municipality
+municipality	31042	Zuienkerke	Q228685	arrondissement	31000	seed.be_admin_municipality
+arrondissement	34000	Arrondissement Kortrijk	Q91388	province	30000	seed.be_admin_arrondissement
+municipality	34002	Anzegem	Q614274	arrondissement	34000	seed.be_admin_municipality
+municipality	34003	Avelgem	Q177133	arrondissement	34000	seed.be_admin_municipality
+municipality	34022	Kortrijk	Q12995	arrondissement	34000	seed.be_admin_municipality
+municipality	34009	Deerlijk	Q822771	arrondissement	34000	seed.be_admin_municipality
+municipality	34043	Spiere-Helkijn	Q846212	arrondissement	34000	seed.be_admin_municipality
+municipality	34013	Harelbeke	Q478797	arrondissement	34000	seed.be_admin_municipality
+municipality	34023	Kuurne	Q731501	arrondissement	34000	seed.be_admin_municipality
+municipality	34025	Lendelede	Q696887	arrondissement	34000	seed.be_admin_municipality
+municipality	34027	Menen	Q213224	arrondissement	34000	seed.be_admin_municipality
+municipality	34040	Waregem	Q204547	arrondissement	34000	seed.be_admin_municipality
+municipality	34041	Wevelgem	Q392343	arrondissement	34000	seed.be_admin_municipality
+municipality	34042	Zwevegem	Q244513	arrondissement	34000	seed.be_admin_municipality
+arrondissement	32000	Arrondissement Diksmuide	Q91402	province	30000	seed.be_admin_arrondissement
+municipality	32003	Diksmuide	Q215244	arrondissement	32000	seed.be_admin_municipality
+municipality	32006	Houthulst	Q696942	arrondissement	32000	seed.be_admin_municipality
+municipality	32010	Koekelare	Q822795	arrondissement	32000	seed.be_admin_municipality
+municipality	32011	Kortemark	Q822763	arrondissement	32000	seed.be_admin_municipality
+municipality	32030	Lo-Reninge	Q822790	arrondissement	32000	seed.be_admin_municipality
+arrondissement	38000	Arrondissement Veurne	Q91411	province	30000	seed.be_admin_arrondissement
+municipality	38002	Alveringem	Q448840	arrondissement	38000	seed.be_admin_municipality
+municipality	38025	Veurne	Q506707	arrondissement	38000	seed.be_admin_municipality
+municipality	38014	Koksijde	Q465545	arrondissement	38000	seed.be_admin_municipality
+municipality	38008	De Panne	Q674954	arrondissement	38000	seed.be_admin_municipality
+municipality	38016	Nieuwpoort	Q623310	arrondissement	38000	seed.be_admin_municipality
+arrondissement	35000	Arrondissement Oostende	Q91427	province	30000	seed.be_admin_arrondissement
+municipality	35002	Bredene	Q742920	arrondissement	35000	seed.be_admin_municipality
+municipality	35029	De Haan	Q492351	arrondissement	35000	seed.be_admin_municipality
+municipality	35005	Gistel	Q815948	arrondissement	35000	seed.be_admin_municipality
+municipality	35006	Ichtegem	Q281181	arrondissement	35000	seed.be_admin_municipality
+municipality	35011	Middelkerke	Q492369	arrondissement	35000	seed.be_admin_municipality
+municipality	35013	Oostende	Q12996	arrondissement	35000	seed.be_admin_municipality
+municipality	35014	Oudenburg	Q835128	arrondissement	35000	seed.be_admin_municipality
+arrondissement	36000	Arrondissement Roeselare	Q91439	province	30000	seed.be_admin_arrondissement
+municipality	36006	Hooglede	Q696907	arrondissement	36000	seed.be_admin_municipality
+municipality	36007	Ingelmunster	Q822748	arrondissement	36000	seed.be_admin_municipality
+municipality	36008	Izegem	Q392337	arrondissement	36000	seed.be_admin_municipality
+municipality	36010	Ledegem	Q735842	arrondissement	36000	seed.be_admin_municipality
+municipality	36011	Lichtervelde	Q696871	arrondissement	36000	seed.be_admin_municipality
+municipality	36012	Moorslede	Q628733	arrondissement	36000	seed.be_admin_municipality
+municipality	36015	Roeselare	Q211037	arrondissement	36000	seed.be_admin_municipality
+municipality	36019	Staden	Q742876	arrondissement	36000	seed.be_admin_municipality
+arrondissement	37000	Arrondissement Tielt	Q91445	province	30000	seed.be_admin_arrondissement
+municipality	37020	Ardooie	Q639974	arrondissement	37000	seed.be_admin_municipality
+municipality	37002	Dentergem	Q742906	arrondissement	37000	seed.be_admin_municipality
+municipality	37010	Oostrozebeke	Q822777	arrondissement	37000	seed.be_admin_municipality
+municipality	37011	Pittem	Q651724	arrondissement	37000	seed.be_admin_municipality
+municipality	37022	Tielt	Q651811	arrondissement	37000	seed.be_admin_municipality
+municipality	37017	Wielsbeke	Q339395	arrondissement	37000	seed.be_admin_municipality
+municipality	37021	Wingene	Q735797	arrondissement	37000	seed.be_admin_municipality
+arrondissement	33000	Arrondissement Ieper	Q91450	province	30000	seed.be_admin_arrondissement
+municipality	33039	Heuvelland	Q822755	arrondissement	33000	seed.be_admin_municipality
+municipality	33040	Langemark-Poelkapelle	Q735865	arrondissement	33000	seed.be_admin_municipality
+municipality	33016	Mesen	Q737077	arrondissement	33000	seed.be_admin_municipality
+municipality	33021	Poperinge	Q499588	arrondissement	33000	seed.be_admin_municipality
+municipality	33041	Vleteren	Q735813	arrondissement	33000	seed.be_admin_municipality
+municipality	33029	Wervik	Q318532	arrondissement	33000	seed.be_admin_municipality
+municipality	33011	Ieper	Q102728	arrondissement	33000	seed.be_admin_municipality
+municipality	33037	Zonnebeke	Q214154	arrondissement	33000	seed.be_admin_municipality
+province	40000	Provincie Oost-Vlaanderen	Q1114	region	02000	seed.be_admin_province
+arrondissement	41000	Arrondissement Aalst	Q90921	province	40000	seed.be_admin_arrondissement
+municipality	41002	Aalst	Q13121	arrondissement	41000	seed.be_admin_municipality
+municipality	41011	Denderleeuw	Q696825	arrondissement	41000	seed.be_admin_municipality
+municipality	41082	Erpe-Mere	Q817458	arrondissement	41000	seed.be_admin_municipality
+municipality	41018	Geraardsbergen	Q499532	arrondissement	41000	seed.be_admin_municipality
+municipality	41024	Haaltert	Q911974	arrondissement	41000	seed.be_admin_municipality
+municipality	41027	Herzele	Q587979	arrondissement	41000	seed.be_admin_municipality
+municipality	41034	Lede	Q912113	arrondissement	41000	seed.be_admin_municipality
+municipality	41048	Ninove	Q385026	arrondissement	41000	seed.be_admin_municipality
+municipality	41063	Sint-Lievens-Houtem	Q817372	arrondissement	41000	seed.be_admin_municipality
+municipality	41081	Zottegem	Q226941	arrondissement	41000	seed.be_admin_municipality
+arrondissement	45000	Arrondissement Oudenaarde	Q90932	province	40000	seed.be_admin_arrondissement
+municipality	45035	Oudenaarde	Q12992	arrondissement	45000	seed.be_admin_municipality
+municipality	45059	Brakel	Q845980	arrondissement	45000	seed.be_admin_municipality
+municipality	45062	Horebeke	Q912076	arrondissement	45000	seed.be_admin_municipality
+municipality	45060	Kluisbergen	Q840517	arrondissement	45000	seed.be_admin_municipality
+municipality	45068	Kruisem	Q46865464	arrondissement	45000	seed.be_admin_municipality
+municipality	45063	Lierde	Q648509	arrondissement	45000	seed.be_admin_municipality
+municipality	45064	Maarkedal	Q912099	arrondissement	45000	seed.be_admin_municipality
+municipality	45041	Ronse	Q268219	arrondissement	45000	seed.be_admin_municipality
+municipality	45061	Wortegem-Petegem	Q840935	arrondissement	45000	seed.be_admin_municipality
+municipality	45065	Zwalm	Q231568	arrondissement	45000	seed.be_admin_municipality
+arrondissement	43000	Arrondissement Eeklo	Q90942	province	40000	seed.be_admin_arrondissement
+municipality	43002	Assenede	Q12901	arrondissement	43000	seed.be_admin_municipality
+municipality	43005	Eeklo	Q12440	arrondissement	43000	seed.be_admin_municipality
+municipality	43007	Kaprijke	Q12437	arrondissement	43000	seed.be_admin_municipality
+municipality	43010	Maldegem	Q12896	arrondissement	43000	seed.be_admin_municipality
+municipality	43014	Sint-Laureins	Q13126	arrondissement	43000	seed.be_admin_municipality
+municipality	43018	Zelzate	Q14062	arrondissement	43000	seed.be_admin_municipality
+arrondissement	44000	Arrondissement Gent	Q90948	province	40000	seed.be_admin_arrondissement
+municipality	44084	Aalter	Q300970	arrondissement	44000	seed.be_admin_municipality
+municipality	44083	Deinze	Q499313	arrondissement	44000	seed.be_admin_municipality
+municipality	44013	Destelbergen	Q3177595	arrondissement	44000	seed.be_admin_municipality
+municipality	44019	Evergem	Q12997	arrondissement	44000	seed.be_admin_municipality
+municipality	44021	Gent	Q1296	arrondissement	44000	seed.be_admin_municipality
+municipality	44020	Gavere	Q690611	arrondissement	44000	seed.be_admin_municipality
+municipality	44085	Lievegem	Q46865167	arrondissement	44000	seed.be_admin_municipality
+municipality	44087	Lochristi	Q735827	arrondissement	44000	seed.be_admin_municipality
+municipality	44088	Merelbeke-Melle	Q124477893	arrondissement	44000	seed.be_admin_municipality
+municipality	44086	Nazareth-De Pinte	Q125550409	arrondissement	44000	seed.be_admin_municipality
+municipality	44052	Oosterzele	Q842477	arrondissement	44000	seed.be_admin_municipality
+municipality	44064	Sint-Martens-Latem	Q737538	arrondissement	44000	seed.be_admin_municipality
+municipality	44081	Zulte	Q228863	arrondissement	44000	seed.be_admin_municipality
+arrondissement	46000	Arrondissement Sint-Niklaas	Q90954	province	40000	seed.be_admin_arrondissement
+municipality	46030	Beveren-Kruibeke-Zwijndrecht	Q130298413	arrondissement	46000	seed.be_admin_municipality
+municipality	46029	Lokeren	Q12910	arrondissement	46000	seed.be_admin_municipality
+municipality	46021	Sint-Niklaas	Q13127	arrondissement	46000	seed.be_admin_municipality
+municipality	46020	Sint-Gillis-Waas	Q430510	arrondissement	46000	seed.be_admin_municipality
+municipality	46024	Stekene	Q735851	arrondissement	46000	seed.be_admin_municipality
+municipality	46025	Temse	Q823623	arrondissement	46000	seed.be_admin_municipality
+arrondissement	42000	Arrondissement Dendermonde	Q90960	province	40000	seed.be_admin_arrondissement
+municipality	42003	Berlare	Q793584	arrondissement	42000	seed.be_admin_municipality
+municipality	42004	Buggenhout	Q202309	arrondissement	42000	seed.be_admin_municipality
+municipality	42008	Hamme	Q391294	arrondissement	42000	seed.be_admin_municipality
+municipality	42010	Laarne	Q730696	arrondissement	42000	seed.be_admin_municipality
+municipality	42011	Lebbeke	Q504653	arrondissement	42000	seed.be_admin_municipality
+municipality	42006	Dendermonde	Q13122	arrondissement	42000	seed.be_admin_municipality
+municipality	42023	Waasmunster	Q587906	arrondissement	42000	seed.be_admin_municipality
+municipality	42025	Wetteren	Q643980	arrondissement	42000	seed.be_admin_municipality
+municipality	42026	Wichelen	Q730801	arrondissement	42000	seed.be_admin_municipality
+municipality	42028	Zele	Q388115	arrondissement	42000	seed.be_admin_municipality
+province	70000	Provincie Limburg	Q1095	region	02000	seed.be_admin_province
+arrondissement	71000	Arrondissement Hasselt	Q93515	province	70000	seed.be_admin_arrondissement
+municipality	71002	As	Q696591	arrondissement	71000	seed.be_admin_municipality
+municipality	71004	Beringen	Q242407	arrondissement	71000	seed.be_admin_municipality
+municipality	71034	Leopoldsburg	Q736120	arrondissement	71000	seed.be_admin_municipality
+municipality	71011	Diepenbeek	Q651826	arrondissement	71000	seed.be_admin_municipality
+municipality	71016	Genk	Q189692	arrondissement	71000	seed.be_admin_municipality
+municipality	71017	Gingelom	Q651837	arrondissement	71000	seed.be_admin_municipality
+municipality	71020	Halen	Q461436	arrondissement	71000	seed.be_admin_municipality
+municipality	71072	Hasselt	Q58780	arrondissement	71000	seed.be_admin_municipality
+municipality	71024	Herk-de-Stad	Q696585	arrondissement	71000	seed.be_admin_municipality
+municipality	71070	Heusden-Zolder	Q319792	arrondissement	71000	seed.be_admin_municipality
+municipality	71037	Lummen	Q329628	arrondissement	71000	seed.be_admin_municipality
+municipality	71045	Nieuwerkerken	Q696740	arrondissement	71000	seed.be_admin_municipality
+municipality	71053	Sint-Truiden	Q37792	arrondissement	71000	seed.be_admin_municipality
+municipality	71071	Tessenderlo-Ham	Q130298677	arrondissement	71000	seed.be_admin_municipality
+municipality	71066	Zonhoven	Q133769	arrondissement	71000	seed.be_admin_municipality
+municipality	71067	Zutendaal	Q231090	arrondissement	71000	seed.be_admin_municipality
+arrondissement	72000	Arrondissement Maaseik	Q93577	province	70000	seed.be_admin_arrondissement
+municipality	72003	Bocholt	Q889044	arrondissement	72000	seed.be_admin_municipality
+municipality	72004	Bree	Q275863	arrondissement	72000	seed.be_admin_municipality
+municipality	72041	Dilsen-Stokkem	Q581246	arrondissement	72000	seed.be_admin_municipality
+municipality	72037	Hamont-Achel	Q499599	arrondissement	72000	seed.be_admin_municipality
+municipality	72038	Hechtel-Eksel	Q819164	arrondissement	72000	seed.be_admin_municipality
+municipality	72039	Houthalen-Helchteren	Q478795	arrondissement	72000	seed.be_admin_municipality
+municipality	72018	Kinrooi	Q819133	arrondissement	72000	seed.be_admin_municipality
+municipality	72020	Lommel	Q194366	arrondissement	72000	seed.be_admin_municipality
+municipality	72021	Maaseik	Q110989	arrondissement	72000	seed.be_admin_municipality
+municipality	72042	Oudsbergen	Q41795471	arrondissement	72000	seed.be_admin_municipality
+municipality	72030	Peer	Q736085	arrondissement	72000	seed.be_admin_municipality
+municipality	72043	Pelt	Q42878311	arrondissement	72000	seed.be_admin_municipality
+arrondissement	73000	Arrondissement Tongeren	Q93549	province	70000	seed.be_admin_arrondissement
+municipality	73001	Alken	Q499604	arrondissement	73000	seed.be_admin_municipality
+municipality	73110	Bilzen-Hoeselt	Q125522830	arrondissement	73000	seed.be_admin_municipality
+municipality	73109	Voeren	Q460479	arrondissement	73000	seed.be_admin_municipality
+municipality	73022	Heers	Q819162	arrondissement	73000	seed.be_admin_municipality
+municipality	73028	Herstappe	Q499584	arrondissement	73000	seed.be_admin_municipality
+municipality	73042	Lanaken	Q695315	arrondissement	73000	seed.be_admin_municipality
+municipality	73107	Maasmechelen	Q329633	arrondissement	73000	seed.be_admin_municipality
+municipality	73066	Riemst	Q736097	arrondissement	73000	seed.be_admin_municipality
+municipality	73111	Tongeren-Borgloon	Q125378487	arrondissement	73000	seed.be_admin_municipality
+municipality	73098	Wellen	Q119331	arrondissement	73000	seed.be_admin_municipality
+region	03000	RÉGION WALLONNE	Q231			seed.be_admin_region
+province	20002	Province du Brabant Wallon	Q1122	region	03000	seed.be_admin_province
+arrondissement	25000	Arrondissement de Nivelles	Q93707	province	20002	seed.be_admin_arrondissement
+municipality	25005	Beauvechain	Q276266	arrondissement	25000	seed.be_admin_municipality
+municipality	25014	Braine-l'Alleud	Q497572	arrondissement	25000	seed.be_admin_municipality
+municipality	25015	Braine-le-Château	Q497558	arrondissement	25000	seed.be_admin_municipality
+municipality	25117	Chastre	Q618054	arrondissement	25000	seed.be_admin_municipality
+municipality	25018	Chaumont-Gistoux	Q670141	arrondissement	25000	seed.be_admin_municipality
+municipality	25023	Court-Saint-Etienne	Q670210	arrondissement	25000	seed.be_admin_municipality
+municipality	25031	Genappe	Q517899	arrondissement	25000	seed.be_admin_municipality
+municipality	25037	Grez-Doiceau	Q670310	arrondissement	25000	seed.be_admin_municipality
+municipality	25118	Hélécine	Q670355	arrondissement	25000	seed.be_admin_municipality
+municipality	25043	Incourt	Q670455	arrondissement	25000	seed.be_admin_municipality
+municipality	25044	Ittre	Q281080	arrondissement	25000	seed.be_admin_municipality
+municipality	25048	Jodoigne	Q670500	arrondissement	25000	seed.be_admin_municipality
+municipality	25050	La Hulpe	Q670407	arrondissement	25000	seed.be_admin_municipality
+municipality	25119	Lasne	Q678158	arrondissement	25000	seed.be_admin_municipality
+municipality	25068	Mont-Saint-Guibert	Q650152	arrondissement	25000	seed.be_admin_municipality
+municipality	25072	Nivelles	Q319463	arrondissement	25000	seed.be_admin_municipality
+municipality	25120	Orp-Jauche	Q678218	arrondissement	25000	seed.be_admin_municipality
+municipality	25121	Ottignies-Louvain-la-Neuve	Q329642	arrondissement	25000	seed.be_admin_municipality
+municipality	25084	Perwez	Q678458	arrondissement	25000	seed.be_admin_municipality
+municipality	25122	Ramillies	Q531456	arrondissement	25000	seed.be_admin_municipality
+municipality	25123	Rebecq	Q374861	arrondissement	25000	seed.be_admin_municipality
+municipality	25091	Rixensart	Q630478	arrondissement	25000	seed.be_admin_municipality
+municipality	25105	Tubize	Q497549	arrondissement	25000	seed.be_admin_municipality
+municipality	25107	Villers-la-Ville	Q678612	arrondissement	25000	seed.be_admin_municipality
+municipality	25124	Walhain	Q650216	arrondissement	25000	seed.be_admin_municipality
+municipality	25110	Waterloo	Q179034	arrondissement	25000	seed.be_admin_municipality
+municipality	25112	Wavre	Q181314	arrondissement	25000	seed.be_admin_municipality
+province	50000	Province du Hainaut	Q1129	region	03000	seed.be_admin_province
+arrondissement	51000	Arrondissement d'Ath	Q94069	province	50000	seed.be_admin_arrondissement
+municipality	51004	Ath	Q95096	arrondissement	51000	seed.be_admin_municipality
+municipality	51008	Beloeil	Q95105	arrondissement	51000	seed.be_admin_municipality
+municipality	51009	Bernissart	Q95112	arrondissement	51000	seed.be_admin_municipality
+municipality	51012	Brugelette	Q95130	arrondissement	51000	seed.be_admin_municipality
+municipality	51014	Chièvres	Q95318	arrondissement	51000	seed.be_admin_municipality
+municipality	51017	Ellezelles	Q665992	arrondissement	51000	seed.be_admin_municipality
+municipality	51067	Enghien	Q666238	arrondissement	51000	seed.be_admin_municipality
+municipality	51019	Flobecq	Q666559	arrondissement	51000	seed.be_admin_municipality
+municipality	51065	Frasnes-lez-Anvaing	Q666813	arrondissement	51000	seed.be_admin_municipality
+municipality	51069	Lessines	Q667790	arrondissement	51000	seed.be_admin_municipality
+municipality	51068	Silly	Q669088	arrondissement	51000	seed.be_admin_municipality
+arrondissement	52000	Arrondissement de Charleroi	Q94077	province	50000	seed.be_admin_arrondissement
+municipality	52074	Aiseau-Presles	Q95004	arrondissement	52000	seed.be_admin_municipality
+municipality	52010	Chapelle-lez-Herlaimont	Q95140	arrondissement	52000	seed.be_admin_municipality
+municipality	52011	Charleroi	Q81046	arrondissement	52000	seed.be_admin_municipality
+municipality	52012	Châtelet	Q95144	arrondissement	52000	seed.be_admin_municipality
+municipality	52015	Courcelles	Q665860	arrondissement	52000	seed.be_admin_municipality
+municipality	52018	Farciennes	Q666503	arrondissement	52000	seed.be_admin_municipality
+municipality	52021	Fleurus	Q314922	arrondissement	52000	seed.be_admin_municipality
+municipality	52022	Fontaine-l'Evêque	Q666696	arrondissement	52000	seed.be_admin_municipality
+municipality	52025	Gerpinnes	Q666902	arrondissement	52000	seed.be_admin_municipality
+municipality	52075	Les Bons Villers	Q95123	arrondissement	52000	seed.be_admin_municipality
+municipality	52048	Montigny-le-Tilleul	Q668437	arrondissement	52000	seed.be_admin_municipality
+municipality	52055	Pont-à-Celles	Q607182	arrondissement	52000	seed.be_admin_municipality
+arrondissement	53000	Arrondissement de Mons	Q94087	province	50000	seed.be_admin_arrondissement
+municipality	53014	Boussu	Q95126	arrondissement	53000	seed.be_admin_municipality
+municipality	53082	Colfontaine	Q665573	arrondissement	53000	seed.be_admin_municipality
+municipality	53020	Dour	Q665938	arrondissement	53000	seed.be_admin_municipality
+municipality	53028	Frameries	Q666751	arrondissement	53000	seed.be_admin_municipality
+municipality	53039	Hensies	Q666983	arrondissement	53000	seed.be_admin_municipality
+municipality	53083	Honnelles	Q667091	arrondissement	53000	seed.be_admin_municipality
+municipality	53044	Jurbise	Q377152	arrondissement	53000	seed.be_admin_municipality
+municipality	53046	Lens	Q667158	arrondissement	53000	seed.be_admin_municipality
+municipality	53053	Mons	Q83407	arrondissement	53000	seed.be_admin_municipality
+municipality	53065	Quaregnon	Q538735	arrondissement	53000	seed.be_admin_municipality
+municipality	53084	Quévy	Q668702	arrondissement	53000	seed.be_admin_municipality
+municipality	53068	Quiévrain	Q668815	arrondissement	53000	seed.be_admin_municipality
+municipality	53070	Saint-Ghislain	Q668950	arrondissement	53000	seed.be_admin_municipality
+arrondissement	55000	Arrondissement de Soignies	Q94110	province	50000	seed.be_admin_arrondissement
+municipality	55004	Braine-le-Comte	Q95129	arrondissement	55000	seed.be_admin_municipality
+municipality	55050	Ecaussinnes	Q273316	arrondissement	55000	seed.be_admin_municipality
+municipality	55035	Le Roeulx	Q668861	arrondissement	55000	seed.be_admin_municipality
+municipality	55086	Manage	Q667987	arrondissement	55000	seed.be_admin_municipality
+municipality	55085	Seneffe	Q669051	arrondissement	55000	seed.be_admin_municipality
+municipality	55040	Soignies	Q462985	arrondissement	55000	seed.be_admin_municipality
+arrondissement	56000	Arrondissement de Thuin	Q94122	province	50000	seed.be_admin_arrondissement
+municipality	56001	Anderlues	Q95005	arrondissement	56000	seed.be_admin_municipality
+municipality	56005	Beaumont	Q95100	arrondissement	56000	seed.be_admin_municipality
+municipality	56016	Chimay	Q95380	arrondissement	56000	seed.be_admin_municipality
+municipality	56022	Erquelinnes	Q666335	arrondissement	56000	seed.be_admin_municipality
+municipality	56029	Froidchapelle	Q666853	arrondissement	56000	seed.be_admin_municipality
+municipality	56086	Ham-sur-Heure-Nalinnes	Q666952	arrondissement	56000	seed.be_admin_municipality
+municipality	56044	Lobbes	Q667936	arrondissement	56000	seed.be_admin_municipality
+municipality	56049	Merbes-le-Château	Q668139	arrondissement	56000	seed.be_admin_municipality
+municipality	56051	Momignies	Q668187	arrondissement	56000	seed.be_admin_municipality
+municipality	56088	Sivry-Rance	Q669136	arrondissement	56000	seed.be_admin_municipality
+municipality	56078	Thuin	Q669186	arrondissement	56000	seed.be_admin_municipality
+arrondissement	57000	Arrondissement de Tournai-Mouscron	Q63020284	province	50000	seed.be_admin_arrondissement
+municipality	57003	Antoing	Q95011	arrondissement	57000	seed.be_admin_municipality
+municipality	57093	Brunehaut	Q95132	arrondissement	57000	seed.be_admin_municipality
+municipality	57018	Celles	Q95136	arrondissement	57000	seed.be_admin_municipality
+municipality	57097	Comines-Warneton	Q665761	arrondissement	57000	seed.be_admin_municipality
+municipality	57027	Estaimpuis	Q666393	arrondissement	57000	seed.be_admin_municipality
+municipality	57094	Leuze-en-Hainaut	Q667862	arrondissement	57000	seed.be_admin_municipality
+municipality	57095	Mont-de-l'Enclus	Q668295	arrondissement	57000	seed.be_admin_municipality
+municipality	57096	Mouscron	Q220145	arrondissement	57000	seed.be_admin_municipality
+municipality	57062	Pecq	Q668540	arrondissement	57000	seed.be_admin_municipality
+municipality	57064	Péruwelz	Q668630	arrondissement	57000	seed.be_admin_municipality
+municipality	57072	Rumes	Q668903	arrondissement	57000	seed.be_admin_municipality
+municipality	57081	Tournai	Q173219	arrondissement	57000	seed.be_admin_municipality
+arrondissement	58000	Arrondissement de La Louvière	Q62011183	province	50000	seed.be_admin_arrondissement
+municipality	58001	La Louvière	Q211572	arrondissement	58000	seed.be_admin_municipality
+municipality	58002	Binche	Q95121	arrondissement	58000	seed.be_admin_municipality
+municipality	58003	Estinnes	Q666446	arrondissement	58000	seed.be_admin_municipality
+municipality	58004	Morlanwelz	Q668493	arrondissement	58000	seed.be_admin_municipality
+province	60000	Province de Liège	Q1127	region	03000	seed.be_admin_province
+arrondissement	61000	Arrondissement de Huy	Q94019	province	60000	seed.be_admin_arrondissement
+municipality	61003	Amay	Q455969	arrondissement	61000	seed.be_admin_municipality
+municipality	61079	Anthisnes	Q572472	arrondissement	61000	seed.be_admin_municipality
+municipality	61010	Burdinne	Q681368	arrondissement	61000	seed.be_admin_municipality
+municipality	61012	Clavier	Q681854	arrondissement	61000	seed.be_admin_municipality
+municipality	61080	Engis	Q682223	arrondissement	61000	seed.be_admin_municipality
+municipality	61019	Ferrières	Q682570	arrondissement	61000	seed.be_admin_municipality
+municipality	61024	Hamoir	Q683083	arrondissement	61000	seed.be_admin_municipality
+municipality	61028	Héron	Q683321	arrondissement	61000	seed.be_admin_municipality
+municipality	61031	Huy	Q207095	arrondissement	61000	seed.be_admin_municipality
+municipality	61039	Marchin	Q710190	arrondissement	61000	seed.be_admin_municipality
+municipality	61041	Modave	Q710237	arrondissement	61000	seed.be_admin_municipality
+municipality	61043	Nandrin	Q710280	arrondissement	61000	seed.be_admin_municipality
+municipality	61048	Ouffet	Q222233	arrondissement	61000	seed.be_admin_municipality
+municipality	61081	Tinlot	Q711152	arrondissement	61000	seed.be_admin_municipality
+municipality	61063	Verlaine	Q711292	arrondissement	61000	seed.be_admin_municipality
+municipality	61068	Villers-le-Bouillet	Q711373	arrondissement	61000	seed.be_admin_municipality
+municipality	61072	Wanze	Q711443	arrondissement	61000	seed.be_admin_municipality
+arrondissement	62000	Arrondissement de Liège	Q94000	province	60000	seed.be_admin_arrondissement
+municipality	62003	Ans	Q499594	arrondissement	62000	seed.be_admin_municipality
+municipality	62006	Awans	Q680564	arrondissement	62000	seed.be_admin_municipality
+municipality	62009	Aywaille	Q793396	arrondissement	62000	seed.be_admin_municipality
+municipality	62011	Bassenge	Q680918	arrondissement	62000	seed.be_admin_municipality
+municipality	62015	Beyne-Heusay	Q681039	arrondissement	62000	seed.be_admin_municipality
+municipality	62119	Blégny	Q681109	arrondissement	62000	seed.be_admin_municipality
+municipality	62022	Chaudfontaine	Q503363	arrondissement	62000	seed.be_admin_municipality
+municipality	62026	Comblain-au-Pont	Q681909	arrondissement	62000	seed.be_admin_municipality
+municipality	62027	Dalhem	Q846182	arrondissement	62000	seed.be_admin_municipality
+municipality	62032	Esneux	Q682271	arrondissement	62000	seed.be_admin_municipality
+municipality	62120	Flémalle	Q175322	arrondissement	62000	seed.be_admin_municipality
+municipality	62038	Fléron	Q682811	arrondissement	62000	seed.be_admin_municipality
+municipality	62118	Grâce-Hollogne	Q683034	arrondissement	62000	seed.be_admin_municipality
+municipality	62051	Herstal	Q211033	arrondissement	62000	seed.be_admin_municipality
+municipality	62060	Juprelle	Q914102	arrondissement	62000	seed.be_admin_municipality
+municipality	62063	Liège	Q3992	arrondissement	62000	seed.be_admin_municipality
+municipality	62121	Neupré	Q710316	arrondissement	62000	seed.be_admin_municipality
+municipality	62079	Oupeye	Q286215	arrondissement	62000	seed.be_admin_municipality
+municipality	62093	Saint-Nicolas	Q65062	arrondissement	62000	seed.be_admin_municipality
+municipality	62096	Seraing	Q194037	arrondissement	62000	seed.be_admin_municipality
+municipality	62099	Soumagne	Q696099	arrondissement	62000	seed.be_admin_municipality
+municipality	62100	Sprimont	Q696110	arrondissement	62000	seed.be_admin_municipality
+municipality	62122	Trooz	Q711205	arrondissement	62000	seed.be_admin_municipality
+municipality	62108	Visé	Q49743	arrondissement	62000	seed.be_admin_municipality
+arrondissement	63000	Arrondissement de Verviers	Q93989	province	60000	seed.be_admin_arrondissement
+municipality	63001	Amel	Q159868	arrondissement	63000	seed.be_admin_municipality
+municipality	63003	Aubel	Q678920	arrondissement	63000	seed.be_admin_municipality
+municipality	63004	Baelen	Q680845	arrondissement	63000	seed.be_admin_municipality
+municipality	63012	Büllingen	Q152737	arrondissement	63000	seed.be_admin_municipality
+municipality	63087	Burg-Reuland	Q159981	arrondissement	63000	seed.be_admin_municipality
+municipality	63013	Bütgenbach	Q160005	arrondissement	63000	seed.be_admin_municipality
+municipality	63020	Dison	Q682105	arrondissement	63000	seed.be_admin_municipality
+municipality	63023	Eupen	Q151831	arrondissement	63000	seed.be_admin_municipality
+municipality	63035	Herve	Q683465	arrondissement	63000	seed.be_admin_municipality
+municipality	63038	Jalhay	Q683634	arrondissement	63000	seed.be_admin_municipality
+municipality	63040	Kelmis	Q159864	arrondissement	63000	seed.be_admin_municipality
+municipality	63045	Lierneux	Q710022	arrondissement	63000	seed.be_admin_municipality
+municipality	63046	Limbourg	Q506739	arrondissement	63000	seed.be_admin_municipality
+municipality	63048	Lontzen	Q159958	arrondissement	63000	seed.be_admin_municipality
+municipality	63049	Malmedy	Q159838	arrondissement	63000	seed.be_admin_municipality
+municipality	63057	Olne	Q710358	arrondissement	63000	seed.be_admin_municipality
+municipality	63058	Pepinster	Q710522	arrondissement	63000	seed.be_admin_municipality
+municipality	63088	Plombières	Q710606	arrondissement	63000	seed.be_admin_municipality
+municipality	63061	Raeren	Q152734	arrondissement	63000	seed.be_admin_municipality
+municipality	63067	Sankt Vith	Q152748	arrondissement	63000	seed.be_admin_municipality
+municipality	63072	Spa	Q39865	arrondissement	63000	seed.be_admin_municipality
+municipality	63073	Stavelot	Q468920	arrondissement	63000	seed.be_admin_municipality
+municipality	63075	Stoumont	Q711046	arrondissement	63000	seed.be_admin_municipality
+municipality	63076	Theux	Q711079	arrondissement	63000	seed.be_admin_municipality
+municipality	63089	Thimister-Clermont	Q711115	arrondissement	63000	seed.be_admin_municipality
+municipality	63086	Trois-Ponts	Q711183	arrondissement	63000	seed.be_admin_municipality
+municipality	63079	Verviers	Q202954	arrondissement	63000	seed.be_admin_municipality
+municipality	63080	Waimes	Q159961	arrondissement	63000	seed.be_admin_municipality
+municipality	63084	Welkenraedt	Q152743	arrondissement	63000	seed.be_admin_municipality
+arrondissement	64000	Arrondissement de Waremme	Q93970	province	60000	seed.be_admin_arrondissement
+municipality	64008	Berloz	Q680978	arrondissement	64000	seed.be_admin_municipality
+municipality	64015	Braives	Q681153	arrondissement	64000	seed.be_admin_municipality
+municipality	64021	Crisnée	Q929415	arrondissement	64000	seed.be_admin_municipality
+municipality	64023	Donceel	Q682163	arrondissement	64000	seed.be_admin_municipality
+municipality	64076	Faimes	Q682441	arrondissement	64000	seed.be_admin_municipality
+municipality	64025	Fexhe-le-Haut-Clocher	Q379113	arrondissement	64000	seed.be_admin_municipality
+municipality	64029	Geer	Q682982	arrondissement	64000	seed.be_admin_municipality
+municipality	64034	Hannut	Q683141	arrondissement	64000	seed.be_admin_municipality
+municipality	64047	Lincent	Q509457	arrondissement	64000	seed.be_admin_municipality
+municipality	64056	Oreye	Q710409	arrondissement	64000	seed.be_admin_municipality
+municipality	64063	Remicourt	Q710690	arrondissement	64000	seed.be_admin_municipality
+municipality	64065	Saint-Georges-sur-Meuse	Q710718	arrondissement	64000	seed.be_admin_municipality
+municipality	64074	Waremme	Q711474	arrondissement	64000	seed.be_admin_municipality
+municipality	64075	Wasseiges	Q711502	arrondissement	64000	seed.be_admin_municipality
+province	80000	Province du Luxembourg	Q1126	region	03000	seed.be_admin_province
+arrondissement	81000	Arrondissement d'Arlon	Q93816	province	80000	seed.be_admin_arrondissement
+municipality	81001	Arlon	Q675960	arrondissement	81000	seed.be_admin_municipality
+municipality	81003	Attert	Q690926	arrondissement	81000	seed.be_admin_municipality
+municipality	81004	Aubange	Q713088	arrondissement	81000	seed.be_admin_municipality
+municipality	81013	Martelange	Q713498	arrondissement	81000	seed.be_admin_municipality
+municipality	81015	Messancy	Q692243	arrondissement	81000	seed.be_admin_municipality
+arrondissement	82000	Arrondissement de Bastogne	Q93925	province	80000	seed.be_admin_arrondissement
+municipality	82039	Bastogne	Q34021	arrondissement	82000	seed.be_admin_municipality
+municipality	82009	Fauvillers	Q713282	arrondissement	82000	seed.be_admin_municipality
+municipality	82037	Gouvy	Q713319	arrondissement	82000	seed.be_admin_municipality
+municipality	82014	Houffalize	Q650274	arrondissement	82000	seed.be_admin_municipality
+municipality	82038	Sainte-Ode	Q713708	arrondissement	82000	seed.be_admin_municipality
+municipality	82036	Vaux-sur-Sûre	Q713864	arrondissement	82000	seed.be_admin_municipality
+municipality	82032	Vielsalm	Q650172	arrondissement	82000	seed.be_admin_municipality
+arrondissement	83000	Arrondissement de Marche-en-Famenne	Q93905	province	80000	seed.be_admin_arrondissement
+municipality	83012	Durbuy	Q497697	arrondissement	83000	seed.be_admin_municipality
+municipality	83013	Erezée	Q287813	arrondissement	83000	seed.be_admin_municipality
+municipality	83028	Hotton	Q160709	arrondissement	83000	seed.be_admin_municipality
+municipality	83031	La Roche-en-Ardenne	Q159974	arrondissement	83000	seed.be_admin_municipality
+municipality	83055	Manhay	Q713458	arrondissement	83000	seed.be_admin_municipality
+municipality	83034	Marche-en-Famenne	Q269908	arrondissement	83000	seed.be_admin_municipality
+municipality	83040	Nassogne	Q429794	arrondissement	83000	seed.be_admin_municipality
+municipality	83044	Rendeux	Q713615	arrondissement	83000	seed.be_admin_municipality
+municipality	83049	Tenneville	Q511239	arrondissement	83000	seed.be_admin_municipality
+arrondissement	84000	Arrondissement de Neufchâteau	Q93873	province	80000	seed.be_admin_arrondissement
+municipality	84009	Bertrix	Q713135	arrondissement	84000	seed.be_admin_municipality
+municipality	84010	Bouillon	Q217216	arrondissement	84000	seed.be_admin_municipality
+municipality	84016	Daverdisse	Q713189	arrondissement	84000	seed.be_admin_municipality
+municipality	84029	Herbeumont	Q713353	arrondissement	84000	seed.be_admin_municipality
+municipality	84033	Léglise	Q713404	arrondissement	84000	seed.be_admin_municipality
+municipality	84035	Libin	Q713433	arrondissement	84000	seed.be_admin_municipality
+municipality	84077	Libramont-Chevigny	Q612267	arrondissement	84000	seed.be_admin_municipality
+municipality	84043	Neufchâteau	Q650135	arrondissement	84000	seed.be_admin_municipality
+municipality	84050	Paliseul	Q696127	arrondissement	84000	seed.be_admin_municipality
+municipality	84059	Saint-Hubert	Q713740	arrondissement	84000	seed.be_admin_municipality
+municipality	84068	Tellin	Q713812	arrondissement	84000	seed.be_admin_municipality
+municipality	84075	Wellin	Q713911	arrondissement	84000	seed.be_admin_municipality
+arrondissement	85000	Arrondissement de Virton	Q93860	province	80000	seed.be_admin_arrondissement
+municipality	85007	Chiny	Q713170	arrondissement	85000	seed.be_admin_municipality
+municipality	85009	Etalle	Q288872	arrondissement	85000	seed.be_admin_municipality
+municipality	85011	Florenville	Q713300	arrondissement	85000	seed.be_admin_municipality
+municipality	85046	Habay	Q713334	arrondissement	85000	seed.be_admin_municipality
+municipality	85024	Meix-devant-Virton	Q669134	arrondissement	85000	seed.be_admin_municipality
+municipality	85026	Musson	Q713538	arrondissement	85000	seed.be_admin_municipality
+municipality	85047	Rouvroy	Q713677	arrondissement	85000	seed.be_admin_municipality
+municipality	85034	Saint-Léger	Q713786	arrondissement	85000	seed.be_admin_municipality
+municipality	85039	Tintigny	Q713845	arrondissement	85000	seed.be_admin_municipality
+municipality	85045	Virton	Q456495	arrondissement	85000	seed.be_admin_municipality
+province	90000	Province de Namur	Q1125	region	03000	seed.be_admin_province
+arrondissement	91000	Arrondissement de Dinant	Q93740	province	90000	seed.be_admin_arrondissement
+municipality	91005	Anhée	Q545889	arrondissement	91000	seed.be_admin_municipality
+municipality	91013	Beauraing	Q329621	arrondissement	91000	seed.be_admin_municipality
+municipality	91015	Bièvre	Q715371	arrondissement	91000	seed.be_admin_municipality
+municipality	91030	Ciney	Q456490	arrondissement	91000	seed.be_admin_municipality
+municipality	91034	Dinant	Q108247	arrondissement	91000	seed.be_admin_municipality
+municipality	91054	Gedinne	Q241069	arrondissement	91000	seed.be_admin_municipality
+municipality	91059	Hamois	Q696133	arrondissement	91000	seed.be_admin_municipality
+municipality	91142	Hastière	Q514641	arrondissement	91000	seed.be_admin_municipality
+municipality	91064	Havelange	Q720709	arrondissement	91000	seed.be_admin_municipality
+municipality	91072	Houyet	Q695390	arrondissement	91000	seed.be_admin_municipality
+municipality	91103	Onhaye	Q695349	arrondissement	91000	seed.be_admin_municipality
+municipality	91114	Rochefort	Q497764	arrondissement	91000	seed.be_admin_municipality
+municipality	91120	Somme-Leuze	Q721342	arrondissement	91000	seed.be_admin_municipality
+municipality	91143	Vresse-sur-Semois	Q650206	arrondissement	91000	seed.be_admin_municipality
+municipality	91141	Yvoir	Q650163	arrondissement	91000	seed.be_admin_municipality
+arrondissement	92000	Arrondissement de Namur	Q93782	province	90000	seed.be_admin_arrondissement
+municipality	92003	Andenne	Q333466	arrondissement	92000	seed.be_admin_municipality
+municipality	92006	Assesse	Q715246	arrondissement	92000	seed.be_admin_municipality
+municipality	92035	Eghezée	Q274522	arrondissement	92000	seed.be_admin_municipality
+municipality	92138	Fernelmont	Q696104	arrondissement	92000	seed.be_admin_municipality
+municipality	92045	Floreffe	Q578583	arrondissement	92000	seed.be_admin_municipality
+municipality	92048	Fosses-la-Ville	Q720478	arrondissement	92000	seed.be_admin_municipality
+municipality	92142	Gembloux	Q223927	arrondissement	92000	seed.be_admin_municipality
+municipality	92054	Gesves	Q388879	arrondissement	92000	seed.be_admin_municipality
+municipality	92140	Jemeppe-sur-Sambre	Q720791	arrondissement	92000	seed.be_admin_municipality
+municipality	92141	La Bruyère	Q715422	arrondissement	92000	seed.be_admin_municipality
+municipality	92087	Mettet	Q118769	arrondissement	92000	seed.be_admin_municipality
+municipality	92094	Namur	Q134121	arrondissement	92000	seed.be_admin_municipality
+municipality	92097	Ohey	Q721090	arrondissement	92000	seed.be_admin_municipality
+municipality	92101	Profondeville	Q696940	arrondissement	92000	seed.be_admin_municipality
+municipality	92137	Sambreville	Q650185	arrondissement	92000	seed.be_admin_municipality
+municipality	92114	Sombreffe	Q650226	arrondissement	92000	seed.be_admin_municipality
+arrondissement	93000	Arrondissement de Philippeville	Q93769	province	90000	seed.be_admin_arrondissement
+municipality	93010	Cerfontaine	Q715474	arrondissement	93000	seed.be_admin_municipality
+municipality	93014	Couvin	Q326771	arrondissement	93000	seed.be_admin_municipality
+municipality	93018	Doische	Q720275	arrondissement	93000	seed.be_admin_municipality
+municipality	93022	Florennes	Q720429	arrondissement	93000	seed.be_admin_municipality
+municipality	93056	Philippeville	Q650239	arrondissement	93000	seed.be_admin_municipality
+municipality	93090	Viroinval	Q650261	arrondissement	93000	seed.be_admin_municipality
+municipality	93088	Walcourt	Q497565	arrondissement	93000	seed.be_admin_municipality

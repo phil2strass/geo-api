@@ -47,3 +47,27 @@ databaseChangeLog:
       file: changelog/24-load-territory-translations-from-wikidata.sql
   - include:
       file: changelog/25-create-admin-territory-structure.sql
+  - include:
+      file: changelog/26-load-country-admin-levels.sql
+  - include:
+      file: changelog/27-override-germany-admin-levels.sql
+  - include:
+      file: changelog/28-extend-germany-admin-levels-with-government-regions.sql
+  - include:
+      file: changelog/29-extend-germany-admin-levels-with-kreise.sql
+  - include:
+      file: changelog/30-override-united-kingdom-admin-levels.sql
+  - include:
+      file: changelog/31-override-belgium-admin-levels.sql
+  - include:
+      file: changelog/32-override-luxembourg-admin-levels.sql
+  - include:
+      file: changelog/33-override-netherlands-admin-levels.sql
+  - include:
+      file: changelog/34-override-denmark-admin-levels.sql
+  - include:
+      file: changelog/35-override-switzerland-admin-levels.sql
+  - include:
+      file: changelog/36-override-austria-admin-levels.sql
+  - include:
+      file: changelog/37-override-italy-admin-levels.sql

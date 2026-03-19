@@ -1,0 +1,358 @@
+level_code	admin_code	display_name	territory_name	territory_wikidata_id	territory_type	parent_level_code	parent_admin_code	source
+province	PV20	Groningen	Groningen	Q752	province			seed.nl_admin_province
+province	PV21	Fryslân	Fryslân	Q770	province			seed.nl_admin_province
+province	PV22	Drenthe	Drenthe	Q772	province			seed.nl_admin_province
+province	PV23	Overijssel	Overijssel	Q773	province			seed.nl_admin_province
+province	PV24	Flevoland	Flevoland	Q707	province			seed.nl_admin_province
+province	PV25	Gelderland	Gelderland	Q775	province			seed.nl_admin_province
+province	PV26	Utrecht	Utrecht	Q776	province			seed.nl_admin_province
+province	PV27	Noord-Holland	Noord-Holland	Q701	province			seed.nl_admin_province
+province	PV28	Zuid-Holland	Zuid-Holland	Q694	province			seed.nl_admin_province
+province	PV29	Zeeland	Zeeland	Q705	province			seed.nl_admin_province
+province	PV30	Noord-Brabant	Noord-Brabant	Q1101	province			seed.nl_admin_province
+province	PV31	Limburg	Limburg	Q1093	province			seed.nl_admin_province
+municipality	GM1680	Aa en Hunze	Aa en Hunze	Q300665	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0358	Aalsmeer	Aalsmeer	Q9897	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0197	Aalten	Aalten	Q275909	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0059	Achtkarspelen	Achtkarspelen	Q341024	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0482	Alblasserdam	Alblasserdam	Q736131	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0613	Albrandswaard	Albrandswaard	Q934525	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0361	Alkmaar	Alkmaar	Q972	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0141	Almelo	Almelo	Q988	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0034	Almere	Almere	Q83178	municipality	province	PV24	seed.nl_admin_municipality
+municipality	GM0484	Alphen aan den Rijn	Alphen aan den Rijn	Q213246	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1723	Alphen-Chaam	Alphen-Chaam	Q9809	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1959	Altena	Altena	Q28057171	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0060	Ameland	Ameland	Q208259	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0307	Amersfoort	Amersfoort	Q992	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0362	Amstelveen	Amstelveen	Q9898	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0363	Amsterdam	Amsterdam	Q9899	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0200	Apeldoorn	Apeldoorn	Q101918	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0202	Arnhem	Arnhem	Q1310	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0106	Assen	Assen	Q798	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0743	Asten	Asten	Q9810	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0744	Baarle-Nassau	Baarle-Nassau	Q9811	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0308	Baarn	Baarn	Q10027	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0489	Barendrecht	Barendrecht	Q204239	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0203	Barneveld	Barneveld	Q164098	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0888	Beek (L.)	Beek	Q9806	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1954	Beekdaelen	Beekdaelen	Q29957432	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0889	Beesel	Beesel	Q9805	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1945	Berg en Dal	Berg en Dal	Q18088965	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1724	Bergeijk	Bergeijk	Q9812	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0893	Bergen (L.)	Bergen	Q9804	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0373	Bergen (NH.)	Bergen	Q9901	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0748	Bergen op Zoom	Bergen op Zoom	Q9814	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1859	Berkelland	Berkelland	Q47104	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1721	Bernheze	Bernheze	Q9815	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0753	Best	Best	Q9816	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0209	Beuningen	Beuningen	Q851244	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0375	Beverwijk	Beverwijk	Q9905	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0310	De Bilt	De Bilt	Q10035	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1728	Bladel	Bladel	Q9817	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0376	Blaricum	Blaricum	Q9906	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0377	Bloemendaal	Bloemendaal	Q9908	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1901	Bodegraven-Reeuwijk	Bodegraven-Reeuwijk	Q889423	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0755	Boekel	Boekel	Q9818	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1681	Borger-Odoorn	Borger-Odoorn	Q835118	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0147	Borne	Borne	Q9997	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0654	Borsele	Borsele	Q10071	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0757	Boxtel	Boxtel	Q9821	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0758	Breda	Breda	Q9822	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1876	Bronckhorst	Bronckhorst	Q747999	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0213	Brummen	Brummen	Q843895	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0899	Brunssum	Brunssum	Q9803	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0312	Bunnik	Bunnik	Q10032	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0313	Bunschoten	Bunschoten	Q10034	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0214	Buren	Buren	Q73061	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0502	Capelle aan den IJssel	Capelle aan den IJssel	Q734860	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0383	Castricum	Castricum	Q9910	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0109	Coevorden	Coevorden	Q60453	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM1706	Cranendonck	Cranendonck	Q9823	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0216	Culemborg	Culemborg	Q816699	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0148	Dalfsen	Dalfsen	Q9998	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM1891	Dantumadiel	Dantumadeel	Q389213	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0503	Delft	Delft	Q690	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0762	Deurne	Deurne	Q9828	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0150	Deventer	Deventer	Q10001	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0384	Diemen	Diemen	Q9913	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1980	Dijk en Waard	Dijk en Waard	Q104758977	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1774	Dinkelland	Dinkelland	Q9999	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0221	Doesburg	Doesburg	Q165736	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0222	Doetinchem	Doetinchem	Q145845	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0766	Dongen	Dongen	Q9829	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0505	Dordrecht	Dordrecht	Q26421	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0498	Drechterland	Drechterland	Q9915	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1719	Drimmelen	Drimmelen	Q9830	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0303	Dronten	Dronten	Q328087	municipality	province	PV24	seed.nl_admin_municipality
+municipality	GM0225	Druten	Druten	Q932142	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0226	Duiven	Duiven	Q613989	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1711	Echt-Susteren	Echt-Susteren	Q9802	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0385	Edam-Volendam	Edam-Volendam	Q9917	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0228	Ede	Ede	Q26555	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0317	Eemnes	Eemnes	Q10037	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1979	Eemsdelta	Eemsdelta	Q97055892	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM0770	Eersel	Eersel	Q9831	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1903	Eijsden-Margraten	Eijsden-Margraten	Q9766	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0772	Eindhoven	Eindhoven	Q9832	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0230	Elburg	Elburg	Q165662	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0114	Emmen	Emmen	Q14641	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0388	Enkhuizen	Enkhuizen	Q9918	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0153	Enschede	Enschede	Q10002	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0232	Epe	Epe	Q238396	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0233	Ermelo	Ermelo	Q753920	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0777	Etten-Leur	Etten-Leur	Q9833	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1940	De Fryske Marren	De Friese Meren	Q2114866	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0779	Geertruidenberg	Geertruidenberg	Q9834	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1771	Geldrop-Mierlo	Geldrop-Mierlo	Q9835	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1652	Gemert-Bakel	Gemert-Bakel	Q9836	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0907	Gennep	Gennep	Q9800	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0784	Gilze en Rijen	Gilze en Rijen	Q9837	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1924	Goeree-Overflakkee	Goeree-Overflakkee	Q933459	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0664	Goes	Goes	Q10072	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0785	Goirle	Goirle	Q9838	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1942	Gooise Meren	Gooise Meren	Q18335889	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0512	Gorinchem	Gorinchem	Q244327	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0513	Gouda	Gouda	Q84125	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0518	's-Gravenhage	Den Haag	Q36600	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0014	Groningen	Groningen	Q892526	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM1729	Gulpen-Wittem	Gulpen-Wittem	Q9767	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0158	Haaksbergen	Haaksbergen	Q10003	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0392	Haarlem	Haarlem	Q9920	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0394	Haarlemmermeer	Haarlemmermeer	Q9924	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1655	Halderberge	Halderberge	Q9841	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0160	Hardenberg	Hardenberg	Q3916626	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0243	Harderwijk	Harderwijk	Q58931	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0523	Hardinxveld-Giessendam	Hardinxveld-Giessendam	Q953012	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0072	Harlingen	Harlingen	Q2536628	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0244	Hattem	Hattem	Q58797	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0396	Heemskerk	Heemskerk	Q9926	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0397	Heemstede	Heemstede	Q9928	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0246	Heerde	Heerde	Q615491	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0074	Heerenveen	Heerenveen	Q574558	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0917	Heerlen	Heerlen	Q9799	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1658	Heeze-Leende	Heeze-Leende	Q9843	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0399	Heiloo	Heiloo	Q9932	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0400	Den Helder	Den Helder	Q9911	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0163	Hellendoorn	Hellendoorn	Q10005	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0794	Helmond	Helmond	Q9844	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0531	Hendrik-Ido-Ambacht	Hendrik-Ido-Ambacht	Q538725	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0164	Hengelo (O.)	Hengelo	Q10006	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0796	's-Hertogenbosch	's-Hertogenbosch	Q9807	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0252	Heumen	Heumen	Q932155	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0797	Heusden	Heusden	Q9845	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0534	Hillegom	Hillegom	Q932116	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0798	Hilvarenbeek	Hilvarenbeek	Q9846	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0402	Hilversum	Hilversum	Q9934	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1963	Hoeksche Waard	Hoeksche Waard	Q56682979	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1735	Hof van Twente	Hof van Twente	Q9996	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM1966	Het Hogeland	Het Hogeland	Q27959423	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM1911	Hollands Kroon	Hollands Kroon	Q9936	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0118	Hoogeveen	Hoogeveen	Q208012	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0405	Hoorn	Hoorn	Q9938	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1507	Horst aan de Maas	Horst aan de Maas	Q9797	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0321	Houten	Houten	Q10044	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0406	Huizen	Huizen	Q9939	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0677	Hulst	Hulst	Q10073	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0353	IJsselstein	IJsselstein	Q10045	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1884	Kaag en Braassem	Kaag en Braassem	Q1348471	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0166	Kampen	Kampen	Q23814173	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0678	Kapelle	Kapelle	Q10074	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0537	Katwijk	Katwijk	Q208764	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0928	Kerkrade	Kerkrade	Q9796	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1598	Koggenland	Koggenland	Q9940	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0542	Krimpen aan den IJssel	Krimpen aan den IJssel	Q739449	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1931	Krimpenerwaard	Krimpenerwaard	Q15991891	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1659	Laarbeek	Laarbeek	Q9848	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1982	Land van Cuijk	Land van Cuijk	Q107242476	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0882	Landgraaf	Landgraaf	Q9795	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0415	Landsmeer	Landsmeer	Q9942	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1621	Lansingerland	Lansingerland	Q1144739	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0417	Laren (NH.)	Laren	Q9945	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0080	Leeuwarden	Leeuwarden	Q2311189	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0546	Leiden	Leiden	Q43631	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0547	Leiderdorp	Leiderdorp	Q1000817	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1916	Leidschendam-Voorburg	Leidschendam-Voorburg	Q112675	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0995	Lelystad	Lelystad	Q166065	municipality	province	PV24	seed.nl_admin_municipality
+municipality	GM1640	Leudal	Leudal	Q9793	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0327	Leusden	Leusden	Q10046	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1705	Lingewaard	Lingewaard	Q952939	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0553	Lisse	Lisse	Q332730	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0262	Lochem	Lochem	Q932058	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0809	Loon op Zand	Loon op Zand	Q9850	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0331	Lopik	Lopik	Q10047	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0168	Losser	Losser	Q10015	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0263	Maasdriel	Maasdriel	Q904544	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1641	Maasgouw	Maasgouw	Q9792	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1991	Maashorst	Maashorst	Q104758976	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0556	Maassluis	Maassluis	Q497130	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0935	Maastricht	Maastricht	Q1309	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0420	Medemblik	Medemblik	Q9947	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0938	Meerssen	Meerssen	Q9772	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1948	Meierijstad	Meierijstad	Q18655255	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0119	Meppel	Meppel	Q60425	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0687	Middelburg (Z.)	Middelburg	Q10076	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM1842	Midden-Delfland	Midden-Delfland	Q952206	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1731	Midden-Drenthe	Midden-Drenthe	Q835125	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM1952	Midden-Groningen	Midden-Groningen	Q23987486	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM1709	Moerdijk	Moerdijk	Q9854	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1978	Molenlanden	Molenlanden	Q42115473	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1955	Montferland	Montferland	Q952963	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0335	Montfoort	Montfoort	Q10048	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0944	Mook en Middelaar	Mook en Middelaar	Q9791	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1740	Neder-Betuwe	Neder-Betuwe	Q952997	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0946	Nederweert	Nederweert	Q9789	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0356	Nieuwegein	Nieuwegein	Q10050	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0569	Nieuwkoop	Nieuwkoop	Q948866	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0267	Nijkerk	Nijkerk	Q73226	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0268	Nijmegen	Nijmegen	Q47887	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1930	Nissewaard	Nissewaard	Q14853527	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1970	Noardeast-Fryslân	Noardeast-Fryslân	Q29509979	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM1695	Noord-Beveland	Noord-Beveland	Q10077	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM1699	Noordenveld	Noordenveld	Q835083	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0171	Noordoostpolder	Noordoostpolder	Q69262	municipality	province	PV24	seed.nl_admin_municipality
+municipality	GM0575	Noordwijk	Noordwijk	Q455464	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0820	Nuenen, Gerwen en Nederwetten	Nuenen, Gerwen en Nederwetten	Q9855	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0302	Nunspeet	Nunspeet	Q931997	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0579	Oegstgeest	Oegstgeest	Q94747	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0823	Oirschot	Oirschot	Q9856	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0824	Oisterwijk	Oisterwijk	Q9857	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1895	Oldambt	Oldambt	Q1347872	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM0269	Oldebroek	Oldebroek	Q932042	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0173	Oldenzaal	Oldenzaal	Q10016	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM1773	Olst-Wijhe	Olst-Wijhe	Q10017	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0175	Ommen	Ommen	Q10018	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM1586	Oost Gelre	Oost Gelre	Q1147580	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0826	Oosterhout	Oosterhout	Q9858	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0085	Ooststellingwerf	Ooststellingwerf	Q259205	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0431	Oostzaan	Oostzaan	Q9951	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0432	Opmeer	Opmeer	Q9952	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0086	Opsterland	Opsterland	Q840632	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0828	Oss	Oss	Q9859	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1509	Oude IJsselstreek	Oude IJsselstreek	Q932031	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0437	Ouder-Amstel	Ouder-Amstel	Q9953	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0589	Oudewater	Oudewater	Q10051	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1734	Overbetuwe	Overbetuwe	Q600871	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0590	Papendrecht	Papendrecht	Q934511	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1894	Peel en Maas	Peel en Maas	Q9785	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0765	Pekela	Pekela	Q932077	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM1926	Pijnacker-Nootdorp	Pijnacker-Nootdorp	Q281768	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0439	Purmerend	Purmerend	Q110423208	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0273	Putten	Putten	Q939948	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0177	Raalte	Raalte	Q10019	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0703	Reimerswaal	Reimerswaal	Q10078	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0274	Renkum	Renkum	Q691725	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0339	Renswoude	Renswoude	Q10039	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1667	Reusel-De Mierden	Reusel-De Mierden	Q9860	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0275	Rheden	Rheden	Q843899	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0340	Rhenen	Rhenen	Q10040	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0597	Ridderkerk	Ridderkerk	Q222220	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1742	Rijssen-Holten	Rijssen-Holten	Q10020	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0603	Rijswijk (ZH.)	Rijswijk	Q506745	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1669	Roerdalen	Roerdalen	Q9784	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0957	Roermond	Roermond	Q8167972	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0736	De Ronde Venen	De Ronde Venen	Q10036	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1674	Roosendaal	Roosendaal	Q9861	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0599	Rotterdam	Rotterdam	Q2680952	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0277	Rozendaal	Rozendaal	Q372592	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0840	Rucphen	Rucphen	Q9862	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0441	Schagen	Schagen	Q9955	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0279	Scherpenzeel	Scherpenzeel	Q939964	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0606	Schiedam	Schiedam	Q204709	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0088	Schiermonnikoog	Schiermonnikoog	Q208011	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM1676	Schouwen-Duiveland	Schouwen-Duiveland	Q10079	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0965	Simpelveld	Simpelveld	Q9769	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0845	Sint-Michielsgestel	Sint-Michielsgestel	Q9866	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1883	Sittard-Geleen	Sittard-Geleen	Q9781	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0610	Sliedrecht	Sliedrecht	Q750760	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1714	Sluis	Sluis	Q10080	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0090	Smallingerland	Smallingerland	Q507065	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0342	Soest	Soest	Q10041	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0847	Someren	Someren	Q9868	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0848	Son en Breugel	Son en Breugel	Q9869	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0037	Stadskanaal	Stadskanaal	Q73074	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM0180	Staphorst	Staphorst	Q10021	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0532	Stede Broec	Stede Broec	Q9962	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0851	Steenbergen	Steenbergen	Q9870	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1708	Steenwijkerland	Steenwijkerland	Q10022	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0971	Stein (L.)	Stein	Q9780	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1904	Stichtse Vecht	Stichtse Vecht	Q10042	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1900	Súdwest-Fryslân	Súdwest-Fryslân	Q1473276	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0715	Terneuzen	Terneuzen	Q10081	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0093	Terschelling	Terschelling	Q204412	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0448	Texel	Texel	Q9966	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM1525	Teylingen	Teylingen	Q1368003	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0716	Tholen	Tholen	Q10082	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0281	Tiel	Tiel	Q73221	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0855	Tilburg	Tilburg	Q26430	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0183	Tubbergen	Tubbergen	Q10023	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM1700	Twenterand	Twenterand	Q10024	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM1730	Tynaarlo	Tynaarlo	Q840457	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0737	Tytsjerksteradiel	Tietjerksteradeel	Q840636	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0450	Uitgeest	Uitgeest	Q9967	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0451	Uithoorn	Uithoorn	Q9969	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0184	Urk	Urk	Q273746	municipality	province	PV24	seed.nl_admin_municipality
+municipality	GM0344	Utrecht	Utrecht	Q803	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1581	Utrechtse Heuvelrug	Utrechtse Heuvelrug	Q10043	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0981	Vaals	Vaals	Q9768	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0994	Valkenburg aan de Geul	Valkenburg aan de Geul	Q9771	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0858	Valkenswaard	Valkenswaard	Q9873	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0047	Veendam	Veendam	Q73065	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM0345	Veenendaal	Veenendaal	Q1840	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0717	Veere	Veere	Q10083	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0861	Veldhoven	Veldhoven	Q9875	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0453	Velsen	Velsen	Q9970	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0983	Venlo	Venlo	Q9777	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM0984	Venray	Venray	Q9775	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1961	Vijfheerenlanden	Vijfheerenlanden	Q29032345	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0622	Vlaardingen	Vlaardingen	Q210007	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0096	Vlieland	Vlieland	Q207851	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0718	Vlissingen	Vlissingen	Q10084	municipality	province	PV29	seed.nl_admin_municipality
+municipality	GM0986	Voerendaal	Voerendaal	Q9770	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1992	Voorne aan Zee	Voorne aan Zee	Q106436626	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0626	Voorschoten	Voorschoten	Q848324	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0285	Voorst	Voorst	Q384772	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0865	Vught	Vught	Q9876	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM1949	Waadhoeke	Waadhoeke	Q27526271	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0866	Waalre	Waalre	Q9877	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0867	Waalwijk	Waalwijk	Q745038	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0627	Waddinxveen	Waddinxveen	Q826048	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0289	Wageningen	Wageningen	Q1305	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0629	Wassenaar	Wassenaar	Q505601	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0852	Waterland	Waterland	Q9971	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0988	Weert	Weert	Q9774	municipality	province	PV31	seed.nl_admin_municipality
+municipality	GM1960	West Betuwe	West Betuwe	Q30142059	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0668	West Maas en Waal	West Maas en Waal	Q658081	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1969	Westerkwartier	Westerkwartier	Q30011757	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM1701	Westerveld	Westerveld	Q747920	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0293	Westervoort	Westervoort	Q524808	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1950	Westerwolde	Westerwolde	Q27768267	municipality	province	PV20	seed.nl_admin_municipality
+municipality	GM1783	Westland	Westland	Q26556	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0098	Weststellingwerf	Weststellingwerf	Q753913	municipality	province	PV21	seed.nl_admin_municipality
+municipality	GM0189	Wierden	Wierden	Q10025	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0296	Wijchen	Wijchen	Q72981	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1696	Wijdemeren	Wijdemeren	Q9975	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0352	Wijk bij Duurstede	Wijk bij Duurstede	Q10053	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0294	Winterswijk	Winterswijk	Q72974	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0873	Woensdrecht	Woensdrecht	Q9881	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0632	Woerden	Woerden	Q5128	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM1690	De Wolden	De Wolden	Q835108	municipality	province	PV22	seed.nl_admin_municipality
+municipality	GM0880	Wormerland	Wormerland	Q9976	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0351	Woudenberg	Woudenberg	Q10055	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0479	Zaanstad	Zaanstad	Q9978	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0297	Zaltbommel	Zaltbommel	Q1532373	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0473	Zandvoort	Zandvoort	Q9980	municipality	province	PV27	seed.nl_admin_municipality
+municipality	GM0050	Zeewolde	Zeewolde	Q184454	municipality	province	PV24	seed.nl_admin_municipality
+municipality	GM0355	Zeist	Zeist	Q10056	municipality	province	PV26	seed.nl_admin_municipality
+municipality	GM0299	Zevenaar	Zevenaar	Q197050	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM0637	Zoetermeer	Zoetermeer	Q26432	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0638	Zoeterwoude	Zoeterwoude	Q218259	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM1892	Zuidplas	Zuidplas	Q228673	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0879	Zundert	Zundert	Q9883	municipality	province	PV30	seed.nl_admin_municipality
+municipality	GM0301	Zutphen	Zutphen	Q15858232	municipality	province	PV25	seed.nl_admin_municipality
+municipality	GM1896	Zwartewaterland	Zwartewaterland	Q10026	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM0642	Zwijndrecht	Zwijndrecht	Q244692	municipality	province	PV28	seed.nl_admin_municipality
+municipality	GM0193	Zwolle	Zwolle	Q793	municipality	province	PV23	seed.nl_admin_municipality
+municipality	GM9001	Bonaire	Bonaire	Q25396	municipality			seed.nl_admin_special_municipality
+municipality	GM9002	Sint Eustatius	Sint Eustatius	Q26180	municipality			seed.nl_admin_special_municipality
+municipality	GM9003	Saba	Saba	Q25528	municipality			seed.nl_admin_special_municipality

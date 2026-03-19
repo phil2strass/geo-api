@@ -190,7 +190,102 @@ python3 scripts/import_territory_wikidata.py
 - `country_admin_level` : niveaux admin par pays
 - `admin_territory` : unites admin propres, avec `display_name` et `admin_code`
 
-Le sync administratif reste separe de la migration `18` et peuple pour l'instant la France sur les niveaux `region` et `department`.
+La migration `26-load-country-admin-levels.sql` seed `country_admin_level` pour tous les pays a partir du snapshot normalise `18-load-territory-from-wikidata.sql` (France conserve son override manuel defini en migration `25`).
+Pour regenerer ce seed :
+
+```bash
+python3 scripts/generate_country_admin_level_sql.py
+```
+
+Le sync administratif reste separe de la migration `18` et peuple pour l'instant :
+- la France sur les niveaux `region` et `department`
+- l'Allemagne sur les niveaux officiels `state`, `government_region` et `kreis`
+- le Royaume-Uni sur les niveaux officiels `constituent_country` et `local_authority_district`
+- la Belgique sur les niveaux officiels `region`, `province`, `arrondissement` et `municipality`
+- le Luxembourg sur les niveaux officiels `canton` et `municipality`
+- la Suisse sur les niveaux officiels `canton` et `municipality`
+- l'Autriche sur les niveaux officiels `state`, `district` et `municipality`
+- le Danemark sur les niveaux officiels `region`, `municipality` et `state_managed_area`
+- les Pays-Bas sur les niveaux officiels `province` et `municipality`
+- l'Italie sur les niveaux officiels `region`, `province_or_equivalent` et `municipality`
+
+Le seed officiel des Kreise allemands est versionne dans `scripts/data/de_kreise_seed.tsv`.
+Pour le regenerer depuis la couche officielle BKG `vg1000_krs` et le mapping Wikidata `P440` :
+
+```bash
+python3 scripts/generate_de_kreise_seed.py
+```
+
+Le seed officiel des local authority districts du Royaume-Uni est versionne dans
+`scripts/data/gb_local_authority_district_seed.tsv`.
+Pour le regenerer depuis les jeux ONS 2025 et le mapping Wikidata `P836` :
+
+```bash
+python3 scripts/generate_gb_local_authority_district_seed.py
+```
+
+Le seed administratif officiel de la Belgique est versionne dans
+`scripts/data/be_admin_seed.tsv`.
+Pour le regenerer depuis le REFNIS 2025 officiel de Statbel et le mapping Wikidata `P1567` :
+
+```bash
+python3 scripts/generate_be_admin_seed.py
+```
+
+Le seed administratif officiel du Luxembourg est versionne dans
+`scripts/data/lu_admin_seed.tsv`.
+Pour le regenerer depuis le CSV officiel ACT `commune-canton-district-circonscription-arrondissements`
+et le snapshot `18-load-territory-from-wikidata.sql` :
+
+```bash
+python3 scripts/generate_lu_admin_seed.py
+```
+
+Le seed administratif officiel de la Suisse est versionne dans
+`scripts/data/ch_admin_seed.tsv`.
+Pour le regenerer depuis l'API officielle BFS `communes/levels` au `01.01.2026`
+et le mapping Wikidata `P771` :
+
+```bash
+python3 scripts/generate_ch_admin_seed.py
+```
+
+Le seed administratif officiel de l'Autriche est versionne dans
+`scripts/data/at_admin_seed.tsv`.
+Pour le regenerer depuis les WFS officiels Statistik Austria `GEM_20260101` et
+`POLBEZ_20260101` et le mapping Wikidata `P964` :
+
+```bash
+python3 scripts/generate_at_admin_seed.py
+```
+
+Le seed administratif officiel du Danemark est versionne dans
+`scripts/data/dk_admin_seed.tsv`.
+Pour le regenerer depuis le CSV officiel DST `Regioner, landsdele og kommuner, v1:2007-`
+et le mapping Wikidata `P1168` :
+
+```bash
+python3 scripts/generate_dk_admin_seed.py
+```
+
+Le seed administratif officiel des Pays-Bas est versionne dans
+`scripts/data/nl_admin_seed.tsv`.
+Pour le regenerer depuis le classeur officiel CBS `Gemeenten alfabetisch 2026`,
+la note CBS sur les codes `9001/9002/9003` de Caribisch Nederland et Wikidata `P382` :
+
+```bash
+python3 scripts/generate_nl_admin_seed.py
+```
+
+Le seed administratif officiel de l'Italie est versionne dans
+`scripts/data/it_admin_seed.tsv`.
+Pour le regenerer depuis le classeur officiel ISTAT `Elenco comuni italiani`,
+le mapping Wikidata `P635` et le snapshot `18-load-territory-from-wikidata.sql` :
+
+```bash
+python3 scripts/generate_it_admin_seed.py
+```
+
 Pour lancer seulement ce sync :
 
 ```bash
@@ -279,3 +374,6 @@ chmod +x scripts/osm/country/create_osm_pbf.sh
 python3 scripts/generate_territory_wikidata_sql_from_truthy_nt.py --dump-file data/latest-truthy.nt.1.bz2
 
 PGPASSWORD=geo psql -h localhost -p 5432 -U geo -d geo2 -c "DROP SCHEMA public CASCADE; CREATE SCHEMA public;"
+
+# database
+./liquibase/run-migrations.sh geo

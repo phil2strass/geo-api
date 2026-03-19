@@ -1,0 +1,113 @@
+level_code	admin_code	display_name	territory_wikidata_id	parent_level_code	parent_admin_code	source
+canton	01	Capellen	Q397678			seed.lu_admin_canton
+canton	02	Esch-sur-Alzette	Q188283			seed.lu_admin_canton
+canton	03	Luxembourg	Q691741			seed.lu_admin_canton
+canton	04	Mersch	Q753917			seed.lu_admin_canton
+canton	05	Clervaux	Q691793			seed.lu_admin_canton
+canton	06	Diekirch	Q691842			seed.lu_admin_canton
+canton	07	Redange	Q835980			seed.lu_admin_canton
+canton	08	Wiltz	Q550021			seed.lu_admin_canton
+canton	09	Vianden	Q845600			seed.lu_admin_canton
+canton	10	Echternach	Q720221			seed.lu_admin_canton
+canton	11	Grevenmacher	Q836002			seed.lu_admin_canton
+canton	12	Remich	Q691781			seed.lu_admin_canton
+municipality	0101	Dippach	Q426998	canton	01	seed.lu_admin_municipality
+municipality	0102	Garnich	Q985388	canton	01	seed.lu_admin_municipality
+municipality	0103	Habscht	Q958682	canton	01	seed.lu_admin_municipality
+municipality	0104	Käerjeng	Q776642	canton	01	seed.lu_admin_municipality
+municipality	0105	Kehlen	Q432495	canton	01	seed.lu_admin_municipality
+municipality	0106	Koerich	Q985471	canton	01	seed.lu_admin_municipality
+municipality	0107	Kopstal	Q985477	canton	01	seed.lu_admin_municipality
+municipality	0108	Mamer	Q921291	canton	01	seed.lu_admin_municipality
+municipality	0110	Steinfort	Q985478	canton	01	seed.lu_admin_municipality
+municipality	0201	Bettembourg	Q832342	canton	02	seed.lu_admin_municipality
+municipality	0202	Differdange	Q16012	canton	02	seed.lu_admin_municipality
+municipality	0203	Dudelange	Q16014	canton	02	seed.lu_admin_municipality
+municipality	0204	Esch-sur-Alzette	Q16010	canton	02	seed.lu_admin_municipality
+municipality	0205	Frisange	Q1017402	canton	02	seed.lu_admin_municipality
+municipality	0206	Kayl	Q939625	canton	02	seed.lu_admin_municipality
+municipality	0207	Leudelange	Q985382	canton	02	seed.lu_admin_municipality
+municipality	0208	Mondercange	Q939598	canton	02	seed.lu_admin_municipality
+municipality	0209	Pétange	Q602441	canton	02	seed.lu_admin_municipality
+municipality	0210	Reckange-sur-Mess	Q783026	canton	02	seed.lu_admin_municipality
+municipality	0211	Roeser	Q683922	canton	02	seed.lu_admin_municipality
+municipality	0212	Rumelange	Q914847	canton	02	seed.lu_admin_municipality
+municipality	0213	Sanem	Q677804	canton	02	seed.lu_admin_municipality
+municipality	0214	Schifflange	Q669155	canton	02	seed.lu_admin_municipality
+municipality	0301	Bertrange	Q809603	canton	03	seed.lu_admin_municipality
+municipality	0302	Contern	Q596040	canton	03	seed.lu_admin_municipality
+municipality	0303	Hesperange	Q921321	canton	03	seed.lu_admin_municipality
+municipality	0304	Luxembourg	Q1842	canton	03	seed.lu_admin_municipality
+municipality	0305	Niederanven	Q985402	canton	03	seed.lu_admin_municipality
+municipality	0306	Sandweiler	Q985476	canton	03	seed.lu_admin_municipality
+municipality	0307	Schuttrange	Q956489	canton	03	seed.lu_admin_municipality
+municipality	0308	Steinsel	Q985149	canton	03	seed.lu_admin_municipality
+municipality	0309	Strassen	Q986400	canton	03	seed.lu_admin_municipality
+municipality	0310	Walferdange	Q917508	canton	03	seed.lu_admin_municipality
+municipality	0311	Weiler-la-Tour	Q985390	canton	03	seed.lu_admin_municipality
+municipality	0401	Colmar-Berg	Q676957	canton	04	seed.lu_admin_municipality
+municipality	0402	Bissen	Q866692	canton	04	seed.lu_admin_municipality
+municipality	0403	Helperknapp	Q25583657	canton	04	seed.lu_admin_municipality
+municipality	0404	Fischbach	Q1016233	canton	04	seed.lu_admin_municipality
+municipality	0405	Heffingen	Q742927	canton	04	seed.lu_admin_municipality
+municipality	0406	Larochette	Q985397	canton	04	seed.lu_admin_municipality
+municipality	0407	Lintgen	Q985395	canton	04	seed.lu_admin_municipality
+municipality	0408	Lorentzweiler	Q256978	canton	04	seed.lu_admin_municipality
+municipality	0409	Mersch	Q284855	canton	04	seed.lu_admin_municipality
+municipality	0410	Nommern	Q985393	canton	04	seed.lu_admin_municipality
+municipality	0501	Clervaux	Q836075	canton	05	seed.lu_admin_municipality
+municipality	0502	Wincrange	Q985404	canton	05	seed.lu_admin_municipality
+municipality	0503	Parc Hosingen	Q743393	canton	05	seed.lu_admin_municipality
+municipality	0504	Troisvierges	Q24454	canton	05	seed.lu_admin_municipality
+municipality	0505	Weiswampach	Q377847	canton	05	seed.lu_admin_municipality
+municipality	0601	Bettendorf	Q832382	canton	06	seed.lu_admin_municipality
+municipality	0602	Bourscheid	Q641381	canton	06	seed.lu_admin_municipality
+municipality	0603	Diekirch	Q16050	canton	06	seed.lu_admin_municipality
+municipality	0604	Erpeldange-sur-Sûre	Q986403	canton	06	seed.lu_admin_municipality
+municipality	0605	Ettelbruck	Q659351	canton	06	seed.lu_admin_municipality
+municipality	0606	Feulen	Q1143707	canton	06	seed.lu_admin_municipality
+municipality	0607	Mertzig	Q685611	canton	06	seed.lu_admin_municipality
+municipality	0608	Reisdorf	Q985196	canton	06	seed.lu_admin_municipality
+municipality	0609	Schieren	Q371757	canton	06	seed.lu_admin_municipality
+municipality	0610	Vallée de l'Ernz	Q1313580	canton	06	seed.lu_admin_municipality
+municipality	0701	Beckerich	Q813727	canton	07	seed.lu_admin_municipality
+municipality	0702	Préizerdaul	Q1134542	canton	07	seed.lu_admin_municipality
+municipality	0703	Ell	Q145727	canton	07	seed.lu_admin_municipality
+municipality	0704	Rambrouch	Q986396	canton	07	seed.lu_admin_municipality
+municipality	0706	Redange/Attert	Q687100	canton	07	seed.lu_admin_municipality
+municipality	0707	Saeul	Q1017421	canton	07	seed.lu_admin_municipality
+municipality	0708	Useldange	Q985333	canton	07	seed.lu_admin_municipality
+municipality	0709	Vichten	Q985473	canton	07	seed.lu_admin_municipality
+municipality	0711	Groussbus-Wal	Q116453518	canton	07	seed.lu_admin_municipality
+municipality	0801	Boulaide	Q811880	canton	08	seed.lu_admin_municipality
+municipality	0802	Esch-sur-Sûre	Q986392	canton	08	seed.lu_admin_municipality
+municipality	0804	Goesdorf	Q985392	canton	08	seed.lu_admin_municipality
+municipality	0805	Kiischpelt	Q1143742	canton	08	seed.lu_admin_municipality
+municipality	0806	Lac de la Haute-Sûre	Q1133688	canton	08	seed.lu_admin_municipality
+municipality	0807	Wiltz	Q741589	canton	08	seed.lu_admin_municipality
+municipality	0808	Winseler	Q985385	canton	08	seed.lu_admin_municipality
+municipality	0901	Tandel	Q1365356	canton	09	seed.lu_admin_municipality
+municipality	0902	Putscheid	Q513740	canton	09	seed.lu_admin_municipality
+municipality	0903	Vianden	Q836082	canton	09	seed.lu_admin_municipality
+municipality	1001	Beaufort	Q18693153	canton	10	seed.lu_admin_municipality
+municipality	1002	Bech	Q813593	canton	10	seed.lu_admin_municipality
+municipality	1003	Berdorf	Q818891	canton	10	seed.lu_admin_municipality
+municipality	1004	Consdorf	Q660217	canton	10	seed.lu_admin_municipality
+municipality	1005	Echternach	Q204317	canton	10	seed.lu_admin_municipality
+municipality	1006	Rosport-Mompach	Q31734921	canton	10	seed.lu_admin_municipality
+municipality	1008	Waldbillig	Q1017412	canton	10	seed.lu_admin_municipality
+municipality	1101	Betzdorf	Q850734	canton	11	seed.lu_admin_municipality
+municipality	1102	Biwer	Q376454	canton	11	seed.lu_admin_municipality
+municipality	1103	Flaxweiler	Q1017425	canton	11	seed.lu_admin_municipality
+municipality	1104	Grevenmacher	Q215826	canton	11	seed.lu_admin_municipality
+municipality	1105	Junglinster	Q1017404	canton	11	seed.lu_admin_municipality
+municipality	1106	Manternach	Q985479	canton	11	seed.lu_admin_municipality
+municipality	1107	Mertert	Q985387	canton	11	seed.lu_admin_municipality
+municipality	1108	Wormeldange	Q985399	canton	11	seed.lu_admin_municipality
+municipality	1202	Dalheim	Q986412	canton	12	seed.lu_admin_municipality
+municipality	1203	Lenningen	Q1017410	canton	12	seed.lu_admin_municipality
+municipality	1204	Mondorf-les-Bains	Q798747	canton	12	seed.lu_admin_municipality
+municipality	1205	Remich	Q734284	canton	12	seed.lu_admin_municipality
+municipality	1206	Schengen	Q183841	canton	12	seed.lu_admin_municipality
+municipality	1207	Stadtbredimus	Q1017400	canton	12	seed.lu_admin_municipality
+municipality	1209	Bous-Waldbredimus	Q116460013	canton	12	seed.lu_admin_municipality

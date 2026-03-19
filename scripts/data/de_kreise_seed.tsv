@@ -1,0 +1,402 @@
+admin_code	display_name	territory_wikidata_id	parent_state_code	parent_government_region_code	source
+01001	Flensburg	Q3798	01		seed.de_admin_kreis
+01002	Kiel	Q1707	01		seed.de_admin_kreis
+01003	Lübeck	Q2843	01		seed.de_admin_kreis
+01004	Neumünster	Q3879	01		seed.de_admin_kreis
+01051	Dithmarschen	Q2947	01		seed.de_admin_kreis
+01053	Herzogtum Lauenburg	Q3000	01		seed.de_admin_kreis
+01054	Nordfriesland	Q2937	01		seed.de_admin_kreis
+01055	Ostholstein	Q2975	01		seed.de_admin_kreis
+01056	Pinneberg	Q3006	01		seed.de_admin_kreis
+01057	Plön	Q2970	01		seed.de_admin_kreis
+01058	Rendsburg-Eckernförde	Q2967	01		seed.de_admin_kreis
+01059	Schleswig-Flensburg	Q2941	01		seed.de_admin_kreis
+01060	Segeberg	Q2980	01		seed.de_admin_kreis
+01061	Steinburg	Q3011	01		seed.de_admin_kreis
+01062	Stormarn	Q3003	01		seed.de_admin_kreis
+02000	Hamburg	Q1055	02		seed.de_admin_kreis
+03101	Braunschweig	Q2773	03		seed.de_admin_kreis
+03102	Salzgitter	Q3200	03		seed.de_admin_kreis
+03103	Wolfsburg	Q3014	03		seed.de_admin_kreis
+03151	Gifhorn	Q6053	03		seed.de_admin_kreis
+03153	Goslar	Q6040	03		seed.de_admin_kreis
+03154	Helmstedt	Q6047	03		seed.de_admin_kreis
+03155	Northeim	Q6018	03		seed.de_admin_kreis
+03157	Peine	Q6045	03		seed.de_admin_kreis
+03158	Wolfenbüttel	Q6041	03		seed.de_admin_kreis
+03159	Göttingen	Q6022	03		seed.de_admin_kreis
+03241	Region Hannover	Q5963	03		seed.de_admin_kreis
+03251	Diepholz	Q5956	03		seed.de_admin_kreis
+03252	Hameln-Pyrmont	Q5970	03		seed.de_admin_kreis
+03254	Hildesheim	Q5978	03		seed.de_admin_kreis
+03255	Holzminden	Q5973	03		seed.de_admin_kreis
+03256	Nienburg (Weser)	Q5958	03		seed.de_admin_kreis
+03257	Schaumburg	Q5966	03		seed.de_admin_kreis
+03351	Celle	Q5919	03		seed.de_admin_kreis
+03352	Cuxhaven	Q5897	03		seed.de_admin_kreis
+03353	Harburg	Q5907	03		seed.de_admin_kreis
+03354	Lüchow-Dannenberg	Q5913	03		seed.de_admin_kreis
+03355	Lüneburg	Q5910	03		seed.de_admin_kreis
+03356	Osterholz	Q5926	03		seed.de_admin_kreis
+03357	Rotenburg (Wümme)	Q5923	03		seed.de_admin_kreis
+03358	Heidekreis	Q5922	03		seed.de_admin_kreis
+03359	Stade	Q5906	03		seed.de_admin_kreis
+03360	Uelzen	Q5915	03		seed.de_admin_kreis
+03361	Verden	Q5927	03		seed.de_admin_kreis
+03401	Delmenhorst	Q3907	03		seed.de_admin_kreis
+03402	Emden	Q4174	03		seed.de_admin_kreis
+03403	Oldenburg (Oldb)	Q2936	03		seed.de_admin_kreis
+03404	Osnabrück	Q2916	03		seed.de_admin_kreis
+03405	Wilhelmshaven	Q3857	03		seed.de_admin_kreis
+03451	Ammerland	Q5947	03		seed.de_admin_kreis
+03452	Aurich	Q5929	03		seed.de_admin_kreis
+03453	Cloppenburg	Q5945	03		seed.de_admin_kreis
+03454	Emsland	Q5936	03		seed.de_admin_kreis
+03455	Friesland	Q5932	03		seed.de_admin_kreis
+03456	Grafschaft Bentheim	Q5939	03		seed.de_admin_kreis
+03457	Leer	Q5934	03		seed.de_admin_kreis
+03458	Oldenburg	Q5952	03		seed.de_admin_kreis
+03459	Osnabrück	Q5940	03		seed.de_admin_kreis
+03460	Vechta	Q5941	03		seed.de_admin_kreis
+03461	Wesermarsch	Q5948	03		seed.de_admin_kreis
+03462	Wittmund	Q5931	03		seed.de_admin_kreis
+04011	Bremen	Q24879	04		seed.de_admin_kreis
+04012	Bremerhaven	Q2706	04		seed.de_admin_kreis
+05111	Düsseldorf	Q1718	05	051	seed.de_admin_kreis
+05112	Duisburg	Q2100	05	051	seed.de_admin_kreis
+05113	Essen	Q2066	05	051	seed.de_admin_kreis
+05114	Krefeld	Q2805	05	051	seed.de_admin_kreis
+05116	Mönchengladbach	Q2758	05	051	seed.de_admin_kreis
+05117	Mülheim an der Ruhr	Q2899	05	051	seed.de_admin_kreis
+05119	Oberhausen	Q2838	05	051	seed.de_admin_kreis
+05120	Remscheid	Q3097	05	051	seed.de_admin_kreis
+05122	Solingen	Q2942	05	051	seed.de_admin_kreis
+05124	Wuppertal	Q2107	05	051	seed.de_admin_kreis
+05154	Kleve	Q6246	05	051	seed.de_admin_kreis
+05158	Mettmann	Q6257	05	051	seed.de_admin_kreis
+05162	Rhein-Kreis Neuss	Q6253	05	051	seed.de_admin_kreis
+05166	Viersen	Q6249	05	051	seed.de_admin_kreis
+05170	Wesel	Q6245	05	051	seed.de_admin_kreis
+05314	Bonn	Q586	05	053	seed.de_admin_kreis
+05315	Köln	Q365	05	053	seed.de_admin_kreis
+05316	Leverkusen	Q2938	05	053	seed.de_admin_kreis
+05334	Städteregion Aachen	Q6272	05	053	seed.de_admin_kreis
+05358	Düren	Q6275	05	053	seed.de_admin_kreis
+05362	Rhein-Erft-Kreis	Q6292	05	053	seed.de_admin_kreis
+05366	Euskirchen	Q6280	05	053	seed.de_admin_kreis
+05370	Heinsberg	Q6264	05	053	seed.de_admin_kreis
+05374	Oberbergischer Kreis	Q6298	05	053	seed.de_admin_kreis
+05378	Rheinisch-Bergischer Kreis	Q6295	05	053	seed.de_admin_kreis
+05382	Rhein-Sieg-Kreis	Q6287	05	053	seed.de_admin_kreis
+05512	Bottrop	Q3069	05	055	seed.de_admin_kreis
+05513	Gelsenkirchen	Q2765	05	055	seed.de_admin_kreis
+05515	Münster	Q2742	05	055	seed.de_admin_kreis
+05554	Borken	Q6191	05	055	seed.de_admin_kreis
+05558	Coesfeld	Q6210	05	055	seed.de_admin_kreis
+05562	Recklinghausen	Q6214	05	055	seed.de_admin_kreis
+05566	Steinfurt	Q6187	05	055	seed.de_admin_kreis
+05570	Warendorf	Q2839	05	055	seed.de_admin_kreis
+05711	Bielefeld	Q2112	05	057	seed.de_admin_kreis
+05754	Gütersloh	Q6218	05	057	seed.de_admin_kreis
+05758	Herford	Q6234	05	057	seed.de_admin_kreis
+05762	Höxter	Q6228	05	057	seed.de_admin_kreis
+05766	Lippe	Q6230	05	057	seed.de_admin_kreis
+05770	Minden-Lübbecke	Q6239	05	057	seed.de_admin_kreis
+05774	Paderborn	Q6224	05	057	seed.de_admin_kreis
+05911	Bochum	Q2103	05	059	seed.de_admin_kreis
+05913	Dortmund	Q1295	05	059	seed.de_admin_kreis
+05914	Hagen	Q2871	05	059	seed.de_admin_kreis
+05915	Hamm	Q2880	05	059	seed.de_admin_kreis
+05916	Herne	Q2904	05	059	seed.de_admin_kreis
+05954	Ennepe-Ruhr-Kreis	Q11280	05	059	seed.de_admin_kreis
+05958	Hochsauerlandkreis	Q5946	05	059	seed.de_admin_kreis
+05962	Märkischer Kreis	Q5937	05	059	seed.de_admin_kreis
+05966	Olpe	Q5953	05	059	seed.de_admin_kreis
+05970	Siegen-Wittgenstein	Q5982	05	059	seed.de_admin_kreis
+05974	Soest	Q5965	05	059	seed.de_admin_kreis
+05978	Unna	Q6163	05	059	seed.de_admin_kreis
+06411	Darmstadt	Q2973	06	064	seed.de_admin_kreis
+06412	Frankfurt am Main	Q1794	06	064	seed.de_admin_kreis
+06413	Offenbach am Main	Q3042	06	064	seed.de_admin_kreis
+06414	Wiesbaden	Q1721	06	064	seed.de_admin_kreis
+06431	Bergstraße	Q7917	06	064	seed.de_admin_kreis
+06432	Darmstadt-Dieburg	Q7916	06	064	seed.de_admin_kreis
+06433	Groß-Gerau	Q7914	06	064	seed.de_admin_kreis
+06434	Hochtaunuskreis	Q7908	06	064	seed.de_admin_kreis
+06435	Main-Kinzig-Kreis	Q7911	06	064	seed.de_admin_kreis
+06436	Main-Taunus-Kreis	Q7909	06	064	seed.de_admin_kreis
+06437	Odenwaldkreis	Q7919	06	064	seed.de_admin_kreis
+06438	Offenbach	Q7912	06	064	seed.de_admin_kreis
+06439	Rheingau-Taunus-Kreis	Q7907	06	064	seed.de_admin_kreis
+06440	Wetteraukreis	Q7910	06	064	seed.de_admin_kreis
+06531	Gießen	Q7904	06	065	seed.de_admin_kreis
+06532	Lahn-Dill-Kreis	Q7905	06	065	seed.de_admin_kreis
+06533	Limburg-Weilburg	Q7906	06	065	seed.de_admin_kreis
+06534	Marburg-Biedenkopf	Q7902	06	065	seed.de_admin_kreis
+06535	Vogelsbergkreis	Q7901	06	065	seed.de_admin_kreis
+06611	Kassel	Q2865	06	066	seed.de_admin_kreis
+06631	Fulda	Q7899	06	066	seed.de_admin_kreis
+06632	Hersfeld-Rotenburg	Q7898	06	066	seed.de_admin_kreis
+06633	Kassel	Q7890	06	066	seed.de_admin_kreis
+06634	Schwalm-Eder-Kreis	Q7894	06	066	seed.de_admin_kreis
+06635	Waldeck-Frankenberg	Q7893	06	066	seed.de_admin_kreis
+06636	Werra-Meißner-Kreis	Q7896	06	066	seed.de_admin_kreis
+07111	Koblenz	Q3104	07		seed.de_admin_kreis
+07131	Ahrweiler	Q8596	07		seed.de_admin_kreis
+07132	Altenkirchen (Westerwald)	Q8608	07		seed.de_admin_kreis
+07133	Bad Kreuznach	Q8572	07		seed.de_admin_kreis
+07134	Birkenfeld	Q8575	07		seed.de_admin_kreis
+07135	Cochem-Zell	Q8590	07		seed.de_admin_kreis
+07137	Mayen-Koblenz	Q8593	07		seed.de_admin_kreis
+07138	Neuwied	Q8606	07		seed.de_admin_kreis
+07140	Rhein-Hunsrück-Kreis	Q8574	07		seed.de_admin_kreis
+07141	Rhein-Lahn-Kreis	Q8601	07		seed.de_admin_kreis
+07143	Westerwaldkreis	Q8602	07		seed.de_admin_kreis
+07211	Trier	Q3138	07		seed.de_admin_kreis
+07231	Bernkastel-Wittlich	Q8585	07		seed.de_admin_kreis
+07232	Eifelkreis Bitburg-Prüm	Q8580	07		seed.de_admin_kreis
+07233	Vulkaneifel	Q8583	07		seed.de_admin_kreis
+07235	Trier-Saarburg	Q8579	07		seed.de_admin_kreis
+07311	Frankenthal (Pfalz)	Q6905	07		seed.de_admin_kreis
+07312	Kaiserslautern	Q3758	07		seed.de_admin_kreis
+07313	Landau in der Pfalz	Q7052	07		seed.de_admin_kreis
+07314	Ludwigshafen am Rhein	Q2910	07		seed.de_admin_kreis
+07315	Mainz	Q1720	07		seed.de_admin_kreis
+07316	Neustadt an der Weinstraße	Q4149	07		seed.de_admin_kreis
+07317	Pirmasens	Q14849	07		seed.de_admin_kreis
+07318	Speyer	Q6829	07		seed.de_admin_kreis
+07319	Worms	Q3852	07		seed.de_admin_kreis
+07320	Zweibrücken	Q16017	07		seed.de_admin_kreis
+07331	Alzey-Worms	Q8566	07		seed.de_admin_kreis
+07332	Bad Dürkheim	Q8557	07		seed.de_admin_kreis
+07333	Donnersbergkreis	Q8564	07		seed.de_admin_kreis
+07334	Germersheim	Q8543	07		seed.de_admin_kreis
+07335	Kaiserslautern	Q8559	07		seed.de_admin_kreis
+07336	Kusel	Q8562	07		seed.de_admin_kreis
+07337	Südliche Weinstraße	Q8551	07		seed.de_admin_kreis
+07338	Rhein-Pfalz-Kreis	Q8554	07		seed.de_admin_kreis
+07339	Mainz-Bingen	Q8569	07		seed.de_admin_kreis
+07340	Südwestpfalz	Q8552	07		seed.de_admin_kreis
+08111	Stuttgart	Q1022	08	081	seed.de_admin_kreis
+08115	Böblingen	Q8536	08	081	seed.de_admin_kreis
+08116	Esslingen	Q8533	08	081	seed.de_admin_kreis
+08117	Göppingen	Q8525	08	081	seed.de_admin_kreis
+08118	Ludwigsburg	Q8541	08	081	seed.de_admin_kreis
+08119	Rems-Murr-Kreis	Q8528	08	081	seed.de_admin_kreis
+08121	Heilbronn	Q715	08	081	seed.de_admin_kreis
+08125	Heilbronn	Q7166	08	081	seed.de_admin_kreis
+08126	Hohenlohekreis	Q8518	08	081	seed.de_admin_kreis
+08127	Schwäbisch Hall	Q8520	08	081	seed.de_admin_kreis
+08128	Main-Tauber-Kreis	Q8517	08	081	seed.de_admin_kreis
+08135	Heidenheim	Q8523	08	081	seed.de_admin_kreis
+08136	Ostalbkreis	Q8522	08	081	seed.de_admin_kreis
+08211	Baden-Baden	Q4100	08	082	seed.de_admin_kreis
+08212	Karlsruhe	Q1040	08	082	seed.de_admin_kreis
+08215	Karlsruhe	Q8178	08	082	seed.de_admin_kreis
+08216	Rastatt	Q8182	08	082	seed.de_admin_kreis
+08221	Heidelberg	Q2966	08	082	seed.de_admin_kreis
+08222	Mannheim	Q2119	08	082	seed.de_admin_kreis
+08225	Neckar-Odenwald-Kreis	Q8174	08	082	seed.de_admin_kreis
+08226	Rhein-Neckar-Kreis	Q8177	08	082	seed.de_admin_kreis
+08231	Pforzheim	Q3046	08	082	seed.de_admin_kreis
+08235	Calw	Q8186	08	082	seed.de_admin_kreis
+08236	Enzkreis	Q8184	08	082	seed.de_admin_kreis
+08237	Freudenstadt	Q8189	08	082	seed.de_admin_kreis
+08311	Freiburg im Breisgau	Q2833	08	083	seed.de_admin_kreis
+08315	Breisgau-Hochschwarzwald	Q8195	08	083	seed.de_admin_kreis
+08316	Emmendingen	Q8193	08	083	seed.de_admin_kreis
+08317	Ortenaukreis	Q8191	08	083	seed.de_admin_kreis
+08325	Rottweil	Q8211	08	083	seed.de_admin_kreis
+08326	Schwarzwald-Baar-Kreis	Q8203	08	083	seed.de_admin_kreis
+08327	Tuttlingen	Q8208	08	083	seed.de_admin_kreis
+08335	Konstanz	Q8206	08	083	seed.de_admin_kreis
+08336	Lörrach	Q8198	08	083	seed.de_admin_kreis
+08337	Waldshut	Q8200	08	083	seed.de_admin_kreis
+08415	Reutlingen	Q8217	08	084	seed.de_admin_kreis
+08416	Tübingen	Q8214	08	084	seed.de_admin_kreis
+08417	Zollernalbkreis	Q8233	08	084	seed.de_admin_kreis
+08421	Ulm	Q3012	08	084	seed.de_admin_kreis
+08425	Alb-Donau-Kreis	Q8221	08	084	seed.de_admin_kreis
+08426	Biberach	Q8223	08	084	seed.de_admin_kreis
+08435	Bodenseekreis	Q8228	08	084	seed.de_admin_kreis
+08436	Ravensburg	Q8225	08	084	seed.de_admin_kreis
+08437	Sigmaringen	Q8230	08	084	seed.de_admin_kreis
+09161	Ingolstadt	Q3004	09	091	seed.de_admin_kreis
+09162	München	Q1726	09	091	seed.de_admin_kreis
+09163	Rosenheim	Q4007	09	091	seed.de_admin_kreis
+09171	Altötting	Q10533	09	091	seed.de_admin_kreis
+09172	Berchtesgadener Land	Q10530	09	091	seed.de_admin_kreis
+09173	Bad Tölz-Wolfratshausen	Q10522	09	091	seed.de_admin_kreis
+09174	Dachau	Q10500	09	091	seed.de_admin_kreis
+09175	Ebersberg	Q10541	09	091	seed.de_admin_kreis
+09176	Eichstätt	Q10491	09	091	seed.de_admin_kreis
+09177	Erding	Q10539	09	091	seed.de_admin_kreis
+09178	Freising	Q10497	09	091	seed.de_admin_kreis
+09179	Fürstenfeldbruck	Q10502	09	091	seed.de_admin_kreis
+09180	Garmisch-Partenkirchen	Q10518	09	091	seed.de_admin_kreis
+09181	Landsberg am Lech	Q10507	09	091	seed.de_admin_kreis
+09182	Miesbach	Q10523	09	091	seed.de_admin_kreis
+09183	Mühldorf a. Inn	Q10537	09	091	seed.de_admin_kreis
+09184	München	Q10544	09	091	seed.de_admin_kreis
+09185	Neuburg-Schrobenhausen	Q10493	09	091	seed.de_admin_kreis
+09186	Pfaffenhofen a.d. Ilm	Q10496	09	091	seed.de_admin_kreis
+09187	Rosenheim	Q10526	09	091	seed.de_admin_kreis
+09188	Starnberg	Q10504	09	091	seed.de_admin_kreis
+09189	Traunstein	Q10528	09	091	seed.de_admin_kreis
+09190	Weilheim-Schongau	Q10516	09	091	seed.de_admin_kreis
+09261	Landshut	Q3974	09	092	seed.de_admin_kreis
+09262	Passau	Q4190	09	092	seed.de_admin_kreis
+09263	Straubing	Q7027	09	092	seed.de_admin_kreis
+09271	Deggendorf	Q10485	09	092	seed.de_admin_kreis
+09272	Freyung-Grafenau	Q10487	09	092	seed.de_admin_kreis
+09273	Kelheim	Q10474	09	092	seed.de_admin_kreis
+09274	Landshut	Q10475	09	092	seed.de_admin_kreis
+09275	Passau	Q10489	09	092	seed.de_admin_kreis
+09276	Regen	Q10483	09	092	seed.de_admin_kreis
+09277	Rottal-Inn	Q10477	09	092	seed.de_admin_kreis
+09278	Straubing-Bogen	Q10482	09	092	seed.de_admin_kreis
+09279	Dingolfing-Landau	Q10480	09	092	seed.de_admin_kreis
+09361	Amberg	Q7042	09	093	seed.de_admin_kreis
+09362	Regensburg	Q2978	09	093	seed.de_admin_kreis
+09363	Weiden i.d. OPf.	Q14803	09	093	seed.de_admin_kreis
+09371	Amberg-Sulzbach	Q10421	09	093	seed.de_admin_kreis
+09372	Cham	Q10424	09	093	seed.de_admin_kreis
+09373	Neumarkt i.d. OPf.	Q10427	09	093	seed.de_admin_kreis
+09374	Neustadt a.d. Waldnaab	Q10420	09	093	seed.de_admin_kreis
+09375	Regensburg	Q10429	09	093	seed.de_admin_kreis
+09376	Schwandorf	Q10423	09	093	seed.de_admin_kreis
+09377	Tirschenreuth	Q10419	09	093	seed.de_admin_kreis
+09461	Bamberg	Q3936	09	094	seed.de_admin_kreis
+09462	Bayreuth	Q3923	09	094	seed.de_admin_kreis
+09463	Coburg	Q14821	09	094	seed.de_admin_kreis
+09464	Hof	Q6938	09	094	seed.de_admin_kreis
+09471	Bamberg	Q10444	09	094	seed.de_admin_kreis
+09472	Bayreuth	Q10439	09	094	seed.de_admin_kreis
+09473	Coburg	Q10440	09	094	seed.de_admin_kreis
+09474	Forchheim	Q10445	09	094	seed.de_admin_kreis
+09475	Hof	Q10431	09	094	seed.de_admin_kreis
+09476	Kronach	Q10434	09	094	seed.de_admin_kreis
+09477	Kulmbach	Q10436	09	094	seed.de_admin_kreis
+09478	Lichtenfels	Q10442	09	094	seed.de_admin_kreis
+09479	Wunsiedel i. Fichtelgebirge	Q10432	09	094	seed.de_admin_kreis
+09561	Ansbach	Q14859	09	095	seed.de_admin_kreis
+09562	Erlangen	Q3126	09	095	seed.de_admin_kreis
+09563	Fürth	Q3075	09	095	seed.de_admin_kreis
+09564	Nürnberg	Q2090	09	095	seed.de_admin_kreis
+09565	Schwabach	Q14889	09	095	seed.de_admin_kreis
+09571	Ansbach	Q10454	09	095	seed.de_admin_kreis
+09572	Erlangen-Höchstadt	Q10447	09	095	seed.de_admin_kreis
+09573	Fürth	Q10455	09	095	seed.de_admin_kreis
+09574	Nürnberger Land	Q10449	09	095	seed.de_admin_kreis
+09575	Neustadt a.d. Aisch-Bad Windsheim	Q10456	09	095	seed.de_admin_kreis
+09576	Roth	Q10451	09	095	seed.de_admin_kreis
+09577	Weißenburg-Gunzenhausen	Q10453	09	095	seed.de_admin_kreis
+09661	Aschaffenburg	Q3942	09	096	seed.de_admin_kreis
+09662	Schweinfurt	Q4126	09	096	seed.de_admin_kreis
+09663	Würzburg	Q2999	09	096	seed.de_admin_kreis
+09671	Aschaffenburg	Q10471	09	096	seed.de_admin_kreis
+09672	Bad Kissingen	Q10466	09	096	seed.de_admin_kreis
+09673	Rhön-Grabfeld	Q10465	09	096	seed.de_admin_kreis
+09674	Haßberge	Q10462	09	096	seed.de_admin_kreis
+09675	Kitzingen	Q10459	09	096	seed.de_admin_kreis
+09676	Miltenberg	Q10472	09	096	seed.de_admin_kreis
+09677	Main-Spessart	Q10469	09	096	seed.de_admin_kreis
+09678	Schweinfurt	Q10461	09	096	seed.de_admin_kreis
+09679	Würzburg	Q10458	09	096	seed.de_admin_kreis
+09761	Augsburg	Q2749	09	097	seed.de_admin_kreis
+09762	Kaufbeuren	Q14805	09	097	seed.de_admin_kreis
+09763	Kempten (Allgäu)	Q3994	09	097	seed.de_admin_kreis
+09764	Memmingen	Q14825	09	097	seed.de_admin_kreis
+09771	Aichach-Friedberg	Q10415	09	097	seed.de_admin_kreis
+09772	Augsburg	Q10414	09	097	seed.de_admin_kreis
+09773	Dillingen a.d. Donau	Q10417	09	097	seed.de_admin_kreis
+09774	Günzburg	Q10412	09	097	seed.de_admin_kreis
+09775	Neu-Ulm	Q10410	09	097	seed.de_admin_kreis
+09776	Lindau (Bodensee)	Q10401	09	097	seed.de_admin_kreis
+09777	Ostallgäu	Q10405	09	097	seed.de_admin_kreis
+09778	Unterallgäu	Q10408	09	097	seed.de_admin_kreis
+09779	Donau-Ries	Q10418	09	097	seed.de_admin_kreis
+09780	Oberallgäu	Q10402	09	097	seed.de_admin_kreis
+10041	Regionalverband Saarbrücken	Q6805	10		seed.de_admin_kreis
+10042	Merzig-Wadern	Q6802	10		seed.de_admin_kreis
+10043	Neunkirchen	Q6799	10		seed.de_admin_kreis
+10044	Saarlouis	Q6794	10		seed.de_admin_kreis
+10045	Saarpfalz-Kreis	Q6793	10		seed.de_admin_kreis
+10046	St. Wendel	Q6789	10		seed.de_admin_kreis
+11000	Berlin	Q64	11		seed.de_admin_kreis
+12051	Brandenburg an der Havel	Q3931	12		seed.de_admin_kreis
+12052	Cottbus	Q3214	12		seed.de_admin_kreis
+12053	Frankfurt (Oder)	Q4024	12		seed.de_admin_kreis
+12054	Potsdam	Q1711	12		seed.de_admin_kreis
+12060	Barnim	Q6115	12		seed.de_admin_kreis
+12061	Dahme-Spreewald	Q6173	12		seed.de_admin_kreis
+12062	Elbe-Elster	Q6152	12		seed.de_admin_kreis
+12063	Havelland	Q6139	12		seed.de_admin_kreis
+12064	Märkisch-Oderland	Q6181	12		seed.de_admin_kreis
+12065	Oberhavel	Q6119	12		seed.de_admin_kreis
+12066	Oberspreewald-Lausitz	Q6156	12		seed.de_admin_kreis
+12067	Oder-Spree	Q6178	12		seed.de_admin_kreis
+12068	Ostprignitz-Ruppin	Q6125	12		seed.de_admin_kreis
+12069	Potsdam-Mittelmark	Q6142	12		seed.de_admin_kreis
+12070	Prignitz	Q6132	12		seed.de_admin_kreis
+12071	Spree-Neiße	Q6165	12		seed.de_admin_kreis
+12072	Teltow-Fläming	Q6146	12		seed.de_admin_kreis
+12073	Uckermark	Q6109	12		seed.de_admin_kreis
+13003	Rostock	Q2861	13		seed.de_admin_kreis
+13004	Schwerin	Q1709	13		seed.de_admin_kreis
+13071	Mecklenburgische Seenplatte	Q2902	13		seed.de_admin_kreis
+13072	Rostock	Q2898	13		seed.de_admin_kreis
+13073	Vorpommern-Rügen	Q2909	13		seed.de_admin_kreis
+13074	Nordwestmecklenburg	Q2876	13		seed.de_admin_kreis
+13075	Vorpommern-Greifswald	Q2917	13		seed.de_admin_kreis
+13076	Ludwigslust-Parchim	Q2905	13		seed.de_admin_kreis
+14511	Chemnitz	Q2795	14		seed.de_admin_kreis
+14521	Erzgebirgskreis	Q6339	14		seed.de_admin_kreis
+14522	Mittelsachsen	Q6328	14		seed.de_admin_kreis
+14523	Vogtlandkreis	Q6337	14		seed.de_admin_kreis
+14524	Zwickau	Q6330	14		seed.de_admin_kreis
+14612	Dresden	Q1731	14		seed.de_admin_kreis
+14625	Bautzen	Q571947	14		seed.de_admin_kreis
+14626	Görlitz	Q6317	14		seed.de_admin_kreis
+14627	Meißen	Q6313	14		seed.de_admin_kreis
+14628	Sächsische Schweiz-Osterzgebirge	Q6323	14		seed.de_admin_kreis
+14713	Leipzig	Q2079	14		seed.de_admin_kreis
+14729	Leipzig	Q6308	14		seed.de_admin_kreis
+14730	Nordsachsen	Q6301	14		seed.de_admin_kreis
+15001	Dessau-Roßlau	Q3828	15		seed.de_admin_kreis
+15002	Halle (Saale)	Q2814	15		seed.de_admin_kreis
+15003	Magdeburg	Q1733	15		seed.de_admin_kreis
+15081	Altmarkkreis Salzwedel	Q6061	15		seed.de_admin_kreis
+15082	Anhalt-Bitterfeld	Q6071	15		seed.de_admin_kreis
+15083	Börde	Q6064	15		seed.de_admin_kreis
+15084	Burgenlandkreis	Q6102	15		seed.de_admin_kreis
+15085	Harz	Q6087	15		seed.de_admin_kreis
+15086	Jerichower Land	Q6068	15		seed.de_admin_kreis
+15087	Mansfeld-Südharz	Q6092	15		seed.de_admin_kreis
+15088	Saalekreis	Q6098	15		seed.de_admin_kreis
+15089	Salzlandkreis	Q6081	15		seed.de_admin_kreis
+15090	Stendal	Q6057	15		seed.de_admin_kreis
+15091	Wittenberg	Q6075	15		seed.de_admin_kreis
+16051	Erfurt	Q1729	16		seed.de_admin_kreis
+16052	Gera	Q3750	16		seed.de_admin_kreis
+16053	Jena	Q3150	16		seed.de_admin_kreis
+16054	Suhl	Q14891	16		seed.de_admin_kreis
+16055	Weimar	Q3955	16		seed.de_admin_kreis
+16056	Eisenach	Q7070	16		seed.de_admin_kreis
+16061	Eichsfeld	Q7861	16		seed.de_admin_kreis
+16062	Nordhausen	Q7858	16		seed.de_admin_kreis
+16063	Wartburgkreis	Q7866	16		seed.de_admin_kreis
+16064	Unstrut-Hainich-Kreis	Q7864	16		seed.de_admin_kreis
+16065	Kyffhäuserkreis	Q7862	16		seed.de_admin_kreis
+16066	Schmalkalden-Meiningen	Q7871	16		seed.de_admin_kreis
+16067	Gotha	Q7869	16		seed.de_admin_kreis
+16068	Sömmerda	Q7865	16		seed.de_admin_kreis
+16069	Hildburghausen	Q7872	16		seed.de_admin_kreis
+16070	Ilm-Kreis	Q7878	16		seed.de_admin_kreis
+16071	Weimarer Land	Q7879	16		seed.de_admin_kreis
+16072	Sonneberg	Q7875	16		seed.de_admin_kreis
+16073	Saalfeld-Rudolstadt	Q7882	16		seed.de_admin_kreis
+16074	Saale-Holzland-Kreis	Q7884	16		seed.de_admin_kreis
+16075	Saale-Orla-Kreis	Q7883	16		seed.de_admin_kreis
+16076	Greiz	Q7887	16		seed.de_admin_kreis
+16077	Altenburger Land	Q7888	16		seed.de_admin_kreis

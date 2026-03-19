@@ -1,0 +1,362 @@
+admin_code	display_name	territory_wikidata_id	parent_country_code	source
+E06000001	Hartlepool	Q2594690	E92000001	seed.gb_local_authority_district
+E06000002	Middlesbrough	Q2673020	E92000001	seed.gb_local_authority_district
+E06000003	Redcar and Cleveland	Q1434448	E92000001	seed.gb_local_authority_district
+E06000004	Stockton-on-Tees	Q894094	E92000001	seed.gb_local_authority_district
+E06000005	Darlington	Q1171024	E92000001	seed.gb_local_authority_district
+E06000006	Halton	Q376141	E92000001	seed.gb_local_authority_district
+E06000007	Warrington	Q894095	E92000001	seed.gb_local_authority_district
+E06000008	Blackburn with Darwen	Q880782	E92000001	seed.gb_local_authority_district
+E06000009	Blackpool	Q20989106	E92000001	seed.gb_local_authority_district
+E06000010	Kingston upon Hull, City of	Q21885987	E92000001	seed.gb_local_authority_district
+E06000011	East Riding of Yorkshire	Q21695028	E92000001	seed.gb_local_authority_district
+E06000012	North East Lincolnshire	Q1342914	E92000001	seed.gb_local_authority_district
+E06000013	North Lincolnshire	Q175945	E92000001	seed.gb_local_authority_district
+E06000014	York	Q20986421	E92000001	seed.gb_local_authority_district
+E06000015	Derby	Q21885980	E92000001	seed.gb_local_authority_district
+E06000016	Leicester	Q21683242	E92000001	seed.gb_local_authority_district
+E06000017	Rutland	Q23107	E92000001	seed.gb_local_authority_district
+E06000018	Nottingham	Q21885994	E92000001	seed.gb_local_authority_district
+E06000019	Herefordshire, County of	Q23129	E92000001	seed.gb_local_authority_district
+E06000020	Telford and Wrekin	Q1425298	E92000001	seed.gb_local_authority_district
+E06000021	Stoke-on-Trent	Q21891722	E92000001	seed.gb_local_authority_district
+E06000022	Bath and North East Somerset	Q810793	E92000001	seed.gb_local_authority_district
+E06000023	Bristol, City of	Q21693433	E92000001	seed.gb_local_authority_district
+E06000024	North Somerset	Q178196	E92000001	seed.gb_local_authority_district
+E06000025	South Gloucestershire	Q1369280	E92000001	seed.gb_local_authority_district
+E06000026	Plymouth	Q21674890	E92000001	seed.gb_local_authority_district
+E06000027	Torbay	Q1136118	E92000001	seed.gb_local_authority_district
+E06000030	Swindon	Q894093	E92000001	seed.gb_local_authority_district
+E06000031	Peterborough	Q12956645	E92000001	seed.gb_local_authority_district
+E06000032	Luton	Q21683239	E92000001	seed.gb_local_authority_district
+E06000033	Southend-on-Sea	Q21487155	E92000001	seed.gb_local_authority_district
+E06000034	Thurrock	Q1549155	E92000001	seed.gb_local_authority_district
+E06000035	Medway	Q797782	E92000001	seed.gb_local_authority_district
+E06000036	Bracknell Forest	Q896725	E92000001	seed.gb_local_authority_district
+E06000037	West Berkshire	Q1473780	E92000001	seed.gb_local_authority_district
+E06000038	Reading	Q21496716	E92000001	seed.gb_local_authority_district
+E06000039	Slough	Q21163036	E92000001	seed.gb_local_authority_district
+E06000040	Windsor and Maidenhead	Q1368496	E92000001	seed.gb_local_authority_district
+E06000041	Wokingham	Q1758432	E92000001	seed.gb_local_authority_district
+E06000042	Milton Keynes	Q894090	E92000001	seed.gb_local_authority_district
+E06000043	Brighton and Hove	Q1022488	E92000001	seed.gb_local_authority_district
+E06000044	Portsmouth	Q21683233	E92000001	seed.gb_local_authority_district
+E06000045	Southampton	Q21683230	E92000001	seed.gb_local_authority_district
+E06000046	Isle of Wight	Q9679	E92000001	seed.gb_local_authority_district
+E06000047	County Durham	Q1137286	E92000001	seed.gb_local_authority_district
+E06000049	Cheshire East	Q1070590	E92000001	seed.gb_local_authority_district
+E06000050	Cheshire West and Chester	Q1070591	E92000001	seed.gb_local_authority_district
+E06000051	Shropshire	Q21694759	E92000001	seed.gb_local_authority_district
+E06000052	Cornwall	Q22338583	E92000001	seed.gb_local_authority_district
+E06000053	Isles of Scilly	Q180209	E92000001	seed.gb_local_authority_district
+E06000054	Wiltshire	Q21694746	E92000001	seed.gb_local_authority_district
+E06000055	Bedford	Q894077	E92000001	seed.gb_local_authority_district
+E06000056	Central Bedfordshire	Q1053723	E92000001	seed.gb_local_authority_district
+E06000057	Northumberland	Q23079	E92000001	seed.gb_local_authority_district
+E06000058	Bournemouth, Christchurch and Poole	Q54366459	E92000001	seed.gb_local_authority_district
+E06000059	Dorset	Q55231693	E92000001	seed.gb_local_authority_district
+E06000060	Buckinghamshire	Q21694636	E92000001	seed.gb_local_authority_district
+E06000061	North Northamptonshire	Q60790121	E92000001	seed.gb_local_authority_district
+E06000062	West Northamptonshire	Q60790129	E92000001	seed.gb_local_authority_district
+E06000063	Cumberland	Q110536343	E92000001	seed.gb_local_authority_district
+E06000064	Westmorland and Furness	Q110536353	E92000001	seed.gb_local_authority_district
+E06000065	North Yorkshire	Q21241814	E92000001	seed.gb_local_authority_district
+E06000066	Somerset	Q21694741	E92000001	seed.gb_local_authority_district
+E07000008	Cambridge	Q21713103	E92000001	seed.gb_local_authority_district
+E07000009	East Cambridgeshire	Q1277768	E92000001	seed.gb_local_authority_district
+E07000010	Fenland	Q176029	E92000001	seed.gb_local_authority_district
+E07000011	Huntingdonshire	Q23330	E92000001	seed.gb_local_authority_district
+E07000012	South Cambridgeshire	Q969203	E92000001	seed.gb_local_authority_district
+E07000032	Amber Valley	Q457014	E92000001	seed.gb_local_authority_district
+E07000033	Bolsover	Q891608	E92000001	seed.gb_local_authority_district
+E07000034	Chesterfield	Q20989091	E92000001	seed.gb_local_authority_district
+E07000035	Derbyshire Dales	Q1199980	E92000001	seed.gb_local_authority_district
+E07000036	Erewash	Q1350065	E92000001	seed.gb_local_authority_district
+E07000037	High Peak	Q1458060	E92000001	seed.gb_local_authority_district
+E07000038	North East Derbyshire	Q1384012	E92000001	seed.gb_local_authority_district
+E07000039	South Derbyshire	Q745385	E92000001	seed.gb_local_authority_district
+E07000040	East Devon	Q1277825	E92000001	seed.gb_local_authority_district
+E07000041	Exeter	Q21886091	E92000001	seed.gb_local_authority_district
+E07000042	Mid Devon	Q662238	E92000001	seed.gb_local_authority_district
+E07000043	North Devon	Q674940	E92000001	seed.gb_local_authority_district
+E07000044	South Hams	Q649699	E92000001	seed.gb_local_authority_district
+E07000045	Teignbridge	Q739432	E92000001	seed.gb_local_authority_district
+E07000046	Torridge	Q1752488	E92000001	seed.gb_local_authority_district
+E07000047	West Devon	Q370814	E92000001	seed.gb_local_authority_district
+E07000061	Eastbourne	Q21886079	E92000001	seed.gb_local_authority_district
+E07000062	Hastings	Q21886138	E92000001	seed.gb_local_authority_district
+E07000063	Lewes	Q1254688	E92000001	seed.gb_local_authority_district
+E07000064	Rother	Q1811605	E92000001	seed.gb_local_authority_district
+E07000065	Wealden	Q1575946	E92000001	seed.gb_local_authority_district
+E07000066	Basildon	Q810056	E92000001	seed.gb_local_authority_district
+E07000067	Braintree	Q897454	E92000001	seed.gb_local_authority_district
+E07000068	Brentwood	Q427849	E92000001	seed.gb_local_authority_district
+E07000069	Castle Point	Q1049506	E92000001	seed.gb_local_authority_district
+E07000070	Chelmsford	Q894080	E92000001	seed.gb_local_authority_district
+E07000071	Colchester	Q589620	E92000001	seed.gb_local_authority_district
+E07000072	Epping Forest	Q1347659	E92000001	seed.gb_local_authority_district
+E07000073	Harlow	Q21713095	E92000001	seed.gb_local_authority_district
+E07000074	Maldon	Q613878	E92000001	seed.gb_local_authority_district
+E07000075	Rochford	Q2160315	E92000001	seed.gb_local_authority_district
+E07000076	Tendring	Q1752638	E92000001	seed.gb_local_authority_district
+E07000077	Uttlesford	Q1496198	E92000001	seed.gb_local_authority_district
+E07000078	Cheltenham	Q20989092	E92000001	seed.gb_local_authority_district
+E07000079	Cotswold	Q581022	E92000001	seed.gb_local_authority_district
+E07000080	Forest of Dean	Q902998	E92000001	seed.gb_local_authority_district
+E07000081	Gloucester	Q20986485	E92000001	seed.gb_local_authority_district
+E07000082	Stroud	Q966144	E92000001	seed.gb_local_authority_district
+E07000083	North Gloucestershire	Q894096	E92000001	seed.gb_local_authority_district
+E07000084	Basingstoke and Deane	Q810185	E92000001	seed.gb_local_authority_district
+E07000085	East Hampshire	Q1277894	E92000001	seed.gb_local_authority_district
+E07000086	Eastleigh	Q894083	E92000001	seed.gb_local_authority_district
+E07000087	Fareham	Q894084	E92000001	seed.gb_local_authority_district
+E07000088	Gosport	Q21886128	E92000001	seed.gb_local_authority_district
+E07000089	Hart	Q1587050	E92000001	seed.gb_local_authority_district
+E07000090	Havant	Q4946344	E92000001	seed.gb_local_authority_district
+E07000091	New Forest	Q1972541	E92000001	seed.gb_local_authority_district
+E07000092	Rushmoor	Q635274	E92000001	seed.gb_local_authority_district
+E07000093	Test Valley	Q2116338	E92000001	seed.gb_local_authority_district
+E07000094	Winchester	Q1094226	E92000001	seed.gb_local_authority_district
+E07000095	Broxbourne	Q894078	E92000001	seed.gb_local_authority_district
+E07000096	Dacorum	Q931180	E92000001	seed.gb_local_authority_district
+E07000098	Hertsmere	Q1614775	E92000001	seed.gb_local_authority_district
+E07000099	North Hertfordshire	Q1685976	E92000001	seed.gb_local_authority_district
+E07000102	Three Rivers	Q1386468	E92000001	seed.gb_local_authority_district
+E07000103	Watford	Q21886164	E92000001	seed.gb_local_authority_district
+E07000105	Ashford	Q894074	E92000001	seed.gb_local_authority_district
+E07000106	Canterbury	Q1094104	E92000001	seed.gb_local_authority_district
+E07000107	Dartford	Q894082	E92000001	seed.gb_local_authority_district
+E07000108	Dover	Q1971967	E92000001	seed.gb_local_authority_district
+E07000109	Gravesham	Q1459781	E92000001	seed.gb_local_authority_district
+E07000110	Maidstone	Q737114	E92000001	seed.gb_local_authority_district
+E07000111	Sevenoaks	Q1499339	E92000001	seed.gb_local_authority_district
+E07000112	Folkestone and Hythe	Q635416	E92000001	seed.gb_local_authority_district
+E07000113	Swale	Q652559	E92000001	seed.gb_local_authority_district
+E07000114	Thanet	Q1752642	E92000001	seed.gb_local_authority_district
+E07000115	Tonbridge and Malling	Q596743	E92000001	seed.gb_local_authority_district
+E07000116	Tunbridge Wells	Q894097	E92000001	seed.gb_local_authority_district
+E07000117	Burnley	Q894079	E92000001	seed.gb_local_authority_district
+E07000118	Chorley	Q894081	E92000001	seed.gb_local_authority_district
+E07000119	Fylde	Q1478592	E92000001	seed.gb_local_authority_district
+E07000120	Hyndburn	Q1640713	E92000001	seed.gb_local_authority_district
+E07000121	Lancaster	Q168052	E92000001	seed.gb_local_authority_district
+E07000122	Pendle	Q1693090	E92000001	seed.gb_local_authority_district
+E07000123	Preston	Q385669	E92000001	seed.gb_local_authority_district
+E07000124	Ribble Valley	Q2116317	E92000001	seed.gb_local_authority_district
+E07000125	Rossendale	Q527423	E92000001	seed.gb_local_authority_district
+E07000126	South Ribble	Q290838	E92000001	seed.gb_local_authority_district
+E07000127	West Lancashire	Q1290796	E92000001	seed.gb_local_authority_district
+E07000128	Wyre	Q894100	E92000001	seed.gb_local_authority_district
+E07000129	Blaby	Q596076	E92000001	seed.gb_local_authority_district
+E07000130	Charnwood	Q1067639	E92000001	seed.gb_local_authority_district
+E07000131	Harborough	Q1556307	E92000001	seed.gb_local_authority_district
+E07000132	Hinckley and Bosworth	Q946825	E92000001	seed.gb_local_authority_district
+E07000133	Melton	Q1853349	E92000001	seed.gb_local_authority_district
+E07000134	North West Leicestershire	Q1853930	E92000001	seed.gb_local_authority_district
+E07000135	Oadby and Wigston	Q764425	E92000001	seed.gb_local_authority_district
+E07000136	Boston	Q894076	E92000001	seed.gb_local_authority_district
+E07000137	East Lindsey	Q82181	E92000001	seed.gb_local_authority_district
+E07000138	Lincoln	Q20989075	E92000001	seed.gb_local_authority_district
+E07000139	North Kesteven	Q607082	E92000001	seed.gb_local_authority_district
+E07000140	South Holland	Q303269	E92000001	seed.gb_local_authority_district
+E07000141	South Kesteven	Q1942426	E92000001	seed.gb_local_authority_district
+E07000142	West Lindsey	Q253501	E92000001	seed.gb_local_authority_district
+E07000143	Breckland	Q488142	E92000001	seed.gb_local_authority_district
+E07000144	Broadland	Q2116353	E92000001	seed.gb_local_authority_district
+E07000145	Great Yarmouth	Q894085	E92000001	seed.gb_local_authority_district
+E07000146	King's Lynn and West Norfolk	Q1742192	E92000001	seed.gb_local_authority_district
+E07000147	North Norfolk	Q1545713	E92000001	seed.gb_local_authority_district
+E07000148	Norwich	Q21886147	E92000001	seed.gb_local_authority_district
+E07000149	South Norfolk	Q1854245	E92000001	seed.gb_local_authority_district
+E07000170	Ashfield	Q600996	E92000001	seed.gb_local_authority_district
+E07000171	Bassetlaw	Q810508	E92000001	seed.gb_local_authority_district
+E07000172	Broxtowe	Q605605	E92000001	seed.gb_local_authority_district
+E07000173	Gedling	Q1497633	E92000001	seed.gb_local_authority_district
+E07000174	Mansfield	Q1891143	E92000001	seed.gb_local_authority_district
+E07000175	Newark and Sherwood	Q637772	E92000001	seed.gb_local_authority_district
+E07000176	Rushcliffe	Q1854225	E92000001	seed.gb_local_authority_district
+E07000177	Cherwell	Q1070481	E92000001	seed.gb_local_authority_district
+E07000178	Oxford	Q20986484	E92000001	seed.gb_local_authority_district
+E07000179	South Oxfordshire	Q1776967	E92000001	seed.gb_local_authority_district
+E07000180	Vale of White Horse	Q1540110	E92000001	seed.gb_local_authority_district
+E07000181	West Oxfordshire	Q1776955	E92000001	seed.gb_local_authority_district
+E07000192	Cannock Chase	Q1033439	E92000001	seed.gb_local_authority_district
+E07000193	East Staffordshire	Q1278032	E92000001	seed.gb_local_authority_district
+E07000194	Lichfield	Q1823259	E92000001	seed.gb_local_authority_district
+E07000195	Newcastle-under-Lyme	Q894089	E92000001	seed.gb_local_authority_district
+E07000196	South Staffordshire	Q2116379	E92000001	seed.gb_local_authority_district
+E07000197	Stafford	Q678347	E92000001	seed.gb_local_authority_district
+E07000198	Staffordshire Moorlands	Q2116362	E92000001	seed.gb_local_authority_district
+E07000199	Tamworth	Q7170938	E92000001	seed.gb_local_authority_district
+E07000200	Babergh	Q797643	E92000001	seed.gb_local_authority_district
+E07000202	Ipswich	Q3801785	E92000001	seed.gb_local_authority_district
+E07000203	Mid Suffolk	Q1931811	E92000001	seed.gb_local_authority_district
+E07000207	Elmbridge	Q1292592	E92000001	seed.gb_local_authority_district
+E07000208	Epsom and Ewell	Q257577	E92000001	seed.gb_local_authority_district
+E07000209	Guildford	Q894086	E92000001	seed.gb_local_authority_district
+E07000210	Mole Valley	Q961824	E92000001	seed.gb_local_authority_district
+E07000211	Reigate and Banstead	Q2066396	E92000001	seed.gb_local_authority_district
+E07000212	Runnymede	Q9324032	E92000001	seed.gb_local_authority_district
+E07000213	Spelthorne	Q1234166	E92000001	seed.gb_local_authority_district
+E07000214	Surrey Heath	Q2116333	E92000001	seed.gb_local_authority_district
+E07000215	Tandridge	Q2301760	E92000001	seed.gb_local_authority_district
+E07000216	Waverley	Q2116521	E92000001	seed.gb_local_authority_district
+E07000217	Woking	Q2277849	E92000001	seed.gb_local_authority_district
+E07000218	North Warwickshire	Q2000897	E92000001	seed.gb_local_authority_district
+E07000219	Nuneaton and Bedworth	Q920466	E92000001	seed.gb_local_authority_district
+E07000220	Rugby	Q894091	E92000001	seed.gb_local_authority_district
+E07000221	Stratford-on-Avon	Q1693076	E92000001	seed.gb_local_authority_district
+E07000222	Warwick	Q611294	E92000001	seed.gb_local_authority_district
+E07000223	Adur	Q379103	E92000001	seed.gb_local_authority_district
+E07000224	Arun	Q1725997	E92000001	seed.gb_local_authority_district
+E07000225	Chichester	Q1072104	E92000001	seed.gb_local_authority_district
+E07000226	Crawley	Q21886073	E92000001	seed.gb_local_authority_district
+E07000227	Horsham	Q1629013	E92000001	seed.gb_local_authority_district
+E07000228	Mid Sussex	Q1344342	E92000001	seed.gb_local_authority_district
+E07000229	Worthing	Q21886170	E92000001	seed.gb_local_authority_district
+E07000234	Bromsgrove	Q1744694	E92000001	seed.gb_local_authority_district
+E07000235	Malvern Hills	Q1427973	E92000001	seed.gb_local_authority_district
+E07000236	Redditch	Q21496675	E92000001	seed.gb_local_authority_district
+E07000237	Worcester	Q20986481	E92000001	seed.gb_local_authority_district
+E07000238	Wychavon	Q2116344	E92000001	seed.gb_local_authority_district
+E07000239	Wyre Forest	Q548224	E92000001	seed.gb_local_authority_district
+E07000240	St Albans	Q1094060	E92000001	seed.gb_local_authority_district
+E07000241	Welwyn Hatfield	Q2166127	E92000001	seed.gb_local_authority_district
+E07000242	East Hertfordshire	Q582288	E92000001	seed.gb_local_authority_district
+E07000243	Stevenage	Q21886152	E92000001	seed.gb_local_authority_district
+E07000244	East Suffolk	Q54554266	E92000001	seed.gb_local_authority_district
+E07000245	West Suffolk	Q54554272	E92000001	seed.gb_local_authority_district
+E08000001	Bolton	Q1364541	E92000001	seed.gb_local_authority_district
+E08000002	Bury	Q512036	E92000001	seed.gb_local_authority_district
+E08000003	Manchester	Q21525592	E92000001	seed.gb_local_authority_district
+E08000004	Oldham	Q1278608	E92000001	seed.gb_local_authority_district
+E08000005	Rochdale	Q1892596	E92000001	seed.gb_local_authority_district
+E08000006	Salford	Q1142118	E92000001	seed.gb_local_authority_district
+E08000007	Stockport	Q1752424	E92000001	seed.gb_local_authority_district
+E08000008	Tameside	Q1423078	E92000001	seed.gb_local_authority_district
+E08000009	Trafford	Q915954	E92000001	seed.gb_local_authority_district
+E08000010	Wigan	Q684307	E92000001	seed.gb_local_authority_district
+E08000011	Knowsley	Q1228523	E92000001	seed.gb_local_authority_district
+E08000012	Liverpool	Q21665571	E92000001	seed.gb_local_authority_district
+E08000013	St. Helens	Q179206	E92000001	seed.gb_local_authority_district
+E08000014	Sefton	Q1546645	E92000001	seed.gb_local_authority_district
+E08000015	Wirral	Q11365639	E92000001	seed.gb_local_authority_district
+E08000017	Doncaster	Q1925846	E92000001	seed.gb_local_authority_district
+E08000018	Rotherham	Q1878732	E92000001	seed.gb_local_authority_district
+E08000021	Newcastle upon Tyne	Q21012735	E92000001	seed.gb_local_authority_district
+E08000022	North Tyneside	Q1120443	E92000001	seed.gb_local_authority_district
+E08000023	South Tyneside	Q1541228	E92000001	seed.gb_local_authority_district
+E08000024	Sunderland	Q1280897	E92000001	seed.gb_local_authority_district
+E08000025	Birmingham	Q20986424	E92000001	seed.gb_local_authority_district
+E08000026	Coventry	Q20986417	E92000001	seed.gb_local_authority_district
+E08000027	Dudley	Q1617704	E92000001	seed.gb_local_authority_district
+E08000028	Sandwell	Q285964	E92000001	seed.gb_local_authority_district
+E08000029	Solihull	Q1925858	E92000001	seed.gb_local_authority_district
+E08000030	Walsall	Q178356	E92000001	seed.gb_local_authority_district
+E08000031	Wolverhampton	Q21885975	E92000001	seed.gb_local_authority_district
+E08000032	Bradford	Q2834810	E92000001	seed.gb_local_authority_district
+E08000033	Calderdale	Q1026448	E92000001	seed.gb_local_authority_district
+E08000034	Kirklees	Q918975	E92000001	seed.gb_local_authority_district
+E08000035	Leeds	Q774015	E92000001	seed.gb_local_authority_district
+E08000036	Wakefield	Q763171	E92000001	seed.gb_local_authority_district
+E08000037	Gateshead	Q929034	E92000001	seed.gb_local_authority_district
+E08000038	Barnsley	Q1857382	E92000001	seed.gb_local_authority_district
+E08000039	Sheffield	Q12956644	E92000001	seed.gb_local_authority_district
+E09000001	City of London	Q23311	E92000001	seed.gb_local_authority_district
+E09000002	Barking and Dagenham	Q205358	E92000001	seed.gb_local_authority_district
+E09000003	Barnet	Q151048	E92000001	seed.gb_local_authority_district
+E09000004	Bexley	Q207208	E92000001	seed.gb_local_authority_district
+E09000005	Brent	Q207201	E92000001	seed.gb_local_authority_district
+E09000006	Bromley	Q208201	E92000001	seed.gb_local_authority_district
+E09000007	Camden	Q202088	E92000001	seed.gb_local_authority_district
+E09000008	Croydon	Q26888	E92000001	seed.gb_local_authority_district
+E09000009	Ealing	Q207218	E92000001	seed.gb_local_authority_district
+E09000010	Enfield	Q210531	E92000001	seed.gb_local_authority_district
+E09000011	Greenwich	Q693450	E92000001	seed.gb_local_authority_district
+E09000012	Hackney	Q205679	E92000001	seed.gb_local_authority_district
+E09000013	Hammersmith and Fulham	Q40478	E92000001	seed.gb_local_authority_district
+E09000014	Haringey	Q213560	E92000001	seed.gb_local_authority_district
+E09000015	Harrow	Q210476	E92000001	seed.gb_local_authority_district
+E09000016	Havering	Q215038	E92000001	seed.gb_local_authority_district
+E09000017	Hillingdon	Q205690	E92000001	seed.gb_local_authority_district
+E09000018	Hounslow	Q214162	E92000001	seed.gb_local_authority_district
+E09000019	Islington	Q205817	E92000001	seed.gb_local_authority_district
+E09000020	Kensington and Chelsea	Q188801	E92000001	seed.gb_local_authority_district
+E09000021	Kingston upon Thames	Q32508	E92000001	seed.gb_local_authority_district
+E09000022	Lambeth	Q202059	E92000001	seed.gb_local_authority_district
+E09000023	Lewisham	Q215030	E92000001	seed.gb_local_authority_district
+E09000024	Merton	Q32504	E92000001	seed.gb_local_authority_district
+E09000025	Newham	Q208139	E92000001	seed.gb_local_authority_district
+E09000026	Redbridge	Q208955	E92000001	seed.gb_local_authority_district
+E09000027	Richmond upon Thames	Q32515	E92000001	seed.gb_local_authority_district
+E09000028	Southwark	Q730706	E92000001	seed.gb_local_authority_district
+E09000029	Sutton	Q320378	E92000001	seed.gb_local_authority_district
+E09000030	Tower Hamlets	Q208152	E92000001	seed.gb_local_authority_district
+E09000031	Waltham Forest	Q40608	E92000001	seed.gb_local_authority_district
+E09000032	Wandsworth	Q210563	E92000001	seed.gb_local_authority_district
+E09000033	Westminster	Q179351	E92000001	seed.gb_local_authority_district
+N09000001	Antrim and Newtownabbey	Q4777347	N92000002	seed.gb_local_authority_district
+N09000002	Armagh City, Banbridge and Craigavon	Q4792580	N92000002	seed.gb_local_authority_district
+N09000003	Belfast	Q1140130	N92000002	seed.gb_local_authority_district
+N09000004	Causeway Coast and Glens	Q5054638	N92000002	seed.gb_local_authority_district
+N09000005	Derry City and Strabane	Q15213714	N92000002	seed.gb_local_authority_district
+N09000006	Fermanagh and Omagh	Q5444365	N92000002	seed.gb_local_authority_district
+N09000007	Lisburn and Castlereagh	Q6558667	N92000002	seed.gb_local_authority_district
+N09000008	Mid and East Antrim	Q6841059	N92000002	seed.gb_local_authority_district
+N09000009	Mid Ulster	Q6840825	N92000002	seed.gb_local_authority_district
+N09000010	Newry, Mourne and Down	Q15262186	N92000002	seed.gb_local_authority_district
+N09000011	Ards and North Down	Q7055155	N92000002	seed.gb_local_authority_district
+S12000005	Clackmannanshire	Q207268	S92000003	seed.gb_local_authority_district
+S12000006	Dumfries and Galloway	Q126514	S92000003	seed.gb_local_authority_district
+S12000008	East Ayrshire	Q209135	S92000003	seed.gb_local_authority_district
+S12000010	East Lothian	Q207257	S92000003	seed.gb_local_authority_district
+S12000011	East Renfrewshire	Q211925	S92000003	seed.gb_local_authority_district
+S12000013	Na h-Eileanan Siar	Q80967	S92000003	seed.gb_local_authority_district
+S12000014	Falkirk	Q216802	S92000003	seed.gb_local_authority_district
+S12000017	Highland	Q208279	S92000003	seed.gb_local_authority_district
+S12000018	Inverclyde	Q208271	S92000003	seed.gb_local_authority_district
+S12000019	Midlothian	Q206934	S92000003	seed.gb_local_authority_district
+S12000020	Moray	Q211106	S92000003	seed.gb_local_authority_district
+S12000021	North Ayrshire	Q206926	S92000003	seed.gb_local_authority_district
+S12000023	Orkney Islands	Q100166	S92000003	seed.gb_local_authority_district
+S12000026	Scottish Borders	Q211113	S92000003	seed.gb_local_authority_district
+S12000027	Shetland Islands	Q47134	S92000003	seed.gb_local_authority_district
+S12000028	South Ayrshire	Q209131	S92000003	seed.gb_local_authority_district
+S12000029	South Lanarkshire	Q209142	S92000003	seed.gb_local_authority_district
+S12000030	Stirling	Q217838	S92000003	seed.gb_local_authority_district
+S12000033	Aberdeen City	Q62274582	S92000003	seed.gb_local_authority_district
+S12000034	Aberdeenshire	Q189912	S92000003	seed.gb_local_authority_district
+S12000035	Argyll and Bute	Q202174	S92000003	seed.gb_local_authority_district
+S12000036	City of Edinburgh	Q2379199	S92000003	seed.gb_local_authority_district
+S12000038	Renfrewshire	Q211091	S92000003	seed.gb_local_authority_district
+S12000039	West Dunbartonshire	Q208121	S92000003	seed.gb_local_authority_district
+S12000040	West Lothian	Q204940	S92000003	seed.gb_local_authority_district
+S12000041	Angus	Q202177	S92000003	seed.gb_local_authority_district
+S12000042	Dundee City	Q2357511	S92000003	seed.gb_local_authority_district
+S12000045	East Dunbartonshire	Q211889	S92000003	seed.gb_local_authority_district
+S12000047	Fife	Q201149	S92000003	seed.gb_local_authority_district
+S12000048	Perth and Kinross	Q207679	S92000003	seed.gb_local_authority_district
+S12000049	Glasgow City	Q55934339	S92000003	seed.gb_local_authority_district
+S12000050	North Lanarkshire	Q207111	S92000003	seed.gb_local_authority_district
+W06000001	Isle of Anglesey	Q42617191	W92000004	seed.gb_local_authority_district
+W06000002	Gwynedd	Q109128	W92000004	seed.gb_local_authority_district
+W06000003	Conwy	Q817971	W92000004	seed.gb_local_authority_district
+W06000004	Denbighshire	Q650682	W92000004	seed.gb_local_authority_district
+W06000005	Flintshire	Q505610	W92000004	seed.gb_local_authority_district
+W06000006	Wrexham	Q843868	W92000004	seed.gb_local_authority_district
+W06000008	Ceredigion	Q217829	W92000004	seed.gb_local_authority_district
+W06000009	Pembrokeshire	Q213361	W92000004	seed.gb_local_authority_district
+W06000010	Carmarthenshire	Q217840	W92000004	seed.gb_local_authority_district
+W06000011	Swansea	Q10996863	W92000004	seed.gb_local_authority_district
+W06000012	Neath Port Talbot	Q748078	W92000004	seed.gb_local_authority_district
+W06000013	Bridgend	Q697126	W92000004	seed.gb_local_authority_district
+W06000014	Vale of Glamorgan	Q844784	W92000004	seed.gb_local_authority_district
+W06000015	Cardiff	Q24342199	W92000004	seed.gb_local_authority_district
+W06000016	Rhondda Cynon Taf	Q817960	W92000004	seed.gb_local_authority_district
+W06000018	Caerphilly	Q748065	W92000004	seed.gb_local_authority_district
+W06000019	Blaenau Gwent	Q596885	W92000004	seed.gb_local_authority_district
+W06000020	Torfaen	Q643919	W92000004	seed.gb_local_authority_district
+W06000021	Monmouthshire	Q207176	W92000004	seed.gb_local_authority_district
+W06000022	Newport	Q5283458	W92000004	seed.gb_local_authority_district
+W06000023	Powys	Q156150	W92000004	seed.gb_local_authority_district
+W06000024	Merthyr Tydfil	Q3306663	W92000004	seed.gb_local_authority_district
