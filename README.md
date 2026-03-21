@@ -201,8 +201,9 @@ python3 scripts/generate_country_admin_level_sql.py
 
 Le sync administratif reste separe de la migration `18` et peuple pour l'instant :
 - la France sur les niveaux officiels `region`, `department`, `arrondissement`, `canton` et `commune`
-- l'Allemagne sur les niveaux officiels `state`, `government_region` et `kreis`
-- le Royaume-Uni sur les niveaux officiels `constituent_country` et `local_authority_district`
+- l'Allemagne sur les niveaux officiels `state`, `government_region`, `kreis` et `municipality`
+- le Royaume-Uni sur les niveaux officiels `constituent_country`, `local_authority_district` et `electoral_ward_division`
+- l'Irlande sur un niveau `county` nettoye a partir des comtes de la Republique presents dans `territory`
 - la Belgique sur les niveaux officiels `region`, `province`, `arrondissement` et `municipality`
 - le Luxembourg sur les niveaux officiels `canton` et `municipality`
 - la Suisse sur les niveaux officiels `canton` et `municipality`
@@ -218,6 +219,15 @@ Pour le regenerer depuis la couche officielle BKG `vg1000_krs` et le mapping Wik
 python3 scripts/generate_de_kreise_seed.py
 ```
 
+Le seed officiel des communes allemandes est versionne dans
+`scripts/data/de_municipality_seed.tsv`.
+Pour le regenerer depuis la couche officielle BKG `vg5000_gem`, le mapping
+Wikidata `P439` et le snapshot versionne `18-load-territory-from-wikidata.sql` :
+
+```bash
+python3 scripts/generate_de_municipality_seed.py
+```
+
 Le seed administratif francais est versionne dans `scripts/data/fr_admin_seed.tsv`.
 Pour le regenerer depuis le COG Insee 2026 et les codes Wikidata :
 
@@ -226,7 +236,7 @@ python3 scripts/generate_fr_admin_seed.py
 ```
 
 Pour peupler `city` et `admin_territory_city` a partir des unites locales deja chargees
-dans `admin_territory` (`FR commune`, `BE/LU/CH/AT/NL/DK/IT municipality`), avec
+dans `admin_territory` (`FR commune`, `DE/ES/PT/BE/LU/CH/AT/NL/DK/IT municipality`), avec
 enrichissement Wikidata :
 
 ```bash
@@ -241,6 +251,28 @@ LIQUIBASE_DB_HOST=localhost LIQUIBASE_DB_PORT=5432 LIQUIBASE_DB_NAME=geo2 LIQUIB
 python3 scripts/sync_admin_territory_city.py --country FR --country BE
 ```
 
+Pour peupler de vraies villes/towns du Royaume-Uni depuis Wikidata (`P31 city|town`
+sous `England`, `Scotland`, `Wales`, `Northern Ireland`) et remplacer la projection
+temporaire des `local_authority_district` :
+
+```bash
+LIQUIBASE_DB_HOST=localhost LIQUIBASE_DB_PORT=5432 LIQUIBASE_DB_NAME=geo2 LIQUIBASE_DB_USER=geo LIQUIBASE_DB_PASSWORD=geo \
+python3 scripts/sync_gb_city.py
+```
+
+Ce chargement alimente `city` uniquement. Il ne cree pas encore de liens
+`admin_territory_city` automatiques pour le Royaume-Uni.
+
+Pour peupler de vraies villes/towns de l'Irlande depuis Wikidata (`P31 city|town|big city`,
+`P17 = Ireland`) :
+
+```bash
+LIQUIBASE_DB_HOST=localhost LIQUIBASE_DB_PORT=5432 LIQUIBASE_DB_NAME=geo2 LIQUIBASE_DB_USER=geo LIQUIBASE_DB_PASSWORD=geo \
+python3 scripts/sync_ie_city.py
+```
+
+Comme pour le Royaume-Uni, ce chargement alimente `city` uniquement.
+
 Le seed officiel des local authority districts du Royaume-Uni est versionne dans
 `scripts/data/gb_local_authority_district_seed.tsv`.
 Pour le regenerer depuis les jeux ONS 2025 et le mapping Wikidata `P836` :
@@ -248,6 +280,23 @@ Pour le regenerer depuis les jeux ONS 2025 et le mapping Wikidata `P836` :
 ```bash
 python3 scripts/generate_gb_local_authority_district_seed.py
 ```
+
+Le seed officiel des electoral wards/divisions du Royaume-Uni est versionne dans
+`scripts/data/gb_electoral_ward_division_seed.tsv`.
+Pour le regenerer depuis le lookup ONS 2025 `ward -> local authority district`,
+le mapping Wikidata `P836` et le snapshot versionne `18-load-territory-from-wikidata.sql` :
+
+```bash
+python3 scripts/generate_gb_electoral_ward_division_seed.py
+```
+
+Lors du sync, les wards/divisions sans item Wikidata exploitable dans le snapshot
+versionne sont materialisees comme `territory` UK de type `region` avec
+`wikidata_id` nul sous leur `local_authority_district` parent, afin de garder la
+couverture ONS 2025 complete.
+
+Le seed Irlande versionne dans `scripts/data/ie_admin_seed.tsv` charge les 26 comtes
+de la Republique d'Irlande en `admin_territory`, avec codes `ISO 3166-2`.
 
 Le seed administratif officiel de la Belgique est versionne dans
 `scripts/data/be_admin_seed.tsv`.
@@ -402,3 +451,13 @@ PGPASSWORD=geo psql -h localhost -p 5432 -U geo -d geo2 -c "DROP SCHEMA public C
 
 # database
 ./liquibase/run-migrations.sh geo
+
+# villes traitées
+FR 34875
+IT 7894
+CH 2110
+AT 2092
+BE 565
+NL 345
+LU 100
+DK 98

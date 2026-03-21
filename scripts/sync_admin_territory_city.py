@@ -32,6 +32,18 @@ SUPPORTED_LOCAL_ADMIN_CITY_CONFIG = {
         "level_code": "commune",
         "label": "French communes",
     },
+    "DE": {
+        "level_code": "municipality",
+        "label": "German municipalities",
+    },
+    "ES": {
+        "level_code": "municipality",
+        "label": "Spanish municipalities",
+    },
+    "PT": {
+        "level_code": "municipality",
+        "label": "Portuguese municipalities",
+    },
     "BE": {
         "level_code": "municipality",
         "label": "Belgian municipalities",
@@ -61,7 +73,7 @@ SUPPORTED_LOCAL_ADMIN_CITY_CONFIG = {
         "label": "Italian municipalities",
     },
 }
-DEFAULT_COUNTRY_ORDER = ["FR", "BE", "LU", "CH", "AT", "NL", "DK", "IT"]
+DEFAULT_COUNTRY_ORDER = ["FR", "DE", "ES", "PT", "BE", "LU", "CH", "AT", "NL", "DK", "IT"]
 
 
 @dataclass(frozen=True)
@@ -408,6 +420,23 @@ def parse_decimal(value: str | None) -> str | None:
     return format(decimal_value, "f")
 
 
+def parse_area_km2(value: str | None) -> str | None:
+    normalized = parse_decimal(value)
+    if normalized is None:
+        return None
+    try:
+        raw_area = Decimal(normalized)
+    except InvalidOperation:
+        return None
+    # Wikidata P2046 is not perfectly normalized in practice for these local units:
+    # some values are already expressed in km2, while others appear in m2.
+    # Local administrative units cannot plausibly exceed 100000 km2, so treat
+    # larger values as m2 and convert them.
+    if raw_area > Decimal("100000"):
+        raw_area = raw_area / Decimal("1000000")
+    return format(raw_area, "f")
+
+
 def parse_population(value: str | None) -> int | None:
     normalized = parse_decimal(value)
     if normalized is None:
@@ -497,7 +526,7 @@ def load_wikidata_metadata(
             entry = metadata[qid]
             label = binding_value(row, "itemLabel")
             description = binding_value(row, "itemDescription")
-            area = parse_decimal(binding_value(row, "area"))
+            area = parse_area_km2(binding_value(row, "area"))
             inception_date = parse_date(binding_value(row, "inception"))
             dissolved_date = parse_date(binding_value(row, "dissolved"))
             website = binding_value(row, "website")
@@ -750,7 +779,7 @@ def build_city_rows(
     rows: list[dict[str, Any]] = []
     for unit in local_units:
         wd = metadata.get(unit.wikidata_id, {})
-        name = as_text(wd.get("name")) or unit.display_name or unit.territory_name
+        name = unit.display_name or unit.territory_name or as_text(wd.get("name"))
         latitude = as_text(wd.get("latitude")) or unit.latitude
         longitude = as_text(wd.get("longitude")) or unit.longitude
         rows.append(

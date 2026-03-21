@@ -75,3 +75,13 @@ databaseChangeLog:
       file: changelog/38-fix-france-wolxheim-territory.sql
   - include:
       file: changelog/39-create-city-structure.sql
+  - include:
+      file: changelog/40-extend-germany-admin-levels-with-municipalities.sql
+  - include:
+      file: changelog/41-extend-united-kingdom-admin-levels-with-electoral-wards.sql
+  - include:
+      file: changelog/42-override-ireland-admin-levels.sql
+  - include:
+      file: changelog/43-override-spain-admin-levels.sql
+  - include:
+      file: changelog/44-override-portugal-admin-levels.sql

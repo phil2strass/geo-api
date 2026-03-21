@@ -23,7 +23,9 @@ export PGPASSWORD="$LIQUIBASE_DB_PASSWORD"
 export PGCLIENTENCODING="${PGCLIENTENCODING:-UTF8}"
 FR_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/fr_admin_seed.tsv"
 DE_KREISE_SEED_PATH="${SCRIPT_DIR}/data/de_kreise_seed.tsv"
+DE_MUNICIPALITY_SEED_PATH="${SCRIPT_DIR}/data/de_municipality_seed.tsv"
 GB_LAD_SEED_PATH="${SCRIPT_DIR}/data/gb_local_authority_district_seed.tsv"
+GB_WARD_SEED_PATH="${SCRIPT_DIR}/data/gb_electoral_ward_division_seed.tsv"
 BE_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/be_admin_seed.tsv"
 LU_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/lu_admin_seed.tsv"
 NL_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/nl_admin_seed.tsv"
@@ -31,6 +33,9 @@ DK_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/dk_admin_seed.tsv"
 CH_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/ch_admin_seed.tsv"
 AT_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/at_admin_seed.tsv"
 IT_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/it_admin_seed.tsv"
+IE_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/ie_admin_seed.tsv"
+ES_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/es_admin_seed.tsv"
+PT_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/pt_admin_seed.tsv"
 
 if [[ ! -f "$FR_ADMIN_SEED_PATH" ]]; then
   echo "Missing France admin seed file: $FR_ADMIN_SEED_PATH" >&2
@@ -42,8 +47,18 @@ if [[ ! -f "$DE_KREISE_SEED_PATH" ]]; then
   exit 1
 fi
 
+if [[ ! -f "$DE_MUNICIPALITY_SEED_PATH" ]]; then
+  echo "Missing Germany municipality seed file: $DE_MUNICIPALITY_SEED_PATH" >&2
+  exit 1
+fi
+
 if [[ ! -f "$GB_LAD_SEED_PATH" ]]; then
   echo "Missing United Kingdom local authority seed file: $GB_LAD_SEED_PATH" >&2
+  exit 1
+fi
+
+if [[ ! -f "$GB_WARD_SEED_PATH" ]]; then
+  echo "Missing United Kingdom electoral ward/division seed file: $GB_WARD_SEED_PATH" >&2
   exit 1
 fi
 
@@ -82,6 +97,21 @@ if [[ ! -f "$IT_ADMIN_SEED_PATH" ]]; then
   exit 1
 fi
 
+if [[ ! -f "$IE_ADMIN_SEED_PATH" ]]; then
+  echo "Missing Ireland admin seed file: $IE_ADMIN_SEED_PATH" >&2
+  exit 1
+fi
+
+if [[ ! -f "$ES_ADMIN_SEED_PATH" ]]; then
+  echo "Missing Spain admin seed file: $ES_ADMIN_SEED_PATH" >&2
+  exit 1
+fi
+
+if [[ ! -f "$PT_ADMIN_SEED_PATH" ]]; then
+  echo "Missing Portugal admin seed file: $PT_ADMIN_SEED_PATH" >&2
+  exit 1
+fi
+
 PSQL=(
   psql
   -X
@@ -107,7 +137,7 @@ if [[ "$("${PSQL[@]}" -qtAX -c "SELECT to_regclass('public.territory') IS NOT NU
   exit 0
 fi
 
-echo "Synchronizing administrative hierarchy for France, Germany, the United Kingdom, Belgium, Luxembourg, Switzerland, Austria, Denmark, the Netherlands and Italy..."
+echo "Synchronizing administrative hierarchy for France, Germany, the United Kingdom, Ireland, Spain, Portugal, Belgium, Luxembourg, Switzerland, Austria, Denmark, the Netherlands and Italy..."
 {
 cat <<'SQL'
 \set ON_ERROR_STOP on
@@ -119,6 +149,14 @@ CREATE TEMP TABLE de_kreise_seed (
     territory_wikidata_id VARCHAR(32) NOT NULL UNIQUE,
     parent_state_code VARCHAR(2) NOT NULL,
     parent_government_region_code VARCHAR(3),
+    source VARCHAR(120) NOT NULL
+) ON COMMIT DROP;
+
+CREATE TEMP TABLE de_municipality_seed (
+    admin_code VARCHAR(8) PRIMARY KEY,
+    display_name TEXT NOT NULL,
+    territory_wikidata_id VARCHAR(32) NOT NULL UNIQUE,
+    parent_kreis_code VARCHAR(5) NOT NULL,
     source VARCHAR(120) NOT NULL
 ) ON COMMIT DROP;
 
@@ -138,6 +176,14 @@ CREATE TEMP TABLE gb_lad_seed (
     display_name TEXT NOT NULL,
     territory_wikidata_id VARCHAR(32) NOT NULL UNIQUE,
     parent_country_code VARCHAR(9) NOT NULL,
+    source VARCHAR(120) NOT NULL
+) ON COMMIT DROP;
+
+CREATE TEMP TABLE gb_ward_seed (
+    admin_code VARCHAR(9) PRIMARY KEY,
+    display_name TEXT NOT NULL,
+    territory_wikidata_id VARCHAR(32),
+    parent_lad_code VARCHAR(9) NOT NULL,
     source VARCHAR(120) NOT NULL
 ) ON COMMIT DROP;
 
@@ -216,11 +262,46 @@ CREATE TEMP TABLE it_admin_seed (
     parent_admin_code VARCHAR(9),
     source VARCHAR(120) NOT NULL
 ) ON COMMIT DROP;
+
+CREATE TEMP TABLE ie_admin_seed (
+    admin_code VARCHAR(9) PRIMARY KEY,
+    display_name TEXT NOT NULL,
+    territory_wikidata_id VARCHAR(32) NOT NULL UNIQUE,
+    source VARCHAR(120) NOT NULL
+) ON COMMIT DROP;
+
+CREATE TEMP TABLE es_admin_seed (
+    level_code VARCHAR(64) NOT NULL,
+    admin_code VARCHAR(9) NOT NULL,
+    display_name TEXT NOT NULL,
+    territory_name TEXT NOT NULL,
+    territory_wikidata_id VARCHAR(32) NOT NULL,
+    territory_type VARCHAR(32) NOT NULL,
+    parent_level_code VARCHAR(64),
+    parent_admin_code VARCHAR(9),
+    source VARCHAR(120) NOT NULL,
+    PRIMARY KEY (level_code, admin_code)
+) ON COMMIT DROP;
+
+CREATE TEMP TABLE pt_admin_seed (
+    level_code VARCHAR(64) NOT NULL,
+    admin_code VARCHAR(9) NOT NULL,
+    display_name TEXT NOT NULL,
+    territory_name TEXT NOT NULL,
+    territory_wikidata_id VARCHAR(32) NOT NULL,
+    territory_type VARCHAR(32) NOT NULL,
+    parent_level_code VARCHAR(64),
+    parent_admin_code VARCHAR(9),
+    source VARCHAR(120) NOT NULL,
+    PRIMARY KEY (level_code, admin_code)
+) ON COMMIT DROP;
 SQL
 
 printf "\\copy de_kreise_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$DE_KREISE_SEED_PATH"
+printf "\\copy de_municipality_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$DE_MUNICIPALITY_SEED_PATH"
 printf "\\copy fr_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$FR_ADMIN_SEED_PATH"
 printf "\\copy gb_lad_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$GB_LAD_SEED_PATH"
+printf "\\copy gb_ward_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$GB_WARD_SEED_PATH"
 printf "\\copy be_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$BE_ADMIN_SEED_PATH"
 printf "\\copy lu_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$LU_ADMIN_SEED_PATH"
 printf "\\copy nl_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$NL_ADMIN_SEED_PATH"
@@ -228,6 +309,9 @@ printf "\\copy dk_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEA
 printf "\\copy ch_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$CH_ADMIN_SEED_PATH"
 printf "\\copy at_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$AT_ADMIN_SEED_PATH"
 printf "\\copy it_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$IT_ADMIN_SEED_PATH"
+printf "\\copy ie_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$IE_ADMIN_SEED_PATH"
+printf "\\copy es_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$ES_ADMIN_SEED_PATH"
+printf "\\copy pt_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$PT_ADMIN_SEED_PATH"
 
 cat <<'SQL'
 
@@ -247,8 +331,22 @@ END $$;
 
 DO $$
 BEGIN
+    IF NOT EXISTS (SELECT 1 FROM de_municipality_seed) THEN
+        RAISE EXCEPTION 'Germany municipality seed is empty';
+    END IF;
+END $$;
+
+DO $$
+BEGIN
     IF NOT EXISTS (SELECT 1 FROM gb_lad_seed) THEN
         RAISE EXCEPTION 'United Kingdom local authority seed is empty';
+    END IF;
+END $$;
+
+DO $$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM gb_ward_seed) THEN
+        RAISE EXCEPTION 'United Kingdom electoral ward/division seed is empty';
     END IF;
 END $$;
 
@@ -298,6 +396,27 @@ DO $$
 BEGIN
     IF NOT EXISTS (SELECT 1 FROM it_admin_seed) THEN
         RAISE EXCEPTION 'Italy admin seed is empty';
+    END IF;
+END $$;
+
+DO $$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM ie_admin_seed) THEN
+        RAISE EXCEPTION 'Ireland admin seed is empty';
+    END IF;
+END $$;
+
+DO $$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM es_admin_seed) THEN
+        RAISE EXCEPTION 'Spain admin seed is empty';
+    END IF;
+END $$;
+
+DO $$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM pt_admin_seed) THEN
+        RAISE EXCEPTION 'Portugal admin seed is empty';
     END IF;
 END $$;
 
@@ -811,6 +930,81 @@ BEGIN
     END IF;
 END $$;
 
+WITH germany AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'DE'
+),
+municipality_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'municipality'
+      AND country_id = (SELECT id FROM germany)
+),
+kreis_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'kreis'
+      AND country_id = (SELECT id FROM germany)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    ml.country_id,
+    ml.id,
+    t.id,
+    parent_at.id,
+    ms.display_name,
+    ms.admin_code,
+    'de_ags_municipality',
+    TRUE,
+    TRUE,
+    ms.source
+FROM municipality_level ml
+JOIN germany g ON g.id = ml.country_id
+JOIN de_municipality_seed ms ON TRUE
+JOIN territory t
+    ON t.country_id = g.id
+   AND t.wikidata_id = ms.territory_wikidata_id
+JOIN kreis_level kl ON kl.country_id = g.id
+JOIN admin_territory parent_at
+    ON parent_at.country_id = g.id
+   AND parent_at.admin_level_id = kl.id
+   AND parent_at.admin_code_system = 'de_ags_kreis'
+   AND parent_at.admin_code = ms.parent_kreis_code;
+
+DO $$
+DECLARE
+    expected_count INTEGER;
+    actual_count INTEGER;
+BEGIN
+    SELECT count(*)
+    INTO expected_count
+    FROM de_municipality_seed;
+
+    SELECT count(*)
+    INTO actual_count
+    FROM admin_territory at
+    JOIN country c ON c.id = at.country_id
+    JOIN country_admin_level cal ON cal.id = at.admin_level_id
+    WHERE c.iso_code = 'DE'
+      AND cal.code = 'municipality';
+
+    IF actual_count <> expected_count THEN
+        RAISE EXCEPTION 'Expected % German municipality rows, got %', expected_count, actual_count;
+    END IF;
+END $$;
+
 WITH united_kingdom AS (
     SELECT id
     FROM country
@@ -921,6 +1115,121 @@ JOIN admin_territory parent_at
    AND parent_at.admin_code_system = 'gb_ons_ctry25'
    AND parent_at.admin_code = lads.parent_country_code;
 
+WITH united_kingdom AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'GB'
+),
+local_authority_district_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'local_authority_district'
+      AND country_id = (SELECT id FROM united_kingdom)
+)
+INSERT INTO territory (
+    name,
+    type,
+    country_id,
+    parent_id,
+    wikidata_id,
+    telephone_country_code,
+    local_dialing_code,
+    latitude,
+    longitude
+)
+SELECT
+    wards.display_name,
+    'region',
+    uk.id,
+    parent_territory.id,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+FROM united_kingdom uk
+JOIN local_authority_district_level ladl ON ladl.country_id = uk.id
+JOIN admin_territory parent_at
+    ON parent_at.country_id = uk.id
+   AND parent_at.admin_level_id = ladl.id
+   AND parent_at.admin_code_system = 'gb_ons_lad25'
+JOIN territory parent_territory
+    ON parent_territory.id = parent_at.territory_id
+JOIN gb_ward_seed wards
+    ON wards.parent_lad_code = parent_at.admin_code
+LEFT JOIN territory existing
+    ON existing.country_id = uk.id
+   AND existing.parent_id = parent_territory.id
+   AND existing.type = 'region'
+   AND existing.name = wards.display_name
+   AND existing.wikidata_id IS NULL
+WHERE NULLIF(wards.territory_wikidata_id, '') IS NULL
+  AND existing.id IS NULL;
+
+WITH united_kingdom AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'GB'
+),
+local_authority_district_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'local_authority_district'
+      AND country_id = (SELECT id FROM united_kingdom)
+),
+electoral_ward_division_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'electoral_ward_division'
+      AND country_id = (SELECT id FROM united_kingdom)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    ewdl.country_id,
+    ewdl.id,
+    t.id,
+    parent_at.id,
+    wards.display_name,
+    wards.admin_code,
+    'gb_ons_wd25',
+    TRUE,
+    TRUE,
+    wards.source
+FROM electoral_ward_division_level ewdl
+JOIN united_kingdom uk ON uk.id = ewdl.country_id
+JOIN gb_ward_seed wards ON TRUE
+JOIN local_authority_district_level ladl ON ladl.country_id = uk.id
+JOIN admin_territory parent_at
+    ON parent_at.country_id = uk.id
+   AND parent_at.admin_level_id = ladl.id
+   AND parent_at.admin_code_system = 'gb_ons_lad25'
+   AND parent_at.admin_code = wards.parent_lad_code
+JOIN territory parent_territory
+    ON parent_territory.id = parent_at.territory_id
+JOIN territory t
+    ON t.country_id = uk.id
+   AND t.type = 'region'
+   AND (
+        (NULLIF(wards.territory_wikidata_id, '') IS NOT NULL AND t.wikidata_id = wards.territory_wikidata_id)
+        OR (
+            NULLIF(wards.territory_wikidata_id, '') IS NULL
+            AND t.parent_id = parent_territory.id
+            AND t.name = wards.display_name
+            AND t.wikidata_id IS NULL
+        )
+   );
+
 DO $$
 DECLARE
     expected_count INTEGER;
@@ -940,6 +1249,28 @@ BEGIN
 
     IF actual_count <> expected_count THEN
         RAISE EXCEPTION 'Expected % UK LAD rows, got %', expected_count, actual_count;
+    END IF;
+END $$;
+
+DO $$
+DECLARE
+    expected_count INTEGER;
+    actual_count INTEGER;
+BEGIN
+    SELECT count(*)
+    INTO expected_count
+    FROM gb_ward_seed;
+
+    SELECT count(*)
+    INTO actual_count
+    FROM admin_territory at
+    JOIN country c ON c.id = at.country_id
+    JOIN country_admin_level cal ON cal.id = at.admin_level_id
+    WHERE c.iso_code = 'GB'
+      AND cal.code = 'electoral_ward_division';
+
+    IF actual_count <> expected_count THEN
+        RAISE EXCEPTION 'Expected % UK ward/division rows, got %', expected_count, actual_count;
     END IF;
 END $$;
 
@@ -2370,6 +2701,704 @@ BEGIN
     END IF;
 END $$;
 
+WITH ireland AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'IE'
+)
+DELETE FROM admin_territory
+USING ireland i
+WHERE admin_territory.country_id = i.id;
+
+WITH ireland AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'IE'
+),
+county_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'county'
+      AND country_id = (SELECT id FROM ireland)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    cl.country_id,
+    cl.id,
+    t.id,
+    NULL,
+    ies.display_name,
+    ies.admin_code,
+    'ie_iso_3166_2',
+    TRUE,
+    TRUE,
+    ies.source
+FROM county_level cl
+JOIN ireland i ON i.id = cl.country_id
+JOIN ie_admin_seed ies ON TRUE
+JOIN territory t
+    ON t.country_id = i.id
+   AND t.wikidata_id = ies.territory_wikidata_id;
+
+DO $$
+DECLARE
+    expected_count INTEGER;
+    actual_count INTEGER;
+BEGIN
+    SELECT count(*)
+    INTO expected_count
+    FROM ie_admin_seed;
+
+    SELECT count(*)
+    INTO actual_count
+    FROM admin_territory at
+    JOIN country c ON c.id = at.country_id
+    WHERE c.iso_code = 'IE';
+
+    IF actual_count <> expected_count THEN
+        RAISE EXCEPTION 'Expected % Ireland admin rows, got %', expected_count, actual_count;
+    END IF;
+END $$;
+
+WITH spain AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'ES'
+),
+top_level_seed AS (
+    SELECT *
+    FROM es_admin_seed
+    WHERE level_code = 'autonomous_community_or_city'
+)
+INSERT INTO territory (
+    wikidata_id,
+    name,
+    type,
+    country_id,
+    parent_id,
+    telephone_country_code,
+    local_dialing_code,
+    latitude,
+    longitude
+)
+SELECT
+    tls.territory_wikidata_id,
+    tls.territory_name,
+    tls.territory_type,
+    es.id,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+FROM spain es
+JOIN top_level_seed tls ON TRUE
+LEFT JOIN territory t
+    ON t.country_id = es.id
+   AND t.wikidata_id = tls.territory_wikidata_id
+WHERE t.id IS NULL
+ON CONFLICT (wikidata_id) DO NOTHING;
+
+WITH spain AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'ES'
+),
+top_level_seed AS (
+    SELECT *
+    FROM es_admin_seed
+    WHERE level_code = 'autonomous_community_or_city'
+),
+province_seed AS (
+    SELECT *
+    FROM es_admin_seed
+    WHERE level_code = 'province'
+)
+INSERT INTO territory (
+    wikidata_id,
+    name,
+    type,
+    country_id,
+    parent_id,
+    telephone_country_code,
+    local_dialing_code,
+    latitude,
+    longitude
+)
+SELECT
+    ps.territory_wikidata_id,
+    ps.territory_name,
+    ps.territory_type,
+    es.id,
+    parent_t.id,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+FROM spain es
+JOIN province_seed ps ON TRUE
+LEFT JOIN top_level_seed tls
+    ON tls.admin_code = ps.parent_admin_code
+LEFT JOIN territory parent_t
+    ON parent_t.wikidata_id = tls.territory_wikidata_id
+LEFT JOIN territory t
+    ON t.country_id = es.id
+   AND t.wikidata_id = ps.territory_wikidata_id
+WHERE t.id IS NULL
+ON CONFLICT (wikidata_id) DO NOTHING;
+
+WITH spain AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'ES'
+),
+province_seed AS (
+    SELECT *
+    FROM es_admin_seed
+    WHERE level_code = 'province'
+),
+municipality_seed AS (
+    SELECT *
+    FROM es_admin_seed
+    WHERE level_code = 'municipality'
+)
+INSERT INTO territory (
+    wikidata_id,
+    name,
+    type,
+    country_id,
+    parent_id,
+    telephone_country_code,
+    local_dialing_code,
+    latitude,
+    longitude
+)
+SELECT
+    ms.territory_wikidata_id,
+    ms.territory_name,
+    ms.territory_type,
+    es.id,
+    parent_t.id,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+FROM spain es
+JOIN municipality_seed ms ON TRUE
+LEFT JOIN province_seed ps
+    ON ps.admin_code = ms.parent_admin_code
+LEFT JOIN territory parent_t
+    ON parent_t.wikidata_id = ps.territory_wikidata_id
+LEFT JOIN territory t
+    ON t.country_id = es.id
+   AND t.wikidata_id = ms.territory_wikidata_id
+WHERE t.id IS NULL
+ON CONFLICT (wikidata_id) DO NOTHING;
+
+WITH spain AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'ES'
+)
+DELETE FROM admin_territory
+USING spain es
+WHERE admin_territory.country_id = es.id;
+
+WITH spain AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'ES'
+),
+top_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'autonomous_community_or_city'
+      AND country_id = (SELECT id FROM spain)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    tl.country_id,
+    tl.id,
+    t.id,
+    NULL,
+    eas.display_name,
+    eas.admin_code,
+    'es_ine_autonomous_community_code_2026',
+    TRUE,
+    TRUE,
+    eas.source
+FROM top_level tl
+JOIN spain es ON es.id = tl.country_id
+JOIN es_admin_seed eas
+    ON eas.level_code = 'autonomous_community_or_city'
+JOIN territory t
+    ON t.country_id = es.id
+   AND t.wikidata_id = eas.territory_wikidata_id;
+
+WITH spain AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'ES'
+),
+top_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'autonomous_community_or_city'
+      AND country_id = (SELECT id FROM spain)
+),
+province_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'province'
+      AND country_id = (SELECT id FROM spain)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    pl.country_id,
+    pl.id,
+    t.id,
+    parent_at.id,
+    eas.display_name,
+    eas.admin_code,
+    'es_ine_province_code_2026',
+    TRUE,
+    TRUE,
+    eas.source
+FROM province_level pl
+JOIN spain es ON es.id = pl.country_id
+JOIN es_admin_seed eas
+    ON eas.level_code = 'province'
+JOIN territory t
+    ON t.country_id = es.id
+   AND t.wikidata_id = eas.territory_wikidata_id
+JOIN top_level tl ON tl.country_id = es.id
+JOIN admin_territory parent_at
+    ON parent_at.country_id = es.id
+   AND parent_at.admin_level_id = tl.id
+   AND parent_at.admin_code_system = 'es_ine_autonomous_community_code_2026'
+   AND parent_at.admin_code = eas.parent_admin_code;
+
+WITH spain AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'ES'
+),
+province_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'province'
+      AND country_id = (SELECT id FROM spain)
+),
+municipality_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'municipality'
+      AND country_id = (SELECT id FROM spain)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    ml.country_id,
+    ml.id,
+    t.id,
+    parent_at.id,
+    eas.display_name,
+    eas.admin_code,
+    'es_ine_municipality_code_2026',
+    TRUE,
+    TRUE,
+    eas.source
+FROM municipality_level ml
+JOIN spain es ON es.id = ml.country_id
+JOIN es_admin_seed eas
+    ON eas.level_code = 'municipality'
+JOIN territory t
+    ON t.country_id = es.id
+   AND t.wikidata_id = eas.territory_wikidata_id
+JOIN province_level pl ON pl.country_id = es.id
+JOIN admin_territory parent_at
+    ON parent_at.country_id = es.id
+   AND parent_at.admin_level_id = pl.id
+   AND parent_at.admin_code_system = 'es_ine_province_code_2026'
+   AND parent_at.admin_code = eas.parent_admin_code;
+
+DO $$
+DECLARE
+    expected_total INTEGER;
+    actual_total INTEGER;
+BEGIN
+    SELECT count(*)
+    INTO expected_total
+    FROM es_admin_seed;
+
+    SELECT count(*)
+    INTO actual_total
+    FROM admin_territory at
+    JOIN country c ON c.id = at.country_id
+    WHERE c.iso_code = 'ES';
+
+    IF actual_total <> expected_total THEN
+        RAISE EXCEPTION 'Expected % Spain admin rows, got %', expected_total, actual_total;
+    END IF;
+END $$;
+
+WITH portugal AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'PT'
+),
+top_level_seed AS (
+    SELECT *
+    FROM pt_admin_seed
+    WHERE level_code = 'district_or_island'
+)
+INSERT INTO territory (
+    wikidata_id,
+    name,
+    type,
+    country_id,
+    parent_id,
+    telephone_country_code,
+    local_dialing_code,
+    latitude,
+    longitude
+)
+SELECT
+    tls.territory_wikidata_id,
+    tls.territory_name,
+    tls.territory_type,
+    pt.id,
+    NULL,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+FROM portugal pt
+JOIN top_level_seed tls ON TRUE
+LEFT JOIN territory t
+    ON t.country_id = pt.id
+   AND t.wikidata_id = tls.territory_wikidata_id
+WHERE t.id IS NULL
+ON CONFLICT (wikidata_id) DO NOTHING;
+
+WITH portugal AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'PT'
+),
+top_level_seed AS (
+    SELECT *
+    FROM pt_admin_seed
+    WHERE level_code = 'district_or_island'
+),
+municipality_seed AS (
+    SELECT *
+    FROM pt_admin_seed
+    WHERE level_code = 'municipality'
+)
+INSERT INTO territory (
+    wikidata_id,
+    name,
+    type,
+    country_id,
+    parent_id,
+    telephone_country_code,
+    local_dialing_code,
+    latitude,
+    longitude
+)
+SELECT
+    ms.territory_wikidata_id,
+    ms.territory_name,
+    ms.territory_type,
+    pt.id,
+    parent_t.id,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+FROM portugal pt
+JOIN municipality_seed ms ON TRUE
+LEFT JOIN top_level_seed tls
+    ON tls.admin_code = ms.parent_admin_code
+LEFT JOIN territory parent_t
+    ON parent_t.wikidata_id = tls.territory_wikidata_id
+LEFT JOIN territory t
+    ON t.country_id = pt.id
+   AND t.wikidata_id = ms.territory_wikidata_id
+WHERE t.id IS NULL
+ON CONFLICT (wikidata_id) DO NOTHING;
+
+WITH portugal AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'PT'
+),
+municipality_seed AS (
+    SELECT *
+    FROM pt_admin_seed
+    WHERE level_code = 'municipality'
+),
+civil_parish_seed AS (
+    SELECT *
+    FROM pt_admin_seed
+    WHERE level_code = 'civil_parish'
+)
+INSERT INTO territory (
+    wikidata_id,
+    name,
+    type,
+    country_id,
+    parent_id,
+    telephone_country_code,
+    local_dialing_code,
+    latitude,
+    longitude
+)
+SELECT
+    cps.territory_wikidata_id,
+    cps.territory_name,
+    cps.territory_type,
+    pt.id,
+    parent_t.id,
+    NULL,
+    NULL,
+    NULL,
+    NULL
+FROM portugal pt
+JOIN civil_parish_seed cps ON TRUE
+LEFT JOIN municipality_seed ms
+    ON ms.admin_code = cps.parent_admin_code
+LEFT JOIN territory parent_t
+    ON parent_t.wikidata_id = ms.territory_wikidata_id
+LEFT JOIN territory t
+    ON t.country_id = pt.id
+   AND t.wikidata_id = cps.territory_wikidata_id
+WHERE t.id IS NULL
+ON CONFLICT (wikidata_id) DO NOTHING;
+
+WITH portugal AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'PT'
+)
+DELETE FROM admin_territory
+USING portugal pt
+WHERE admin_territory.country_id = pt.id;
+
+WITH portugal AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'PT'
+),
+top_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'district_or_island'
+      AND country_id = (SELECT id FROM portugal)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    tl.country_id,
+    tl.id,
+    t.id,
+    NULL,
+    pas.display_name,
+    pas.admin_code,
+    'pt_dgt_au_parent_code',
+    TRUE,
+    TRUE,
+    pas.source
+FROM top_level tl
+JOIN portugal pt ON pt.id = tl.country_id
+JOIN pt_admin_seed pas
+    ON pas.level_code = 'district_or_island'
+JOIN territory t
+    ON t.country_id = pt.id
+   AND t.wikidata_id = pas.territory_wikidata_id;
+
+WITH portugal AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'PT'
+),
+top_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'district_or_island'
+      AND country_id = (SELECT id FROM portugal)
+),
+municipality_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'municipality'
+      AND country_id = (SELECT id FROM portugal)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    ml.country_id,
+    ml.id,
+    t.id,
+    parent_at.id,
+    pas.display_name,
+    pas.admin_code,
+    'pt_dgt_au_municipality_code',
+    TRUE,
+    TRUE,
+    pas.source
+FROM municipality_level ml
+JOIN portugal pt ON pt.id = ml.country_id
+JOIN pt_admin_seed pas
+    ON pas.level_code = 'municipality'
+JOIN territory t
+    ON t.country_id = pt.id
+   AND t.wikidata_id = pas.territory_wikidata_id
+JOIN top_level tl ON tl.country_id = pt.id
+JOIN admin_territory parent_at
+    ON parent_at.country_id = pt.id
+   AND parent_at.admin_level_id = tl.id
+   AND parent_at.admin_code_system = 'pt_dgt_au_parent_code'
+   AND parent_at.admin_code = pas.parent_admin_code;
+
+WITH portugal AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'PT'
+),
+municipality_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'municipality'
+      AND country_id = (SELECT id FROM portugal)
+),
+civil_parish_level AS (
+    SELECT id, country_id
+    FROM country_admin_level
+    WHERE code = 'civil_parish'
+      AND country_id = (SELECT id FROM portugal)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    cpl.country_id,
+    cpl.id,
+    t.id,
+    parent_at.id,
+    pas.display_name,
+    pas.admin_code,
+    'pt_dgt_au_civil_parish_code',
+    TRUE,
+    TRUE,
+    pas.source
+FROM civil_parish_level cpl
+JOIN portugal pt ON pt.id = cpl.country_id
+JOIN pt_admin_seed pas
+    ON pas.level_code = 'civil_parish'
+JOIN territory t
+    ON t.country_id = pt.id
+   AND t.wikidata_id = pas.territory_wikidata_id
+JOIN municipality_level ml ON ml.country_id = pt.id
+JOIN admin_territory parent_at
+    ON parent_at.country_id = pt.id
+   AND parent_at.admin_level_id = ml.id
+   AND parent_at.admin_code_system = 'pt_dgt_au_municipality_code'
+   AND parent_at.admin_code = pas.parent_admin_code;
+
+DO $$
+DECLARE
+    expected_total INTEGER;
+    actual_total INTEGER;
+BEGIN
+    SELECT count(*)
+    INTO expected_total
+    FROM pt_admin_seed;
+
+    SELECT count(*)
+    INTO actual_total
+    FROM admin_territory at
+    JOIN country c ON c.id = at.country_id
+    WHERE c.iso_code = 'PT';
+
+    IF actual_total <> expected_total THEN
+        RAISE EXCEPTION 'Expected % Portugal admin rows, got %', expected_total, actual_total;
+    END IF;
+END $$;
+
 COMMIT;
 SQL
 } | "${PSQL[@]}"
@@ -2377,6 +3406,9 @@ SQL
 FR_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'FR'")"
 DE_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'DE'")"
 GB_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'GB'")"
+IE_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'IE'")"
+ES_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'ES'")"
+PT_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'PT'")"
 BE_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'BE'")"
 LU_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'LU'")"
 CH_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'CH'")"
@@ -2384,4 +3416,4 @@ AT_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN 
 NL_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'NL'")"
 DK_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'DK'")"
 IT_COUNT="$("${PSQL[@]}" -qtAX -c "SELECT count(*) FROM admin_territory at JOIN country c ON c.id = at.country_id WHERE c.iso_code = 'IT'")"
-echo "Administrative hierarchy sync completed (${FR_COUNT} French rows, ${DE_COUNT} German rows, ${GB_COUNT} UK rows, ${BE_COUNT} Belgium rows, ${LU_COUNT} Luxembourg rows, ${CH_COUNT} Switzerland rows, ${AT_COUNT} Austria rows, ${DK_COUNT} Denmark rows, ${NL_COUNT} Netherlands rows, ${IT_COUNT} Italy rows)."
+echo "Administrative hierarchy sync completed (${FR_COUNT} French rows, ${DE_COUNT} German rows, ${GB_COUNT} UK rows, ${IE_COUNT} Ireland rows, ${ES_COUNT} Spain rows, ${PT_COUNT} Portugal rows, ${BE_COUNT} Belgium rows, ${LU_COUNT} Luxembourg rows, ${CH_COUNT} Switzerland rows, ${AT_COUNT} Austria rows, ${DK_COUNT} Denmark rows, ${NL_COUNT} Netherlands rows, ${IT_COUNT} Italy rows)."
