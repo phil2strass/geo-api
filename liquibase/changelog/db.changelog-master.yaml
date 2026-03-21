@@ -71,3 +71,7 @@ databaseChangeLog:
       file: changelog/36-override-austria-admin-levels.sql
   - include:
       file: changelog/37-override-italy-admin-levels.sql
+  - include:
+      file: changelog/38-fix-france-wolxheim-territory.sql
+  - include:
+      file: changelog/39-create-city-structure.sql

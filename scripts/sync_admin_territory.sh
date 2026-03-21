@@ -21,6 +21,7 @@ require_command psql
 
 export PGPASSWORD="$LIQUIBASE_DB_PASSWORD"
 export PGCLIENTENCODING="${PGCLIENTENCODING:-UTF8}"
+FR_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/fr_admin_seed.tsv"
 DE_KREISE_SEED_PATH="${SCRIPT_DIR}/data/de_kreise_seed.tsv"
 GB_LAD_SEED_PATH="${SCRIPT_DIR}/data/gb_local_authority_district_seed.tsv"
 BE_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/be_admin_seed.tsv"
@@ -30,6 +31,11 @@ DK_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/dk_admin_seed.tsv"
 CH_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/ch_admin_seed.tsv"
 AT_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/at_admin_seed.tsv"
 IT_ADMIN_SEED_PATH="${SCRIPT_DIR}/data/it_admin_seed.tsv"
+
+if [[ ! -f "$FR_ADMIN_SEED_PATH" ]]; then
+  echo "Missing France admin seed file: $FR_ADMIN_SEED_PATH" >&2
+  exit 1
+fi
 
 if [[ ! -f "$DE_KREISE_SEED_PATH" ]]; then
   echo "Missing Germany Kreis seed file: $DE_KREISE_SEED_PATH" >&2
@@ -114,6 +120,17 @@ CREATE TEMP TABLE de_kreise_seed (
     parent_state_code VARCHAR(2) NOT NULL,
     parent_government_region_code VARCHAR(3),
     source VARCHAR(120) NOT NULL
+) ON COMMIT DROP;
+
+CREATE TEMP TABLE fr_admin_seed (
+    level_code VARCHAR(64) NOT NULL,
+    admin_code VARCHAR(9) NOT NULL,
+    display_name TEXT NOT NULL,
+    territory_wikidata_id VARCHAR(32) NOT NULL UNIQUE,
+    parent_level_code VARCHAR(64),
+    parent_admin_code VARCHAR(9),
+    source VARCHAR(120) NOT NULL,
+    PRIMARY KEY (level_code, admin_code)
 ) ON COMMIT DROP;
 
 CREATE TEMP TABLE gb_lad_seed (
@@ -202,6 +219,7 @@ CREATE TEMP TABLE it_admin_seed (
 SQL
 
 printf "\\copy de_kreise_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$DE_KREISE_SEED_PATH"
+printf "\\copy fr_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$FR_ADMIN_SEED_PATH"
 printf "\\copy gb_lad_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$GB_LAD_SEED_PATH"
 printf "\\copy be_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$BE_ADMIN_SEED_PATH"
 printf "\\copy lu_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$LU_ADMIN_SEED_PATH"
@@ -212,6 +230,13 @@ printf "\\copy at_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEA
 printf "\\copy it_admin_seed FROM '%s' WITH (FORMAT csv, DELIMITER E'\\\\t', HEADER true)\n" "$IT_ADMIN_SEED_PATH"
 
 cat <<'SQL'
+
+DO $$
+BEGIN
+    IF NOT EXISTS (SELECT 1 FROM fr_admin_seed) THEN
+        RAISE EXCEPTION 'France admin seed is empty';
+    END IF;
+END $$;
 
 DO $$
 BEGIN
@@ -503,6 +528,55 @@ JOIN admin_territory parent_at
    AND parent_at.admin_level_id = rl.id
    AND parent_at.admin_code_system = 'fr_insee'
    AND parent_at.admin_code = ds.parent_region_code;
+
+WITH france AS (
+    SELECT id
+    FROM country
+    WHERE iso_code = 'FR'
+),
+level_map AS (
+    SELECT id, country_id, code
+    FROM country_admin_level
+    WHERE country_id = (SELECT id FROM france)
+)
+INSERT INTO admin_territory (
+    country_id,
+    admin_level_id,
+    territory_id,
+    parent_admin_territory_id,
+    display_name,
+    admin_code,
+    admin_code_system,
+    is_current,
+    is_official,
+    source
+)
+SELECT
+    lm.country_id,
+    lm.id,
+    t.id,
+    parent_at.id,
+    fas.display_name,
+    fas.admin_code,
+    'fr_insee',
+    TRUE,
+    TRUE,
+    fas.source
+FROM fr_admin_seed fas
+JOIN level_map lm
+    ON lm.code = fas.level_code
+JOIN france f
+    ON f.id = lm.country_id
+JOIN territory t
+    ON t.country_id = f.id
+   AND t.wikidata_id = fas.territory_wikidata_id
+JOIN level_map parent_level
+    ON parent_level.code = fas.parent_level_code
+JOIN admin_territory parent_at
+    ON parent_at.country_id = f.id
+   AND parent_at.admin_level_id = parent_level.id
+   AND parent_at.admin_code_system = 'fr_insee'
+   AND parent_at.admin_code = fas.parent_admin_code;
 
 WITH germany AS (
     SELECT id

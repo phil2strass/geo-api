@@ -189,6 +189,8 @@ python3 scripts/import_territory_wikidata.py
 `territory` reste le gazetteer large importe depuis Wikidata. La hierarchie administrative propre est desormais separee dans :
 - `country_admin_level` : niveaux admin par pays
 - `admin_territory` : unites admin propres, avec `display_name` et `admin_code`
+- `city` : projection metier des villes du monde, reliee a Wikidata et optionnellement a `territory`
+- `admin_territory_city` : liens explicites entre unite administrative et ville (`seat`, `coextensive`, `largest_city`)
 
 La migration `26-load-country-admin-levels.sql` seed `country_admin_level` pour tous les pays a partir du snapshot normalise `18-load-territory-from-wikidata.sql` (France conserve son override manuel defini en migration `25`).
 Pour regenerer ce seed :
@@ -198,7 +200,7 @@ python3 scripts/generate_country_admin_level_sql.py
 ```
 
 Le sync administratif reste separe de la migration `18` et peuple pour l'instant :
-- la France sur les niveaux `region` et `department`
+- la France sur les niveaux officiels `region`, `department`, `arrondissement`, `canton` et `commune`
 - l'Allemagne sur les niveaux officiels `state`, `government_region` et `kreis`
 - le Royaume-Uni sur les niveaux officiels `constituent_country` et `local_authority_district`
 - la Belgique sur les niveaux officiels `region`, `province`, `arrondissement` et `municipality`
@@ -214,6 +216,29 @@ Pour le regenerer depuis la couche officielle BKG `vg1000_krs` et le mapping Wik
 
 ```bash
 python3 scripts/generate_de_kreise_seed.py
+```
+
+Le seed administratif francais est versionne dans `scripts/data/fr_admin_seed.tsv`.
+Pour le regenerer depuis le COG Insee 2026 et les codes Wikidata :
+
+```bash
+python3 scripts/generate_fr_admin_seed.py
+```
+
+Pour peupler `city` et `admin_territory_city` a partir des unites locales deja chargees
+dans `admin_territory` (`FR commune`, `BE/LU/CH/AT/NL/DK/IT municipality`), avec
+enrichissement Wikidata :
+
+```bash
+LIQUIBASE_DB_HOST=localhost LIQUIBASE_DB_PORT=5432 LIQUIBASE_DB_NAME=geo2 LIQUIBASE_DB_USER=geo LIQUIBASE_DB_PASSWORD=geo \
+python3 scripts/sync_admin_territory_city.py
+```
+
+Pour limiter le sync a certains pays :
+
+```bash
+LIQUIBASE_DB_HOST=localhost LIQUIBASE_DB_PORT=5432 LIQUIBASE_DB_NAME=geo2 LIQUIBASE_DB_USER=geo LIQUIBASE_DB_PASSWORD=geo \
+python3 scripts/sync_admin_territory_city.py --country FR --country BE
 ```
 
 Le seed officiel des local authority districts du Royaume-Uni est versionne dans
